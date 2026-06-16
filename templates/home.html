@@ -1,101 +1,395 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Mock Test Portal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mock Test Portal</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --purple-50: #f3f0ff;
+    --purple-100: #ede9fe;
+    --purple-500: #7c3aed;
+    --purple-600: #6d28d9;
+    --purple-700: #5b21b6;
+    --purple-900: #2e1065;
+    --indigo-400: #818cf8;
+    --indigo-500: #6366f1;
+    --indigo-600: #4f46e5;
+    --white: #ffffff;
+    --gray-50: #f9fafb;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-400: #9ca3af;
+    --gray-600: #4b5563;
+    --gray-800: #1f2937;
+    --radius: 14px;
+    --radius-sm: 9px;
+    --shadow: 0 20px 60px rgba(109,40,217,0.18), 0 4px 16px rgba(0,0,0,0.08);
+  }
+
+  html { height: 100%; }
+
+  body {
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #1a0533 0%, #2d1065 40%, #1e3a8a 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Animated orbs */
+  body::before, body::after {
+    content: '';
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.35;
+    pointer-events: none;
+    animation: drift 12s ease-in-out infinite alternate;
+  }
+  body::before {
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, #7c3aed, transparent 70%);
+    top: -150px; left: -100px;
+  }
+  body::after {
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, #3b82f6, transparent 70%);
+    bottom: -100px; right: -80px;
+    animation-direction: alternate-reverse;
+    animation-duration: 15s;
+  }
+
+  @keyframes drift {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(40px, 30px) scale(1.08); }
+  }
+
+  /* Floating particles */
+  .particles { position: fixed; inset: 0; pointer-events: none; overflow: hidden; }
+  .particle {
+    position: absolute;
+    width: 3px; height: 3px;
+    background: rgba(255,255,255,0.4);
+    border-radius: 50%;
+    animation: float-up linear infinite;
+  }
+  @keyframes float-up {
+    0% { transform: translateY(100vh) translateX(0); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 0.5; }
+    100% { transform: translateY(-20px) translateX(30px); opacity: 0; }
+  }
+
+  /* Glass card */
+  .card {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    background: rgba(255,255,255,0.07);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 24px;
+    padding: 44px 40px;
+    box-shadow: 0 32px 80px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.12);
+    animation: card-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  @keyframes card-in {
+    from { opacity: 0; transform: translateY(32px) scale(0.96); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+  }
+
+  /* Logo mark */
+  .logo-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+  }
+  .logo {
+    width: 56px; height: 56px;
+    background: linear-gradient(135deg, #7c3aed, #6366f1);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(124,58,237,0.5);
+    position: relative;
+    animation: logo-pulse 3s ease-in-out infinite;
+  }
+  @keyframes logo-pulse {
+    0%, 100% { box-shadow: 0 8px 24px rgba(124,58,237,0.5); }
+    50% { box-shadow: 0 8px 36px rgba(124,58,237,0.8), 0 0 0 8px rgba(124,58,237,0.1); }
+  }
+  .logo svg { width: 28px; height: 28px; fill: none; stroke: white; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+  h2 {
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -0.3px;
+    margin-bottom: 6px;
+  }
+  .subtitle {
+    color: rgba(255,255,255,0.5);
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 32px;
+    letter-spacing: 0.2px;
+  }
+
+  /* Divider */
+  .divider {
+    height: 1px;
+    background: rgba(255,255,255,0.1);
+    margin: 28px 0;
+  }
+
+  /* Form */
+  .field { margin-bottom: 18px; }
+  label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.55);
+    margin-bottom: 8px;
+  }
+
+  input, select {
+    width: 100%;
+    padding: 13px 16px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: var(--radius-sm);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.25s ease;
+    -webkit-appearance: none;
+  }
+  input::placeholder { color: rgba(255,255,255,0.25); }
+  input:focus, select:focus {
+    border-color: rgba(124,58,237,0.7);
+    background: rgba(124,58,237,0.1);
+    box-shadow: 0 0 0 3px rgba(124,58,237,0.2);
+  }
+  input:focus::placeholder { color: transparent; }
+
+  select option { background: #1e1b4b; color: white; }
+
+  /* Floating label effect */
+  .field-wrap { position: relative; }
+  .field-icon {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px; height: 18px;
+    opacity: 0.35;
+    pointer-events: none;
+  }
+
+  /* Two column grid */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+  /* Submit button */
+  .btn {
+    width: 100%;
+    margin-top: 26px;
+    padding: 15px;
+    background: linear-gradient(135deg, #7c3aed, #6366f1);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    letter-spacing: 0.2px;
+  }
+  .btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #6d28d9, #4f46e5);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .btn:hover::before { opacity: 1; }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(124,58,237,0.5); }
+  .btn:active { transform: translateY(0); }
+  .btn span { position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; gap: 8px; }
+  .btn svg { width: 18px; height: 18px; fill: none; stroke: white; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+  /* Ripple */
+  .ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.3);
+    transform: scale(0);
+    animation: ripple-anim 0.6s linear;
+    pointer-events: none;
+  }
+  @keyframes ripple-anim {
+    to { transform: scale(4); opacity: 0; }
+  }
+
+  /* Info strip */
+  .info-strip {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22px;
+  }
+  .info-strip span { font-size: 12px; color: rgba(255,255,255,0.35); }
+  .dot { width: 3px; height: 3px; background: rgba(255,255,255,0.2); border-radius: 50%; }
+
+  /* Input validation */
+  input:not(:placeholder-shown):valid { border-color: rgba(52,211,153,0.4); }
+
+  @media (max-width: 520px) {
+    .card { padding: 32px 24px; }
+    .grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
 </head>
 <body>
 
-<h2>Mock Test Portal</h2>
+<div class="particles" id="particles"></div>
 
-<form method="POST">
+<div class="card">
+  <div class="logo-wrap">
+    <div class="logo">
+      <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="2"/><path d="M9 12h6M9 16h4"/></svg>
+    </div>
+  </div>
 
-    Name
-    <input
-        type="text"
-        name="name"
-        required
-        placeholder="Enter your name"
-    >
+  <h2>Mock Test Portal</h2>
+  <p class="subtitle">Complete your profile to begin the exam</p>
 
-    <br><br>
+  <div class="divider"></div>
 
-    Enrollment No
-    <input
-        type="text"
-        name="enroll_no"
-        required
-        placeholder="Enter your Enrollment No"
-    >
+  <form method="POST" id="examForm">
 
-    <br><br>
+    <div class="grid-2">
+      <div class="field">
+        <label>Full Name</label>
+        <div class="field-wrap">
+          <input type="text" name="name" placeholder="Your name" required autocomplete="off">
+          <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        </div>
+      </div>
+      <div class="field">
+        <label>Enrollment No.</label>
+        <div class="field-wrap">
+          <input type="text" name="enroll_no" placeholder="e.g. EN2024001" required autocomplete="off">
+          <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 9h8M8 13h5"/></svg>
+        </div>
+      </div>
+    </div>
 
-    Batch Number
-    <input
-        type="text"
-        name="batch_no"
-        required
-        placeholder="Enter your Batch Number"
-    >
+    <div class="grid-2">
+      <div class="field">
+        <label>Batch Number</label>
+        <div class="field-wrap">
+          <input type="text" name="batch_no" placeholder="e.g. B-12" required autocomplete="off">
+          <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+      </div>
+      <div class="field">
+        <label>Trainer Name</label>
+        <select name="trainer_name" required>
+          <option value="">Select trainer</option>
+          <option value="Tushar">Tushar</option>
+          <option value="Kuldeep">Kuldeep</option>
+          <option value="Prashant">Prashant</option>
+          <option value="Nagesh">Nagesh</option>
+        </select>
+      </div>
+    </div>
 
-    <br><br>
+    <div class="field">
+      <label>Select Exam</label>
+      <select name="course" required id="courseSelect">
+        <option value="">Choose your exam</option>
+        <option value="DA">📊 Data Analytics</option>
+        <option value="DS">🔬 Data Science</option>
+        <option value="CLOUD">☁️ AWS Cloud</option>
+      </select>
+    </div>
 
-    Trainer Name
-
-    <select name="trainer_name" required>
-
-        <option value="">
-            Select Trainer
-        </option>
-
-        <option value="Tushar">
-            Tushar
-        </option>
-
-        <option value="Kuldeep">
-            Kuldeep
-        </option>
-
-        <option value="Prashant">
-            Prashant
-        </option>
-
-        <option value="Nagesh">
-            Nagesh
-        </option>
-
-    </select>
-
-    <br><br>
-
-    Select Exam
-
-    <select name="course" required>
-
-        <option value="">
-            Choose Exam
-        </option>
-
-        <option value="DA">
-            Data Analytics
-        </option>
-
-        <option value="DS">
-            Data Science
-        </option>
-
-        <option value="CLOUD">
-            AWS
-        </option>
-
-    </select>
-
-    <br><br>
-
-    <button type="submit">
-        Start Exam
+    <button type="submit" class="btn" id="submitBtn">
+      <span>
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        Begin Exam
+      </span>
     </button>
 
-</form>
+  </form>
 
+  <div class="info-strip">
+    <span>20 min duration</span>
+    <div class="dot"></div>
+    <span>Auto-submit on timeout</span>
+    <div class="dot"></div>
+    <span>40% to pass</span>
+  </div>
+</div>
+
+<script>
+  // Particles
+  const container = document.getElementById('particles');
+  for (let i = 0; i < 18; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    p.style.cssText = `
+      left: ${Math.random() * 100}%;
+      width: ${Math.random() * 3 + 1}px;
+      height: ${Math.random() * 3 + 1}px;
+      animation-duration: ${Math.random() * 12 + 8}s;
+      animation-delay: ${Math.random() * 8}s;
+      opacity: ${Math.random() * 0.5 + 0.1};
+    `;
+    container.appendChild(p);
+  }
+
+  // Ripple on button
+  document.getElementById('submitBtn').addEventListener('click', function(e) {
+    const rect = this.getBoundingClientRect();
+    const r = document.createElement('span');
+    r.className = 'ripple';
+    const size = Math.max(rect.width, rect.height);
+    r.style.cssText = `width:${size}px;height:${size}px;left:${e.clientX-rect.left-size/2}px;top:${e.clientY-rect.top-size/2}px`;
+    this.appendChild(r);
+    setTimeout(() => r.remove(), 700);
+  });
+
+  // Staggered field animation
+  document.querySelectorAll('.field').forEach((f, i) => {
+    f.style.opacity = '0';
+    f.style.transform = 'translateY(16px)';
+    f.style.transition = 'all 0.5s ease';
+    setTimeout(() => {
+      f.style.opacity = '1';
+      f.style.transform = 'translateY(0)';
+    }, 400 + i * 80);
+  });
+</script>
 </body>
 </html>
