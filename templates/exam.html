@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exam</title>
+</head>
+<body>
+
+<h2>{{ course }} Exam</h2>
+
+<p>
+    Time Remaining:
+    <span id="timer">20:00</span>
+</p>
+
+<form method="POST" action="/submit_exam">
+
+    {% for question in questions %}
+
+        <h4>
+            Q{{ loop.index }}.
+            {{ question.question }}
+        </h4>
+
+        <input
+            type="radio"
+            name="q{{ loop.index0 }}"
+            value="{{ question.options[0] }}"
+            required
+        >
+        {{ question.options[0] }}
+
+        <br>
+
+        <input
+            type="radio"
+            name="q{{ loop.index0 }}"
+            value="{{ question.options[1] }}"
+        >
+        {{ question.options[1] }}
+
+        <br>
+
+        <input
+            type="radio"
+            name="q{{ loop.index0 }}"
+            value="{{ question.options[2] }}"
+        >
+        {{ question.options[2] }}
+
+        <br>
+
+        <input
+            type="radio"
+            name="q{{ loop.index0 }}"
+            value="{{ question.options[3] }}"
+        >
+        {{ question.options[3] }}
+
+        <hr>
+
+    {% endfor %}
+
+    <button type="submit">
+        Submit Exam
+    </button>
+
+</form>
+
+<script>
+
+let timeLeft = 20 * 60;
+
+function updateTimer(){
+
+    let minutes = Math.floor(timeLeft / 60);
+    let seconds = timeLeft % 60;
+
+    document.getElementById("timer").innerHTML =
+        minutes + ":" +
+        String(seconds).padStart(2,"0");
+
+    if(timeLeft <= 0){
+        document.forms[0].submit();
+    }
+
+    timeLeft--;
+
+}
+
+setInterval(updateTimer,1000);
+
+</script>
+
+</body>
+</html>

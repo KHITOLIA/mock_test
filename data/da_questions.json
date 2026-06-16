@@ -1,0 +1,202 @@
+[
+    {
+        "question": "What is Pandas?",
+        "options": [
+            "Python Library",
+            "Database",
+            "Operating System",
+            "Browser"
+        ],
+        "answer": "Python Library"
+    },
+    {
+        "question": "What is NumPy used for?",
+        "options": [
+            "Numerical Computing",
+            "Web Development",
+            "Networking",
+            "Database Management"
+        ],
+        "answer": "Numerical Computing"
+    },
+    {
+        "question": "Which function is used to read a CSV file in Pandas?",
+        "options": [
+            "read_csv()",
+            "open_csv()",
+            "load_csv()",
+            "csv_read()"
+        ],
+        "answer": "read_csv()"
+    },
+    {
+        "question": "Which chart is best for showing trends over time?",
+        "options": [
+            "Line Chart",
+            "Pie Chart",
+            "Bar Chart",
+            "Scatter Plot"
+        ],
+        "answer": "Line Chart"
+    },
+    {
+        "question": "What does SQL stand for?",
+        "options": [
+            "Structured Query Language",
+            "Simple Query Language",
+            "System Query Language",
+            "Sequential Query Language"
+        ],
+        "answer": "Structured Query Language"
+    },
+    {
+        "question": "Which SQL clause is used to filter records?",
+        "options": [
+            "WHERE",
+            "GROUP BY",
+            "ORDER BY",
+            "HAVING"
+        ],
+        "answer": "WHERE"
+    },
+    {
+        "question": "Which Pandas function shows the first 5 rows?",
+        "options": [
+            "head()",
+            "tail()",
+            "info()",
+            "describe()"
+        ],
+        "answer": "head()"
+    },
+    {
+        "question": "Which Pandas function shows the last 5 rows?",
+        "options": [
+            "tail()",
+            "head()",
+            "info()",
+            "shape()"
+        ],
+        "answer": "tail()"
+    },
+    {
+        "question": "What does the shape attribute return?",
+        "options": [
+            "Rows and Columns",
+            "Only Rows",
+            "Only Columns",
+            "Data Types"
+        ],
+        "answer": "Rows and Columns"
+    },
+    {
+        "question": "Which function is used to remove missing values?",
+        "options": [
+            "dropna()",
+            "fillna()",
+            "remove()",
+            "delete()"
+        ],
+        "answer": "dropna()"
+    },
+    {
+        "question": "What does fillna() do?",
+        "options": [
+            "Fill Missing Values",
+            "Delete Missing Values",
+            "Sort Values",
+            "Rename Columns"
+        ],
+        "answer": "Fill Missing Values"
+    },
+    {
+        "question": "Which library is used for data visualization?",
+        "options": [
+            "Matplotlib",
+            "NumPy",
+            "Pandas",
+            "Scikit-learn"
+        ],
+        "answer": "Matplotlib"
+    },
+    {
+        "question": "Which chart is commonly used to show proportions?",
+        "options": [
+            "Pie Chart",
+            "Line Chart",
+            "Scatter Plot",
+            "Histogram"
+        ],
+        "answer": "Pie Chart"
+    },
+    {
+        "question": "What is the purpose of GROUP BY in SQL?",
+        "options": [
+            "Group Similar Records",
+            "Sort Records",
+            "Delete Records",
+            "Filter Records"
+        ],
+        "answer": "Group Similar Records"
+    },
+    {
+        "question": "Which keyword is used to sort records in SQL?",
+        "options": [
+            "ORDER BY",
+            "GROUP BY",
+            "WHERE",
+            "HAVING"
+        ],
+        "answer": "ORDER BY"
+    },
+    {
+        "question": "What does COUNT(*) do in SQL?",
+        "options": [
+            "Counts Rows",
+            "Counts Columns",
+            "Deletes Rows",
+            "Updates Rows"
+        ],
+        "answer": "Counts Rows"
+    },
+    {
+        "question": "Which function calculates average in SQL?",
+        "options": [
+            "AVG()",
+            "SUM()",
+            "COUNT()",
+            "MEAN()"
+        ],
+        "answer": "AVG()"
+    },
+    {
+        "question": "Which SQL join returns matching records from both tables?",
+        "options": [
+            "INNER JOIN",
+            "LEFT JOIN",
+            "RIGHT JOIN",
+            "FULL JOIN"
+        ],
+        "answer": "INNER JOIN"
+    },
+    {
+        "question": "What is Data Analytics?",
+        "options": [
+            "Analyzing Data for Insights",
+            "Creating Databases",
+            "Building Websites",
+            "Managing Networks"
+        ],
+        "answer": "Analyzing Data for Insights"
+    },
+    {
+        "question": "Which Python library is commonly used for analytics?",
+        "options": [
+            "Pandas",
+            "Tkinter",
+            "Flask",
+            "Pygame"
+        ],
+        "answer": "Pandas"
+    }
+]

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mock Test Portal</title>
+</head>
+<body>
+
+<h2>Mock Test Portal</h2>
+
+<form method="POST">
+
+    Name
+    <input
+        type="text"
+        name="name"
+        required
+        placeholder="Enter your name"
+    >
+
+    <br><br>
+
+    Enrollment No
+    <input
+        type="text"
+        name="enroll_no"
+        required
+        placeholder="Enter your Enrollment No"
+    >
+
+    <br><br>
+
+    Batch Number
+    <input
+        type="text"
+        name="batch_no"
+        required
+        placeholder="Enter your Batch Number"
+    >
+
+    <br><br>
+
+    Trainer Name
+
+    <select name="trainer_name" required>
+
+        <option value="">
+            Select Trainer
+        </option>
+
+        <option value="Tushar">
+            Tushar
+        </option>
+
+        <option value="Kuldeep">
+            Kuldeep
+        </option>
+
+        <option value="Prashant">
+            Prashant
+        </option>
+
+        <option value="Nagesh">
+            Nagesh
+        </option>
+
+    </select>
+
+    <br><br>
+
+    Select Exam
+
+    <select name="course" required>
+
+        <option value="">
+            Choose Exam
+        </option>
+
+        <option value="DA">
+            Data Analytics
+        </option>
+
+        <option value="DS">
+            Data Science
+        </option>
+
+        <option value="CLOUD">
+            AWS
+        </option>
+
+    </select>
+
+    <br><br>
+
+    <button type="submit">
+        Start Exam
+    </button>
+
+</form>
+
+</body>
+</html>
