@@ -37,7 +37,9 @@ def load_questions(course):
     file_map = {
         'DA' : "data/da_questions.json",
         'DS' : 'data/ds_questions.json',
-        'CLOUD' : 'data/aws_questions.json'
+        'AWS' : 'data/aws_questions.json',
+        'AZURE' : 'data/azure_az104_exam_bank.json',
+        'DEVOPS': 'data/devops_exam_bank.json'
     }
 
     with open(file_map[course], "r", encoding = "utf-8") as f:
