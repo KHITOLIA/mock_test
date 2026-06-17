@@ -1,0 +1,502 @@
+[
+    {
+        "question": "What is the primary purpose of footprinting in ethical hacking?",
+        "options": [
+            "Gather information about the target",
+            "Exploit vulnerabilities",
+            "Maintain access",
+            "Delete logs"
+        ],
+        "answer": "Gather information about the target"
+    },
+    {
+        "question": "Which tool is commonly used for network scanning?",
+        "options": [
+            "Nmap",
+            "Wireshark",
+            "Burp Suite",
+            "John the Ripper"
+        ],
+        "answer": "Nmap"
+    },
+    {
+        "question": "What does OSINT stand for?",
+        "options": [
+            "Open Source Intelligence",
+            "Operating System Integration",
+            "Online Security Interface Tool",
+            "Open Security Internet Technology"
+        ],
+        "answer": "Open Source Intelligence"
+    },
+    {
+        "question": "Which protocol is used by DNS?",
+        "options": [
+            "UDP",
+            "ICMP",
+            "ARP",
+            "GRE"
+        ],
+        "answer": "UDP"
+    },
+    {
+        "question": "Which Nmap option performs a SYN scan?",
+        "options": [
+            "-sS",
+            "-sU",
+            "-sV",
+            "-O"
+        ],
+        "answer": "-sS"
+    },
+    {
+        "question": "What is the purpose of WHOIS?",
+        "options": [
+            "Domain registration lookup",
+            "Port scanning",
+            "Password cracking",
+            "Packet capture"
+        ],
+        "answer": "Domain registration lookup"
+    },
+    {
+        "question": "Which tool is commonly used for packet analysis?",
+        "options": [
+            "Wireshark",
+            "Hydra",
+            "Nikto",
+            "Aircrack-ng"
+        ],
+        "answer": "Wireshark"
+    },
+    {
+        "question": "What type of attack attempts to overwhelm a service?",
+        "options": [
+            "DoS",
+            "SQL Injection",
+            "XSS",
+            "MITM"
+        ],
+        "answer": "DoS"
+    },
+    {
+        "question": "Which attack intercepts communication between two parties?",
+        "options": [
+            "Man-in-the-Middle",
+            "Dictionary Attack",
+            "Buffer Overflow",
+            "Phishing"
+        ],
+        "answer": "Man-in-the-Middle"
+    },
+    {
+        "question": "Which protocol resolves IP addresses to MAC addresses?",
+        "options": [
+            "ARP",
+            "DNS",
+            "DHCP",
+            "SNMP"
+        ],
+        "answer": "ARP"
+    },
+    {
+        "question": "What is the default port for HTTPS?",
+        "options": [
+            "443",
+            "80",
+            "22",
+            "53"
+        ],
+        "answer": "443"
+    },
+    {
+        "question": "Which tool is commonly used for password cracking?",
+        "options": [
+            "John the Ripper",
+            "Nmap",
+            "Wireshark",
+            "Ettercap"
+        ],
+        "answer": "John the Ripper"
+    },
+    {
+        "question": "What is a vulnerability?",
+        "options": [
+            "A weakness that can be exploited",
+            "A security policy",
+            "An encryption algorithm",
+            "A firewall rule"
+        ],
+        "answer": "A weakness that can be exploited"
+    },
+    {
+        "question": "Which framework is commonly used for exploitation?",
+        "options": [
+            "Metasploit",
+            "Snort",
+            "Nagios",
+            "Splunk"
+        ],
+        "answer": "Metasploit"
+    },
+    {
+        "question": "What does CVE stand for?",
+        "options": [
+            "Common Vulnerabilities and Exposures",
+            "Critical Vulnerability Evaluation",
+            "Cyber Vulnerability Enumeration",
+            "Common Verification Engine"
+        ],
+        "answer": "Common Vulnerabilities and Exposures"
+    },
+    {
+        "question": "Which attack injects malicious SQL code into an application?",
+        "options": [
+            "SQL Injection",
+            "XSS",
+            "CSRF",
+            "Session Hijacking"
+        ],
+        "answer": "SQL Injection"
+    },
+    {
+        "question": "What is the purpose of a firewall?",
+        "options": [
+            "Filter network traffic",
+            "Crack passwords",
+            "Capture packets",
+            "Encrypt files"
+        ],
+        "answer": "Filter network traffic"
+    },
+    {
+        "question": "Which protocol provides secure remote access?",
+        "options": [
+            "SSH",
+            "Telnet",
+            "FTP",
+            "TFTP"
+        ],
+        "answer": "SSH"
+    },
+    {
+        "question": "Which port is used by SSH?",
+        "options": [
+            "22",
+            "21",
+            "23",
+            "25"
+        ],
+        "answer": "22"
+    },
+    {
+        "question": "What is social engineering?",
+        "options": [
+            "Manipulating people to obtain information",
+            "Scanning networks",
+            "Encrypting traffic",
+            "Writing malware"
+        ],
+        "answer": "Manipulating people to obtain information"
+    },
+    {
+        "question": "Which attack uses fraudulent emails to steal information?",
+        "options": [
+            "Phishing",
+            "Spoofing",
+            "Sniffing",
+            "Scanning"
+        ],
+        "answer": "Phishing"
+    },
+    {
+        "question": "What is a zero-day vulnerability?",
+        "options": [
+            "Unknown vulnerability with no patch",
+            "Patched vulnerability",
+            "Weak password",
+            "Expired certificate"
+        ],
+        "answer": "Unknown vulnerability with no patch"
+    },
+    {
+        "question": "Which tool is used for wireless password auditing?",
+        "options": [
+            "Aircrack-ng",
+            "Nessus",
+            "Burp Suite",
+            "Nikto"
+        ],
+        "answer": "Aircrack-ng"
+    },
+    {
+        "question": "What is the purpose of Nessus?",
+        "options": [
+            "Vulnerability Scanning",
+            "Packet Capturing",
+            "Password Cracking",
+            "Wireless Hacking"
+        ],
+        "answer": "Vulnerability Scanning"
+    },
+    {
+        "question": "Which attack exploits user trust in web applications?",
+        "options": [
+            "CSRF",
+            "ARP Poisoning",
+            "DNS Enumeration",
+            "Banner Grabbing"
+        ],
+        "answer": "CSRF"
+    },
+    {
+        "question": "What is XSS?",
+        "options": [
+            "Cross-Site Scripting",
+            "Cross Security Scan",
+            "Extended Secure Session",
+            "Cross Server Spoofing"
+        ],
+        "answer": "Cross-Site Scripting"
+    },
+    {
+        "question": "What is banner grabbing used for?",
+        "options": [
+            "Identifying service versions",
+            "Cracking passwords",
+            "Capturing credentials",
+            "Deleting logs"
+        ],
+        "answer": "Identifying service versions"
+    },
+    {
+        "question": "Which command displays network connections in Windows?",
+        "options": [
+            "netstat",
+            "ping",
+            "tracert",
+            "ipconfig"
+        ],
+        "answer": "netstat"
+    },
+    {
+        "question": "What is the purpose of hashing?",
+        "options": [
+            "Verify data integrity",
+            "Encrypt files",
+            "Scan ports",
+            "Route traffic"
+        ],
+        "answer": "Verify data integrity"
+    },
+    {
+        "question": "Which algorithm is considered a hashing algorithm?",
+        "options": [
+            "SHA-256",
+            "AES",
+            "DES",
+            "RSA"
+        ],
+        "answer": "SHA-256"
+    },
+    {
+        "question": "Which protocol is insecure because it transmits credentials in clear text?",
+        "options": [
+            "Telnet",
+            "SSH",
+            "HTTPS",
+            "SFTP"
+        ],
+        "answer": "Telnet"
+    },
+    {
+        "question": "What is privilege escalation?",
+        "options": [
+            "Gaining higher permissions",
+            "Encrypting files",
+            "Scanning ports",
+            "Creating backups"
+        ],
+        "answer": "Gaining higher permissions"
+    },
+    {
+        "question": "Which tool is widely used for web application testing?",
+        "options": [
+            "Burp Suite",
+            "Nmap",
+            "Hydra",
+            "Aircrack-ng"
+        ],
+        "answer": "Burp Suite"
+    },
+    {
+        "question": "What is a brute-force attack?",
+        "options": [
+            "Trying multiple password combinations",
+            "Intercepting packets",
+            "Scanning ports",
+            "Spoofing DNS"
+        ],
+        "answer": "Trying multiple password combinations"
+    },
+    {
+        "question": "What does VPN stand for?",
+        "options": [
+            "Virtual Private Network",
+            "Verified Protected Node",
+            "Virtual Protected Network",
+            "Verified Private Node"
+        ],
+        "answer": "Virtual Private Network"
+    },
+    {
+        "question": "Which protocol is commonly used by VPNs for secure communication?",
+        "options": [
+            "IPsec",
+            "ARP",
+            "ICMP",
+            "RARP"
+        ],
+        "answer": "IPsec"
+    },
+    {
+        "question": "What is the purpose of SNMP?",
+        "options": [
+            "Network Management",
+            "File Transfer",
+            "Email Communication",
+            "Remote Login"
+        ],
+        "answer": "Network Management"
+    },
+    {
+        "question": "Which attack poisons ARP tables?",
+        "options": [
+            "ARP Spoofing",
+            "SQL Injection",
+            "XSS",
+            "CSRF"
+        ],
+        "answer": "ARP Spoofing"
+    },
+    {
+        "question": "What is malware?",
+        "options": [
+            "Malicious Software",
+            "Monitoring Tool",
+            "Network Scanner",
+            "Encryption Program"
+        ],
+        "answer": "Malicious Software"
+    },
+    {
+        "question": "Which malware replicates itself without user interaction?",
+        "options": [
+            "Worm",
+            "Trojan",
+            "Adware",
+            "Spyware"
+        ],
+        "answer": "Worm"
+    },
+    {
+        "question": "What is a Trojan?",
+        "options": [
+            "Malware disguised as legitimate software",
+            "Network scanner",
+            "Firewall",
+            "Encryption protocol"
+        ],
+        "answer": "Malware disguised as legitimate software"
+    },
+    {
+        "question": "Which attack attempts to redirect users to a fake website?",
+        "options": [
+            "DNS Spoofing",
+            "ARP Inspection",
+            "Port Mirroring",
+            "NAT"
+        ],
+        "answer": "DNS Spoofing"
+    },
+    {
+        "question": "Which CEH phase involves exploiting discovered vulnerabilities?",
+        "options": [
+            "Gaining Access",
+            "Reconnaissance",
+            "Scanning",
+            "Covering Tracks"
+        ],
+        "answer": "Gaining Access"
+    },
+    {
+        "question": "What is the purpose of log clearing by attackers?",
+        "options": [
+            "Hide evidence",
+            "Improve performance",
+            "Increase bandwidth",
+            "Patch vulnerabilities"
+        ],
+        "answer": "Hide evidence"
+    },
+    {
+        "question": "Which port does HTTP use by default?",
+        "options": [
+            "80",
+            "443",
+            "22",
+            "21"
+        ],
+        "answer": "80"
+    },
+    {
+        "question": "What is enumeration?",
+        "options": [
+            "Extracting detailed information from systems",
+            "Deleting logs",
+            "Creating malware",
+            "Installing patches"
+        ],
+        "answer": "Extracting detailed information from systems"
+    },
+    {
+        "question": "Which tool can perform password attacks against multiple protocols?",
+        "options": [
+            "Hydra",
+            "Wireshark",
+            "Nikto",
+            "tcpdump"
+        ],
+        "answer": "Hydra"
+    },
+    {
+        "question": "What is the purpose of a honeypot?",
+        "options": [
+            "Attract and analyze attackers",
+            "Block all traffic",
+            "Encrypt communications",
+            "Manage users"
+        ],
+        "answer": "Attract and analyze attackers"
+    },
+    {
+        "question": "What is the primary goal of ethical hacking?",
+        "options": [
+            "Improve security by identifying weaknesses",
+            "Steal data",
+            "Bypass compliance",
+            "Disable systems"
+        ],
+        "answer": "Improve security by identifying weaknesses"
+    },
+    {
+        "question": "Which tool is commonly used to discover web server vulnerabilities?",
+        "options": [
+            "Nikto",
+            "Nmap",
+            "Hydra",
+            "John the Ripper"
+        ],
+        "answer": "Nikto"
+    }
+]

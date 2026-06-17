@@ -1,0 +1,22 @@
+[
+  {
+    "question": "Which OSPF router type redistributes external routes into an OSPF domain?",
+    "options": [
+      "Internal Router",
+      "ABR",
+      "ASBR",
+      "Backbone Router"
+    ],
+    "answer": "ASBR"
+  },
+  {
+    "question": "Which BGP attribute is evaluated first in the BGP best path selection process?",
+    "options": [
+      "AS Path",
+      "Local Preference",
+      "Weight",
+      "MED"
+    ],
+    "answer": "Weight"
+  }
+]

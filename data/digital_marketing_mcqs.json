@@ -1,0 +1,402 @@
+[
+  {
+    "question": "What is Digital Marketing?",
+    "options": [
+      "Marketing through newspapers",
+      "Marketing through digital channels and the internet",
+      "Marketing through radio only",
+      "Door-to-door marketing"
+    ],
+    "answer": "Marketing through digital channels and the internet"
+  },
+  {
+    "question": "What does SEO stand for?",
+    "options": [
+      "Search Engine Optimization",
+      "Search Email Optimization",
+      "Site Engine Optimization",
+      "Social Engine Optimization"
+    ],
+    "answer": "Search Engine Optimization"
+  },
+  {
+    "question": "Which platform is primarily used for professional networking?",
+    "options": [
+      "Instagram",
+      "Facebook",
+      "LinkedIn",
+      "Snapchat"
+    ],
+    "answer": "LinkedIn"
+  },
+  {
+    "question": "What is the full form of PPC?",
+    "options": [
+      "Pay Per Click",
+      "Pay Per Customer",
+      "Post Per Click",
+      "Pay Per Campaign"
+    ],
+    "answer": "Pay Per Click"
+  },
+  {
+    "question": "Which tool is commonly used to track website traffic?",
+    "options": [
+      "Photoshop",
+      "Google Analytics",
+      "Canva",
+      "Excel"
+    ],
+    "answer": "Google Analytics"
+  },
+  {
+    "question": "What is a keyword in SEO?",
+    "options": [
+      "A password",
+      "A word or phrase users search for online",
+      "A website address",
+      "A social media post"
+    ],
+    "answer": "A word or phrase users search for online"
+  },
+  {
+    "question": "Which of the following is a Search Engine?",
+    "options": [
+      "WhatsApp",
+      "Instagram",
+      "Google",
+      "Telegram"
+    ],
+    "answer": "Google"
+  },
+  {
+    "question": "What does CTR stand for?",
+    "options": [
+      "Customer Tracking Rate",
+      "Click Through Rate",
+      "Conversion Tracking Ratio",
+      "Click Traffic Report"
+    ],
+    "answer": "Click Through Rate"
+  },
+  {
+    "question": "Which marketing method uses emails to reach customers?",
+    "options": [
+      "Content Marketing",
+      "Affiliate Marketing",
+      "Email Marketing",
+      "Influencer Marketing"
+    ],
+    "answer": "Email Marketing"
+  },
+  {
+    "question": "What is the main objective of Content Marketing?",
+    "options": [
+      "Create valuable content for the audience",
+      "Increase hardware sales",
+      "Build software",
+      "Design logos"
+    ],
+    "answer": "Create valuable content for the audience"
+  },
+  {
+    "question": "What is a Backlink?",
+    "options": [
+      "A broken link",
+      "A link from another website to your website",
+      "A homepage link",
+      "A menu link"
+    ],
+    "answer": "A link from another website to your website"
+  },
+  {
+    "question": "Which metric measures the percentage of visitors who leave a website without interaction?",
+    "options": [
+      "Conversion Rate",
+      "Bounce Rate",
+      "CTR",
+      "CPC"
+    ],
+    "answer": "Bounce Rate"
+  },
+  {
+    "question": "What is CPC?",
+    "options": [
+      "Cost Per Click",
+      "Customer Per Click",
+      "Click Per Campaign",
+      "Cost Per Customer"
+    ],
+    "answer": "Cost Per Click"
+  },
+  {
+    "question": "Which social media platform is owned by Meta Platforms?",
+    "options": [
+      "YouTube",
+      "LinkedIn",
+      "Instagram",
+      "Twitter (X)"
+    ],
+    "answer": "Instagram"
+  },
+  {
+    "question": "What does SERP stand for?",
+    "options": [
+      "Search Engine Results Page",
+      "Search Engine Ranking Position",
+      "Search Engine Report Program",
+      "Site Engine Results Page"
+    ],
+    "answer": "Search Engine Results Page"
+  },
+  {
+    "question": "Which type of marketing involves promoting products through partners who earn commissions?",
+    "options": [
+      "Email Marketing",
+      "Affiliate Marketing",
+      "Content Marketing",
+      "Social Media Marketing"
+    ],
+    "answer": "Affiliate Marketing"
+  },
+  {
+    "question": "Which platform is most commonly used for video marketing?",
+    "options": [
+      "Pinterest",
+      "YouTube",
+      "LinkedIn",
+      "Reddit"
+    ],
+    "answer": "YouTube"
+  },
+  {
+    "question": "What is Conversion Rate?",
+    "options": [
+      "Percentage of visitors who complete a desired action",
+      "Website loading speed",
+      "Number of page views",
+      "Number of ads displayed"
+    ],
+    "answer": "Percentage of visitors who complete a desired action"
+  },
+  {
+    "question": "Which of the following is an On-Page SEO factor?",
+    "options": [
+      "Backlinks",
+      "Meta Title and Meta Description",
+      "Social Shares",
+      "Domain Authority"
+    ],
+    "answer": "Meta Title and Meta Description"
+  },
+  {
+    "question": "What is the primary benefit of Digital Marketing?",
+    "options": [
+      "Limited Reach",
+      "Higher Printing Costs",
+      "Global Audience Reach",
+      "No Analytics Available"
+    ],
+    "answer": "Global Audience Reach"
+  },
+  {
+    "question": "What is the primary goal of SEO?",
+    "options": [
+      "Increase website traffic from organic search results",
+      "Increase paid advertising costs",
+      "Improve website design only",
+      "Increase social media followers"
+    ],
+    "answer": "Increase website traffic from organic search results"
+  },
+  {
+    "question": "Which of the following is an On-Page SEO factor?",
+    "options": [
+      "Backlinks",
+      "Meta Title",
+      "Domain Authority",
+      "Social Signals"
+    ],
+    "answer": "Meta Title"
+  },
+  {
+    "question": "What is a backlink?",
+    "options": [
+      "A broken link",
+      "A link from one website to another website",
+      "A homepage link",
+      "An internal link only"
+    ],
+    "answer": "A link from one website to another website"
+  },
+  {
+    "question": "Which tag is used to define the title of a webpage?",
+    "options": [
+      "<meta>",
+      "<body>",
+      "<title>",
+      "<head>"
+    ],
+    "answer": "<title>"
+  },
+  {
+    "question": "What is Keyword Research?",
+    "options": [
+      "Finding keywords users search for",
+      "Designing a website",
+      "Creating backlinks",
+      "Writing code"
+    ],
+    "answer": "Finding keywords users search for"
+  },
+  {
+    "question": "Which tool is commonly used to analyze website traffic?",
+    "options": [
+      "Photoshop",
+      "Google Analytics",
+      "Canva",
+      "Excel"
+    ],
+    "answer": "Google Analytics"
+  },
+  {
+    "question": "Which heading tag is the most important for SEO?",
+    "options": [
+      "H6",
+      "H4",
+      "H2",
+      "H1"
+    ],
+    "answer": "H1"
+  },
+  {
+    "question": "Which SEO technique follows search engine guidelines?",
+    "options": [
+      "Black Hat SEO",
+      "Grey Hat SEO",
+      "White Hat SEO",
+      "Negative SEO"
+    ],
+    "answer": "White Hat SEO"
+  },
+  {
+    "question": "What is Technical SEO?",
+    "options": [
+      "SEO related to website infrastructure and performance",
+      "Social media marketing",
+      "Email marketing",
+      "Graphic designing"
+    ],
+    "answer": "SEO related to website infrastructure and performance"
+  },
+  {
+    "question": "What is the recommended SEO practice for URLs?",
+    "options": [
+      "Long and complex URLs",
+      "Short, descriptive, keyword-rich URLs",
+      "URLs with special characters",
+      "Random URLs"
+    ],
+    "answer": "Short, descriptive, keyword-rich URLs"
+  },
+  {
+    "question": "What is the primary goal of SMO?",
+    "options": [
+      "Improve website coding",
+      "Increase brand awareness and engagement on social media",
+      "Increase server speed",
+      "Create software applications"
+    ],
+    "answer": "Increase brand awareness and engagement on social media"
+  },
+  {
+    "question": "Which of the following is a social media platform?",
+    "options": [
+      "Google Chrome",
+      "Microsoft Word",
+      "Facebook",
+      "Windows"
+    ],
+    "answer": "Facebook"
+  },
+  {
+    "question": "Which metric measures user interaction with content?",
+    "options": [
+      "Bounce Rate",
+      "Engagement Rate",
+      "CPC",
+      "CTR"
+    ],
+    "answer": "Engagement Rate"
+  },
+  {
+    "question": "What is a hashtag (#)?",
+    "options": [
+      "A coding language",
+      "A keyword used to categorize content on social media",
+      "A website URL",
+      "A search engine"
+    ],
+    "answer": "A keyword used to categorize content on social media"
+  },
+  {
+    "question": "What type of content generally receives the highest engagement on social media?",
+    "options": [
+      "Blank Posts",
+      "Video Content",
+      "Empty Images",
+      "Long URLs"
+    ],
+    "answer": "Video Content"
+  },
+  {
+    "question": "Which metric indicates how many people saw a social media post?",
+    "options": [
+      "Reach",
+      "Conversion",
+      "Bounce Rate",
+      "CPC"
+    ],
+    "answer": "Reach"
+  },
+  {
+    "question": "What is \"Engagement\" on social media?",
+    "options": [
+      "Website hosting",
+      "Likes, comments, shares, and interactions",
+      "Coding activity",
+      "Server maintenance"
+    ],
+    "answer": "Likes, comments, shares, and interactions"
+  },
+  {
+    "question": "What is the best posting strategy for SMO?",
+    "options": [
+      "Posting randomly",
+      "Consistent posting with quality content",
+      "Posting once a year",
+      "Posting only advertisements"
+    ],
+    "answer": "Consistent posting with quality content"
+  },
+  {
+    "question": "What are impressions in social media marketing?",
+    "options": [
+      "The number of times content is displayed",
+      "The number of purchases made",
+      "The number of followers lost",
+      "The number of comments only"
+    ],
+    "answer": "The number of times content is displayed"
+  },
+  {
+    "question": "Which of the following is a benefit of SMO?",
+    "options": [
+      "Improved brand visibility",
+      "Increased engagement",
+      "Better website traffic",
+      "All of the above"
+    ],
+    "answer": "All of the above"
+  }
+]
