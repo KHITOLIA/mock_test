@@ -3,350 +3,376 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Exam Result — Mock Test Portal</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Result — Mock Test Portal</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 
-  body {
-    min-height: 100vh;
-    font-family: 'Inter', sans-serif;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 60px 24px 80px;
-    position: relative;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
+:root{
+  --bg:#05070f;
+  --surface:rgba(255,255,255,0.04);
+  --border:rgba(255,255,255,0.08);
+  --text:#f1f5f9;
+  --text-2:rgba(241,245,249,0.5);
+  --text-3:rgba(241,245,249,0.28);
+  --amber:#fbbf24;
+  --green:#34d399;
+  --red:#f87171;
+  --r:14px;
+}
 
-  /* Dynamic background — toggled by class on <body> */
-  body.pass {
-    background: linear-gradient(135deg, #022c22 0%, #064e3b 55%, #065f46 100%);
-  }
-  body.fail {
-    background: linear-gradient(135deg, #0f0c29 0%, #302b63 55%, #24243e 100%);
-  }
+html,body{height:100%}
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  min-height:100vh;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  padding:60px 20px 80px;
+  overflow-x:hidden;
+  position:relative;
+}
 
-  /* Glowing orbs */
-  .orb {
-    position: fixed;
-    border-radius: 50%;
-    filter: blur(90px);
-    pointer-events: none;
-    animation: orb-drift 14s ease-in-out infinite alternate;
-  }
-  body.pass .orb-1 { width:500px;height:500px; top:-180px;right:-80px; background:radial-gradient(circle,rgba(52,211,153,0.45),transparent 65%); opacity:0.35; }
-  body.pass .orb-2 { width:380px;height:380px; bottom:-120px;left:-60px; background:radial-gradient(circle,rgba(110,231,183,0.35),transparent 65%); opacity:0.3; animation-direction:alternate-reverse; animation-duration:18s; }
-  body.fail .orb-1 { width:500px;height:500px; top:-180px;right:-80px; background:radial-gradient(circle,rgba(129,140,248,0.45),transparent 65%); opacity:0.35; }
-  body.fail .orb-2 { width:380px;height:380px; bottom:-120px;left:-60px; background:radial-gradient(circle,rgba(248,113,113,0.35),transparent 65%); opacity:0.3; animation-direction:alternate-reverse; animation-duration:18s; }
-  @keyframes orb-drift {
-    from { transform: translate(0,0) scale(1); }
-    to   { transform: translate(35px,25px) scale(1.1); }
-  }
+/* ── Mesh ── */
+.mesh{
+  position:fixed;inset:0;pointer-events:none;z-index:0;
+}
+.mesh-pass{
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 0%,rgba(52,211,153,0.1) 0%,transparent 60%),
+    radial-gradient(ellipse 50% 40% at 20% 80%,rgba(34,211,238,0.06) 0%,transparent 55%),
+    radial-gradient(ellipse 40% 40% at 80% 30%,rgba(251,191,36,0.05) 0%,transparent 50%);
+}
+.mesh-fail{
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 0%,rgba(248,113,113,0.08) 0%,transparent 60%),
+    radial-gradient(ellipse 50% 40% at 80% 80%,rgba(139,92,246,0.07) 0%,transparent 55%);
+}
+.grid-lines{
+  position:fixed;inset:0;pointer-events:none;z-index:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.02) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,0.02) 1px,transparent 1px);
+  background-size:60px 60px;
+  mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 30%,transparent 100%);
+}
 
-  /* Confetti container */
-  .confetti-wrap { position:fixed; inset:0; pointer-events:none; overflow:hidden; }
-  .cp {
-    position:absolute;
-    border-radius: 2px;
-    animation: cp-fall linear forwards;
-  }
-  @keyframes cp-fall {
-    0%   { transform: translateY(-30px) rotate(0deg);   opacity:1; }
-    100% { transform: translateY(110vh) rotate(760deg); opacity:0; }
-  }
+/* ── Confetti ── */
+.confetti-wrap{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:1}
+.cp{position:absolute;animation:cpfall linear forwards}
+@keyframes cpfall{0%{transform:translateY(-30px) rotate(0);opacity:1}100%{transform:translateY(110vh) rotate(740deg);opacity:0}}
 
-  /* Card */
-  .card {
-    position: relative;
-    width: 100%;
-    max-width: 500px;
-    background: rgba(255,255,255,0.07);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    border: 1px solid rgba(255,255,255,0.13);
-    border-radius: 28px;
-    padding: 48px 40px 52px;
-    box-shadow: 0 40px 100px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.1);
-    text-align: center;
-    animation: card-in 0.75s cubic-bezier(0.16,1,0.3,1) both;
-  }
-  @keyframes card-in {
-    from { opacity:0; transform: scale(0.88) translateY(28px); }
-    to   { opacity:1; transform: scale(1) translateY(0); }
-  }
+/* ── Card ── */
+.card{
+  position:relative;z-index:10;
+  width:100%;max-width:520px;
+}
 
-  /* Status icon */
-  .icon-wrap {
-    width: 80px; height: 80px;
-    border-radius: 50%;
-    margin: 0 auto 24px;
-    display: flex; align-items: center; justify-content: center;
-    position: relative;
-    animation: icon-pop 0.6s 0.45s cubic-bezier(0.34,1.56,0.64,1) both;
-  }
-  @keyframes icon-pop {
-    from { transform: scale(0); opacity:0; }
-    to   { transform: scale(1); opacity:1; }
-  }
-  body.pass .icon-wrap { background: rgba(52,211,153,0.15); border: 2px solid rgba(52,211,153,0.3); }
-  body.fail .icon-wrap { background: rgba(248,113,113,0.15); border: 2px solid rgba(248,113,113,0.3); }
-  .icon-wrap svg { width:36px; height:36px; fill:none; stroke-width:2.5; stroke-linecap:round; stroke-linejoin:round; }
-  body.pass .icon-wrap svg { stroke: #34d399; }
-  body.fail .icon-wrap svg { stroke: #f87171; }
+/* Top status strip */
+.status-strip{
+  border-radius:16px 16px 0 0;
+  padding:20px 28px;
+  display:flex;align-items:center;gap:14px;
+  border:1px solid var(--border);
+  border-bottom:none;
+}
+.status-strip.pass{
+  background:linear-gradient(135deg,rgba(52,211,153,0.1),rgba(34,211,238,0.06));
+  border-color:rgba(52,211,153,0.2);
+}
+.status-strip.fail{
+  background:linear-gradient(135deg,rgba(248,113,113,0.1),rgba(139,92,246,0.06));
+  border-color:rgba(248,113,113,0.2);
+}
+.ss-icon{
+  width:48px;height:48px;border-radius:14px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  animation:iconPop .6s .3s cubic-bezier(.34,1.56,.64,1) both;
+}
+@keyframes iconPop{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
+.status-strip.pass .ss-icon{background:rgba(52,211,153,.15);border:1px solid rgba(52,211,153,.25)}
+.status-strip.fail .ss-icon{background:rgba(248,113,113,.15);border:1px solid rgba(248,113,113,.25)}
+.ss-icon svg{width:24px;height:24px;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.status-strip.pass .ss-icon svg{stroke:var(--green)}
+.status-strip.fail .ss-icon svg{stroke:var(--red)}
+.ss-text{}
+.ss-label{font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+.status-strip.pass .ss-label{color:var(--green)}
+.status-strip.fail .ss-label{color:var(--red)}
+.ss-desc{font-size:13px;color:var(--text-2);margin-top:3px}
 
-  /* Ripple rings on icon */
-  .icon-wrap::before, .icon-wrap::after {
-    content:''; position:absolute; border-radius:50%;
-    animation: icon-ripple 2.8s ease-out infinite;
-  }
-  body.pass .icon-wrap::before  { border: 1.5px solid rgba(52,211,153,0.25); }
-  body.pass .icon-wrap::after   { border: 1.5px solid rgba(52,211,153,0.1); animation-delay:0.9s; }
-  body.fail .icon-wrap::before  { border: 1.5px solid rgba(248,113,113,0.25); }
-  body.fail .icon-wrap::after   { border: 1.5px solid rgba(248,113,113,0.1); animation-delay:0.9s; }
-  @keyframes icon-ripple {
-    0%   { width:80px;  height:80px;  opacity:1; }
-    100% { width:148px; height:148px; opacity:0; }
-  }
+/* Main card body */
+.card-body{
+  background:rgba(255,255,255,0.035);
+  border:1px solid var(--border);
+  border-top:none;
+  border-radius:0 0 20px 20px;
+  padding:32px 28px 36px;
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  animation:cardIn .7s cubic-bezier(.16,1,.3,1) both;
+}
+@keyframes cardIn{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 
-  h2 { font-size:20px; font-weight:700; color:white; letter-spacing:-0.3px; margin-bottom:6px; }
-  .tagline { font-size:13px; color:rgba(255,255,255,0.4); margin-bottom:36px; }
+/* Score ring */
+.score-section{
+  display:flex;align-items:center;gap:28px;
+  margin-bottom:28px;
+  padding-bottom:28px;
+  border-bottom:1px solid var(--border);
+}
+.ring-wrap{position:relative;width:130px;height:130px;flex-shrink:0}
+.ring-svg{transform:rotate(-90deg)}
+.ring-track{fill:none;stroke:rgba(255,255,255,.06);stroke-width:9}
+.ring-fill{
+  fill:none;stroke-width:9;stroke-linecap:round;
+  stroke-dasharray:352;stroke-dashoffset:352;
+  transition:stroke-dashoffset 1.4s cubic-bezier(.25,1,.5,1) .4s;
+}
+.ring-fill.pass{stroke:url(#passGrad)}
+.ring-fill.fail{stroke:url(#failGrad)}
+.ring-center{
+  position:absolute;inset:0;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;
+}
+.ring-pct{
+  font-family:'Syne',sans-serif;
+  font-size:32px;font-weight:800;letter-spacing:-1px;line-height:1;
+  animation:pctPop .6s .5s cubic-bezier(.34,1.56,.64,1) both;
+}
+.ring-pct.pass{
+  background:linear-gradient(135deg,#34d399,#22d3ee);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.ring-pct.fail{
+  background:linear-gradient(135deg,#f87171,#a78bfa);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+@keyframes pctPop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
+.ring-sub{font-size:10px;color:var(--text-3);text-transform:uppercase;letter-spacing:.6px;font-weight:500}
 
-  /* Score ring */
-  .score-wrap {
-    position: relative;
-    width: 164px; height: 164px;
-    margin: 0 auto 32px;
-  }
-  .score-svg { transform: rotate(-90deg); display:block; }
-  .score-track { fill:none; stroke:rgba(255,255,255,0.08); stroke-width:10; }
-  .score-fill {
-    fill:none; stroke-width:10; stroke-linecap:round;
-    stroke-dasharray: 427;
-    stroke-dashoffset: 427;
-    transition: stroke-dashoffset 1.5s cubic-bezier(0.25,1,0.5,1) 0.5s;
-  }
-  body.pass .score-fill { stroke: #34d399; }
-  body.fail .score-fill { stroke: #f87171; }
-  .score-center {
-    position:absolute; inset:0;
-    display:flex; flex-direction:column;
-    align-items:center; justify-content:center;
-    gap:3px;
-  }
-  .score-pct {
-    font-size:40px; font-weight:800;
-    letter-spacing:-1.5px; line-height:1;
-    animation: pct-in 0.6s 0.6s cubic-bezier(0.34,1.56,0.64,1) both;
-  }
-  body.pass .score-pct { color: #34d399; }
-  body.fail .score-pct { color: #f87171; }
-  @keyframes pct-in {
-    from { opacity:0; transform:scale(0.6); }
-    to   { opacity:1; transform:scale(1); }
-  }
-  .score-sub { font-size:11px; color:rgba(255,255,255,0.4); text-transform:uppercase; letter-spacing:0.5px; font-weight:500; }
+.score-info{}
+.score-verdict{
+  font-family:'Syne',sans-serif;font-size:22px;font-weight:800;
+  letter-spacing:-.5px;margin-bottom:10px;
+  background:linear-gradient(90deg,#34d399,#22d3ee);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.score-verdict.fail{background:linear-gradient(90deg,#f87171,#a78bfa)}
+.score-tagline{font-size:13px;color:var(--text-2);line-height:1.5}
 
-  /* Stats grid */
-  .stats {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-bottom: 24px;
-  }
-  .stat {
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 14px;
-    padding: 16px 10px;
-    opacity: 0;
-    animation: stat-in 0.45s ease forwards;
-  }
-  .stat:nth-child(1) { animation-delay: 0.75s; }
-  .stat:nth-child(2) { animation-delay: 0.9s; }
-  .stat:nth-child(3) { animation-delay: 1.05s; }
-  @keyframes stat-in {
-    from { opacity:0; transform:translateY(14px); }
-    to   { opacity:1; transform:translateY(0); }
-  }
-  .stat-value { font-size:24px; font-weight:700; color:white; margin-bottom:5px; }
-  .stat-value.correct { color: #34d399; }
-  .stat-value.wrong   { color: #f87171; }
-  .stat-key { font-size:11px; text-transform:uppercase; letter-spacing:0.5px; color:rgba(255,255,255,0.35); font-weight:500; }
+/* Stats */
+.stats-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:10px;
+  margin-bottom:28px;
+}
+.stat-card{
+  padding:16px 12px;
+  background:rgba(255,255,255,0.03);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  text-align:center;
+  opacity:0;
+  animation:statIn .4s ease forwards;
+}
+.stat-card:nth-child(1){animation-delay:.6s}
+.stat-card:nth-child(2){animation-delay:.75s}
+.stat-card:nth-child(3){animation-delay:.9s}
+@keyframes statIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.stat-val{font-family:'Syne',sans-serif;font-size:26px;font-weight:800;margin-bottom:5px}
+.stat-val.g{color:var(--green)}
+.stat-val.r{color:var(--red)}
+.stat-val.w{color:var(--text)}
+.stat-key{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--text-3);font-weight:500}
 
-  /* Pass/Fail badge */
-  .badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 28px;
-    border-radius: 40px;
-    font-size: 13px; font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-bottom: 28px;
-    opacity: 0;
-    animation: badge-pop 0.5s 1.1s cubic-bezier(0.34,1.56,0.64,1) forwards;
-  }
-  @keyframes badge-pop {
-    from { opacity:0; transform:scale(0.75); }
-    to   { opacity:1; transform:scale(1); }
-  }
-  body.pass .badge { background:rgba(52,211,153,0.15); border:1.5px solid rgba(52,211,153,0.3); color:#34d399; }
-  body.fail .badge { background:rgba(248,113,113,0.15); border:1.5px solid rgba(248,113,113,0.3); color:#f87171; }
-  .badge-dot { width:7px; height:7px; border-radius:50%; background:currentColor; }
+/* Breakdown bar */
+.breakdown{margin-bottom:28px}
+.bk-label{font-size:12px;color:var(--text-3);font-weight:500;margin-bottom:8px;display:flex;justify-content:space-between}
+.bk-bar{height:8px;border-radius:99px;background:rgba(255,255,255,.06);overflow:hidden;display:flex;gap:2px}
+.bk-correct{height:100%;background:linear-gradient(90deg,#34d399,#22d3ee);border-radius:99px;transition:width 1.2s cubic-bezier(.25,1,.5,1) .7s}
+.bk-wrong{height:100%;background:linear-gradient(90deg,#f87171,#a78bfa);border-radius:99px;transition:width 1.2s cubic-bezier(.25,1,.5,1) .9s}
 
-  /* Divider */
-  .divider { height:1px; background:rgba(255,255,255,0.08); margin-bottom:24px; }
+/* CTA */
+.cta-row{display:flex;gap:10px}
+.cta-primary{
+  flex:1;display:flex;align-items:center;justify-content:center;gap:8px;
+  padding:13px;
+  background:linear-gradient(135deg,#fbbf24,#f97316);
+  color:#0a0a0a;
+  font-family:'Syne',sans-serif;font-size:14px;font-weight:700;
+  text-decoration:none;border-radius:var(--r);
+  transition:transform .25s,box-shadow .25s;letter-spacing:.2px;
+}
+.cta-primary:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(251,191,36,.3)}
+.cta-primary svg{width:16px;height:16px;fill:none;stroke:#0a0a0a;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 
-  /* CTA */
-  .cta {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    width: 100%;
-    padding: 14px;
-    border-radius: 12px;
-    background: rgba(255,255,255,0.1);
-    border: 1px solid rgba(255,255,255,0.16);
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 14px; font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background 0.25s, transform 0.25s, box-shadow 0.25s;
-    letter-spacing: 0.2px;
-  }
-  .cta:hover { background:rgba(255,255,255,0.18); transform:translateY(-2px); box-shadow:0 10px 28px rgba(0,0,0,0.3); }
-  .cta svg { width:16px; height:16px; fill:none; stroke:white; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
-
-  @media (max-width: 520px) {
-    .card { padding:36px 22px; }
-    .stats { gap:8px; }
-    .stat-value { font-size:20px; }
-  }
+@media(max-width:480px){
+  body{padding:32px 14px 60px}
+  .score-section{flex-direction:column;align-items:flex-start;gap:20px}
+  .stats-grid{gap:8px}
+  .stat-val{font-size:22px}
+  .card-body{padding:24px 20px 28px}
+  .status-strip{padding:16px 20px}
+}
 </style>
 </head>
+<body>
 
-{# Body gets class "pass" or "fail" based on percentage from Flask #}
-<body class="{{ 'pass' if percentage >= 40 else 'fail' }}">
-
-<div class="orb orb-1"></div>
-<div class="orb orb-2"></div>
-
-{% if percentage >= 40 %}
-<div class="confetti-wrap" id="confettiWrap"></div>
-{% endif %}
+<div class="mesh {% if percentage >= 40 %}mesh-pass{% else %}mesh-fail{% endif %}"></div>
+<div class="grid-lines"></div>
+{% if percentage >= 40 %}<div class="confetti-wrap" id="confWrap"></div>{% endif %}
 
 <div class="card">
 
-  <!-- Status icon -->
-  <div class="icon-wrap">
-    {% if percentage >= 40 %}
-    <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
-    {% else %}
-    <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
-    {% endif %}
+  <!-- Status strip -->
+  <div class="status-strip {% if percentage >= 40 %}pass{% else %}fail{% endif %}">
+    <div class="ss-icon">
+      {% if percentage >= 40 %}
+      <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+      {% else %}
+      <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      {% endif %}
+    </div>
+    <div class="ss-text">
+      <div class="ss-label">{% if percentage >= 40 %}Congratulations!{% else %}Better luck next time{% endif %}</div>
+      <div class="ss-desc">{% if percentage >= 40 %}You've cleared the exam successfully{% else %}You didn't meet the passing criteria{% endif %}</div>
+    </div>
   </div>
 
-  <h2>Exam Submitted</h2>
-  <p class="tagline">Here's your result</p>
+  <!-- Body -->
+  <div class="card-body">
 
-  <!-- Animated score ring -->
-  {# r=68 → circumference ≈ 427.26 #}
-  <div class="score-wrap">
-    <svg class="score-svg" width="164" height="164" viewBox="0 0 164 164">
-      <circle class="score-track" cx="82" cy="82" r="68"/>
-      <circle class="score-fill" id="scoreFill" cx="82" cy="82" r="68"/>
+    <!-- SVG gradients -->
+    <svg width="0" height="0" style="position:absolute">
+      <defs>
+        <linearGradient id="passGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#34d399"/>
+          <stop offset="100%" stop-color="#22d3ee"/>
+        </linearGradient>
+        <linearGradient id="failGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#f87171"/>
+          <stop offset="100%" stop-color="#a78bfa"/>
+        </linearGradient>
+      </defs>
     </svg>
-    <div class="score-center">
-      <span class="score-pct" id="pctDisplay">0%</span>
-      <span class="score-sub">Score</span>
+
+    <!-- Score section -->
+    <div class="score-section">
+      <div class="ring-wrap">
+        <svg class="ring-svg" width="130" height="130" viewBox="0 0 130 130">
+          <circle class="ring-track" cx="65" cy="65" r="56"/>
+          <circle class="ring-fill {% if percentage >= 40 %}pass{% else %}fail{% endif %}" id="ringFill" cx="65" cy="65" r="56"/>
+        </svg>
+        <div class="ring-center">
+          <span class="ring-pct {% if percentage >= 40 %}pass{% else %}fail{% endif %}" id="pctEl">0%</span>
+          <span class="ring-sub">Score</span>
+        </div>
+      </div>
+      <div class="score-info">
+        <div class="score-verdict {% if percentage < 40 %}fail{% endif %}">
+          {% if percentage >= 40 %}PASS ✓{% else %}FAIL ✗{% endif %}
+        </div>
+        <div class="score-tagline">
+          {% if percentage >= 40 %}
+            You scored {{ score }} out of {{ total }} questions correctly.
+          {% else %}
+            You need 40% to pass. You scored {{ percentage }}%.
+          {% endif %}
+        </div>
+      </div>
     </div>
+
+    <!-- Stats -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-val g">{{ score }}</div>
+        <div class="stat-key">Correct</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val r">{{ total - score }}</div>
+        <div class="stat-key">Wrong</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val w">{{ total }}</div>
+        <div class="stat-key">Total</div>
+      </div>
+    </div>
+
+    <!-- Breakdown bar -->
+    <div class="breakdown">
+      <div class="bk-label">
+        <span>Score breakdown</span>
+        <span style="color:var(--text-2)">{{ score }}/{{ total }} correct</span>
+      </div>
+      <div class="bk-bar">
+        <div class="bk-correct" id="bkCorrect" style="width:0%"></div>
+        <div class="bk-wrong" id="bkWrong" style="width:0%"></div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-row">
+      <a href="/" class="cta-primary">
+        <svg viewBox="0 0 24 24"><path d="M1 4v6h6"/><path d="M3.51 15a9 9 0 103.13-5.36L1 10"/></svg>
+        Take Another Exam
+      </a>
+    </div>
+
   </div>
-
-  <!-- Stat cards — variables come from Flask render_template -->
-  <div class="stats">
-    <div class="stat">
-      <div class="stat-value correct">{{ score }}</div>
-      <div class="stat-key">Correct</div>
-    </div>
-    <div class="stat">
-      {# total and score come from submit_exam route #}
-      <div class="stat-value wrong">{{ total - score }}</div>
-      <div class="stat-key">Wrong</div>
-    </div>
-    <div class="stat">
-      <div class="stat-value">{{ total }}</div>
-      <div class="stat-key">Total</div>
-    </div>
-  </div>
-
-  <!-- Pass / Fail badge -->
-  <div class="badge">
-    <div class="badge-dot"></div>
-    {% if percentage >= 40 %}PASS{% else %}FAIL{% endif %}
-  </div>
-
-  <div class="divider"></div>
-
-  <a href="/" class="cta">
-    <svg viewBox="0 0 24 24"><path d="M1 4v6h6"/><path d="M3.51 15a9 9 0 103.13-5.36L1 10"/></svg>
-    Take another exam
-  </a>
-
 </div>
 
 <script>
-  // percentage is rendered by Flask/Jinja2 as a plain number
-  const PCT = {{ percentage }};
-  const CIRCUMFERENCE = 2 * Math.PI * 68; // ≈427.26
+const PCT = {{ percentage }};
+const SCORE = {{ score }};
+const TOTAL = {{ total }};
+const CIRC = 2 * Math.PI * 56; // ≈351.86
 
-  // Animate score ring
-  const fill = document.getElementById('scoreFill');
-  fill.style.strokeDasharray = CIRCUMFERENCE;
-  fill.style.strokeDashoffset = CIRCUMFERENCE;
-  setTimeout(() => {
-    fill.style.strokeDashoffset = CIRCUMFERENCE - (PCT / 100) * CIRCUMFERENCE;
-  }, 80);
+// Ring animation
+const ring = document.getElementById('ringFill');
+ring.style.strokeDasharray = CIRC;
+ring.style.strokeDashoffset = CIRC;
+setTimeout(()=>{ ring.style.strokeDashoffset = CIRC - (PCT/100)*CIRC; }, 80);
 
-  // Animated percentage counter
-  const pctEl = document.getElementById('pctDisplay');
-  let curr = 0;
-  const duration = 1200; // ms
-  const steps = 60;
-  const increment = PCT / steps;
-  const interval = duration / steps;
-  const counter = setInterval(() => {
-    curr = Math.min(curr + increment, PCT);
-    pctEl.textContent = Math.round(curr) + '%';
-    if (curr >= PCT) clearInterval(counter);
-  }, interval);
+// Counter
+const pctEl = document.getElementById('pctEl');
+let curr=0;
+const steps=60, dur=1200;
+const inc=PCT/steps, intv=dur/steps;
+const counter=setInterval(()=>{
+  curr=Math.min(curr+inc,PCT);
+  pctEl.textContent=Math.round(curr)+'%';
+  if(curr>=PCT) clearInterval(counter);
+},intv);
 
-  // Confetti — only rendered in template when percentage >= 40
-  {% if percentage >= 40 %}
-  const colors = ['#34d399','#6ee7b7','#a7f3d0','#fbbf24','#818cf8','#c4b5fd','#ffffff','#86efac'];
-  const wrap = document.getElementById('confettiWrap');
-  for (let i = 0; i < 70; i++) {
-    const el = document.createElement('div');
-    el.className = 'cp';
-    const size = Math.random() * 8 + 5;
-    el.style.cssText = [
-      'left:' + (Math.random() * 100) + '%',
-      'top:-20px',
-      'width:' + size + 'px',
-      'height:' + size + 'px',
-      'background:' + colors[Math.floor(Math.random() * colors.length)],
-      'border-radius:' + (Math.random() > 0.45 ? '50%' : '2px'),
-      'animation-duration:' + (Math.random() * 2 + 2.2) + 's',
-      'animation-delay:' + (Math.random() * 1.8) + 's',
-      'opacity:' + (Math.random() * 0.7 + 0.3)
-    ].join(';');
-    wrap.appendChild(el);
-  }
-  {% endif %}
+// Breakdown bar
+setTimeout(()=>{
+  document.getElementById('bkCorrect').style.width=(SCORE/TOTAL*100)+'%';
+  document.getElementById('bkWrong').style.width=((TOTAL-SCORE)/TOTAL*100)+'%';
+},700);
+
+// Confetti
+{% if percentage >= 40 %}
+const colors=['#34d399','#22d3ee','#fbbf24','#a78bfa','#f0fdfa','#ffffff','#6ee7b7'];
+const wrap=document.getElementById('confWrap');
+for(let i=0;i<70;i++){
+  const el=document.createElement('div');
+  el.className='cp';
+  const sz=Math.random()*8+4;
+  el.style.cssText=[
+    'left:'+(Math.random()*100)+'%',
+    'top:-20px',
+    'width:'+sz+'px','height:'+sz+'px',
+    'background:'+colors[Math.floor(Math.random()*colors.length)],
+    'border-radius:'+(Math.random()>.45?'50%':'3px'),
+    'animation-duration:'+(Math.random()*2+2)+'s',
+    'animation-delay:'+(Math.random()*1.8)+'s',
+    'opacity:'+(Math.random()*.7+.3)
+  ].join(';');
+  wrap.appendChild(el);
+}
+{% endif %}
 </script>
 </body>
 </html>

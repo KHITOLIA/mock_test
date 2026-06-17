@@ -4,339 +4,344 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mock Test Portal</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 
-  :root {
-    --purple-50: #f3f0ff;
-    --purple-100: #ede9fe;
-    --purple-500: #7c3aed;
-    --purple-600: #6d28d9;
-    --purple-700: #5b21b6;
-    --purple-900: #2e1065;
-    --indigo-400: #818cf8;
-    --indigo-500: #6366f1;
-    --indigo-600: #4f46e5;
-    --white: #ffffff;
-    --gray-50: #f9fafb;
-    --gray-100: #f3f4f6;
-    --gray-200: #e5e7eb;
-    --gray-400: #9ca3af;
-    --gray-600: #4b5563;
-    --gray-800: #1f2937;
-    --radius: 14px;
-    --radius-sm: 9px;
-    --shadow: 0 20px 60px rgba(109,40,217,0.18), 0 4px 16px rgba(0,0,0,0.08);
-  }
+:root{
+  --bg:#05070f;
+  --surface:rgba(255,255,255,0.04);
+  --surface-hover:rgba(255,255,255,0.07);
+  --border:rgba(255,255,255,0.08);
+  --border-focus:rgba(251,191,36,0.6);
+  --amber:#fbbf24;
+  --amber-glow:rgba(251,191,36,0.15);
+  --cyan:#22d3ee;
+  --cyan-glow:rgba(34,211,238,0.12);
+  --text:#f1f5f9;
+  --text-2:rgba(241,245,249,0.5);
+  --text-3:rgba(241,245,249,0.28);
+  --r:12px;
+}
 
-  html { height: 100%; }
+html,body{height:100%}
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  min-height:100vh;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  padding:48px 20px 80px;
+  overflow-x:hidden;
+  position:relative;
+}
 
-  body {
-    min-height: 100vh;
-    font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg, #1a0533 0%, #2d1065 40%, #1e3a8a 100%);
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 48px 24px 64px;
-    position: relative;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
+/* ── Mesh background ── */
+.mesh{
+  position:fixed;inset:0;
+  pointer-events:none;
+  z-index:0;
+  background:
+    radial-gradient(ellipse 80% 50% at 20% 10%, rgba(251,191,36,0.07) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 80%, rgba(34,211,238,0.07) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 60% at 50% 50%, rgba(139,92,246,0.05) 0%, transparent 70%);
+}
+.grid-lines{
+  position:fixed;inset:0;pointer-events:none;z-index:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,0.025) 1px,transparent 1px);
+  background-size:60px 60px;
+  mask-image:radial-gradient(ellipse 90% 90% at 50% 50%,black 30%,transparent 100%);
+}
 
-  /* Animated orbs */
-  body::before, body::after {
-    content: '';
-    position: fixed;
-    border-radius: 50%;
-    filter: blur(80px);
-    opacity: 0.35;
-    pointer-events: none;
-    animation: drift 12s ease-in-out infinite alternate;
-  }
-  body::before {
-    width: 500px; height: 500px;
-    background: radial-gradient(circle, #7c3aed, transparent 70%);
-    top: -150px; left: -100px;
-  }
-  body::after {
-    width: 400px; height: 400px;
-    background: radial-gradient(circle, #3b82f6, transparent 70%);
-    bottom: -100px; right: -80px;
-    animation-direction: alternate-reverse;
-    animation-duration: 15s;
-  }
+/* ── Card ── */
+.card{
+  position:relative;
+  z-index:10;
+  width:100%;
+  max-width:460px;
+  background:rgba(255,255,255,0.035);
+  border:1px solid var(--border);
+  border-radius:24px;
+  padding:44px 40px 48px;
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.04) inset,
+    0 32px 80px rgba(0,0,0,0.6),
+    0 0 60px rgba(251,191,36,0.04);
+  animation:cardIn .7s cubic-bezier(.16,1,.3,1) both;
+}
+.card::before{
+  content:'';position:absolute;inset:0;border-radius:24px;
+  background:linear-gradient(135deg,rgba(251,191,36,0.06) 0%,transparent 50%,rgba(34,211,238,0.04) 100%);
+  pointer-events:none;
+}
+@keyframes cardIn{
+  from{opacity:0;transform:translateY(28px) scale(.97)}
+  to{opacity:1;transform:translateY(0) scale(1)}
+}
 
-  @keyframes drift {
-    0% { transform: translate(0, 0) scale(1); }
-    100% { transform: translate(40px, 30px) scale(1.08); }
-  }
+/* ── Top badge ── */
+.badge-row{
+  display:flex;align-items:center;gap:10px;
+  margin-bottom:32px;
+}
+.badge-icon{
+  width:42px;height:42px;border-radius:12px;
+  background:linear-gradient(135deg,rgba(251,191,36,0.15),rgba(251,191,36,0.05));
+  border:1px solid rgba(251,191,36,0.2);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.badge-icon svg{width:20px;height:20px;fill:none;stroke:var(--amber);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.badge-text{}
+.badge-text h1{
+  font-family:'Syne',sans-serif;
+  font-size:18px;font-weight:800;
+  letter-spacing:-.3px;
+  background:linear-gradient(90deg,#fbbf24,#f97316);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.badge-text p{font-size:12px;color:var(--text-3);margin-top:1px}
 
-  /* Floating particles */
-  .particles { position: fixed; inset: 0; pointer-events: none; overflow: hidden; }
-  .particle {
-    position: absolute;
-    width: 3px; height: 3px;
-    background: rgba(255,255,255,0.4);
-    border-radius: 50%;
-    animation: float-up linear infinite;
-  }
-  @keyframes float-up {
-    0% { transform: translateY(100vh) translateX(0); opacity: 0; }
-    10% { opacity: 1; }
-    90% { opacity: 0.5; }
-    100% { transform: translateY(-20px) translateX(30px); opacity: 0; }
-  }
+/* ── Section label ── */
+.section-label{
+  font-size:11px;font-weight:600;letter-spacing:1.2px;
+  text-transform:uppercase;color:var(--text-3);
+  margin:24px 0 14px;
+  display:flex;align-items:center;gap:8px;
+}
+.section-label::after{content:'';flex:1;height:1px;background:var(--border)}
 
-  /* Glass card */
-  .card {
-    position: relative;
-    width: 100%;
-    max-width: 480px;
-    background: rgba(255,255,255,0.07);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    border: 1px solid rgba(255,255,255,0.15);
-    border-radius: 24px;
-    padding: 44px 40px;
-    box-shadow: 0 32px 80px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.12);
-    animation: card-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
-  }
+/* ── Field ── */
+.field{margin-bottom:14px;position:relative}
+.field label{
+  display:block;font-size:11.5px;font-weight:500;
+  color:var(--text-3);letter-spacing:.3px;
+  margin-bottom:7px;
+}
+.field input,.field select{
+  width:100%;padding:12px 14px 12px 40px;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  color:var(--text);
+  font-family:'Inter',sans-serif;font-size:14px;
+  outline:none;
+  transition:border-color .2s,background .2s,box-shadow .2s;
+  -webkit-appearance:none;
+}
+.field input::placeholder{color:var(--text-3)}
+.field input:focus,.field select:focus{
+  border-color:var(--border-focus);
+  background:rgba(251,191,36,0.04);
+  box-shadow:0 0 0 3px rgba(251,191,36,0.08);
+}
+.field-icon{
+  position:absolute;left:13px;bottom:13px;
+  width:16px;height:16px;pointer-events:none;
+  fill:none;stroke:var(--text-3);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;
+  transition:stroke .2s;
+}
+.field:focus-within .field-icon{stroke:var(--amber)}
+.field select option{background:#0f111a;color:var(--text)}
 
-  @keyframes card-in {
-    from { opacity: 0; transform: translateY(32px) scale(0.96); }
-    to { opacity: 1; transform: translateY(0) scale(1); }
-  }
+/* ── Two col ── */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 
-  /* Logo mark */
-  .logo-wrap {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 28px;
-  }
-  .logo {
-    width: 56px; height: 56px;
-    background: linear-gradient(135deg, #7c3aed, #6366f1);
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 8px 24px rgba(124,58,237,0.5);
-    position: relative;
-    animation: logo-pulse 3s ease-in-out infinite;
-  }
-  @keyframes logo-pulse {
-    0%, 100% { box-shadow: 0 8px 24px rgba(124,58,237,0.5); }
-    50% { box-shadow: 0 8px 36px rgba(124,58,237,0.8), 0 0 0 8px rgba(124,58,237,0.1); }
-  }
-  .logo svg { width: 28px; height: 28px; fill: none; stroke: white; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+/* ── Exam selector ── */
+.exam-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:4px}
+.exam-card{
+  position:relative;
+  padding:14px 10px 12px;
+  border:1.5px solid var(--border);
+  border-radius:var(--r);
+  cursor:pointer;
+  text-align:center;
+  transition:all .25s ease;
+  background:var(--surface);
+}
+.exam-card:hover{border-color:rgba(251,191,36,0.35);background:var(--amber-glow)}
+.exam-card input[type=radio]{
+  position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%;margin:0;
+}
+.exam-card .ec-icon{font-size:22px;margin-bottom:6px;display:block}
+.exam-card .ec-name{font-size:12px;font-weight:600;color:var(--text-2);letter-spacing:.2px}
+.exam-card .ec-tag{font-size:10px;color:var(--text-3);margin-top:3px}
+.exam-card.selected{
+  border-color:var(--amber);
+  background:var(--amber-glow);
+  box-shadow:0 0 16px rgba(251,191,36,0.1);
+}
+.exam-card.selected .ec-name{color:var(--amber)}
+.exam-card .check-dot{
+  position:absolute;top:8px;right:8px;
+  width:14px;height:14px;border-radius:50%;
+  border:1.5px solid var(--border);
+  background:transparent;
+  transition:all .2s;
+  display:flex;align-items:center;justify-content:center;
+}
+.exam-card.selected .check-dot{
+  border-color:var(--amber);background:var(--amber);
+}
+.exam-card.selected .check-dot::after{
+  content:'';width:5px;height:5px;border-radius:50%;background:#000;
+}
 
-  h2 {
-    color: white;
-    font-size: 22px;
-    font-weight: 700;
-    text-align: center;
-    letter-spacing: -0.3px;
-    margin-bottom: 6px;
-  }
-  .subtitle {
-    color: rgba(255,255,255,0.5);
-    font-size: 13px;
-    text-align: center;
-    margin-bottom: 32px;
-    letter-spacing: 0.2px;
-  }
+/* ── Trainer select styled ── */
+.trainer-pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:4px}
+.trainer-pill{
+  position:relative;
+  padding:8px 16px;
+  border:1.5px solid var(--border);
+  border-radius:99px;
+  cursor:pointer;
+  font-size:13px;font-weight:500;color:var(--text-2);
+  background:var(--surface);
+  transition:all .2s;
+  white-space:nowrap;
+  user-select:none;
+}
+.trainer-pill input[type=radio]{
+  position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%;margin:0;
+}
+.trainer-pill:hover{border-color:rgba(34,211,238,0.4);color:var(--cyan)}
+.trainer-pill.selected{
+  border-color:var(--cyan);
+  background:var(--cyan-glow);
+  color:var(--cyan);
+  box-shadow:0 0 12px rgba(34,211,238,0.1);
+}
 
-  /* Divider */
-  .divider {
-    height: 1px;
-    background: rgba(255,255,255,0.1);
-    margin: 28px 0;
-  }
+/* ── Submit ── */
+.submit-btn{
+  width:100%;margin-top:28px;
+  padding:15px;
+  background:linear-gradient(135deg,#fbbf24,#f97316);
+  color:#0a0a0a;
+  font-family:'Syne',sans-serif;
+  font-size:15px;font-weight:700;
+  letter-spacing:.3px;
+  border:none;border-radius:var(--r);
+  cursor:pointer;
+  position:relative;overflow:hidden;
+  transition:transform .25s,box-shadow .25s;
+  display:flex;align-items:center;justify-content:center;gap:9px;
+}
+.submit-btn::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,#fcd34d,#fb923c);
+  opacity:0;transition:opacity .25s;
+}
+.submit-btn:hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(251,191,36,0.35)}
+.submit-btn:hover::before{opacity:1}
+.submit-btn:active{transform:translateY(0)}
+.submit-btn span{position:relative;z-index:1;display:flex;align-items:center;gap:8px}
+.submit-btn svg{width:17px;height:17px;fill:none;stroke:#0a0a0a;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 
-  /* Form */
-  .field { margin-bottom: 18px; }
-  label {
-    display: block;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.6px;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.55);
-    margin-bottom: 8px;
-  }
+/* ── Footer note ── */
+.foot-note{
+  display:flex;justify-content:center;gap:20px;
+  margin-top:24px;flex-wrap:wrap;
+}
+.fn-item{
+  display:flex;align-items:center;gap:5px;
+  font-size:11.5px;color:var(--text-3);
+}
+.fn-dot{width:5px;height:5px;border-radius:50%;background:var(--amber);opacity:.6}
 
-  input, select {
-    width: 100%;
-    padding: 13px 16px;
-    background: rgba(255,255,255,0.08);
-    border: 1px solid rgba(255,255,255,0.12);
-    border-radius: var(--radius-sm);
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 15px;
-    outline: none;
-    transition: all 0.25s ease;
-    -webkit-appearance: none;
-  }
-  input::placeholder { color: rgba(255,255,255,0.25); }
-  input:focus, select:focus {
-    border-color: rgba(124,58,237,0.7);
-    background: rgba(124,58,237,0.1);
-    box-shadow: 0 0 0 3px rgba(124,58,237,0.2);
-  }
-  input:focus::placeholder { color: transparent; }
-
-  select option { background: #1e1b4b; color: white; }
-
-  /* Floating label effect */
-  .field-wrap { position: relative; }
-  .field-icon {
-    position: absolute;
-    right: 14px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 18px; height: 18px;
-    opacity: 0.35;
-    pointer-events: none;
-  }
-
-  /* Two column grid */
-  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-
-  /* Submit button */
-  .btn {
-    width: 100%;
-    margin-top: 26px;
-    padding: 15px;
-    background: linear-gradient(135deg, #7c3aed, #6366f1);
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    border: none;
-    border-radius: var(--radius-sm);
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    letter-spacing: 0.2px;
-  }
-  .btn::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, #6d28d9, #4f46e5);
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  .btn:hover::before { opacity: 1; }
-  .btn:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(124,58,237,0.5); }
-  .btn:active { transform: translateY(0); }
-  .btn span { position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; gap: 8px; }
-  .btn svg { width: 18px; height: 18px; fill: none; stroke: white; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-
-  /* Ripple */
-  .ripple {
-    position: absolute;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.3);
-    transform: scale(0);
-    animation: ripple-anim 0.6s linear;
-    pointer-events: none;
-  }
-  @keyframes ripple-anim {
-    to { transform: scale(4); opacity: 0; }
-  }
-
-  /* Info strip */
-  .info-strip {
-    display: flex;
-    gap: 6px;
-    align-items: center;
-    justify-content: center;
-    margin-top: 22px;
-    padding-bottom: 4px;
-  }
-  .info-strip span { font-size: 12px; color: rgba(255,255,255,0.35); }
-  .dot { width: 3px; height: 3px; background: rgba(255,255,255,0.2); border-radius: 50%; }
-
-  /* Input validation */
-  input:not(:placeholder-shown):valid { border-color: rgba(52,211,153,0.4); }
-
-  @media (max-width: 520px) {
-    .card { padding: 32px 24px; }
-    .grid-2 { grid-template-columns: 1fr; }
-  }
+@media(max-width:500px){
+  .card{padding:32px 22px 40px}
+  .grid2{grid-template-columns:1fr}
+  .exam-grid{grid-template-columns:1fr 1fr}
+}
 </style>
 </head>
 <body>
-
-<div class="particles" id="particles"></div>
+<div class="mesh"></div>
+<div class="grid-lines"></div>
 
 <div class="card">
-  <div class="logo-wrap">
-    <div class="logo">
+  <div class="badge-row">
+    <div class="badge-icon">
       <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="2"/><path d="M9 12h6M9 16h4"/></svg>
+    </div>
+    <div class="badge-text">
+      <h1>MOCK TEST PORTAL</h1>
+      <p>Enter your details to begin</p>
     </div>
   </div>
 
-  <h2>Mock Test Portal</h2>
-  <p class="subtitle">Complete your profile to begin the exam</p>
+  <form method="POST" id="mainForm">
 
-  <div class="divider"></div>
+    <div class="section-label">Student Info</div>
 
-  <form method="POST" id="examForm">
-
-    <div class="grid-2">
+    <div class="grid2">
       <div class="field">
         <label>Full Name</label>
-        <div class="field-wrap">
-          <input type="text" name="name" placeholder="Your name" required autocomplete="off">
-          <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-        </div>
+        <svg class="field-icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        <input type="text" name="name" placeholder="Your name" required autocomplete="off">
       </div>
       <div class="field">
         <label>Enrollment No.</label>
-        <div class="field-wrap">
-          <input type="text" name="enroll_no" placeholder="e.g. EN2024001" required autocomplete="off">
-          <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 9h8M8 13h5"/></svg>
-        </div>
-      </div>
-    </div>
-
-    <div class="grid-2">
-      <div class="field">
-        <label>Batch Number</label>
-        <div class="field-wrap">
-          <input type="text" name="batch_no" placeholder="e.g. B-12" required autocomplete="off">
-          <svg class="field-icon" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
-        </div>
-      </div>
-      <div class="field">
-        <label>Trainer Name</label>
-        <select name="trainer_name" required>
-          <option value="">Select trainer</option>
-          <option value="Tushar">Khitoliya Ji</option>
-          <option value="Kuldeep">Kuldeep</option>
-          <option value="Prashant">Prashant</option>
-          <option value="Nagesh">Nagesh</option>
-        </select>
+        <svg class="field-icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 9h8M8 13h5"/></svg>
+        <input type="text" name="enroll_no" placeholder="EN2024001" required autocomplete="off">
       </div>
     </div>
 
     <div class="field">
-      <label>Select Exam</label>
-      <select name="course" required id="courseSelect">
-        <option value="">Choose your exam</option>
-        <option value="DA">📊 Data Analytics</option>
-        <option value="DS">🔬 Data Science</option>
-        <option value="CLOUD">☁️ AWS Cloud</option>
-      </select>
+      <label>Batch Number</label>
+      <svg class="field-icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      <input type="text" name="batch_no" placeholder="e.g. B-12" required autocomplete="off">
     </div>
 
-    <button type="submit" class="btn" id="submitBtn">
+    <div class="section-label">Select Trainer</div>
+    <div class="trainer-pills">
+      <label class="trainer-pill" id="tp-tushar">
+        <input type="radio" name="trainer_name" value="Tushar" required onchange="selectTrainer(this)"> Tushar
+      </label>
+      <label class="trainer-pill" id="tp-kuldeep">
+        <input type="radio" name="trainer_name" value="Kuldeep" onchange="selectTrainer(this)"> Kuldeep
+      </label>
+      <label class="trainer-pill" id="tp-prashant">
+        <input type="radio" name="trainer_name" value="Prashant" onchange="selectTrainer(this)"> Prashant
+      </label>
+      <label class="trainer-pill" id="tp-nagesh">
+        <input type="radio" name="trainer_name" value="Nagesh" onchange="selectTrainer(this)"> Nagesh
+      </label>
+    </div>
+
+    <div class="section-label">Choose Exam</div>
+    <div class="exam-grid">
+      <label class="exam-card" id="ec-da">
+        <input type="radio" name="course" value="DA" required onchange="selectExam(this)">
+        <span class="check-dot"></span>
+        <span class="ec-icon">📊</span>
+        <div class="ec-name">Data Analytics</div>
+        <div class="ec-tag">DA</div>
+      </label>
+      <label class="exam-card" id="ec-ds">
+        <input type="radio" name="course" value="DS" onchange="selectExam(this)">
+        <span class="check-dot"></span>
+        <span class="ec-icon">🔬</span>
+        <div class="ec-name">Data Science</div>
+        <div class="ec-tag">DS</div>
+      </label>
+      <label class="exam-card" id="ec-cloud">
+        <input type="radio" name="course" value="CLOUD" onchange="selectExam(this)">
+        <span class="check-dot"></span>
+        <span class="ec-icon">☁️</span>
+        <div class="ec-name">AWS Cloud</div>
+        <div class="ec-tag">CLOUD</div>
+      </label>
+    </div>
+
+    <button type="submit" class="submit-btn">
       <span>
         <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         Begin Exam
@@ -345,53 +350,28 @@
 
   </form>
 
-  <div class="info-strip">
-    <span>20 min duration</span>
-    <div class="dot"></div>
-    <span>Auto-submit on timeout</span>
-    <div class="dot"></div>
-    <span>40% to pass</span>
+  <div class="foot-note">
+    <div class="fn-item"><div class="fn-dot"></div>20 min duration</div>
+    <div class="fn-item"><div class="fn-dot"></div>Auto-submit on timeout</div>
+    <div class="fn-item"><div class="fn-dot"></div>40% passing marks</div>
   </div>
 </div>
 
 <script>
-  // Particles
-  const container = document.getElementById('particles');
-  for (let i = 0; i < 18; i++) {
-    const p = document.createElement('div');
-    p.className = 'particle';
-    p.style.cssText = `
-      left: ${Math.random() * 100}%;
-      width: ${Math.random() * 3 + 1}px;
-      height: ${Math.random() * 3 + 1}px;
-      animation-duration: ${Math.random() * 12 + 8}s;
-      animation-delay: ${Math.random() * 8}s;
-      opacity: ${Math.random() * 0.5 + 0.1};
-    `;
-    container.appendChild(p);
-  }
-
-  // Ripple on button
-  document.getElementById('submitBtn').addEventListener('click', function(e) {
-    const rect = this.getBoundingClientRect();
-    const r = document.createElement('span');
-    r.className = 'ripple';
-    const size = Math.max(rect.width, rect.height);
-    r.style.cssText = `width:${size}px;height:${size}px;left:${e.clientX-rect.left-size/2}px;top:${e.clientY-rect.top-size/2}px`;
-    this.appendChild(r);
-    setTimeout(() => r.remove(), 700);
-  });
-
-  // Staggered field animation
-  document.querySelectorAll('.field').forEach((f, i) => {
-    f.style.opacity = '0';
-    f.style.transform = 'translateY(16px)';
-    f.style.transition = 'all 0.5s ease';
-    setTimeout(() => {
-      f.style.opacity = '1';
-      f.style.transform = 'translateY(0)';
-    }, 400 + i * 80);
-  });
+function selectExam(radio){
+  document.querySelectorAll('.exam-card').forEach(c=>c.classList.remove('selected'));
+  radio.closest('.exam-card').classList.add('selected');
+}
+function selectTrainer(radio){
+  document.querySelectorAll('.trainer-pill').forEach(p=>p.classList.remove('selected'));
+  radio.closest('.trainer-pill').classList.add('selected');
+}
+// Stagger field entrance
+document.querySelectorAll('.field,.exam-card,.trainer-pill').forEach((el,i)=>{
+  el.style.opacity='0';el.style.transform='translateY(12px)';
+  el.style.transition='opacity .4s ease, transform .4s ease';
+  setTimeout(()=>{el.style.opacity='1';el.style.transform='translateY(0)'},300+i*55);
+});
 </script>
 </body>
 </html>
