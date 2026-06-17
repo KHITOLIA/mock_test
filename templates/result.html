@@ -3,19 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Result — Mock Test Portal</title>
+<title>Result — Training Basket</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 
 :root{
-  --bg:#05070f;
+  --bg:#0a0a0a;
   --surface:rgba(255,255,255,0.04);
-  --border:rgba(255,255,255,0.08);
-  --text:#f1f5f9;
-  --text-2:rgba(241,245,249,0.5);
-  --text-3:rgba(241,245,249,0.28);
-  --amber:#fbbf24;
+  --border:rgba(255,255,255,0.09);
+  --text:#f5f5f5;
+  --text-2:rgba(245,245,245,0.5);
+  --text-3:rgba(245,245,245,0.28);
+  --yellow:#FFD600;
+  --yellow-dim:rgba(255,214,0,0.12);
   --green:#34d399;
   --red:#f87171;
   --r:14px;
@@ -35,27 +36,24 @@ body{
   position:relative;
 }
 
-/* ── Mesh ── */
-.mesh{
-  position:fixed;inset:0;pointer-events:none;z-index:0;
-}
-.mesh-pass{
+/* ── Background ── */
+.bg-glow{position:fixed;inset:0;pointer-events:none;z-index:0}
+.bg-glow.pass{
   background:
-    radial-gradient(ellipse 70% 50% at 50% 0%,rgba(52,211,153,0.1) 0%,transparent 60%),
-    radial-gradient(ellipse 50% 40% at 20% 80%,rgba(34,211,238,0.06) 0%,transparent 55%),
-    radial-gradient(ellipse 40% 40% at 80% 30%,rgba(251,191,36,0.05) 0%,transparent 50%);
+    radial-gradient(ellipse 60% 45% at 50% 0%,rgba(52,211,153,0.09) 0%,transparent 60%),
+    radial-gradient(ellipse 40% 35% at 15% 80%,rgba(255,214,0,0.06) 0%,transparent 55%);
 }
-.mesh-fail{
+.bg-glow.fail{
   background:
-    radial-gradient(ellipse 70% 50% at 50% 0%,rgba(248,113,113,0.08) 0%,transparent 60%),
-    radial-gradient(ellipse 50% 40% at 80% 80%,rgba(139,92,246,0.07) 0%,transparent 55%);
+    radial-gradient(ellipse 60% 45% at 50% 0%,rgba(248,113,113,0.08) 0%,transparent 60%),
+    radial-gradient(ellipse 40% 35% at 85% 80%,rgba(139,92,246,0.06) 0%,transparent 55%);
 }
 .grid-lines{
   position:fixed;inset:0;pointer-events:none;z-index:0;
   background-image:
-    linear-gradient(rgba(255,255,255,0.02) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,255,255,0.02) 1px,transparent 1px);
-  background-size:60px 60px;
+    linear-gradient(rgba(255,255,255,0.018) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,0.018) 1px,transparent 1px);
+  background-size:52px 52px;
   mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 30%,transparent 100%);
 }
 
@@ -65,25 +63,42 @@ body{
 @keyframes cpfall{0%{transform:translateY(-30px) rotate(0);opacity:1}100%{transform:translateY(110vh) rotate(740deg);opacity:0}}
 
 /* ── Card ── */
-.card{
-  position:relative;z-index:10;
-  width:100%;max-width:520px;
+.card{position:relative;z-index:10;width:100%;max-width:520px}
+
+/* Top brand bar */
+.brand-bar{
+  display:flex;align-items:center;gap:12px;
+  padding:14px 24px;
+  background:rgba(255,255,255,0.03);
+  border:1px solid var(--border);
+  border-radius:16px 16px 0 0;
+  border-bottom:none;
+}
+.tb-logo{
+  width:34px;height:34px;border-radius:9px;
+  background:var(--yellow);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.tb-logo svg{width:20px;height:20px}
+.brand-name{
+  font-family:'Syne',sans-serif;
+  font-size:13px;font-weight:800;
+  color:var(--yellow);
 }
 
-/* Top status strip */
+/* Status strip */
 .status-strip{
-  border-radius:16px 16px 0 0;
   padding:20px 28px;
   display:flex;align-items:center;gap:14px;
   border:1px solid var(--border);
-  border-bottom:none;
+  border-top:none;border-bottom:none;
 }
 .status-strip.pass{
-  background:linear-gradient(135deg,rgba(52,211,153,0.1),rgba(34,211,238,0.06));
+  background:linear-gradient(135deg,rgba(52,211,153,0.09),rgba(255,214,0,0.04));
   border-color:rgba(52,211,153,0.2);
 }
 .status-strip.fail{
-  background:linear-gradient(135deg,rgba(248,113,113,0.1),rgba(139,92,246,0.06));
+  background:linear-gradient(135deg,rgba(248,113,113,0.09),rgba(139,92,246,0.05));
   border-color:rgba(248,113,113,0.2);
 }
 .ss-icon{
@@ -97,13 +112,12 @@ body{
 .ss-icon svg{width:24px;height:24px;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
 .status-strip.pass .ss-icon svg{stroke:var(--green)}
 .status-strip.fail .ss-icon svg{stroke:var(--red)}
-.ss-text{}
 .ss-label{font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
 .status-strip.pass .ss-label{color:var(--green)}
 .status-strip.fail .ss-label{color:var(--red)}
 .ss-desc{font-size:13px;color:var(--text-2);margin-top:3px}
 
-/* Main card body */
+/* Body */
 .card-body{
   background:rgba(255,255,255,0.035);
   border:1px solid var(--border);
@@ -143,7 +157,7 @@ body{
   animation:pctPop .6s .5s cubic-bezier(.34,1.56,.64,1) both;
 }
 .ring-pct.pass{
-  background:linear-gradient(135deg,#34d399,#22d3ee);
+  background:linear-gradient(135deg,#34d399,#FFD600);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
 }
 .ring-pct.fail{
@@ -153,14 +167,18 @@ body{
 @keyframes pctPop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
 .ring-sub{font-size:10px;color:var(--text-3);text-transform:uppercase;letter-spacing:.6px;font-weight:500}
 
-.score-info{}
 .score-verdict{
   font-family:'Syne',sans-serif;font-size:22px;font-weight:800;
   letter-spacing:-.5px;margin-bottom:10px;
-  background:linear-gradient(90deg,#34d399,#22d3ee);
+}
+.score-verdict.pass{
+  background:linear-gradient(90deg,#34d399,#FFD600);
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
 }
-.score-verdict.fail{background:linear-gradient(90deg,#f87171,#a78bfa)}
+.score-verdict.fail{
+  background:linear-gradient(90deg,#f87171,#a78bfa);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
 .score-tagline{font-size:13px;color:var(--text-2);line-height:1.5}
 
 /* Stats */
@@ -184,14 +202,14 @@ body{
 .stat-val{font-family:'Syne',sans-serif;font-size:26px;font-weight:800;margin-bottom:5px}
 .stat-val.g{color:var(--green)}
 .stat-val.r{color:var(--red)}
-.stat-val.w{color:var(--text)}
+.stat-val.y{color:var(--yellow)}
 .stat-key{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--text-3);font-weight:500}
 
-/* Breakdown bar */
+/* Breakdown */
 .breakdown{margin-bottom:28px}
 .bk-label{font-size:12px;color:var(--text-3);font-weight:500;margin-bottom:8px;display:flex;justify-content:space-between}
 .bk-bar{height:8px;border-radius:99px;background:rgba(255,255,255,.06);overflow:hidden;display:flex;gap:2px}
-.bk-correct{height:100%;background:linear-gradient(90deg,#34d399,#22d3ee);border-radius:99px;transition:width 1.2s cubic-bezier(.25,1,.5,1) .7s}
+.bk-correct{height:100%;background:linear-gradient(90deg,#34d399,#FFD600);border-radius:99px;transition:width 1.2s cubic-bezier(.25,1,.5,1) .7s}
 .bk-wrong{height:100%;background:linear-gradient(90deg,#f87171,#a78bfa);border-radius:99px;transition:width 1.2s cubic-bezier(.25,1,.5,1) .9s}
 
 /* CTA */
@@ -199,13 +217,13 @@ body{
 .cta-primary{
   flex:1;display:flex;align-items:center;justify-content:center;gap:8px;
   padding:13px;
-  background:linear-gradient(135deg,#fbbf24,#f97316);
+  background:var(--yellow);
   color:#0a0a0a;
-  font-family:'Syne',sans-serif;font-size:14px;font-weight:700;
+  font-family:'Syne',sans-serif;font-size:14px;font-weight:800;
   text-decoration:none;border-radius:var(--r);
   transition:transform .25s,box-shadow .25s;letter-spacing:.2px;
 }
-.cta-primary:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(251,191,36,.3)}
+.cta-primary:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(255,214,0,.28)}
 .cta-primary svg{width:16px;height:16px;fill:none;stroke:#0a0a0a;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 
 @media(max-width:480px){
@@ -215,16 +233,33 @@ body{
   .stat-val{font-size:22px}
   .card-body{padding:24px 20px 28px}
   .status-strip{padding:16px 20px}
+  .brand-bar{padding:12px 16px}
 }
 </style>
 </head>
 <body>
 
-<div class="mesh {% if percentage >= 40 %}mesh-pass{% else %}mesh-fail{% endif %}"></div>
+<div class="bg-glow {% if percentage >= 40 %}pass{% else %}fail{% endif %}"></div>
 <div class="grid-lines"></div>
 {% if percentage >= 40 %}<div class="confetti-wrap" id="confWrap"></div>{% endif %}
 
 <div class="card">
+
+  <!-- Brand bar -->
+  <div class="brand-bar">
+    <div class="tb-logo">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.5 10.5h17l-2.2 8.5H5.7L3.5 10.5z" fill="#0a0a0a"/>
+        <path d="M8 10.5v7M12 10.5v7M16 10.5v7" stroke="#FFD600" stroke-width="1.1" stroke-linecap="round"/>
+        <path d="M7 10.5 Q5.5 7 8.5 6.2" stroke="#0a0a0a" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        <path d="M17 10.5 Q18.5 7 15.5 6.2" stroke="#0a0a0a" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        <polygon points="12,2 7.5,4.5 12,7 16.5,4.5" fill="#0a0a0a"/>
+        <line x1="16.5" y1="4.5" x2="16.5" y2="7" stroke="#0a0a0a" stroke-width="1.2" stroke-linecap="round"/>
+        <circle cx="16.5" cy="7.7" r=".7" fill="#0a0a0a"/>
+      </svg>
+    </div>
+    <div class="brand-name">Training Basket</div>
+  </div>
 
   <!-- Status strip -->
   <div class="status-strip {% if percentage >= 40 %}pass{% else %}fail{% endif %}">
@@ -235,7 +270,7 @@ body{
       <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
       {% endif %}
     </div>
-    <div class="ss-text">
+    <div>
       <div class="ss-label">{% if percentage >= 40 %}Congratulations!{% else %}Better luck next time{% endif %}</div>
       <div class="ss-desc">{% if percentage >= 40 %}You've cleared the exam successfully{% else %}You didn't meet the passing criteria{% endif %}</div>
     </div>
@@ -249,7 +284,7 @@ body{
       <defs>
         <linearGradient id="passGrad" x1="0%" y1="0%" x2="100%" y2="0%">
           <stop offset="0%" stop-color="#34d399"/>
-          <stop offset="100%" stop-color="#22d3ee"/>
+          <stop offset="100%" stop-color="#FFD600"/>
         </linearGradient>
         <linearGradient id="failGrad" x1="0%" y1="0%" x2="100%" y2="0%">
           <stop offset="0%" stop-color="#f87171"/>
@@ -258,7 +293,7 @@ body{
       </defs>
     </svg>
 
-    <!-- Score section -->
+    <!-- Score ring -->
     <div class="score-section">
       <div class="ring-wrap">
         <svg class="ring-svg" width="130" height="130" viewBox="0 0 130 130">
@@ -271,7 +306,7 @@ body{
         </div>
       </div>
       <div class="score-info">
-        <div class="score-verdict {% if percentage < 40 %}fail{% endif %}">
+        <div class="score-verdict {% if percentage >= 40 %}pass{% else %}fail{% endif %}">
           {% if percentage >= 40 %}PASS ✓{% else %}FAIL ✗{% endif %}
         </div>
         <div class="score-tagline">
@@ -295,12 +330,12 @@ body{
         <div class="stat-key">Wrong</div>
       </div>
       <div class="stat-card">
-        <div class="stat-val w">{{ total }}</div>
+        <div class="stat-val y">{{ total }}</div>
         <div class="stat-key">Total</div>
       </div>
     </div>
 
-    <!-- Breakdown bar -->
+    <!-- Breakdown -->
     <div class="breakdown">
       <div class="bk-label">
         <span>Score breakdown</span>
@@ -327,15 +362,13 @@ body{
 const PCT = {{ percentage }};
 const SCORE = {{ score }};
 const TOTAL = {{ total }};
-const CIRC = 2 * Math.PI * 56; // ≈351.86
+const CIRC = 2 * Math.PI * 56;
 
-// Ring animation
 const ring = document.getElementById('ringFill');
 ring.style.strokeDasharray = CIRC;
 ring.style.strokeDashoffset = CIRC;
 setTimeout(()=>{ ring.style.strokeDashoffset = CIRC - (PCT/100)*CIRC; }, 80);
 
-// Counter
 const pctEl = document.getElementById('pctEl');
 let curr=0;
 const steps=60, dur=1200;
@@ -346,15 +379,13 @@ const counter=setInterval(()=>{
   if(curr>=PCT) clearInterval(counter);
 },intv);
 
-// Breakdown bar
 setTimeout(()=>{
   document.getElementById('bkCorrect').style.width=(SCORE/TOTAL*100)+'%';
   document.getElementById('bkWrong').style.width=((TOTAL-SCORE)/TOTAL*100)+'%';
 },700);
 
-// Confetti
 {% if percentage >= 40 %}
-const colors=['#34d399','#22d3ee','#fbbf24','#a78bfa','#f0fdfa','#ffffff','#6ee7b7'];
+const colors=['#FFD600','#34d399','#ffffff','#fcd34d','#6ee7b7','#FFF176'];
 const wrap=document.getElementById('confWrap');
 for(let i=0;i<70;i++){
   const el=document.createElement('div');

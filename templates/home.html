@@ -3,24 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mock Test Portal</title>
+<title>Mock Test Portal — Training Basket</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 
 :root{
-  --bg:#05070f;
+  --bg:#0a0a0a;
+  --bg2:#111111;
   --surface:rgba(255,255,255,0.04);
   --surface-hover:rgba(255,255,255,0.07);
-  --border:rgba(255,255,255,0.08);
-  --border-focus:rgba(251,191,36,0.6);
-  --amber:#fbbf24;
-  --amber-glow:rgba(251,191,36,0.15);
-  --cyan:#22d3ee;
-  --cyan-glow:rgba(34,211,238,0.12);
-  --text:#f1f5f9;
-  --text-2:rgba(241,245,249,0.5);
-  --text-3:rgba(241,245,249,0.28);
+  --border:rgba(255,255,255,0.09);
+  --border-focus:rgba(255,214,0,0.7);
+  --yellow:#FFD600;
+  --yellow-dim:rgba(255,214,0,0.12);
+  --yellow-glow:rgba(255,214,0,0.08);
+  --text:#f5f5f5;
+  --text-2:rgba(245,245,245,0.5);
+  --text-3:rgba(245,245,245,0.28);
   --r:12px;
 }
 
@@ -38,32 +38,27 @@ body{
   position:relative;
 }
 
-/* ── Mesh background ── */
-.mesh{
-  position:fixed;inset:0;
-  pointer-events:none;
-  z-index:0;
+/* ── Background ── */
+.bg-glow{
+  position:fixed;inset:0;pointer-events:none;z-index:0;
   background:
-    radial-gradient(ellipse 80% 50% at 20% 10%, rgba(251,191,36,0.07) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 40% at 80% 80%, rgba(34,211,238,0.07) 0%, transparent 55%),
-    radial-gradient(ellipse 50% 60% at 50% 50%, rgba(139,92,246,0.05) 0%, transparent 70%);
+    radial-gradient(ellipse 70% 40% at 15% 10%,rgba(255,214,0,0.08) 0%,transparent 60%),
+    radial-gradient(ellipse 50% 50% at 85% 85%,rgba(255,214,0,0.04) 0%,transparent 55%);
 }
 .grid-lines{
   position:fixed;inset:0;pointer-events:none;z-index:0;
   background-image:
-    linear-gradient(rgba(255,255,255,0.025) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,255,255,0.025) 1px,transparent 1px);
-  background-size:60px 60px;
-  mask-image:radial-gradient(ellipse 90% 90% at 50% 50%,black 30%,transparent 100%);
+    linear-gradient(rgba(255,255,255,0.018) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,0.018) 1px,transparent 1px);
+  background-size:52px 52px;
+  mask-image:radial-gradient(ellipse 85% 85% at 50% 50%,black 30%,transparent 100%);
 }
 
 /* ── Card ── */
 .card{
-  position:relative;
-  z-index:10;
-  width:100%;
-  max-width:460px;
-  background:rgba(255,255,255,0.035);
+  position:relative;z-index:10;
+  width:100%;max-width:480px;
+  background:rgba(255,255,255,0.03);
   border:1px solid var(--border);
   border-radius:24px;
   padding:44px 40px 48px;
@@ -71,13 +66,13 @@ body{
   -webkit-backdrop-filter:blur(20px);
   box-shadow:
     0 0 0 1px rgba(255,255,255,0.04) inset,
-    0 32px 80px rgba(0,0,0,0.6),
-    0 0 60px rgba(251,191,36,0.04);
-  animation:cardIn .7s cubic-bezier(.16,1,.3,1) both;
+    0 32px 80px rgba(0,0,0,0.7),
+    0 0 80px rgba(255,214,0,0.03);
+  animation:cardIn .65s cubic-bezier(.16,1,.3,1) both;
 }
 .card::before{
   content:'';position:absolute;inset:0;border-radius:24px;
-  background:linear-gradient(135deg,rgba(251,191,36,0.06) 0%,transparent 50%,rgba(34,211,238,0.04) 100%);
+  background:linear-gradient(135deg,rgba(255,214,0,0.05) 0%,transparent 50%);
   pointer-events:none;
 }
 @keyframes cardIn{
@@ -85,28 +80,29 @@ body{
   to{opacity:1;transform:translateY(0) scale(1)}
 }
 
-/* ── Top badge ── */
-.badge-row{
-  display:flex;align-items:center;gap:10px;
-  margin-bottom:32px;
+/* ── Logo / Badge ── */
+.brand-row{
+  display:flex;align-items:center;gap:14px;
+  margin-bottom:36px;
+  padding-bottom:24px;
+  border-bottom:1px solid var(--border);
 }
-.badge-icon{
-  width:42px;height:42px;border-radius:12px;
-  background:linear-gradient(135deg,rgba(251,191,36,0.15),rgba(251,191,36,0.05));
-  border:1px solid rgba(251,191,36,0.2);
+.tb-logo{
+  width:48px;height:48px;border-radius:14px;
+  background:#FFD600;
   display:flex;align-items:center;justify-content:center;
   flex-shrink:0;
+  box-shadow:0 0 20px rgba(255,214,0,0.25);
 }
-.badge-icon svg{width:20px;height:20px;fill:none;stroke:var(--amber);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.badge-text{}
-.badge-text h1{
+/* Training Basket "TB" monogram SVG */
+.tb-logo svg{width:28px;height:28px}
+.brand-info{}
+.brand-name{
   font-family:'Syne',sans-serif;
-  font-size:18px;font-weight:800;
-  letter-spacing:-.3px;
-  background:linear-gradient(90deg,#fbbf24,#f97316);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  font-size:16px;font-weight:800;letter-spacing:-.2px;
+  color:var(--yellow);
 }
-.badge-text p{font-size:12px;color:var(--text-3);margin-top:1px}
+.brand-tagline{font-size:11.5px;color:var(--text-3);margin-top:2px;letter-spacing:.2px}
 
 /* ── Section label ── */
 .section-label{
@@ -117,16 +113,15 @@ body{
 }
 .section-label::after{content:'';flex:1;height:1px;background:var(--border)}
 
-/* ── Field ── */
+/* ── Fields ── */
 .field{margin-bottom:14px;position:relative}
 .field label{
   display:block;font-size:11.5px;font-weight:500;
-  color:var(--text-3);letter-spacing:.3px;
-  margin-bottom:7px;
+  color:var(--text-3);letter-spacing:.3px;margin-bottom:7px;
 }
 .field input,.field select{
   width:100%;padding:12px 14px 12px 40px;
-  background:var(--surface);
+  background:rgba(255,255,255,0.04);
   border:1px solid var(--border);
   border-radius:var(--r);
   color:var(--text);
@@ -138,8 +133,8 @@ body{
 .field input::placeholder{color:var(--text-3)}
 .field input:focus,.field select:focus{
   border-color:var(--border-focus);
-  background:rgba(251,191,36,0.04);
-  box-shadow:0 0 0 3px rgba(251,191,36,0.08);
+  background:rgba(255,214,0,0.04);
+  box-shadow:0 0 0 3px rgba(255,214,0,0.1);
 }
 .field-icon{
   position:absolute;left:13px;bottom:13px;
@@ -147,53 +142,12 @@ body{
   fill:none;stroke:var(--text-3);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;
   transition:stroke .2s;
 }
-.field:focus-within .field-icon{stroke:var(--amber)}
-.field select option{background:#0f111a;color:var(--text)}
+.field:focus-within .field-icon{stroke:var(--yellow)}
 
-/* ── Two col ── */
+/* ── Grid ── */
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 
-/* ── Exam selector ── */
-.exam-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:4px}
-.exam-card{
-  position:relative;
-  padding:14px 10px 12px;
-  border:1.5px solid var(--border);
-  border-radius:var(--r);
-  cursor:pointer;
-  text-align:center;
-  transition:all .25s ease;
-  background:var(--surface);
-}
-.exam-card:hover{border-color:rgba(251,191,36,0.35);background:var(--amber-glow)}
-.exam-card input[type=radio]{
-  position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%;margin:0;
-}
-.exam-card .ec-icon{font-size:22px;margin-bottom:6px;display:block}
-.exam-card .ec-name{font-size:12px;font-weight:600;color:var(--text-2);letter-spacing:.2px}
-.exam-card .ec-tag{font-size:10px;color:var(--text-3);margin-top:3px}
-.exam-card.selected{
-  border-color:var(--amber);
-  background:var(--amber-glow);
-  box-shadow:0 0 16px rgba(251,191,36,0.1);
-}
-.exam-card.selected .ec-name{color:var(--amber)}
-.exam-card .check-dot{
-  position:absolute;top:8px;right:8px;
-  width:14px;height:14px;border-radius:50%;
-  border:1.5px solid var(--border);
-  background:transparent;
-  transition:all .2s;
-  display:flex;align-items:center;justify-content:center;
-}
-.exam-card.selected .check-dot{
-  border-color:var(--amber);background:var(--amber);
-}
-.exam-card.selected .check-dot::after{
-  content:'';width:5px;height:5px;border-radius:50%;background:#000;
-}
-
-/* ── Trainer select styled ── */
+/* ── Trainer pills ── */
 .trainer-pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:4px}
 .trainer-pill{
   position:relative;
@@ -202,7 +156,7 @@ body{
   border-radius:99px;
   cursor:pointer;
   font-size:13px;font-weight:500;color:var(--text-2);
-  background:var(--surface);
+  background:rgba(255,255,255,0.04);
   transition:all .2s;
   white-space:nowrap;
   user-select:none;
@@ -210,22 +164,22 @@ body{
 .trainer-pill input[type=radio]{
   position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%;margin:0;
 }
-.trainer-pill:hover{border-color:rgba(34,211,238,0.4);color:var(--cyan)}
+.trainer-pill:hover{border-color:rgba(255,214,0,0.4);color:var(--yellow)}
 .trainer-pill.selected{
-  border-color:var(--cyan);
-  background:var(--cyan-glow);
-  color:var(--cyan);
-  box-shadow:0 0 12px rgba(34,211,238,0.1);
+  border-color:var(--yellow);
+  background:var(--yellow-dim);
+  color:var(--yellow);
+  box-shadow:0 0 12px rgba(255,214,0,0.12);
 }
 
 /* ── Submit ── */
 .submit-btn{
   width:100%;margin-top:28px;
   padding:15px;
-  background:linear-gradient(135deg,#fbbf24,#f97316);
+  background:var(--yellow);
   color:#0a0a0a;
   font-family:'Syne',sans-serif;
-  font-size:15px;font-weight:700;
+  font-size:15px;font-weight:800;
   letter-spacing:.3px;
   border:none;border-radius:var(--r);
   cursor:pointer;
@@ -235,10 +189,10 @@ body{
 }
 .submit-btn::before{
   content:'';position:absolute;inset:0;
-  background:linear-gradient(135deg,#fcd34d,#fb923c);
+  background:rgba(255,255,255,0.15);
   opacity:0;transition:opacity .25s;
 }
-.submit-btn:hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(251,191,36,0.35)}
+.submit-btn:hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(255,214,0,0.3)}
 .submit-btn:hover::before{opacity:1}
 .submit-btn:active{transform:translateY(0)}
 .submit-btn span{position:relative;z-index:1;display:flex;align-items:center;gap:8px}
@@ -253,27 +207,44 @@ body{
   display:flex;align-items:center;gap:5px;
   font-size:11.5px;color:var(--text-3);
 }
-.fn-dot{width:5px;height:5px;border-radius:50%;background:var(--amber);opacity:.6}
+.fn-dot{width:5px;height:5px;border-radius:50%;background:var(--yellow);opacity:.6}
 
 @media(max-width:500px){
   .card{padding:32px 22px 40px}
   .grid2{grid-template-columns:1fr}
-  .exam-grid{grid-template-columns:1fr 1fr}
 }
 </style>
 </head>
 <body>
-<div class="mesh"></div>
+<div class="bg-glow"></div>
 <div class="grid-lines"></div>
 
 <div class="card">
-  <div class="badge-row">
-    <div class="badge-icon">
-      <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="2"/><path d="M9 12h6M9 16h4"/></svg>
+
+  <!-- Brand -->
+  <div class="brand-row">
+    <div class="tb-logo">
+      <!-- Training Basket logo mark: shopping basket with graduation cap -->
+      <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Basket body -->
+        <path d="M4 12h20l-2.5 10H6.5L4 12z" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="0"/>
+        <path d="M4 12h20l-2.5 10H6.5L4 12z" fill="#1a1a1a"/>
+        <!-- Basket lines -->
+        <path d="M9 12v8M14 12v8M19 12v8" stroke="#FFD600" stroke-width="1.2" stroke-linecap="round"/>
+        <!-- Handle left -->
+        <path d="M8 12 Q6 7 10 6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" fill="none"/>
+        <!-- Handle right -->
+        <path d="M20 12 Q22 7 18 6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" fill="none"/>
+        <!-- Grad cap -->
+        <rect x="9" y="3" width="10" height="1.8" rx=".9" fill="#1a1a1a"/>
+        <polygon points="14,1 9,3.5 14,6 19,3.5" fill="#1a1a1a"/>
+        <line x1="19" y1="3.5" x2="19" y2="6.5" stroke="#1a1a1a" stroke-width="1.2" stroke-linecap="round"/>
+        <circle cx="19" cy="7" r=".8" fill="#1a1a1a"/>
+      </svg>
     </div>
-    <div class="badge-text">
-      <h1>MOCK TEST PORTAL</h1>
-      <p>Enter your details to begin</p>
+    <div class="brand-info">
+      <div class="brand-name">Training Basket</div>
+      <div class="brand-tagline">Mock Test Portal · Enter your details to begin</div>
     </div>
   </div>
 
@@ -333,19 +304,14 @@ body{
 </div>
 
 <script>
-function selectExam(radio){
-  document.querySelectorAll('.exam-card').forEach(c=>c.classList.remove('selected'));
-  radio.closest('.exam-card').classList.add('selected');
-}
 function selectTrainer(radio){
   document.querySelectorAll('.trainer-pill').forEach(p=>p.classList.remove('selected'));
   radio.closest('.trainer-pill').classList.add('selected');
 }
-// Stagger field entrance
-document.querySelectorAll('.field,.exam-card,.trainer-pill').forEach((el,i)=>{
+document.querySelectorAll('.field,.trainer-pill').forEach((el,i)=>{
   el.style.opacity='0';el.style.transform='translateY(12px)';
   el.style.transition='opacity .4s ease, transform .4s ease';
-  setTimeout(()=>{el.style.opacity='1';el.style.transform='translateY(0)'},300+i*55);
+  setTimeout(()=>{el.style.opacity='1';el.style.transform='translateY(0)'},280+i*55);
 });
 </script>
 </body>
