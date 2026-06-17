@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Select Course — Mock Test Portal</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+  --bg:#05070f;
+  --surface:rgba(255,255,255,0.035);
+  --border:rgba(255,255,255,0.08);
+  --text:#f1f5f9;
+  --text-2:rgba(241,245,249,0.5);
+  --text-3:rgba(241,245,249,0.28);
+  --amber:#fbbf24;
+  --amber-dim:rgba(251,191,36,0.1);
+  --cyan:#22d3ee;
+  --r:14px;
+}
+
+html,body{height:100%}
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:48px 20px 80px;
+  overflow-x:hidden;
+  position:relative;
+}
+
+/* ── Mesh background ── */
+.mesh{
+  position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:
+    radial-gradient(ellipse 70% 50% at 20% 10%,rgba(251,191,36,0.07) 0%,transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 85%,rgba(34,211,238,0.07) 0%,transparent 55%),
+    radial-gradient(ellipse 50% 60% at 50% 50%,rgba(139,92,246,0.04) 0%,transparent 70%);
+}
+.grid-lines{
+  position:fixed;inset:0;pointer-events:none;z-index:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.022) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,0.022) 1px,transparent 1px);
+  background-size:60px 60px;
+  mask-image:radial-gradient(ellipse 90% 90% at 50% 50%,black 20%,transparent 100%);
+}
+
+/* ── Wrapper ── */
+.wrap{
+  position:relative;z-index:10;
+  width:100%;max-width:540px;
+  animation:wrapIn .7s cubic-bezier(.16,1,.3,1) both;
+}
+@keyframes wrapIn{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── Header ── */
+.header{text-align:center;margin-bottom:44px}
+.logo-badge{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:8px 16px 8px 10px;
+  border-radius:99px;
+  background:var(--surface);
+  border:1px solid var(--border);
+  margin-bottom:22px;
+}
+.logo-icon{
+  width:30px;height:30px;border-radius:8px;
+  background:linear-gradient(135deg,rgba(251,191,36,.18),rgba(251,191,36,.06));
+  border:1px solid rgba(251,191,36,.22);
+  display:flex;align-items:center;justify-content:center;
+}
+.logo-icon svg{width:15px;height:15px;fill:none;stroke:var(--amber);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.logo-text{font-size:12px;font-weight:600;color:var(--text-2);letter-spacing:.4px}
+
+h1{
+  font-family:'Syne',sans-serif;
+  font-size:32px;font-weight:800;
+  letter-spacing:-1px;line-height:1.1;
+  margin-bottom:12px;
+}
+h1 span{
+  background:linear-gradient(90deg,#fbbf24,#f97316);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.sub{
+  font-size:14px;color:var(--text-2);line-height:1.6;max-width:360px;margin:0 auto;
+}
+
+/* ── Course cards ── */
+.courses{display:flex;flex-direction:column;gap:12px;margin-bottom:36px}
+
+.course-card{
+  position:relative;
+  display:flex;align-items:center;gap:18px;
+  padding:20px 22px;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  text-decoration:none;
+  color:var(--text);
+  overflow:hidden;
+  transition:border-color .25s,box-shadow .25s,transform .25s,background .25s;
+  opacity:0;transform:translateX(-16px);
+  animation:cardSlide .45s cubic-bezier(.16,1,.3,1) forwards;
+}
+.course-card:nth-child(1){animation-delay:.1s}
+.course-card:nth-child(2){animation-delay:.2s}
+.course-card:nth-child(3){animation-delay:.3s}
+@keyframes cardSlide{to{opacity:1;transform:translateX(0)}}
+
+/* Hover shimmer */
+.course-card::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(251,191,36,0.05) 0%,transparent 60%);
+  opacity:0;transition:opacity .3s;
+}
+.course-card:hover{
+  border-color:rgba(251,191,36,0.3);
+  box-shadow:0 0 0 1px rgba(251,191,36,0.08),0 8px 32px rgba(0,0,0,0.4);
+  transform:translateY(-2px);
+  background:rgba(255,255,255,0.05);
+}
+.course-card:hover::before{opacity:1}
+.course-card:active{transform:translateY(0)}
+
+/* Color variants */
+.course-card.da:hover{border-color:rgba(251,191,36,0.35)}
+.course-card.da:hover .cc-icon-wrap{background:rgba(251,191,36,0.15);border-color:rgba(251,191,36,0.3)}
+.course-card.ds:hover{border-color:rgba(34,211,238,0.35)}
+.course-card.ds:hover .cc-icon-wrap{background:rgba(34,211,238,0.12);border-color:rgba(34,211,238,0.28)}
+.course-card.ds::before{background:linear-gradient(135deg,rgba(34,211,238,0.05) 0%,transparent 60%)}
+.course-card.cloud:hover{border-color:rgba(139,92,246,0.4)}
+.course-card.cloud:hover .cc-icon-wrap{background:rgba(139,92,246,0.12);border-color:rgba(139,92,246,0.28)}
+.course-card.cloud::before{background:linear-gradient(135deg,rgba(139,92,246,0.05) 0%,transparent 60%)}
+
+/* Icon */
+.cc-icon-wrap{
+  width:52px;height:52px;border-radius:14px;flex-shrink:0;
+  background:rgba(255,255,255,0.05);
+  border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  font-size:24px;
+  transition:background .25s,border-color .25s,transform .25s;
+}
+.course-card:hover .cc-icon-wrap{transform:scale(1.08) rotate(-3deg)}
+
+/* Text */
+.cc-text{flex:1;min-width:0}
+.cc-name{
+  font-family:'Syne',sans-serif;
+  font-size:16px;font-weight:700;letter-spacing:-.2px;
+  margin-bottom:4px;
+}
+.cc-desc{font-size:12.5px;color:var(--text-3);line-height:1.5}
+.cc-tag{
+  margin-top:8px;
+  display:inline-flex;align-items:center;gap:4px;
+  font-size:10.5px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;
+  padding:3px 9px;border-radius:99px;
+}
+.da .cc-tag{background:rgba(251,191,36,0.1);color:var(--amber);border:1px solid rgba(251,191,36,0.2)}
+.ds .cc-tag{background:rgba(34,211,238,0.08);color:var(--cyan);border:1px solid rgba(34,211,238,0.18)}
+.cloud .cc-tag{background:rgba(139,92,246,0.1);color:#a78bfa;border:1px solid rgba(139,92,246,0.2)}
+
+/* Arrow */
+.cc-arrow{
+  width:34px;height:34px;border-radius:99px;
+  background:rgba(255,255,255,0.05);
+  border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+  transition:all .25s;
+}
+.cc-arrow svg{width:15px;height:15px;fill:none;stroke:var(--text-3);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:stroke .25s,transform .25s}
+.course-card:hover .cc-arrow{background:rgba(251,191,36,0.12);border-color:rgba(251,191,36,0.25)}
+.course-card:hover .cc-arrow svg{stroke:var(--amber);transform:translateX(2px)}
+.ds:hover .cc-arrow{background:rgba(34,211,238,0.1);border-color:rgba(34,211,238,0.22)}
+.ds:hover .cc-arrow svg{stroke:var(--cyan)}
+.cloud:hover .cc-arrow{background:rgba(139,92,246,0.1);border-color:rgba(139,92,246,0.22)}
+.cloud:hover .cc-arrow svg{stroke:#a78bfa}
+
+/* ── Footer strip ── */
+.footer-strip{
+  display:flex;justify-content:center;gap:24px;flex-wrap:wrap;
+  padding-top:24px;
+  border-top:1px solid var(--border);
+}
+.fs-item{
+  display:flex;align-items:center;gap:6px;
+  font-size:12px;color:var(--text-3);
+}
+.fs-dot{width:5px;height:5px;border-radius:50%}
+.da-dot{background:var(--amber);opacity:.7}
+.ds-dot{background:var(--cyan);opacity:.7}
+.cloud-dot{background:#a78bfa;opacity:.7}
+
+@media(max-width:480px){
+  h1{font-size:26px}
+  .course-card{padding:16px 16px}
+  .cc-icon-wrap{width:44px;height:44px;font-size:20px;border-radius:11px}
+}
+</style>
+</head>
+<body>
+<div class="mesh"></div>
+<div class="grid-lines"></div>
+
+<div class="wrap">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo-badge">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="2"/><path d="M9 12h6M9 16h4"/></svg>
+      </div>
+      <span class="logo-text">Mock Test Portal</span>
+    </div>
+    <h1>Choose Your <span>Exam</span></h1>
+    <p class="sub">Select a course below to begin your timed mock test. Each exam is 20 minutes long.</p>
+  </div>
+
+  <!-- Course cards -->
+  <div class="courses">
+
+    <a href="{{ url_for('exam', course='DA') }}" class="course-card da">
+      <div class="cc-icon-wrap">📊</div>
+      <div class="cc-text">
+        <div class="cc-name">Data Analytics</div>
+        <div class="cc-desc">Excel, SQL, Power BI, statistics & data visualization concepts</div>
+        <span class="cc-tag">DA · 20 Questions</span>
+      </div>
+      <div class="cc-arrow">
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+    </a>
+
+    <a href="{{ url_for('exam', course='DS') }}" class="course-card ds">
+      <div class="cc-icon-wrap">🔬</div>
+      <div class="cc-text">
+        <div class="cc-name">Data Science</div>
+        <div class="cc-desc">Python, ML algorithms, model evaluation & statistical analysis</div>
+        <span class="cc-tag">DS · 20 Questions</span>
+      </div>
+      <div class="cc-arrow">
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+    </a>
+
+    <a href="{{ url_for('exam', course='CLOUD') }}" class="course-card cloud">
+      <div class="cc-icon-wrap">☁️</div>
+      <div class="cc-text">
+        <div class="cc-name">AWS Cloud</div>
+        <div class="cc-desc">EC2, S3, Lambda, IAM, VPC & core cloud architecture concepts</div>
+        <span class="cc-tag">CLOUD · 20 Questions</span>
+      </div>
+      <div class="cc-arrow">
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer-strip">
+    <div class="fs-item"><div class="fs-dot da-dot"></div>20 min per exam</div>
+    <div class="fs-item"><div class="fs-dot ds-dot"></div>Auto-submit on timeout</div>
+    <div class="fs-item"><div class="fs-dot cloud-dot"></div>40% to pass</div>
+  </div>
+
+</div>
+</body>
+</html>
