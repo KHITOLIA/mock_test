@@ -1,0 +1,77 @@
+[
+  {
+    "question": "What is Data Science?",
+    "options": ["Extracting insights from data", "Building networks", "Creating websites", "Managing databases"],
+    "answer": "Extracting insights from data"
+  },
+  {
+    "question": "Which library is used for machine learning in Python?",
+    "options": ["Scikit-Learn", "Flask", "Tkinter", "Pygame"],
+    "answer": "Scikit-Learn"
+  },
+  {
+    "question": "What is supervised learning?",
+    "options": ["Learning with labeled data", "Learning without data", "Learning without labels", "Learning from databases"],
+    "answer": "Learning with labeled data"
+  },
+  {
+    "question": "Which algorithm is used for classification?",
+    "options": ["Logistic Regression", "K-Means", "Apriori", "PCA"],
+    "answer": "Logistic Regression"
+  },
+  {
+    "question": "What does PCA stand for?",
+    "options": ["Principal Component Analysis", "Primary Component Algorithm", "Prediction Component Analysis", "Parallel Component Analysis"],
+    "answer": "Principal Component Analysis"
+  },
+  {
+    "question": "Which metric is commonly used for classification?",
+    "options": ["Accuracy", "RMSE", "MAE", "MSE"],
+    "answer": "Accuracy"
+  },
+  {
+    "question": "What is overfitting?",
+    "options": ["Model performs well on training data but poorly on new data", "Model performs poorly everywhere", "Model is too small", "Model is unsupervised"],
+    "answer": "Model performs well on training data but poorly on new data"
+  },
+  {
+    "question": "Which library is used for deep learning?",
+    "options": ["TensorFlow", "NumPy", "Pandas", "OpenCV"],
+    "answer": "TensorFlow"
+  },
+  {
+    "question": "What is the purpose of train-test split?",
+    "options": ["Evaluate model performance", "Increase dataset size", "Remove missing values", "Normalize data"],
+    "answer": "Evaluate model performance"
+  },
+  {
+    "question": "Which algorithm is used for clustering?",
+    "options": ["K-Means", "Linear Regression", "Logistic Regression", "Decision Tree"],
+    "answer": "K-Means"
+  },
+  {
+    "question": "What is a feature in machine learning?",
+    "options": ["Input variable", "Output variable", "Database", "Model"],
+    "answer": "Input variable"
+  },
+  {
+    "question": "What is the output variable called?",
+    "options": ["Target", "Feature", "Dataset", "Label Encoder"],
+    "answer": "Target"
+  },
+  {
+    "question": "Which library is used for data visualization?",
+    "options": ["Matplotlib", "TensorFlow", "Scikit-Learn", "Flask"],
+    "answer": "Matplotlib"
+  },
+  {
+    "question": "What is a confusion matrix used for?",
+    "options": ["Evaluating classification models", "Clustering", "Feature engineering", "Data cleaning"],
+    "answer": "Evaluating classification models"
+  },
+  {
+    "question": "Which technique handles categorical data?",
+    "options": ["One Hot Encoding", "Normalization", "Scaling", "PCA"],
+    "answer": "One Hot Encoding"
+  }
+]

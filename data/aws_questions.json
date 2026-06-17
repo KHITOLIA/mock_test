@@ -1,0 +1,77 @@
+[
+  {
+    "question": "What does AWS stand for?",
+    "options": ["Amazon Web Services", "Amazon Web Storage", "Advanced Web Services", "Application Web Services"],
+    "answer": "Amazon Web Services"
+  },
+  {
+    "question": "Which AWS service provides virtual servers?",
+    "options": ["EC2", "S3", "Lambda", "RDS"],
+    "answer": "EC2"
+  },
+  {
+    "question": "Which AWS service is used for object storage?",
+    "options": ["S3", "EC2", "IAM", "VPC"],
+    "answer": "S3"
+  },
+  {
+    "question": "What is IAM used for?",
+    "options": ["Identity and Access Management", "Internet Access Module", "Infrastructure Access Method", "Identity Allocation Management"],
+    "answer": "Identity and Access Management"
+  },
+  {
+    "question": "Which AWS service is serverless?",
+    "options": ["Lambda", "EC2", "EBS", "VPC"],
+    "answer": "Lambda"
+  },
+  {
+    "question": "Which AWS database service is relational?",
+    "options": ["RDS", "S3", "CloudFront", "Lambda"],
+    "answer": "RDS"
+  },
+  {
+    "question": "What is Amazon VPC?",
+    "options": ["Virtual Private Cloud", "Virtual Public Cloud", "Verified Private Connection", "Virtual Processing Cluster"],
+    "answer": "Virtual Private Cloud"
+  },
+  {
+    "question": "Which service distributes content globally?",
+    "options": ["CloudFront", "EC2", "S3", "IAM"],
+    "answer": "CloudFront"
+  },
+  {
+    "question": "Which AWS service provides monitoring?",
+    "options": ["CloudWatch", "Route53", "IAM", "SQS"],
+    "answer": "CloudWatch"
+  },
+  {
+    "question": "Which service is used for DNS management?",
+    "options": ["Route53", "Lambda", "S3", "EC2"],
+    "answer": "Route53"
+  },
+  {
+    "question": "Which AWS service provides block storage?",
+    "options": ["EBS", "S3", "Lambda", "RDS"],
+    "answer": "EBS"
+  },
+  {
+    "question": "What is an Availability Zone?",
+    "options": ["Isolated AWS data center", "AWS Region", "Database Cluster", "Storage Bucket"],
+    "answer": "Isolated AWS data center"
+  },
+  {
+    "question": "Which AWS service manages containers?",
+    "options": ["ECS", "S3", "IAM", "CloudWatch"],
+    "answer": "ECS"
+  },
+  {
+    "question": "Which service is used for message queuing?",
+    "options": ["SQS", "SNS", "EC2", "VPC"],
+    "answer": "SQS"
+  },
+  {
+    "question": "What is AWS Region?",
+    "options": ["Geographical area containing Availability Zones", "Virtual Server", "Storage Service", "Database Service"],
+    "answer": "Geographical area containing Availability Zones"
+  }
+]
