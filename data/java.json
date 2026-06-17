@@ -1,0 +1,1052 @@
+[
+    {
+        "question": "What is Java?",
+        "options": [
+            "Programming Language",
+            "Database",
+            "Operating System",
+            "Web Browser"
+        ],
+        "answer": "Programming Language"
+    },
+    {
+        "question": "Who developed Java?",
+        "options": [
+            "James Gosling",
+            "Dennis Ritchie",
+            "Bjarne Stroustrup",
+            "Guido van Rossum"
+        ],
+        "answer": "James Gosling"
+    },
+    {
+        "question": "Which company originally developed Java?",
+        "options": [
+            "Sun Microsystems",
+            "Microsoft",
+            "IBM",
+            "Oracle"
+        ],
+        "answer": "Sun Microsystems"
+    },
+    {
+        "question": "Which method is the entry point of a Java application?",
+        "options": [
+            "main()",
+            "start()",
+            "run()",
+            "init()"
+        ],
+        "answer": "main()"
+    },
+    {
+        "question": "Which keyword is used to inherit a class in Java?",
+        "options": [
+            "extends",
+            "implements",
+            "inherits",
+            "super"
+        ],
+        "answer": "extends"
+    },
+    {
+        "question": "Which keyword is used to define a constant in Java?",
+        "options": [
+            "final",
+            "const",
+            "static",
+            "immutable"
+        ],
+        "answer": "final"
+    },
+    {
+        "question": "Which package is automatically imported in Java?",
+        "options": [
+            "java.lang",
+            "java.util",
+            "java.io",
+            "java.net"
+        ],
+        "answer": "java.lang"
+    },
+    {
+        "question": "Which operator is used for object creation?",
+        "options": [
+            "new",
+            "create",
+            "malloc",
+            "alloc"
+        ],
+        "answer": "new"
+    },
+    {
+        "question": "Which data type stores true or false values?",
+        "options": [
+            "boolean",
+            "int",
+            "char",
+            "float"
+        ],
+        "answer": "boolean"
+    },
+    {
+        "question": "What is the size of int in Java?",
+        "options": [
+            "4 bytes",
+            "2 bytes",
+            "8 bytes",
+            "1 byte"
+        ],
+        "answer": "4 bytes"
+    },
+    {
+        "question": "Which loop executes at least once?",
+        "options": [
+            "do-while",
+            "while",
+            "for",
+            "enhanced for"
+        ],
+        "answer": "do-while"
+    },
+    {
+        "question": "Which keyword refers to the current object?",
+        "options": [
+            "this",
+            "self",
+            "current",
+            "super"
+        ],
+        "answer": "this"
+    },
+    {
+        "question": "Which keyword refers to the parent class?",
+        "options": [
+            "super",
+            "this",
+            "parent",
+            "base"
+        ],
+        "answer": "super"
+    },
+    {
+        "question": "What is method overloading?",
+        "options": [
+            "Same method name with different parameters",
+            "Same method in different classes",
+            "Overriding parent method",
+            "Calling multiple methods"
+        ],
+        "answer": "Same method name with different parameters"
+    },
+    {
+        "question": "What is method overriding?",
+        "options": [
+            "Redefining parent class method",
+            "Creating multiple methods",
+            "Calling a method twice",
+            "Hiding variables"
+        ],
+        "answer": "Redefining parent class method"
+    },
+    {
+        "question": "Which access modifier provides the widest access?",
+        "options": [
+            "public",
+            "private",
+            "protected",
+            "default"
+        ],
+        "answer": "public"
+    },
+    {
+        "question": "Which access modifier restricts access within the same class only?",
+        "options": [
+            "private",
+            "public",
+            "protected",
+            "default"
+        ],
+        "answer": "private"
+    },
+    {
+        "question": "Java supports which type of inheritance?",
+        "options": [
+            "Single",
+            "Multiple through classes",
+            "Hybrid through classes",
+            "None"
+        ],
+        "answer": "Single"
+    },
+    {
+        "question": "Which keyword is used to implement an interface?",
+        "options": [
+            "implements",
+            "extends",
+            "inherits",
+            "interface"
+        ],
+        "answer": "implements"
+    },
+    {
+        "question": "Can an interface contain default methods?",
+        "options": [
+            "Yes",
+            "No",
+            "Only abstract methods",
+            "Only static methods"
+        ],
+        "answer": "Yes"
+    },
+    {
+        "question": "Which collection allows duplicate elements?",
+        "options": [
+            "ArrayList",
+            "HashSet",
+            "TreeSet",
+            "LinkedHashSet"
+        ],
+        "answer": "ArrayList"
+    },
+    {
+        "question": "Which collection does not allow duplicates?",
+        "options": [
+            "HashSet",
+            "ArrayList",
+            "Vector",
+            "LinkedList"
+        ],
+        "answer": "HashSet"
+    },
+    {
+        "question": "Which interface is implemented by ArrayList?",
+        "options": [
+            "List",
+            "Set",
+            "Map",
+            "Queue"
+        ],
+        "answer": "List"
+    },
+    {
+        "question": "Which collection stores key-value pairs?",
+        "options": [
+            "Map",
+            "List",
+            "Set",
+            "Queue"
+        ],
+        "answer": "Map"
+    },
+    {
+        "question": "Which class implements Map?",
+        "options": [
+            "HashMap",
+            "ArrayList",
+            "HashSet",
+            "LinkedList"
+        ],
+        "answer": "HashMap"
+    },
+    {
+        "question": "Which Map maintains insertion order?",
+        "options": [
+            "LinkedHashMap",
+            "HashMap",
+            "TreeMap",
+            "Hashtable"
+        ],
+        "answer": "LinkedHashMap"
+    },
+    {
+        "question": "Which Map sorts keys?",
+        "options": [
+            "TreeMap",
+            "HashMap",
+            "LinkedHashMap",
+            "Hashtable"
+        ],
+        "answer": "TreeMap"
+    },
+    {
+        "question": "Which collection is synchronized?",
+        "options": [
+            "Vector",
+            "ArrayList",
+            "HashMap",
+            "HashSet"
+        ],
+        "answer": "Vector"
+    },
+    {
+        "question": "Which exception occurs when dividing by zero?",
+        "options": [
+            "ArithmeticException",
+            "IOException",
+            "NullPointerException",
+            "ClassCastException"
+        ],
+        "answer": "ArithmeticException"
+    },
+    {
+        "question": "Which exception occurs when accessing a null reference?",
+        "options": [
+            "NullPointerException",
+            "IOException",
+            "ArithmeticException",
+            "SQLException"
+        ],
+        "answer": "NullPointerException"
+    },
+    {
+        "question": "Which block always executes in exception handling?",
+        "options": [
+            "finally",
+            "try",
+            "catch",
+            "throw"
+        ],
+        "answer": "finally"
+    },
+    {
+        "question": "Which keyword is used to throw an exception?",
+        "options": [
+            "throw",
+            "throws",
+            "catch",
+            "finally"
+        ],
+        "answer": "throw"
+    },
+    {
+        "question": "Which keyword declares exceptions in a method signature?",
+        "options": [
+            "throws",
+            "throw",
+            "catch",
+            "try"
+        ],
+        "answer": "throws"
+    },
+    {
+        "question": "Which class is the parent of all exceptions?",
+        "options": [
+            "Throwable",
+            "Exception",
+            "Error",
+            "Object"
+        ],
+        "answer": "Throwable"
+    },
+    {
+        "question": "Which package contains collection classes?",
+        "options": [
+            "java.util",
+            "java.io",
+            "java.net",
+            "java.sql"
+        ],
+        "answer": "java.util"
+    },
+    {
+        "question": "Which class is immutable?",
+        "options": [
+            "String",
+            "StringBuilder",
+            "StringBuffer",
+            "ArrayList"
+        ],
+        "answer": "String"
+    },
+    {
+        "question": "Which class is mutable and not synchronized?",
+        "options": [
+            "StringBuilder",
+            "String",
+            "StringBuffer",
+            "Character"
+        ],
+        "answer": "StringBuilder"
+    },
+    {
+        "question": "Which class is mutable and synchronized?",
+        "options": [
+            "StringBuffer",
+            "String",
+            "StringBuilder",
+            "Character"
+        ],
+        "answer": "StringBuffer"
+    },
+    {
+        "question": "Which keyword is used for multithreading?",
+        "options": [
+            "Thread",
+            "Runnable",
+            "Both Thread and Runnable",
+            "Process"
+        ],
+        "answer": "Both Thread and Runnable"
+    },
+    {
+        "question": "Which method starts a thread?",
+        "options": [
+            "start()",
+            "run()",
+            "execute()",
+            "begin()"
+        ],
+        "answer": "start()"
+    },
+    {
+        "question": "Which method contains thread logic?",
+        "options": [
+            "run()",
+            "start()",
+            "main()",
+            "sleep()"
+        ],
+        "answer": "run()"
+    },
+    {
+        "question": "Which method pauses a thread?",
+        "options": [
+            "sleep()",
+            "wait()",
+            "join()",
+            "yield()"
+        ],
+        "answer": "sleep()"
+    },
+    {
+        "question": "What is JVM?",
+        "options": [
+            "Java Virtual Machine",
+            "Java Variable Method",
+            "Java Verified Module",
+            "Java Visual Manager"
+        ],
+        "answer": "Java Virtual Machine"
+    },
+    {
+        "question": "What is JDK?",
+        "options": [
+            "Java Development Kit",
+            "Java Deployment Kit",
+            "Java Design Kit",
+            "Java Data Kit"
+        ],
+        "answer": "Java Development Kit"
+    },
+    {
+        "question": "What is JRE?",
+        "options": [
+            "Java Runtime Environment",
+            "Java Resource Engine",
+            "Java Runtime Engine",
+            "Java Render Environment"
+        ],
+        "answer": "Java Runtime Environment"
+    },
+    {
+        "question": "Which feature allows code reuse?",
+        "options": [
+            "Inheritance",
+            "Encapsulation",
+            "Polymorphism",
+            "Abstraction"
+        ],
+        "answer": "Inheritance"
+    },
+    {
+        "question": "Which OOP concept hides implementation details?",
+        "options": [
+            "Abstraction",
+            "Inheritance",
+            "Polymorphism",
+            "Association"
+        ],
+        "answer": "Abstraction"
+    },
+    {
+        "question": "Which OOP concept binds data and methods together?",
+        "options": [
+            "Encapsulation",
+            "Inheritance",
+            "Polymorphism",
+            "Abstraction"
+        ],
+        "answer": "Encapsulation"
+    },
+    {
+        "question": "What is polymorphism?",
+        "options": [
+            "One interface multiple forms",
+            "Code hiding",
+            "Data binding",
+            "Object creation"
+        ],
+        "answer": "One interface multiple forms"
+    },
+    {
+        "question": "Which keyword prevents inheritance?",
+        "options": [
+            "final",
+            "static",
+            "private",
+            "abstract"
+        ],
+        "answer": "final"
+    },
+    {
+        "question": "Can abstract classes have constructors?",
+        "options": [
+            "Yes",
+            "No",
+            "Only private constructors",
+            "Only protected constructors"
+        ],
+        "answer": "Yes"
+    },
+    {
+        "question": "Can interfaces have static methods?",
+        "options": [
+            "Yes",
+            "No",
+            "Only from Java 5",
+            "Only from Java 6"
+        ],
+        "answer": "Yes"
+    },
+    {
+        "question": "Which stream is used for byte data?",
+        "options": [
+            "InputStream",
+            "Reader",
+            "Scanner",
+            "Console"
+        ],
+        "answer": "InputStream"
+    },
+    {
+        "question": "Which stream is used for character data?",
+        "options": [
+            "Reader",
+            "InputStream",
+            "FileInputStream",
+            "BufferedInputStream"
+        ],
+        "answer": "Reader"
+    },
+    {
+        "question": "Which package is used for JDBC?",
+        "options": [
+            "java.sql",
+            "java.db",
+            "java.jdbc",
+            "java.database"
+        ],
+        "answer": "java.sql"
+    },
+    {
+        "question": "What does JDBC stand for?",
+        "options": [
+            "Java Database Connectivity",
+            "Java Data Connection",
+            "Java Driver Connectivity",
+            "Java Database Component"
+        ],
+        "answer": "Java Database Connectivity"
+    },
+    {
+        "question": "Which JDBC interface executes SQL queries?",
+        "options": [
+            "Statement",
+            "Connection",
+            "Driver",
+            "ResultSet"
+        ],
+        "answer": "Statement"
+    },
+    {
+        "question": "Which JDBC object stores query results?",
+        "options": [
+            "ResultSet",
+            "Statement",
+            "Connection",
+            "Driver"
+        ],
+        "answer": "ResultSet"
+    },
+    {
+        "question": "Which annotation marks a Spring Boot application?",
+        "options": [
+            "@SpringBootApplication",
+            "@Application",
+            "@SpringApp",
+            "@BootApp"
+        ],
+        "answer": "@SpringBootApplication"
+    },
+    {
+        "question": "Which annotation is used for dependency injection?",
+        "options": [
+            "@Autowired",
+            "@Injectable",
+            "@BeanConfig",
+            "@ResourceManager"
+        ],
+        "answer": "@Autowired"
+    },
+    {
+        "question": "Which annotation creates a REST controller?",
+        "options": [
+            "@RestController",
+            "@Controller",
+            "@Service",
+            "@Repository"
+        ],
+        "answer": "@RestController"
+    },
+    {
+        "question": "Which annotation maps HTTP GET requests?",
+        "options": [
+            "@GetMapping",
+            "@PostMapping",
+            "@RequestBody",
+            "@PathVariable"
+        ],
+        "answer": "@GetMapping"
+    },
+    {
+        "question": "Which annotation maps HTTP POST requests?",
+        "options": [
+            "@PostMapping",
+            "@GetMapping",
+            "@DeleteMapping",
+            "@PutMapping"
+        ],
+        "answer": "@PostMapping"
+    },
+    {
+        "question": "Which annotation is used for database repositories?",
+        "options": [
+            "@Repository",
+            "@Service",
+            "@Component",
+            "@Bean"
+        ],
+        "answer": "@Repository"
+    },
+    {
+        "question": "Which annotation marks a service class?",
+        "options": [
+            "@Service",
+            "@Repository",
+            "@Component",
+            "@Controller"
+        ],
+        "answer": "@Service"
+    },
+    {
+        "question": "Which annotation maps URL path parameters?",
+        "options": [
+            "@PathVariable",
+            "@RequestBody",
+            "@RequestParam",
+            "@ResponseBody"
+        ],
+        "answer": "@PathVariable"
+    },
+    {
+        "question": "Which annotation binds request parameters?",
+        "options": [
+            "@RequestParam",
+            "@PathVariable",
+            "@Autowired",
+            "@Bean"
+        ],
+        "answer": "@RequestParam"
+    },
+    {
+        "question": "Which annotation binds JSON request body?",
+        "options": [
+            "@RequestBody",
+            "@ResponseBody",
+            "@PathVariable",
+            "@Autowired"
+        ],
+        "answer": "@RequestBody"
+    },
+    {
+        "question": "Which Spring Boot starter is used for web applications?",
+        "options": [
+            "spring-boot-starter-web",
+            "spring-boot-starter-jdbc",
+            "spring-boot-starter-test",
+            "spring-boot-starter-security"
+        ],
+        "answer": "spring-boot-starter-web"
+    },
+    {
+        "question": "Which dependency is used for JPA?",
+        "options": [
+            "spring-boot-starter-data-jpa",
+            "spring-boot-starter-web",
+            "spring-boot-starter-test",
+            "spring-boot-starter-security"
+        ],
+        "answer": "spring-boot-starter-data-jpa"
+    },
+    {
+        "question": "Which annotation marks an entity class?",
+        "options": [
+            "@Entity",
+            "@Table",
+            "@Column",
+            "@Id"
+        ],
+        "answer": "@Entity"
+    },
+    {
+        "question": "Which annotation marks the primary key?",
+        "options": [
+            "@Id",
+            "@Column",
+            "@Entity",
+            "@GeneratedValue"
+        ],
+        "answer": "@Id"
+    },
+    {
+        "question": "Which annotation enables automatic ID generation?",
+        "options": [
+            "@GeneratedValue",
+            "@AutoId",
+            "@PrimaryKey",
+            "@Sequence"
+        ],
+        "answer": "@GeneratedValue"
+    },
+    {
+        "question": "Which repository interface provides CRUD operations?",
+        "options": [
+            "JpaRepository",
+            "EntityManager",
+            "RepositoryManager",
+            "CrudManager"
+        ],
+        "answer": "JpaRepository"
+    },
+    {
+        "question": "What does SQL stand for?",
+        "options": [
+            "Structured Query Language",
+            "Simple Query Language",
+            "Standard Query Logic",
+            "Structured Question Language"
+        ],
+        "answer": "Structured Query Language"
+    },
+    {
+        "question": "Which SQL command retrieves data?",
+        "options": [
+            "SELECT",
+            "INSERT",
+            "UPDATE",
+            "DELETE"
+        ],
+        "answer": "SELECT"
+    },
+    {
+        "question": "Which SQL command inserts data?",
+        "options": [
+            "INSERT",
+            "SELECT",
+            "DELETE",
+            "DROP"
+        ],
+        "answer": "INSERT"
+    },
+    {
+        "question": "Which SQL command updates data?",
+        "options": [
+            "UPDATE",
+            "INSERT",
+            "DELETE",
+            "CREATE"
+        ],
+        "answer": "UPDATE"
+    },
+    {
+        "question": "Which SQL command removes data?",
+        "options": [
+            "DELETE",
+            "SELECT",
+            "UPDATE",
+            "ALTER"
+        ],
+        "answer": "DELETE"
+    },
+    {
+        "question": "Which Java feature was introduced in Java 8?",
+        "options": [
+            "Lambda Expressions",
+            "Generics",
+            "Annotations",
+            "JDBC"
+        ],
+        "answer": "Lambda Expressions"
+    },
+    {
+        "question": "Which interface represents a functional interface?",
+        "options": [
+            "Runnable",
+            "List",
+            "Map",
+            "Set"
+        ],
+        "answer": "Runnable"
+    },
+    {
+        "question": "Which API processes collections functionally?",
+        "options": [
+            "Stream API",
+            "JDBC",
+            "AWT",
+            "Swing"
+        ],
+        "answer": "Stream API"
+    },
+    {
+        "question": "Which stream operation transforms data?",
+        "options": [
+            "map()",
+            "collect()",
+            "count()",
+            "forEach()"
+        ],
+        "answer": "map()"
+    },
+    {
+        "question": "Which stream operation filters data?",
+        "options": [
+            "filter()",
+            "map()",
+            "reduce()",
+            "collect()"
+        ],
+        "answer": "filter()"
+    },
+    {
+        "question": "Which stream operation collects results?",
+        "options": [
+            "collect()",
+            "map()",
+            "filter()",
+            "peek()"
+        ],
+        "answer": "collect()"
+    },
+    {
+        "question": "Which class is used to represent optional values?",
+        "options": [
+            "Optional",
+            "OptionalValue",
+            "Nullable",
+            "ValueHolder"
+        ],
+        "answer": "Optional"
+    },
+    {
+        "question": "Which keyword is used for synchronization?",
+        "options": [
+            "synchronized",
+            "sync",
+            "lock",
+            "monitor"
+        ],
+        "answer": "synchronized"
+    },
+    {
+        "question": "Which collection follows FIFO order?",
+        "options": [
+            "Queue",
+            "Stack",
+            "Set",
+            "Map"
+        ],
+        "answer": "Queue"
+    },
+    {
+        "question": "Which collection follows LIFO order?",
+        "options": [
+            "Stack",
+            "Queue",
+            "Set",
+            "Map"
+        ],
+        "answer": "Stack"
+    },
+    {
+        "question": "Which class provides dynamic arrays?",
+        "options": [
+            "ArrayList",
+            "HashMap",
+            "HashSet",
+            "TreeSet"
+        ],
+        "answer": "ArrayList"
+    },
+    {
+        "question": "Which class provides doubly linked list implementation?",
+        "options": [
+            "LinkedList",
+            "ArrayList",
+            "Vector",
+            "HashSet"
+        ],
+        "answer": "LinkedList"
+    },
+    {
+        "question": "What is the default value of boolean?",
+        "options": [
+            "false",
+            "true",
+            "0",
+            "null"
+        ],
+        "answer": "false"
+    },
+    {
+        "question": "What is the default value of int?",
+        "options": [
+            "0",
+            "1",
+            "null",
+            "-1"
+        ],
+        "answer": "0"
+    },
+    {
+        "question": "What is the default value of object references?",
+        "options": [
+            "null",
+            "0",
+            "undefined",
+            "false"
+        ],
+        "answer": "null"
+    },
+    {
+        "question": "Which keyword is used to create abstract classes?",
+        "options": [
+            "abstract",
+            "virtual",
+            "base",
+            "interface"
+        ],
+        "answer": "abstract"
+    },
+    {
+        "question": "Can a final method be overridden?",
+        "options": [
+            "No",
+            "Yes",
+            "Only in subclasses",
+            "Only if protected"
+        ],
+        "answer": "No"
+    },
+    {
+        "question": "Can a static method be overridden?",
+        "options": [
+            "No",
+            "Yes",
+            "Only in interfaces",
+            "Only in abstract classes"
+        ],
+        "answer": "No"
+    },
+    {
+        "question": "Which keyword is used to define packages?",
+        "options": [
+            "package",
+            "import",
+            "namespace",
+            "module"
+        ],
+        "answer": "package"
+    },
+    {
+        "question": "Which keyword imports classes from packages?",
+        "options": [
+            "import",
+            "include",
+            "using",
+            "require"
+        ],
+        "answer": "import"
+    },
+    {
+        "question": "Which access modifier is visible within package and subclasses?",
+        "options": [
+            "protected",
+            "private",
+            "public",
+            "default only"
+        ],
+        "answer": "protected"
+    },
+    {
+        "question": "Which collection provides natural sorting?",
+        "options": [
+            "TreeSet",
+            "HashSet",
+            "ArrayList",
+            "Vector"
+        ],
+        "answer": "TreeSet"
+    },
+    {
+        "question": "Which Java version introduced records?",
+        "options": [
+            "Java 16",
+            "Java 8",
+            "Java 11",
+            "Java 6"
+        ],
+        "answer": "Java 16"
+    },
+    {
+        "question": "Which Java version introduced var keyword?",
+        "options": [
+            "Java 10",
+            "Java 8",
+            "Java 11",
+            "Java 17"
+        ],
+        "answer": "Java 10"
+    },
+    {
+        "question": "Which Java version introduced switch expressions?",
+        "options": [
+            "Java 14",
+            "Java 7",
+            "Java 8",
+            "Java 11"
+        ],
+        "answer": "Java 14"
+    },
+    {
+        "question": "Which keyword is used for lambda expressions?",
+        "options": [
+            "->",
+            "=>",
+            "::",
+            ":="
+        ],
+        "answer": "->"
+    }
+]

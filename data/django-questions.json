@@ -1,0 +1,302 @@
+[
+  {
+    "question": "What is Django?",
+    "options": [
+      "A JavaScript framework",
+      "A Python web framework",
+      "A database management system",
+      "A CSS library"
+    ],
+    "answer": "A Python web framework"
+  },
+  {
+    "question": "Which architectural pattern does Django primarily follow?",
+    "options": [
+      "MVC",
+      "MVT",
+      "MVVM",
+      "MVP"
+    ],
+    "answer": "MVT"
+  },
+  {
+    "question": "What does MVT stand for in Django?",
+    "options": [
+      "Model, View, Template",
+      "Module, View, Template",
+      "Model, Variable, Template",
+      "Module, Variable, Table"
+    ],
+    "answer": "Model, View, Template"
+  },
+  {
+    "question": "Which command is used to create a new Django project?",
+    "options": [
+      "django-admin startproject project_name",
+      "python manage.py startproject project_name",
+      "django create project_name",
+      "python manage.py createproject project_name"
+    ],
+    "answer": "django-admin startproject project_name"
+  },
+  {
+    "question": "Which command is used to create a new Django app?",
+    "options": [
+      "python manage.py createapp app_name",
+      "django-admin startapp app_name",
+      "python manage.py startapp app_name",
+      "django create app_name"
+    ],
+    "answer": "python manage.py startapp app_name"
+  },
+  {
+    "question": "Which file contains the list of installed applications in a Django project?",
+    "options": [
+      "urls.py",
+      "settings.py",
+      "views.py",
+      "apps.py"
+    ],
+    "answer": "settings.py"
+  },
+  {
+    "question": "Which file is responsible for defining URL patterns in Django?",
+    "options": [
+      "models.py",
+      "views.py",
+      "urls.py",
+      "admin.py"
+    ],
+    "answer": "urls.py"
+  },
+  {
+    "question": "What is the default database used by Django?",
+    "options": [
+      "MySQL",
+      "PostgreSQL",
+      "SQLite",
+      "MongoDB"
+    ],
+    "answer": "SQLite"
+  },
+  {
+    "question": "Which Django component handles the interaction with the database?",
+    "options": [
+      "Templates",
+      "Views",
+      "Models",
+      "Middleware"
+    ],
+    "answer": "Models"
+  },
+  {
+    "question": "Which command creates database migration files?",
+    "options": [
+      "python manage.py migrate",
+      "python manage.py makemigrations",
+      "python manage.py syncdb",
+      "python manage.py dbmigrate"
+    ],
+    "answer": "python manage.py makemigrations"
+  },
+  {
+    "question": "Which command applies migrations to the database?",
+    "options": [
+      "python manage.py makemigrations",
+      "python manage.py migrate",
+      "python manage.py applymigrations",
+      "python manage.py syncdb"
+    ],
+    "answer": "python manage.py migrate"
+  },
+  {
+    "question": "Which file is commonly used to define database models?",
+    "options": [
+      "views.py",
+      "urls.py",
+      "models.py",
+      "forms.py"
+    ],
+    "answer": "models.py"
+  },
+  {
+    "question": "What is the purpose of Django's admin interface?",
+    "options": [
+      "To manage server settings",
+      "To automatically generate APIs",
+      "To manage application data through a web interface",
+      "To create templates"
+    ],
+    "answer": "To manage application data through a web interface"
+  },
+  {
+    "question": "Which command creates a superuser account in Django?",
+    "options": [
+      "python manage.py createsuperuser",
+      "python manage.py createadmin",
+      "python manage.py adduser",
+      "python manage.py makesuperuser"
+    ],
+    "answer": "python manage.py createsuperuser"
+  },
+  {
+    "question": "Which Django template syntax is used to display a variable?",
+    "options": [
+      "{% variable %}",
+      "{{ variable }}",
+      "[[ variable ]]",
+      "<%= variable %>"
+    ],
+    "answer": "{{ variable }}"
+  },
+  {
+    "question": "Which Django template tag is used for control structures such as loops and conditions?",
+    "options": [
+      "{{ }}",
+      "{# #}",
+      "{% %}",
+      "(( ))"
+    ],
+    "answer": "{% %}"
+  },
+  {
+    "question": "What is the purpose of middleware in Django?",
+    "options": [
+      "To define database models",
+      "To process requests and responses globally",
+      "To create templates",
+      "To manage static files"
+    ],
+    "answer": "To process requests and responses globally"
+  },
+  {
+    "question": "Which file is used to register models with the Django admin site?",
+    "options": [
+      "models.py",
+      "views.py",
+      "admin.py",
+      "apps.py"
+    ],
+    "answer": "admin.py"
+  },
+  {
+    "question": "What is the purpose of the 'collectstatic' command?",
+    "options": [
+      "To collect database migrations",
+      "To gather static files into a single location for deployment",
+      "To optimize templates",
+      "To create media files"
+    ],
+    "answer": "To gather static files into a single location for deployment"
+  },
+  {
+    "question": "Which setting is used to specify directories for static files?",
+    "options": [
+      "STATIC_ROOT",
+      "STATICFILES_DIRS",
+      "MEDIA_ROOT",
+      "TEMPLATE_DIRS"
+    ],
+    "answer": "STATICFILES_DIRS"
+  },
+  {
+    "question": "What is a QuerySet in Django?",
+    "options": [
+      "A collection of HTML templates",
+      "A Python list of database tables",
+      "A collection of database queries and their results",
+      "A set of middleware classes"
+    ],
+    "answer": "A collection of database queries and their results"
+  },
+  {
+    "question": "Which method retrieves all records from a Django model?",
+    "options": [
+      "Model.get()",
+      "Model.fetch()",
+      "Model.objects.all()",
+      "Model.objects.get()"
+    ],
+    "answer": "Model.objects.all()"
+  },
+  {
+    "question": "Which method retrieves a single object matching the query criteria?",
+    "options": [
+      "objects.filter()",
+      "objects.all()",
+      "objects.get()",
+      "objects.find()"
+    ],
+    "answer": "objects.get()"
+  },
+  {
+    "question": "What happens if 'objects.get()' returns multiple matching records?",
+    "options": [
+      "It returns the first record",
+      "It returns a list of records",
+      "It raises a MultipleObjectsReturned exception",
+      "It returns null"
+    ],
+    "answer": "It raises a MultipleObjectsReturned exception"
+  },
+  {
+    "question": "Which method is used to filter records in a QuerySet?",
+    "options": [
+      "objects.search()",
+      "objects.filter()",
+      "objects.find()",
+      "objects.where()"
+    ],
+    "answer": "objects.filter()"
+  },
+  {
+    "question": "Which field type should be used to store email addresses in a Django model?",
+    "options": [
+      "TextField",
+      "EmailField",
+      "CharField",
+      "URLField"
+    ],
+    "answer": "EmailField"
+  },
+  {
+    "question": "What is the purpose of the 'on_delete' argument in a ForeignKey field?",
+    "options": [
+      "To validate foreign key values",
+      "To define what happens when the referenced object is deleted",
+      "To optimize database queries",
+      "To enforce unique relationships"
+    ],
+    "answer": "To define what happens when the referenced object is deleted"
+  },
+  {
+    "question": "Which decorator is commonly used to restrict access to authenticated users only?",
+    "options": [
+      "@admin_required",
+      "@auth_required",
+      "@login_required",
+      "@user_required"
+    ],
+    "answer": "@login_required"
+  },
+  {
+    "question": "What is CSRF protection in Django used for?",
+    "options": [
+      "To encrypt passwords",
+      "To prevent unauthorized database access",
+      "To protect against Cross-Site Request Forgery attacks",
+      "To optimize API requests"
+    ],
+    "answer": "To protect against Cross-Site Request Forgery attacks"
+  },
+  {
+    "question": "Which template tag is used to include a CSRF token in a form?",
+    "options": [
+      "{% csrf_token %}",
+      "{{ csrf_token }}",
+      "{% token %}",
+      "{{ token }}"
+    ],
+    "answer": "{% csrf_token %}"
+  }
+]
