@@ -34,7 +34,7 @@ app = Flask(__name__)
 app.secret_key = "mock_test"
 
 def load_questions(course):
-        file_map = {
+    file_map = {
         'DA' : "data/da_questions.json",
         'DS' : 'data/ds_questions.json',
         'AWS' : 'data/aws_questions.json',
