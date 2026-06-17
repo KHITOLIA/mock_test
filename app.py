@@ -34,7 +34,7 @@ app = Flask(__name__)
 app.secret_key = "mock_test"
 
 def load_questions(course):
-    file_map = {
+        file_map = {
         'DA' : "data/da_questions.json",
         'DS' : 'data/ds_questions.json',
         'AWS' : 'data/aws_questions.json',
@@ -42,7 +42,11 @@ def load_questions(course):
         'DEVOPS': 'data/devops_exam_bank.json',
         "JAVA" : 'data/java.json',
         'WEBDEV' : 'data/front-end-questions.json',
-        'DJANGO': 'data/django-questions.json'
+        'DJANGO': 'data/django-questions.json',
+        'CYBER' : 'data/CEH_v13_50_MCQ_Set_1.json',
+        'CCNA' : 'data/ccna_200_301_exam_bank.json',
+        'CCNP' : 'data/CCNP_ENCOR_50_Questions.json',
+        'DM' : 'data/digital_marketing_mcqs.json'
     }
 
     with open(file_map[course], "r", encoding = "utf-8") as f:
