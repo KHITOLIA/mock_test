@@ -14,6 +14,7 @@ scope = [
     "https://www.googleapis.com/auth/drive"
 ]
 
+
 creds_dict = json.loads(
     os.environ["GOOGLE_CREDENTIALS"]
 )
@@ -22,11 +23,6 @@ creds = ServiceAccountCredentials.from_json_keyfile_dict(
     creds_dict,
     scope
 )
-
-# creds = ServiceAccountCredentials.from_json_keyfile_name(
-#     "credentials.json",
-#     scope
-# )
 
 client = gspread.authorize(creds)
 
@@ -41,8 +37,7 @@ def load_questions(course):
     file_map = {
         'DA' : "data/da_questions.json",
         'DS' : 'data/ds_questions.json',
-        'CLOUD' : 'data/aws_saa_c03_exam_bank.json'
-        
+        'CLOUD' : 'data/aws_questions.json'
     }
 
     with open(file_map[course], "r", encoding = "utf-8") as f:
@@ -71,10 +66,18 @@ def home():
         session["enroll_no"] = request.form["enroll_no"]
         session["batch_no"] = request.form["batch_no"]
         session["trainer_name"] = request.form["trainer_name"]
-        course = request.form["course"]
+        # course = request.form["course"]
 
-        return redirect(url_for("exam",course=course))
+        return redirect(url_for("courses"))
     return render_template("home.html")
+
+# courses
+@app.route("/courses")
+def courses():
+
+    return render_template(
+        "courses.html"
+    )
 
 
 # exam page
