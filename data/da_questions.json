@@ -1,202 +1,1002 @@
 [
-    {
-        "question": "What is Pandas?",
-        "options": [
-            "Python Library",
-            "Database",
-            "Operating System",
-            "Browser"
-        ],
-        "answer": "Python Library"
-    },
-    {
-        "question": "What is NumPy used for?",
-        "options": [
-            "Numerical Computing",
-            "Web Development",
-            "Networking",
-            "Database Management"
-        ],
-        "answer": "Numerical Computing"
-    },
-    {
-        "question": "Which function is used to read a CSV file in Pandas?",
-        "options": [
-            "read_csv()",
-            "open_csv()",
-            "load_csv()",
-            "csv_read()"
-        ],
-        "answer": "read_csv()"
-    },
-    {
-        "question": "Which chart is best for showing trends over time?",
-        "options": [
-            "Line Chart",
-            "Pie Chart",
-            "Bar Chart",
-            "Scatter Plot"
-        ],
-        "answer": "Line Chart"
-    },
-    {
-        "question": "What does SQL stand for?",
-        "options": [
-            "Structured Query Language",
-            "Simple Query Language",
-            "System Query Language",
-            "Sequential Query Language"
-        ],
-        "answer": "Structured Query Language"
-    },
-    {
-        "question": "Which SQL clause is used to filter records?",
-        "options": [
-            "WHERE",
-            "GROUP BY",
-            "ORDER BY",
-            "HAVING"
-        ],
-        "answer": "WHERE"
-    },
-    {
-        "question": "Which Pandas function shows the first 5 rows?",
-        "options": [
-            "head()",
-            "tail()",
-            "info()",
-            "describe()"
-        ],
-        "answer": "head()"
-    },
-    {
-        "question": "Which Pandas function shows the last 5 rows?",
-        "options": [
-            "tail()",
-            "head()",
-            "info()",
-            "shape()"
-        ],
-        "answer": "tail()"
-    },
-    {
-        "question": "What does the shape attribute return?",
-        "options": [
-            "Rows and Columns",
-            "Only Rows",
-            "Only Columns",
-            "Data Types"
-        ],
-        "answer": "Rows and Columns"
-    },
-    {
-        "question": "Which function is used to remove missing values?",
-        "options": [
-            "dropna()",
-            "fillna()",
-            "remove()",
-            "delete()"
-        ],
-        "answer": "dropna()"
-    },
-    {
-        "question": "What does fillna() do?",
-        "options": [
-            "Fill Missing Values",
-            "Delete Missing Values",
-            "Sort Values",
-            "Rename Columns"
-        ],
-        "answer": "Fill Missing Values"
-    },
-    {
-        "question": "Which library is used for data visualization?",
-        "options": [
-            "Matplotlib",
-            "NumPy",
-            "Pandas",
-            "Scikit-learn"
-        ],
-        "answer": "Matplotlib"
-    },
-    {
-        "question": "Which chart is commonly used to show proportions?",
-        "options": [
-            "Pie Chart",
-            "Line Chart",
-            "Scatter Plot",
-            "Histogram"
-        ],
-        "answer": "Pie Chart"
-    },
-    {
-        "question": "What is the purpose of GROUP BY in SQL?",
-        "options": [
-            "Group Similar Records",
-            "Sort Records",
-            "Delete Records",
-            "Filter Records"
-        ],
-        "answer": "Group Similar Records"
-    },
-    {
-        "question": "Which keyword is used to sort records in SQL?",
-        "options": [
-            "ORDER BY",
-            "GROUP BY",
-            "WHERE",
-            "HAVING"
-        ],
-        "answer": "ORDER BY"
-    },
-    {
-        "question": "What does COUNT(*) do in SQL?",
-        "options": [
-            "Counts Rows",
-            "Counts Columns",
-            "Deletes Rows",
-            "Updates Rows"
-        ],
-        "answer": "Counts Rows"
-    },
-    {
-        "question": "Which function calculates average in SQL?",
-        "options": [
-            "AVG()",
-            "SUM()",
-            "COUNT()",
-            "MEAN()"
-        ],
-        "answer": "AVG()"
-    },
-    {
-        "question": "Which SQL join returns matching records from both tables?",
-        "options": [
-            "INNER JOIN",
-            "LEFT JOIN",
-            "RIGHT JOIN",
-            "FULL JOIN"
-        ],
-        "answer": "INNER JOIN"
-    },
-    {
-        "question": "What is Data Analytics?",
-        "options": [
-            "Analyzing Data for Insights",
-            "Creating Databases",
-            "Building Websites",
-            "Managing Networks"
-        ],
-        "answer": "Analyzing Data for Insights"
-    },
-    {
-        "question": "Which Python library is commonly used for analytics?",
-        "options": [
-            "Pandas",
-            "Tkinter",
-            "Flask",
-            "Pygame"
-        ],
-        "answer": "Pandas"
-    }
+  {
+    "question": "Data Analytics Q1: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q2: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q3: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q4: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q5: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q6: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q7: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q8: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q9: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q10: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q11: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q12: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q13: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q14: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q15: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q16: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q17: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q18: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q19: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q20: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q21: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q22: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q23: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q24: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q25: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q26: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q27: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q28: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q29: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q30: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q31: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q32: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q33: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q34: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q35: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q36: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q37: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q38: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q39: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q40: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q41: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q42: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q43: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q44: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q45: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q46: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q47: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q48: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q49: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q50: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q51: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q52: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q53: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q54: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q55: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q56: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q57: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q58: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q59: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q60: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q61: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q62: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q63: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q64: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q65: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q66: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q67: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q68: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q69: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q70: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q71: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q72: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q73: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q74: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q75: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q76: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q77: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q78: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q79: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q80: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q81: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q82: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q83: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q84: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q85: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q86: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q87: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q88: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q89: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q90: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q91: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q92: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q93: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q94: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q95: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q96: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q97: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q98: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q99: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  },
+  {
+    "question": "Data Analytics Q100: Which concept best relates to analytics?",
+    "options": [
+      "Data visualization",
+      "Computer assembly",
+      "Web hosting",
+      "Game design"
+    ],
+    "answer": "Data visualization"
+  }
 ]
