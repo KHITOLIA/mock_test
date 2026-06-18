@@ -409,35 +409,73 @@
     <!-- Horizontal grid of exam cards -->
     <div class="exam-grid">
 
-      <!-- Data Analytics -->
-      <a href="{{ url_for('exam', course='DA') }}" class="exam-card">
-        <div class="ec-icon">📈</div>
-        <div class="ec-name">Data Analytics</div>
-        <div class="ec-desc">
-          Excel, SQL, Power BI, Data Cleaning, Visualization & Business Insights
-        </div>
-        <div class="ec-footer">
-          <span class="ec-tag">ANALYTICS</span>
-          <div class="ec-arrow"><svg viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg></div>
-        </div>
-      </a>
+<!-- Data Analytics -->
+<a href="{{ url_for('exam', course='DA') }}" class="exam-card">
+  <div class="ec-icon">📊</div>
+  <div class="ec-name">Data Analytics</div>
+  <div class="ec-desc">
+    SQL, Excel, Power BI, Statistics & Business Intelligence
+  </div>
+  <div class="ec-footer">
+    <span class="ec-tag">Analytics</span>
+    <div class="ec-arrow">
+      <svg viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7" />
+      </svg>
+    </div>
+  </div>
+</a>
 
-      <!-- Data Science -->
-      <a href="{{ url_for('exam', course='DS') }}" class="exam-card">
-        <div class="ec-icon">🧠</div>
-        <div class="ec-name">Data Science</div>
-        <div class="ec-desc">
-          Python, Machine Learning, Statistics, NLP & Predictive Modeling
-        </div>
-        <div class="ec-footer">
-          <span class="ec-tag">AI & ML</span>
-          <div class="ec-arrow"><svg viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg></div>
-        </div>
-      </a>
+<!-- Data Science -->
+<a href="{{ url_for('exam', course='DS') }}" class="exam-card">
+  <div class="ec-icon">🧠</div>
+  <div class="ec-name">Data Science</div>
+  <div class="ec-desc">
+    Python, Machine Learning, Deep Learning & Predictive Analytics
+  </div>
+  <div class="ec-footer">
+    <span class="ec-tag">Data Science</span>
+    <div class="ec-arrow">
+      <svg viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7" />
+      </svg>
+    </div>
+  </div>
+</a>
+
+<!-- Generative AI -->
+<a href="{{ url_for('exam', course='GENAI') }}" class="exam-card">
+  <div class="ec-icon">🤖</div>
+  <div class="ec-name">Generative AI</div>
+  <div class="ec-desc">
+    LLMs, Prompt Engineering, RAG, Fine-Tuning & AI Applications
+  </div>
+  <div class="ec-footer">
+    <span class="ec-tag">Gen AI</span>
+    <div class="ec-arrow">
+      <svg viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7" />
+      </svg>
+    </div>
+  </div>
+</a>
+
+<!-- Agentic AI -->
+<a href="{{ url_for('exam', course='AGENTICAI') }}" class="exam-card">
+  <div class="ec-icon">🚀</div>
+  <div class="ec-name">Agentic AI</div>
+  <div class="ec-desc">
+    AI Agents, Tool Calling, Memory, Multi-Agent Systems & Automation
+  </div>
+  <div class="ec-footer">
+    <span class="ec-tag">Agentic AI</span>
+    <div class="ec-arrow">
+      <svg viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7" />
+      </svg>
+    </div>
+  </div>
+</a>
 
       <!-- AWS -->
       <a href="{{ url_for('exam', course='AWS') }}" class="exam-card">
