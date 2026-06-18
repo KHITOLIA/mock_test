@@ -1,517 +1,448 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mock Test Portal — Training Basket</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
-  <style>
-    *,
-    *::before,
-    *::after {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mock Test Portal — Training Basket</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 
-    :root {
-      --bg: #0a0a0a;
-      --bg2: #111111;
-      --surface: rgba(255, 255, 255, 0.04);
-      --surface-hover: rgba(255, 255, 255, 0.07);
-      --border: rgba(255, 255, 255, 0.09);
-      --border-focus: rgba(255, 214, 0, 0.7);
-      --yellow: #FFD600;
-      --yellow-dim: rgba(255, 214, 0, 0.12);
-      --yellow-glow: rgba(255, 214, 0, 0.08);
-      --text: #f5f5f5;
-      --text-2: rgba(245, 245, 245, 0.5);
-      --text-3: rgba(245, 245, 245, 0.28);
-      --r: 12px;
-    }
+:root{
+  --bg:#0a0a0a;
+  --bg2:#111111;
+  --surface:rgba(255,255,255,0.04);
+  --surface-hover:rgba(255,255,255,0.07);
+  --border:rgba(255,255,255,0.09);
+  --border-focus:rgba(255,214,0,0.7);
+  --yellow:#FFD600;
+  --yellow-dim:rgba(255,214,0,0.12);
+  --yellow-glow:rgba(255,214,0,0.08);
+  --text:#f5f5f5;
+  --text-2:rgba(245,245,245,0.5);
+  --text-3:rgba(245,245,245,0.28);
+  --r:12px;
+}
 
-    html,
-    body {
-      height: 100%
-    }
+html,body{height:100%}
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  min-height:100vh;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  padding:40px 20px 80px;
+  overflow-x:hidden;
+  position:relative;
+}
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      min-height: 100vh;
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      padding: 48px 20px 80px;
-      overflow-x: hidden;
-      position: relative;
-    }
+/* ── Background ── */
+.bg-glow{
+  position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:
+    radial-gradient(ellipse 70% 40% at 15% 10%,rgba(255,214,0,0.08) 0%,transparent 60%),
+    radial-gradient(ellipse 50% 50% at 85% 85%,rgba(255,214,0,0.04) 0%,transparent 55%);
+}
+.grid-lines{
+  position:fixed;inset:0;pointer-events:none;z-index:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.018) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,0.018) 1px,transparent 1px);
+  background-size:52px 52px;
+  mask-image:radial-gradient(ellipse 85% 85% at 50% 50%,black 30%,transparent 100%);
+}
 
-    /* ── Background ── */
-    .bg-glow {
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      z-index: 0;
-      background:
-        radial-gradient(ellipse 70% 40% at 15% 10%, rgba(255, 214, 0, 0.08) 0%, transparent 60%),
-        radial-gradient(ellipse 50% 50% at 85% 85%, rgba(255, 214, 0, 0.04) 0%, transparent 55%);
-    }
+/* ── Page wrapper ── */
+.page-wrap{
+  position:relative;z-index:10;
+  width:100%;max-width:520px;
+  display:flex;flex-direction:column;gap:16px;
+  animation:wrapIn .65s cubic-bezier(.16,1,.3,1) both;
+}
+@keyframes wrapIn{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 
-    .grid-lines {
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      z-index: 0;
-      background-image:
-        linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
-      background-size: 52px 52px;
-      mask-image: radial-gradient(ellipse 85% 85% at 50% 50%, black 30%, transparent 100%);
-    }
+/* ══════════════════════════════════════
+   INFO PANEL (above form)
+══════════════════════════════════════ */
+.info-panel{
+  background:rgba(255,255,255,0.025);
+  border:1px solid rgba(255,214,0,0.15);
+  border-radius:20px;
+  overflow:hidden;
+}
 
-    /* ── Card ── */
-    .card {
-      position: relative;
-      z-index: 10;
-      width: 100%;
-      max-width: 480px;
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      padding: 44px 40px 48px;
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      box-shadow:
-        0 0 0 1px rgba(255, 255, 255, 0.04) inset,
-        0 32px 80px rgba(0, 0, 0, 0.7),
-        0 0 80px rgba(255, 214, 0, 0.03);
-      animation: cardIn .65s cubic-bezier(.16, 1, .3, 1) both;
-    }
+/* Brand header inside info panel */
+.info-brand{
+  display:flex;align-items:center;gap:14px;
+  padding:20px 24px;
+  background:linear-gradient(135deg,rgba(255,214,0,0.1) 0%,rgba(255,214,0,0.03) 100%);
+  border-bottom:1px solid rgba(255,214,0,0.12);
+}
+.tb-logo{
+  width:52px;height:52px;border-radius:14px;
+  background:var(--yellow);
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+  box-shadow:0 0 24px rgba(255,214,0,0.3),0 4px 12px rgba(0,0,0,0.4);
+}
+.tb-logo svg{width:30px;height:30px}
+.brand-text{}
+.brand-name{
+  font-family:'Syne',sans-serif;
+  font-size:20px;font-weight:800;letter-spacing:-.3px;
+  color:var(--yellow);
+  line-height:1.1;
+}
+.brand-sub{
+  font-size:11.5px;color:var(--text-3);
+  margin-top:3px;letter-spacing:.3px;
+}
 
-    .card::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      border-radius: 24px;
-      background: linear-gradient(135deg, rgba(255, 214, 0, 0.05) 0%, transparent 50%);
-      pointer-events: none;
-    }
+/* Info stats row */
+.info-stats{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  border-bottom:1px solid rgba(255,255,255,0.06);
+}
+.i-stat{
+  padding:14px 16px;
+  text-align:center;
+  border-right:1px solid rgba(255,255,255,0.06);
+}
+.i-stat:last-child{border-right:none}
+.i-stat-val{
+  font-family:'Syne',sans-serif;
+  font-size:18px;font-weight:800;
+  color:var(--yellow);
+  line-height:1;
+  margin-bottom:4px;
+}
+.i-stat-key{
+  font-size:10px;text-transform:uppercase;
+  letter-spacing:.8px;color:var(--text-3);font-weight:600;
+}
 
-    @keyframes cardIn {
-      from {
-        opacity: 0;
-        transform: translateY(28px) scale(.97)
-      }
+/* About section */
+.info-about{
+  padding:18px 24px;
+  border-bottom:1px solid rgba(255,255,255,0.06);
+}
+.info-about p{
+  font-size:12.5px;color:var(--text-2);
+  line-height:1.7;
+}
+.info-about p strong{color:var(--yellow)}
 
-      to {
-        opacity: 1;
-        transform: translateY(0) scale(1)
-      }
-    }
+/* Highlights */
+.info-highlights{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:0;
+}
+.hi-item{
+  display:flex;align-items:flex-start;gap:10px;
+  padding:14px 16px;
+  border-right:1px solid rgba(255,255,255,0.06);
+  border-bottom:1px solid rgba(255,255,255,0.06);
+}
+.hi-item:nth-child(2n){border-right:none}
+.hi-item:nth-last-child(-n+2){border-bottom:none}
+.hi-icon{
+  width:30px;height:30px;border-radius:8px;flex-shrink:0;
+  background:rgba(255,214,0,0.1);
+  border:1px solid rgba(255,214,0,0.18);
+  display:flex;align-items:center;justify-content:center;
+  font-size:13px;margin-top:1px;
+}
+.hi-text{}
+.hi-title{font-size:12px;font-weight:600;color:var(--text);margin-bottom:2px}
+.hi-desc{font-size:11px;color:var(--text-3);line-height:1.45}
 
-    /* ── Logo / Badge ── */
-    .brand-row {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      margin-bottom: 36px;
-      padding-bottom: 24px;
-      border-bottom: 1px solid var(--border);
-    }
+/* Coordinator strip */
+.info-coordinator{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:14px;
+  padding:14px 20px;
+  background:rgba(255,214,0,0.05);
+  border-top:1px solid rgba(255,214,0,0.12);
+  flex-wrap:wrap;
+}
+.coord-left{}
+.coord-label{
+  font-size:9.5px;text-transform:uppercase;letter-spacing:1px;
+  font-weight:700;color:var(--yellow);opacity:.7;margin-bottom:3px;
+}
+.coord-name{font-size:13px;font-weight:600;color:var(--text)}
+.coord-role{font-size:11px;color:var(--text-3);margin-top:1px}
+.coord-phone{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:8px 16px;
+  border-radius:99px;
+  text-decoration:none;
+  color:var(--yellow);
+  font-weight:700;font-size:13px;
+  border:1px solid rgba(255,214,0,0.28);
+  background:rgba(255,214,0,0.08);
+  white-space:nowrap;
+  animation:pulsePhone 2.5s infinite;
+  transition:transform .25s,box-shadow .25s;
+}
+.coord-phone:hover{transform:translateY(-2px);box-shadow:0 0 20px rgba(255,214,0,.2)}
+@keyframes pulsePhone{
+  0%{box-shadow:0 0 0 0 rgba(255,214,0,.35)}
+  70%{box-shadow:0 0 0 10px rgba(255,214,0,0)}
+  100%{box-shadow:0 0 0 0 rgba(255,214,0,0)}
+}
 
-    .tb-logo {
-      width: 48px;
-      height: 48px;
-      border-radius: 14px;
-      background: #FFD600;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      box-shadow: 0 0 20px rgba(255, 214, 0, 0.25);
-    }
+/* ══════════════════════════════════════
+   FORM CARD
+══════════════════════════════════════ */
+.card{
+  position:relative;
+  background:rgba(255,255,255,0.03);
+  border:1px solid var(--border);
+  border-radius:20px;
+  padding:32px 32px 36px;
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.04) inset,
+    0 24px 60px rgba(0,0,0,0.6);
+}
+.card::before{
+  content:'';position:absolute;inset:0;border-radius:20px;
+  background:linear-gradient(135deg,rgba(255,214,0,0.04) 0%,transparent 50%);
+  pointer-events:none;
+}
 
-    /* Training Basket "TB" monogram SVG */
-    .tb-logo svg {
-      width: 28px;
-      height: 28px
-    }
+.form-heading{
+  font-family:'Syne',sans-serif;
+  font-size:16px;font-weight:800;letter-spacing:-.2px;
+  color:var(--text);
+  margin-bottom:22px;
+  display:flex;align-items:center;gap:8px;
+}
+.form-heading span{
+  width:4px;height:18px;border-radius:2px;
+  background:var(--yellow);display:inline-block;
+}
 
-    .brand-info {}
+/* ── Section label ── */
+.section-label{
+  font-size:10.5px;font-weight:600;letter-spacing:1.2px;
+  text-transform:uppercase;color:var(--text-3);
+  margin:20px 0 12px;
+  display:flex;align-items:center;gap:8px;
+}
+.section-label::after{content:'';flex:1;height:1px;background:var(--border)}
 
-    .brand-name {
-      font-family: 'Syne', sans-serif;
-      font-size: 16px;
-      font-weight: 800;
-      letter-spacing: -.2px;
-      color: var(--yellow);
-    }
-
-    .brand-tagline {
-      font-size: 11.5px;
-      color: var(--text-3);
-      margin-top: 2px;
-      letter-spacing: .2px
-    }
-
-    /* ── Section label ── */
-    .section-label {
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 1.2px;
-      text-transform: uppercase;
-      color: var(--text-3);
-      margin: 24px 0 14px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .section-label::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: var(--border)
-    }
-
-    /* ── Fields ── */
-    .field {
-      margin-bottom: 14px;
-      position: relative
-    }
-
-    .field label {
-      display: block;
-      font-size: 11.5px;
-      font-weight: 500;
-      color: var(--text-3);
-      letter-spacing: .3px;
-      margin-bottom: 7px;
-    }
-
-    .field input,
-    .field select {
-      width: 100%;
-      padding: 12px 14px 12px 40px;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid var(--border);
-      border-radius: var(--r);
-      color: var(--text);
-      font-family: 'Inter', sans-serif;
-      font-size: 14px;
-      outline: none;
-      transition: border-color .2s, background .2s, box-shadow .2s;
-      -webkit-appearance: none;
-    }
-
-    .field input::placeholder {
-      color: var(--text-3)
-    }
-
-    .field input:focus,
-    .field select:focus {
-      border-color: var(--border-focus);
-      background: rgba(255, 214, 0, 0.04);
-      box-shadow: 0 0 0 3px rgba(255, 214, 0, 0.1);
-    }
-
-    .field-icon {
-      position: absolute;
-      left: 13px;
-      bottom: 13px;
-      width: 16px;
-      height: 16px;
-      pointer-events: none;
-      fill: none;
-      stroke: var(--text-3);
-      stroke-width: 1.8;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      transition: stroke .2s;
-    }
-
-    .field:focus-within .field-icon {
-      stroke: var(--yellow)
-    }
-
-    /* ── Grid ── */
-    .grid2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px
-    }
-
-    /* ── Trainer pills ── */
-    .trainer-pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 4px
-    }
-
-    .trainer-pill {
-      position: relative;
-      padding: 8px 16px;
-      border: 1.5px solid var(--border);
-      border-radius: 99px;
-      cursor: pointer;
-      font-size: 13px;
-      font-weight: 500;
-      color: var(--text-2);
-      background: rgba(255, 255, 255, 0.04);
-      transition: all .2s;
-      white-space: nowrap;
-      user-select: none;
-    }
-
-    .trainer-pill input[type=radio] {
-      position: absolute;
-      inset: 0;
-      opacity: 0;
-      cursor: pointer;
-      width: 100%;
-      height: 100%;
-      margin: 0;
-    }
-
-    .trainer-pill:hover {
-      border-color: rgba(255, 214, 0, 0.4);
-      color: var(--yellow)
-    }
-
-    .trainer-pill.selected {
-      border-color: var(--yellow);
-      background: var(--yellow-dim);
-      color: var(--yellow);
-      box-shadow: 0 0 12px rgba(255, 214, 0, 0.12);
-    }
-
-    /* ── Submit ── */
-    .submit-btn {
-      width: 100%;
-      margin-top: 28px;
-      padding: 15px;
-      background: var(--yellow);
-      color: #0a0a0a;
-      font-family: 'Syne', sans-serif;
-      font-size: 15px;
-      font-weight: 800;
-      letter-spacing: .3px;
-      border: none;
-      border-radius: var(--r);
-      cursor: pointer;
-      position: relative;
-      overflow: hidden;
-      transition: transform .25s, box-shadow .25s;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 9px;
-    }
-
-    .submit-btn::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: rgba(255, 255, 255, 0.15);
-      opacity: 0;
-      transition: opacity .25s;
-    }
-
-    .submit-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 36px rgba(255, 214, 0, 0.3)
-    }
-
-    .submit-btn:hover::before {
-      opacity: 1
-    }
-
-    .submit-btn:active {
-      transform: translateY(0)
-    }
-
-    .submit-btn span {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      align-items: center;
-      gap: 8px
-    }
-
-    .submit-btn svg {
-      width: 17px;
-      height: 17px;
-      fill: none;
-      stroke: #0a0a0a;
-      stroke-width: 2.2;
-      stroke-linecap: round;
-      stroke-linejoin: round
-    }
-
-    /* ── Footer note ── */
-    .foot-note {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 24px;
-      flex-wrap: wrap;
-    }
-
-    .fn-item {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      font-size: 11.5px;
-      color: var(--text-3);
-    }
-
-    .fn-dot {
-      width: 5px;
-      height: 5px;
-      border-radius: 50%;
-      background: var(--yellow);
-      opacity: .6
-    }
-
-    @media(max-width:500px) {
-      .card {
-        padding: 32px 22px 40px
-      }
-
-      .grid2 {
-        grid-template-columns: 1fr
-      }
-    }
-
-/* Trainer Dropdown */
-
-.field select{
-  width:100%;
-  padding:12px 45px 12px 40px;
+/* ── Fields ── */
+.field{margin-bottom:12px;position:relative}
+.field label{
+  display:block;font-size:11px;font-weight:500;
+  color:var(--text-3);letter-spacing:.3px;margin-bottom:6px;
+}
+.field input,.field select{
+  width:100%;padding:11px 14px 11px 40px;
   background:rgba(255,255,255,0.04);
   border:1px solid var(--border);
   border-radius:var(--r);
-  color:#f5f5f5 !important;
-  font-family:'Inter',sans-serif;
-  font-size:14px;
-  cursor:pointer;
-  appearance:none;
+  color:#f5f5f5;
+  font-family:'Inter',sans-serif;font-size:14px;
+  outline:none;
+  transition:border-color .2s,background .2s,box-shadow .2s;
   -webkit-appearance:none;
-  -moz-appearance:none;
-
+  appearance:none;
+}
+.field input::placeholder{color:var(--text-3)}
+.field input:focus,.field select:focus{
+  border-color:var(--border-focus);
+  background:rgba(255,214,0,0.04);
+  box-shadow:0 0 0 3px rgba(255,214,0,0.1);
+}
+.field select{
+  padding-right:40px;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' stroke='%23FFD600' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
   background-repeat:no-repeat;
-  background-position:right 15px center;
+  background-position:right 14px center;
+  background-color:rgba(255,255,255,0.04);
+  cursor:pointer;
 }
-
-.field select option{
-  background:#111111;
-  color:#f5f5f5;
+.field select option{background:#111111;color:#f5f5f5}
+.field-icon{
+  position:absolute;left:13px;bottom:12px;
+  width:15px;height:15px;pointer-events:none;
+  fill:none;stroke:var(--text-3);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;
+  transition:stroke .2s;
 }
+.field:focus-within .field-icon{stroke:var(--yellow)}
 
-.field select:focus{
-  border-color:var(--border-focus);
-  background-color:rgba(255,214,0,0.04);
+/* ── Grid ── */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+
+/* ── Submit ── */
+.submit-btn{
+  width:100%;margin-top:22px;padding:14px;
+  background:var(--yellow);color:#0a0a0a;
+  font-family:'Syne',sans-serif;font-size:15px;font-weight:800;
+  letter-spacing:.3px;border:none;border-radius:var(--r);
+  cursor:pointer;position:relative;overflow:hidden;
+  transition:transform .25s,box-shadow .25s;
+  display:flex;align-items:center;justify-content:center;gap:9px;
 }
-
-/* Coordinator Card */
-
-.coordinator-box{
-  margin-top:22px;
-  margin-bottom:12px;
-  padding:16px;
-  border-radius:14px;
-  background:rgba(255,214,0,0.05);
-  border:1px solid rgba(255,214,0,0.15);
+.submit-btn::before{
+  content:'';position:absolute;inset:0;
+  background:rgba(255,255,255,0.15);opacity:0;transition:opacity .25s;
 }
+.submit-btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(255,214,0,.3)}
+.submit-btn:hover::before{opacity:1}
+.submit-btn:active{transform:translateY(0)}
+.submit-btn span{position:relative;z-index:1;display:flex;align-items:center;gap:8px}
+.submit-btn svg{width:16px;height:16px;fill:none;stroke:#0a0a0a;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 
-.coordinator-title{
-  color:var(--yellow);
-  font-size:11px;
-  text-transform:uppercase;
-  letter-spacing:1px;
-  font-weight:700;
-  margin-bottom:8px;
+/* ── Footer note ── */
+.foot-note{
+  display:flex;justify-content:center;gap:20px;
+  margin-top:18px;flex-wrap:wrap;
 }
+.fn-item{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--text-3)}
+.fn-dot{width:4px;height:4px;border-radius:50%;background:var(--yellow);opacity:.6}
 
-.coordinator-text{
-  color:var(--text-2);
-  font-size:13px;
-  line-height:1.5;
+@media(max-width:500px){
+  .card{padding:24px 18px 28px}
+  .grid2{grid-template-columns:1fr}
+  .info-highlights{grid-template-columns:1fr}
+  .hi-item{border-right:none}
+  .hi-item:nth-last-child(-n+2){border-bottom:1px solid rgba(255,255,255,0.06)}
+  .hi-item:last-child{border-bottom:none}
+  .info-stats{grid-template-columns:repeat(3,1fr)}
+  .info-coordinator{flex-direction:column;align-items:flex-start}
 }
-
-.coordinator-phone{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  margin-top:12px;
-  padding:8px 14px;
-  border-radius:999px;
-  text-decoration:none;
-  color:var(--yellow);
-  font-weight:700;
-  border:1px solid rgba(255,214,0,0.25);
-  background:rgba(255,214,0,0.08);
-  animation:pulsePhone 2s infinite;
-  transition:.3s;
-}
-
-.coordinator-phone:hover{
-  transform:translateY(-2px);
-  box-shadow:0 0 20px rgba(255,214,0,.18);
-}
-
-@keyframes pulsePhone{
-  0%{
-    box-shadow:0 0 0 0 rgba(255,214,0,.35);
-  }
-  70%{
-    box-shadow:0 0 0 12px rgba(255,214,0,0);
-  }
-  100%{
-    box-shadow:0 0 0 0 rgba(255,214,0,0);
-  }
-}
-  </style>
+</style>
 </head>
-
 <body>
-  <div class="bg-glow"></div>
-  <div class="grid-lines"></div>
+<div class="bg-glow"></div>
+<div class="grid-lines"></div>
 
-  <div class="card">
+<div class="page-wrap">
 
-    <!-- Brand -->
-    <div class="brand-row">
+  <!-- ═══════════════════════════════
+       INFO PANEL
+  ════════════════════════════════ -->
+  <div class="info-panel">
+
+    <!-- Brand header -->
+    <div class="info-brand">
       <div class="tb-logo">
-        <!-- Training Basket logo mark: shopping basket with graduation cap -->
-        <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Basket body -->
-          <path d="M4 12h20l-2.5 10H6.5L4 12z" fill="#0a0a0a" stroke="#0a0a0a" stroke-width="0" />
-          <path d="M4 12h20l-2.5 10H6.5L4 12z" fill="#1a1a1a" />
-          <!-- Basket lines -->
-          <path d="M9 12v8M14 12v8M19 12v8" stroke="#FFD600" stroke-width="1.2" stroke-linecap="round" />
-          <!-- Handle left -->
-          <path d="M8 12 Q6 7 10 6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" fill="none" />
-          <!-- Handle right -->
-          <path d="M20 12 Q22 7 18 6" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" fill="none" />
-          <!-- Grad cap -->
-          <rect x="9" y="3" width="10" height="1.8" rx=".9" fill="#1a1a1a" />
-          <polygon points="14,1 9,3.5 14,6 19,3.5" fill="#1a1a1a" />
-          <line x1="19" y1="3.5" x2="19" y2="6.5" stroke="#1a1a1a" stroke-width="1.2" stroke-linecap="round" />
-          <circle cx="19" cy="7" r=".8" fill="#1a1a1a" />
+        <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.5 13h21l-2.7 10.5H7.2L4.5 13z" fill="#0a0a0a"/>
+          <path d="M10 13v8M15 13v8M20 13v8" stroke="#FFD600" stroke-width="1.3" stroke-linecap="round"/>
+          <path d="M9 13 Q7 8 11 7" stroke="#0a0a0a" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+          <path d="M21 13 Q23 8 19 7" stroke="#0a0a0a" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+          <polygon points="15,2 9,5 15,8 21,5" fill="#0a0a0a"/>
+          <line x1="21" y1="5" x2="21" y2="8.5" stroke="#0a0a0a" stroke-width="1.4" stroke-linecap="round"/>
+          <circle cx="21" cy="9.3" r=".9" fill="#0a0a0a"/>
         </svg>
       </div>
-      <div class="brand-info">
+      <div class="brand-text">
         <div class="brand-name">Training Basket</div>
-        <div class="brand-tagline">Mock Test Portal · Enter your details to begin</div>
+        <div class="brand-sub">India's Premier IT Training Institute · Est. 2015</div>
       </div>
+    </div>
+
+    <!-- Stats row -->
+    <div class="info-stats">
+      <div class="i-stat">
+        <div class="i-stat-val">10,000+</div>
+        <div class="i-stat-key">Students Trained</div>
+      </div>
+      <div class="i-stat">
+        <div class="i-stat-val">50+</div>
+        <div class="i-stat-key">Courses Offered</div>
+      </div>
+      <div class="i-stat">
+        <div class="i-stat-val">95%</div>
+        <div class="i-stat-key">Placement Rate</div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="info-about">
+      <p>
+        <strong>Training Basket</strong> is a leading IT training institute offering industry-relevant courses in
+        Data Analytics, Data Science, Cloud Computing, DevOps, and more. Our expert-led programs are
+        designed to bridge the gap between academic learning and real-world industry requirements.
+      </p>
+    </div>
+
+    <!-- Highlights grid -->
+    <div class="info-highlights">
+      <div class="hi-item">
+        <div class="hi-icon">🎓</div>
+        <div class="hi-text">
+          <div class="hi-title">Expert Trainers</div>
+          <div class="hi-desc">10+ years industry experience</div>
+        </div>
+      </div>
+      <div class="hi-item">
+        <div class="hi-icon">💼</div>
+        <div class="hi-text">
+          <div class="hi-title">Placement Support</div>
+          <div class="hi-desc">Dedicated career assistance</div>
+        </div>
+      </div>
+      <div class="hi-item">
+        <div class="hi-icon">🏆</div>
+        <div class="hi-text">
+          <div class="hi-title">Certified Programs</div>
+          <div class="hi-desc">Industry-recognized certifications</div>
+        </div>
+      </div>
+      <div class="hi-item">
+        <div class="hi-icon">🕐</div>
+        <div class="hi-text">
+          <div class="hi-title">Flexible Batches</div>
+          <div class="hi-desc">Weekday &amp; weekend options</div>
+        </div>
+      </div>
+      <div class="hi-item">
+        <div class="hi-icon">💻</div>
+        <div class="hi-text">
+          <div class="hi-title">Live Projects</div>
+          <div class="hi-desc">Hands-on real-world training</div>
+        </div>
+      </div>
+      <div class="hi-item">
+        <div class="hi-icon">📍</div>
+        <div class="hi-text">
+          <div class="hi-title">Delhi NCR</div>
+          <div class="hi-desc">Laxmi Nagar &amp; online batches</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coordinator -->
+    <div class="info-coordinator">
+      <div class="coord-left">
+        <div class="coord-label">Training &amp; Placement Coordinator</div>
+        <div class="coord-name">Ms. Moushmi Bagh</div>
+        <div class="coord-role">For queries &amp; enrollment assistance</div>
+      </div>
+      <a href="tel:9811329422" class="coord-phone">
+        📞 98113 29422
+      </a>
+    </div>
+
+  </div><!-- /info-panel -->
+
+
+  <!-- ═══════════════════════════════
+       FORM CARD
+  ════════════════════════════════ -->
+  <div class="card">
+
+    <div class="form-heading">
+      <span></span> Student Exam Registration
     </div>
 
     <form method="POST" id="mainForm">
@@ -521,106 +452,64 @@
       <div class="grid2">
         <div class="field">
           <label>Full Name</label>
-          <svg class="field-icon" viewBox="0 0 24 24">
-            <circle cx="12" cy="8" r="4" />
-            <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
-          </svg>
+          <svg class="field-icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
           <input type="text" name="name" placeholder="Your name" required autocomplete="off">
         </div>
         <div class="field">
           <label>Enrollment No.</label>
-          <svg class="field-icon" viewBox="0 0 24 24">
-            <rect x="3" y="4" width="18" height="16" rx="2" />
-            <path d="M8 9h8M8 13h5" />
-          </svg>
+          <svg class="field-icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 9h8M8 13h5"/></svg>
           <input type="text" name="enroll_no" placeholder="EN2024001" required autocomplete="off">
         </div>
       </div>
 
       <div class="field">
         <label>Batch Number</label>
-        <svg class="field-icon" viewBox="0 0 24 24">
-          <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
-          <circle cx="9" cy="7" r="4" />
-          <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
-        </svg>
+        <svg class="field-icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
         <input type="text" name="batch_no" placeholder="e.g. B-12" required autocomplete="off">
       </div>
 
-<div class="section-label">Trainer Information</div>
+      <div class="section-label">Trainer Info</div>
 
-<div class="field">
-  <label>Select Trainer</label>
-
-  <svg class="field-icon" viewBox="0 0 24 24">
-    <circle cx="12" cy="8" r="4"/>
-    <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
-  </svg>
-
-  <select name="trainer_name" required>
-    <option value="" selected disabled>Choose Your Trainer</option>
-
-    <option value="TUSHAR KHITOLIYA">TUSHAR KHITOLIYA</option>
-    <option value="KULDEEP SHARMA">KULDEEP SHARMA</option>
-    <option value="PRASHANT RAJPUT">PRASHANT RAJPUT</option>
-    <option value="NAGESH RAJPUT">NAGESH SINGH</option>
-    <option value="SUMIT KUMAR">SUMIT KUMAR</option>
-    <option value="SUMIT THANUA">SUMIT THANUA</option>
-    <option value="SHASHANK AGGARWAL">SHASHANK AGGARWAL</option>
-  </select>
-</div>
+      <div class="field">
+        <label>Select Trainer</label>
+        <svg class="field-icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        <select name="trainer_name" required>
+          <option value="" selected disabled>Choose Your Trainer</option>
+          <option value="TUSHAR KHITOLIYA">TUSHAR KHITOLIYA</option>
+          <option value="KULDEEP SHARMA">KULDEEP SHARMA</option>
+          <option value="PRASHANT RAJPUT">PRASHANT RAJPUT</option>
+          <option value="NAGESH SINGH">NAGESH SINGH</option>
+          <option value="SUMIT KUMAR">SUMIT KUMAR</option>
+          <option value="SUMIT THANUA">SUMIT THANUA</option>
+          <option value="SHASHANK AGGARWAL">SHASHANK AGGARWAL</option>
+        </select>
+      </div>
 
       <button type="submit" class="submit-btn">
         <span>
-          <svg viewBox="0 0 24 24">
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           Begin Exam
         </span>
       </button>
 
-    <div class="coordinator-box">
-  <div class="coordinator-title">
-    Training & Placement Coordinator
-  </div>
-
-  <div>
-    Ms. Moushmi Bagh
-  </div>
-
-  <a href="tel:9811329422" class="coordinator-phone">
-    📞 98113 29422
-  </a>
-</div>
     </form>
 
     <div class="foot-note">
-      <div class="fn-item">
-        <div class="fn-dot"></div>20 min duration
-      </div>
-      <div class="fn-item">
-        <div class="fn-dot"></div>Auto-submit on timeout
-      </div>
-      <div class="fn-item">
-        <div class="fn-dot"></div>40% passing marks
-      </div>
+      <div class="fn-item"><div class="fn-dot"></div>90 min duration</div>
+      <div class="fn-item"><div class="fn-dot"></div>Auto-submit on timeout</div>
+      <div class="fn-item"><div class="fn-dot"></div>40% passing marks</div>
     </div>
-  </div>
 
-  
+  </div><!-- /card -->
 
+</div><!-- /page-wrap -->
 
-  <script>
-    function selectTrainer(radio) {
-      document.querySelectorAll('.trainer-pill').forEach(p => p.classList.remove('selected'));
-      radio.closest('.trainer-pill').classList.add('selected');
-    }
-    document.querySelectorAll('.field,.trainer-pill').forEach((el, i) => {
-      el.style.opacity = '0'; el.style.transform = 'translateY(12px)';
-      el.style.transition = 'opacity .4s ease, transform .4s ease';
-      setTimeout(() => { el.style.opacity = '1'; el.style.transform = 'translateY(0)' }, 280 + i * 55);
-    });
-  </script>
+<script>
+document.querySelectorAll('.field').forEach((el,i)=>{
+  el.style.opacity='0';el.style.transform='translateY(10px)';
+  el.style.transition='opacity .4s ease, transform .4s ease';
+  setTimeout(()=>{el.style.opacity='1';el.style.transform='translateY(0)'},200+i*60);
+});
+</script>
 </body>
-
 </html>
