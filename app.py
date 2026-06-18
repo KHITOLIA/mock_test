@@ -46,7 +46,9 @@ def load_questions(course):
         'CYBER' : 'data/CEH_v13_50_MCQ_Set_1.json',
         'CCNA' : 'data/ccna_200_301_exam_bank.json',
         'CCNP' : 'data/CCNP_ENCOR_50_Questions.json',
-        'DM' : 'data/digital_marketing_mcqs.json'
+        'DM' : 'data/digital_marketing_mcqs.json',
+        'GENAI' : 'data/gen_ai_100_mcqs.json',
+        'AGENTICAI' : 'data/agentic_ai_100_mcqs.json'
     }
 
     with open(file_map[course], "r", encoding = "utf-8") as f:
