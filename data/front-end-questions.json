@@ -1,79 +1,84 @@
 [
   {
     "question": "Which HTML tag is used to create a hyperlink?",
-    "options": [
-      "<link>",
-      "<a>",
-      "<href>",
-      "<url>"
-    ],
+    "options": ["<link>", "<a>", "<href>", "<url>"],
     "answer": "<a>"
   },
   {
-    "question": "Which HTML element is used to display the largest heading?",
-    "options": [
-      "<heading>",
-      "<h6>",
-      "<head>",
-      "<h1>"
-    ],
+    "question": "Which HTML element represents the largest heading?",
+    "options": ["<heading>", "<h1>", "<h6>", "<head>"],
     "answer": "<h1>"
   },
   {
     "question": "What is the purpose of the 'alt' attribute in an image tag?",
     "options": [
-      "To specify image dimensions",
-      "To provide alternative text if the image cannot be displayed",
-      "To add a caption below the image",
-      "To optimize image loading speed"
+      "To define image dimensions",
+      "To provide alternative text",
+      "To set image alignment",
+      "To optimize image loading"
     ],
-    "answer": "To provide alternative text if the image cannot be displayed"
+    "answer": "To provide alternative text"
   },
   {
     "question": "Which attribute must be unique within an HTML document?",
-    "options": [
-      "class",
-      "style",
-      "id",
-      "name"
-    ],
+    "options": ["class", "name", "id", "style"],
     "answer": "id"
   },
   {
-    "question": "Which CSS property controls the space inside an element's border?",
-    "options": [
-      "margin",
-      "padding",
-      "spacing",
-      "border-spacing"
-    ],
-    "answer": "padding"
+    "question": "Which HTML element is used to create an unordered list?",
+    "options": ["<ol>", "<ul>", "<li>", "<dl>"],
+    "answer": "<ul>"
   },
   {
-    "question": "Which CSS property is used to change the text color?",
+    "question": "Which HTML element is used for tabular data?",
+    "options": ["<grid>", "<table>", "<section>", "<div>"],
+    "answer": "<table>"
+  },
+  {
+    "question": "Which semantic HTML tag is commonly used for site navigation?",
+    "options": ["<aside>", "<nav>", "<section>", "<header>"],
+    "answer": "<nav>"
+  },
+  {
+    "question": "Which input type hides entered characters?",
+    "options": ["text", "hidden", "password", "secure"],
+    "answer": "password"
+  },
+  {
+    "question": "Which HTML element embeds a video?",
+    "options": ["<media>", "<video>", "<movie>", "<embed-video>"],
+    "answer": "<video>"
+  },
+  {
+    "question": "What does the 'required' attribute do in a form field?",
     "options": [
-      "font-color",
-      "text-color",
-      "color",
-      "foreground"
+      "Makes the field read-only",
+      "Prevents form submission if empty",
+      "Adds validation styling",
+      "Encrypts input data"
     ],
+    "answer": "Prevents form submission if empty"
+  },
+  {
+    "question": "Which CSS property changes the text color?",
+    "options": ["font-color", "text-color", "color", "foreground"],
     "answer": "color"
   },
   {
-    "question": "Which CSS layout module is designed primarily for one-dimensional layouts?",
-    "options": [
-      "Grid",
-      "Flexbox",
-      "Float",
-      "Positioning"
-    ],
-    "answer": "Flexbox"
+    "question": "Which CSS property controls the space inside an element's border?",
+    "options": ["margin", "padding", "spacing", "border-spacing"],
+    "answer": "padding"
+  },
+  {
+    "question": "Which CSS property controls the space outside an element's border?",
+    "options": ["margin", "padding", "spacing", "gap"],
+    "answer": "margin"
   },
   {
     "question": "What does CSS stand for?",
     "options": [
+      "Creative Style Sheets",
       "Computer Style Sheets",
-      "Creative Style System",
       "Cascading Style Sheets",
       "Colorful Style Sheets"
     ],
@@ -81,222 +86,552 @@
   },
   {
     "question": "Which CSS position value places an element relative to its normal position?",
-    "options": [
-      "absolute",
-      "fixed",
-      "relative",
-      "sticky"
-    ],
+    "options": ["absolute", "fixed", "relative", "sticky"],
     "answer": "relative"
   },
   {
-    "question": "Which JavaScript keyword declares a block-scoped variable that cannot be reassigned?",
-    "options": [
-      "var",
-      "let",
-      "const",
-      "static"
-    ],
-    "answer": "const"
+    "question": "Which CSS layout module is designed for one-dimensional layouts?",
+    "options": ["Grid", "Flexbox", "Float", "Table"],
+    "answer": "Flexbox"
   },
   {
-    "question": "What is the result of '5' === 5 in JavaScript?",
-    "options": [
-      "true",
-      "false",
-      "undefined",
-      "null"
-    ],
-    "answer": "false"
+    "question": "Which CSS property is used to make text bold?",
+    "options": ["font-style", "font-weight", "text-weight", "bold"],
+    "answer": "font-weight"
   },
   {
-    "question": "Which method adds an element to the end of an array?",
-    "options": [
-      "append()",
-      "push()",
-      "add()",
-      "insert()"
-    ],
-    "answer": "push()"
+    "question": "Which CSS property controls the stacking order of positioned elements?",
+    "options": ["order", "stack", "z-index", "layer"],
+    "answer": "z-index"
   },
   {
-    "question": "Which of the following is NOT a JavaScript data type?",
-    "options": [
-      "String",
-      "Boolean",
-      "Integer",
-      "Undefined"
-    ],
-    "answer": "Integer"
-  },
-  {
-    "question": "What does the 'typeof null' expression return in JavaScript?",
-    "options": [
-      "null",
-      "undefined",
-      "object",
-      "boolean"
-    ],
-    "answer": "object"
-  },
-  {
-    "question": "Which JavaScript function is used to convert a JSON string into an object?",
-    "options": [
-      "JSON.stringify()",
-      "JSON.parse()",
-      "JSON.convert()",
-      "JSON.toObject()"
-    ],
-    "answer": "JSON.parse()"
-  },
-  {
-    "question": "What is event bubbling in JavaScript?",
-    "options": [
-      "An event propagates from the target element to its ancestors",
-      "An event propagates from parent to child elements only",
-      "Multiple events occur simultaneously",
-      "An event repeats automatically"
-    ],
-    "answer": "An event propagates from the target element to its ancestors"
-  },
-  {
-    "question": "Which Bootstrap class creates a responsive fixed-width container?",
-    "options": [
-      ".container",
-      ".wrapper",
-      ".container-fluid",
-      ".row"
-    ],
-    "answer": ".container"
-  },
-  {
-    "question": "How many columns are available in the Bootstrap grid system?",
-    "options": [
-      "8",
-      "10",
-      "12",
-      "16"
-    ],
-    "answer": "12"
-  },
-  {
-    "question": "Which Bootstrap class makes an image responsive?",
-    "options": [
-      ".img-fluid",
-      ".img-responsive",
-      ".responsive-img",
-      ".img-fit"
-    ],
-    "answer": ".img-fluid"
-  },
-  {
-    "question": "Which Bootstrap breakpoint applies to screens 768px and wider?",
-    "options": [
-      "sm",
-      "md",
-      "lg",
-      "xl"
-    ],
-    "answer": "md"
-  },
-  {
-    "question": "What is the Virtual DOM in React?",
-    "options": [
-      "A copy of the browser's DOM stored on the server",
-      "A lightweight JavaScript representation of the real DOM",
-      "A browser extension used by React",
-      "A React database for storing components"
-    ],
-    "answer": "A lightweight JavaScript representation of the real DOM"
-  },
-  {
-    "question": "Which hook is used to manage state in a functional React component?",
-    "options": [
-      "useEffect()",
-      "useContext()",
-      "useReducer()",
-      "useState()"
-    ],
-    "answer": "useState()"
-  },
-  {
-    "question": "How are data passed from a parent component to a child component in React?",
-    "options": [
-      "Using state",
-      "Using props",
-      "Using hooks",
-      "Using refs"
-    ],
-    "answer": "Using props"
-  },
-  {
-    "question": "Which hook is commonly used to perform side effects in React?",
-    "options": [
-      "useMemo()",
-      "useEffect()",
-      "useCallback()",
-      "useRef()"
-    ],
-    "answer": "useEffect()"
-  },
-  {
-    "question": "What is JSX in React?",
-    "options": [
-      "A JavaScript library",
-      "A CSS preprocessor",
-      "A syntax extension that allows writing HTML-like code in JavaScript",
-      "A package manager for React"
-    ],
-    "answer": "A syntax extension that allows writing HTML-like code in JavaScript"
-  },
-  {
-    "question": "Which React attribute is required when rendering lists of elements?",
-    "options": [
-      "index",
-      "id",
-      "key",
-      "value"
-    ],
-    "answer": "key"
-  },
-  {
-    "question": "What is the output of the following expression: [1, 2, 3].map(x => x * 2)?",
-    "options": [
-      "[1, 2, 3]",
-      "[2, 4, 6]",
-      "[1, 4, 9]",
-      "[3, 6, 9]"
-    ],
-    "answer": "[2, 4, 6]"
-  },
-  {
-    "question": "Which CSS unit is relative to the root element's font size?",
-    "options": [
-      "em",
-      "px",
-      "rem",
-      "%"
-    ],
+    "question": "Which CSS unit is relative to the root font size?",
+    "options": ["em", "px", "rem", "%"],
     "answer": "rem"
   },
   {
-    "question": "Which method prevents the default behavior of an event in JavaScript?",
+    "question": "Which CSS property is used to round element corners?",
+    "options": ["corner-radius", "border-radius", "radius", "curve"],
+    "answer": "border-radius"
+  },
+  {
+    "question": "What is the default value of the CSS 'position' property?",
+    "options": ["relative", "absolute", "fixed", "static"],
+    "answer": "static"
+  },
+  {
+    "question": "Which CSS property controls the transparency of an element?",
+    "options": ["visibility", "display", "opacity", "filter"],
+    "answer": "opacity"
+  },
+  {
+    "question": "Which value of the display property hides an element and removes it from the layout?",
+    "options": ["hidden", "none", "invisible", "opacity: 0"],
+    "answer": "none"
+  },
+  {
+    "question": "Which CSS property defines the space between flex or grid items?",
+    "options": ["spacing", "margin", "padding", "gap"],
+    "answer": "gap"
+  },
+  {
+    "question": "Which selector targets all elements with the class 'card'?",
+    "options": ["#card", ".card", "*card", "card"],
+    "answer": ".card"
+  },
+  {
+    "question": "Which JavaScript keyword declares a block-scoped variable?",
+    "options": ["var", "const", "let", "define"],
+    "answer": "let"
+  },
+  {
+    "question": "Which keyword declares a variable that cannot be reassigned?",
+    "options": ["var", "let", "const", "static"],
+    "answer": "const"
+  },
+  {
+    "question": "What is the result of '5' === 5?",
+    "options": ["true", "false", "undefined", "null"],
+    "answer": "false"
+  },
+  {
+    "question": "Which operator checks both value and data type?",
+    "options": ["==", "===", "=", "!="],
+    "answer": "==="
+  },
+  {
+    "question": "Which method adds an item to the end of an array?",
+    "options": ["append()", "push()", "add()", "insert()"],
+    "answer": "push()"
+  },
+  {
+    "question": "Which method removes the last element from an array?",
+    "options": ["shift()", "pop()", "slice()", "splice()"],
+    "answer": "pop()"
+  },
+  {
+    "question": "Which method converts a JSON string into a JavaScript object?",
+    "options": ["JSON.stringify()", "JSON.parse()", "JSON.convert()", "JSON.decode()"],
+    "answer": "JSON.parse()"
+  },
+  {
+    "question": "Which method converts a JavaScript object into a JSON string?",
+    "options": ["JSON.parse()", "JSON.encode()", "JSON.stringify()", "JSON.objectify()"],
+    "answer": "JSON.stringify()"
+  },
+  {
+    "question": "Which value represents an intentionally empty variable?",
+    "options": ["undefined", "false", "null", "0"],
+    "answer": "null"
+  },
+  {
+    "question": "What is the result of typeof null?",
+    "options": ["null", "undefined", "object", "boolean"],
+    "answer": "object"
+  },
+  {
+    "question": "Which method is used to select an element by ID?",
     "options": [
-      "stopPropagation()",
-      "preventDefault()",
-      "stopDefault()",
-      "cancelEvent()"
+      "document.querySelectorAll()",
+      "document.getElementById()",
+      "document.getElementsByClassName()",
+      "document.findById()"
     ],
+    "answer": "document.getElementById()"
+  },
+  {
+    "question": "Which event occurs when a user clicks an element?",
+    "options": ["onchange", "onmouseover", "onclick", "onfocus"],
+    "answer": "onclick"
+  },
+  {
+    "question": "Which method prevents the default browser behavior?",
+    "options": ["stopPropagation()", "preventDefault()", "cancel()", "stopDefault()"],
     "answer": "preventDefault()"
   },
   {
-    "question": "Which JavaScript feature allows functions to remember variables from their outer scope even after the outer function has executed?",
+    "question": "Which method stops event bubbling?",
+    "options": ["preventDefault()", "stopEvent()", "stopPropagation()", "cancelBubble()"],
+    "answer": "stopPropagation()"
+  },
+  {
+    "question": "What is event bubbling?",
     "options": [
-      "Hoisting",
-      "Destructuring",
-      "Closure",
-      "Callback"
+      "Events move from parent to child",
+      "Events move from child to parent",
+      "Events execute asynchronously",
+      "Events repeat automatically"
     ],
-    "answer": "Closure"
+    "answer": "Events move from child to parent"
+  },
+  {
+    "question": "Which function schedules code execution after a delay?",
+    "options": ["setInterval()", "setTimeout()", "delay()", "wait()"],
+    "answer": "setTimeout()"
+  },
+  {
+    "question": "Which function repeatedly executes code at specified intervals?",
+    "options": ["setTimeout()", "repeat()", "setInterval()", "loop()"],
+    "answer": "setInterval()"
+  },
+  {
+    "question": "Which array method creates a new array by transforming each element?",
+    "options": ["filter()", "forEach()", "map()", "reduce()"],
+    "answer": "map()"
+  },
+  {
+    "question": "Which array method returns elements that pass a condition?",
+    "options": ["map()", "reduce()", "filter()", "find()"],
+    "answer": "filter()"
+  },
+  {
+    "question": "Which array method returns the first matching element?",
+    "options": ["filter()", "find()", "map()", "some()"],
+    "answer": "find()"
+  },
+  {
+    "question": "Which array method executes a function for each element without returning a new array?",
+    "options": ["map()", "forEach()", "filter()", "reduce()"],
+    "answer": "forEach()"
+  },
+  {
+    "question": "Which keyword is used to create a function in JavaScript?",
+    "options": ["func", "method", "function", "define"],
+    "answer": "function"
+  },
+  {
+    "question": "What is a closure in JavaScript?",
+    "options": [
+      "A way to close browser windows",
+      "A function with access to its outer scope",
+      "A method for ending loops",
+      "A type of object"
+    ],
+    "answer": "A function with access to its outer scope"
+  },
+  {
+    "question": "What is the output type of an async function?",
+    "options": ["Object", "Promise", "Array", "String"],
+    "answer": "Promise"
+  },
+  {
+    "question": "Which keyword waits for a Promise to resolve?",
+    "options": ["wait", "resolve", "await", "async"],
+    "answer": "await"
+  },
+  {
+    "question": "What is a Promise in JavaScript?",
+    "options": [
+      "A loop construct",
+      "An object representing the eventual completion of an asynchronous operation",
+      "A type of function",
+      "A DOM element"
+    ],
+    "answer": "An object representing the eventual completion of an asynchronous operation"
+  },
+  {
+    "question": "Which keyword refers to the current object context?",
+    "options": ["self", "this", "current", "context"],
+    "answer": "this"
+  },
+  {
+    "question": "Which Bootstrap class creates a fixed-width responsive container?",
+    "options": [".wrapper", ".container", ".container-fluid", ".row"],
+    "answer": ".container"
+  },
+  {
+    "question": "Which Bootstrap class creates a full-width container?",
+    "options": [".container", ".container-fluid", ".fluid", ".full-width"],
+    "answer": ".container-fluid"
+  },
+  {
+    "question": "How many columns are in the Bootstrap grid system?",
+    "options": ["8", "10", "12", "16"],
+    "answer": "12"
+  },
+  {
+    "question": "Which Bootstrap class creates a row in the grid system?",
+    "options": [".grid", ".row", ".col", ".container"],
+    "answer": ".row"
+  },
+  {
+    "question": "Which Bootstrap class makes an image responsive?",
+    "options": [".img-responsive", ".responsive-img", ".img-fluid", ".img-fit"],
+    "answer": ".img-fluid"
+  },
+  {
+    "question": "Which Bootstrap breakpoint applies to screens 768px and above?",
+    "options": ["sm", "md", "lg", "xl"],
+    "answer": "md"
+  },
+  {
+    "question": "Which Bootstrap breakpoint applies to screens 992px and above?",
+    "options": ["sm", "md", "lg", "xl"],
+    "answer": "lg"
+  },
+  {
+    "question": "Which Bootstrap utility class adds margin on all sides?",
+    "options": ["p-3", "m-3", "mx-3", "my-3"],
+    "answer": "m-3"
+  },
+  {
+    "question": "Which Bootstrap utility class adds padding on all sides?",
+    "options": ["m-3", "p-3", "px-3", "py-3"],
+    "answer": "p-3"
+  },
+  {
+    "question": "Which Bootstrap class styles a button with the primary theme color?",
+    "options": [".button-primary", ".btn-main", ".btn-primary", ".primary-btn"],
+    "answer": ".btn-primary"
+  },
+  {
+    "question": "Which Bootstrap class hides an element on small screens and below?",
+    "options": ["d-none d-md-block", "d-sm-none", "hide-sm", "d-hide-sm"],
+    "answer": "d-none d-md-block"
+  },
+  {
+    "question": "What is React?",
+    "options": [
+      "A backend framework",
+      "A JavaScript library for building user interfaces",
+      "A database",
+      "A CSS framework"
+    ],
+    "answer": "A JavaScript library for building user interfaces"
+  },
+  {
+    "question": "Who developed React?",
+    "options": ["Google", "Microsoft", "Meta", "Twitter"],
+    "answer": "Meta"
+  },
+  {
+    "question": "What is JSX?",
+    "options": [
+      "A JavaScript framework",
+      "A CSS extension",
+      "A syntax extension for JavaScript",
+      "A package manager"
+    ],
+    "answer": "A syntax extension for JavaScript"
+  },
+  {
+    "question": "Which hook is used to manage state in a functional component?",
+    "options": ["useEffect()", "useState()", "useRef()", "useMemo()"],
+    "answer": "useState()"
+  },
+  {
+    "question": "Which hook is used to perform side effects?",
+    "options": ["useCallback()", "useMemo()", "useEffect()", "useRef()"],
+    "answer": "useEffect()"
+  },
+  {
+    "question": "How is data passed from a parent component to a child component?",
+    "options": ["State", "Props", "Hooks", "Refs"],
+    "answer": "Props"
+  },
+  {
+    "question": "Which React attribute is required when rendering lists?",
+    "options": ["id", "index", "key", "name"],
+    "answer": "key"
+  },
+  {
+    "question": "What is the Virtual DOM?",
+    "options": [
+      "A copy of the real DOM stored in memory",
+      "A browser extension",
+      "A database",
+      "A React component"
+    ],
+    "answer": "A copy of the real DOM stored in memory"
+  },
+  {
+    "question": "Which method is used to update state based on the previous value?",
+    "options": [
+      "setState(value)",
+      "setState(prev => prev + 1)",
+      "updateState()",
+      "changeState()"
+    ],
+    "answer": "setState(prev => prev + 1)"
+  },
+  {
+    "question": "What happens when a React component's state changes?",
+    "options": [
+      "The page reloads",
+      "The component re-renders",
+      "The browser closes",
+      "Nothing happens"
+    ],
+    "answer": "The component re-renders"
+  },
+  {
+    "question": "Which hook provides direct access to a DOM element?",
+    "options": ["useState()", "useEffect()", "useRef()", "useMemo()"],
+    "answer": "useRef()"
+  },
+  {
+    "question": "What is a React component?",
+    "options": [
+      "A database table",
+      "A reusable piece of UI",
+      "A CSS file",
+      "A JavaScript loop"
+    ],
+    "answer": "A reusable piece of UI"
+  },
+  {
+    "question": "Which symbol is used to embed JavaScript expressions inside JSX?",
+    "options": ["()", "[]", "{}", "<>"],
+    "answer": "{}"
+  },
+  {
+    "question": "Which prop is used to pass child elements into a component?",
+    "options": ["content", "children", "elements", "nested"],
+    "answer": "children"
+  },
+  {
+    "question": "Which hook memoizes a computed value?",
+    "options": ["useEffect()", "useMemo()", "useRef()", "useState()"],
+    "answer": "useMemo()"
+  },
+  {
+    "question": "Which hook memoizes a function?",
+    "options": ["useMemo()", "useEffect()", "useCallback()", "useRef()"],
+    "answer": "useCallback()"
+  },
+  {
+    "question": "What is the purpose of React Fragments?",
+    "options": [
+      "To add styles",
+      "To group elements without extra DOM nodes",
+      "To create animations",
+      "To store state"
+    ],
+    "answer": "To group elements without extra DOM nodes"
+  },
+  {
+    "question": "Which syntax creates a React Fragment?",
+    "options": ["<div></div>", "<></>", "<fragment></fragment>", "<group></group>"],
+    "answer": "<></>"
+  },
+  {
+    "question": "What is conditional rendering in React?",
+    "options": [
+      "Rendering based on CSS rules",
+      "Rendering components based on conditions",
+      "Rendering only once",
+      "Rendering asynchronously"
+    ],
+    "answer": "Rendering components based on conditions"
+  },
+  {
+    "question": "Which method is commonly used to render lists in React?",
+    "options": ["forEach()", "map()", "filter()", "reduce()"],
+    "answer": "map()"
+  },
+  {
+    "question": "Which JavaScript method combines all elements of an array into a single value?",
+    "options": ["map()", "filter()", "reduce()", "find()"],
+    "answer": "reduce()"
+  },
+  {
+    "question": "What does the spread operator (...) do?",
+    "options": [
+      "Creates loops",
+      "Copies or expands iterable elements",
+      "Declares variables",
+      "Creates promises"
+    ],
+    "answer": "Copies or expands iterable elements"
+  },
+  {
+    "question": "Which operator provides a default value for null or undefined?",
+    "options": ["||", "&&", "??", "?."],
+    "answer": "??"
+  },
+  {
+    "question": "What does optional chaining (?.) prevent?",
+    "options": [
+      "Infinite loops",
+      "Syntax errors",
+      "Errors when accessing properties of null or undefined",
+      "Duplicate objects"
+    ],
+    "answer": "Errors when accessing properties of null or undefined"
+  },
+  {
+    "question": "Which keyword exports a module in JavaScript?",
+    "options": ["share", "module", "export", "publish"],
+    "answer": "export"
+  },
+  {
+    "question": "Which keyword imports a module in JavaScript?",
+    "options": ["include", "require", "import", "fetch"],
+    "answer": "import"
+  },
+  {
+    "question": "What is responsive web design?",
+    "options": [
+      "Designing websites only for mobile devices",
+      "Creating websites that adapt to different screen sizes",
+      "Using Bootstrap exclusively",
+      "Building single-page applications"
+    ],
+    "answer": "Creating websites that adapt to different screen sizes"
+  },
+  {
+    "question": "Which CSS rule is used to apply styles based on screen size?",
+    "options": ["@screen", "@media", "@responsive", "@viewport"],
+    "answer": "@media"
+  },
+  {
+    "question": "Which HTML meta tag helps create responsive layouts?",
+    "options": [
+      "<meta charset='UTF-8'>",
+      "<meta viewport>",
+      "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+      "<meta responsive='true'>"
+    ],
+    "answer": "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
+  },
+  {
+    "question": "Which image format supports transparency?",
+    "options": ["JPEG", "PNG", "BMP", "TIFF"],
+    "answer": "PNG"
+  },
+  {
+    "question": "What is the purpose of semantic HTML?",
+    "options": [
+      "To reduce file size",
+      "To improve accessibility and SEO",
+      "To add animations",
+      "To improve CSS performance"
+    ],
+    "answer": "To improve accessibility and SEO"
+  },
+  {
+    "question": "Which HTML tag defines the main content of a document?",
+    "options": ["<body>", "<article>", "<main>", "<section>"],
+    "answer": "<main>"
+  },
+  {
+    "question": "Which accessibility attribute associates a label with an input?",
+    "options": ["name", "for", "id", "aria-label"],
+    "answer": "for"
+  },
+  {
+    "question": "Which CSS property specifies how overflowing content is handled?",
+    "options": ["clip", "overflow", "display", "visibility"],
+    "answer": "overflow"
+  },
+  {
+    "question": "What does SEO stand for?",
+    "options": [
+      "Search Engine Optimization",
+      "Site Engine Optimization",
+      "Search Experience Operation",
+      "System Engine Output"
+    ],
+    "answer": "Search Engine Optimization"
+  },
+  {
+    "question": "Which browser storage mechanism persists data even after the browser is closed?",
+    "options": ["sessionStorage", "cookies", "localStorage", "cacheMemory"],
+    "answer": "localStorage"
+  },
+  {
+    "question": "Which browser storage mechanism is cleared when the browser tab is closed?",
+    "options": ["localStorage", "cookies", "sessionStorage", "indexedDB"],
+    "answer": "sessionStorage"
+  },
+  {
+    "question": "Which HTTP method is typically used to retrieve data?",
+    "options": ["POST", "PUT", "GET", "DELETE"],
+    "answer": "GET"
+  },
+  {
+    "question": "Which HTTP status code indicates a successful request?",
+    "options": ["200", "301", "404", "500"],
+    "answer": "200"
+  },
+  {
+    "question": "Which HTTP status code indicates that a resource was not found?",
+    "options": ["200", "301", "404", "500"],
+    "answer": "404"
+  },
+  {
+    "question": "Which JavaScript API is commonly used to make HTTP requests?",
+    "options": ["request()", "fetch()", "ajax()", "http()"],
+    "answer": "fetch()"
+  },
+  {
+    "question": "What is CORS?",
+    "options": [
+      "A CSS framework",
+      "A browser security mechanism controlling cross-origin requests",
+      "A JavaScript library",
+      "A React feature"
+    ],
+    "answer": "A browser security mechanism controlling cross-origin requests"
   }
 ]
