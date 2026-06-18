@@ -10,16 +10,14 @@
 
 :root{
   --bg:#0a0a0a;
-  --bg2:#111111;
-  --surface:rgba(255,255,255,0.04);
-  --surface-hover:rgba(255,255,255,0.07);
+  --surface:rgba(255,255,255,0.035);
   --border:rgba(255,255,255,0.09);
+  --border-y:rgba(255,214,0,0.15);
   --border-focus:rgba(255,214,0,0.7);
   --yellow:#FFD600;
-  --yellow-dim:rgba(255,214,0,0.12);
-  --yellow-glow:rgba(255,214,0,0.08);
+  --yellow-dim:rgba(255,214,0,0.10);
   --text:#f5f5f5;
-  --text-2:rgba(245,245,245,0.5);
+  --text-2:rgba(245,245,245,0.52);
   --text-3:rgba(245,245,245,0.28);
   --r:12px;
 }
@@ -33,7 +31,7 @@ body{
   display:flex;
   align-items:flex-start;
   justify-content:center;
-  padding:40px 20px 80px;
+  padding:36px 20px 80px;
   overflow-x:hidden;
   position:relative;
 }
@@ -42,14 +40,14 @@ body{
 .bg-glow{
   position:fixed;inset:0;pointer-events:none;z-index:0;
   background:
-    radial-gradient(ellipse 70% 40% at 15% 10%,rgba(255,214,0,0.08) 0%,transparent 60%),
-    radial-gradient(ellipse 50% 50% at 85% 85%,rgba(255,214,0,0.04) 0%,transparent 55%);
+    radial-gradient(ellipse 65% 40% at 10% 8%,rgba(255,214,0,0.07) 0%,transparent 60%),
+    radial-gradient(ellipse 45% 45% at 88% 88%,rgba(255,214,0,0.04) 0%,transparent 55%);
 }
 .grid-lines{
   position:fixed;inset:0;pointer-events:none;z-index:0;
   background-image:
-    linear-gradient(rgba(255,255,255,0.018) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,255,255,0.018) 1px,transparent 1px);
+    linear-gradient(rgba(255,255,255,0.016) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,0.016) 1px,transparent 1px);
   background-size:52px 52px;
   mask-image:radial-gradient(ellipse 85% 85% at 50% 50%,black 30%,transparent 100%);
 }
@@ -57,157 +55,195 @@ body{
 /* ── Page wrapper ── */
 .page-wrap{
   position:relative;z-index:10;
-  width:100%;max-width:520px;
-  display:flex;flex-direction:column;gap:16px;
+  width:100%;max-width:540px;
+  display:flex;flex-direction:column;gap:14px;
   animation:wrapIn .65s cubic-bezier(.16,1,.3,1) both;
 }
-@keyframes wrapIn{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes wrapIn{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
 
-/* ══════════════════════════════════════
-   INFO PANEL (above form)
-══════════════════════════════════════ */
+/* ════════════════════════════════
+   INFO PANEL
+════════════════════════════════ */
 .info-panel{
-  background:rgba(255,255,255,0.025);
-  border:1px solid rgba(255,214,0,0.15);
+  background:rgba(255,255,255,0.022);
+  border:1px solid var(--border-y);
   border-radius:20px;
   overflow:hidden;
 }
 
-/* Brand header inside info panel */
+/* ── Brand header ── */
 .info-brand{
-  display:flex;align-items:center;gap:14px;
-  padding:20px 24px;
-  background:linear-gradient(135deg,rgba(255,214,0,0.1) 0%,rgba(255,214,0,0.03) 100%);
+  display:flex;align-items:center;gap:16px;
+  padding:22px 24px 20px;
+  background:linear-gradient(135deg,rgba(255,214,0,0.09) 0%,rgba(255,214,0,0.02) 100%);
   border-bottom:1px solid rgba(255,214,0,0.12);
+  position:relative;
+  overflow:hidden;
+}
+.info-brand::after{
+  content:'';
+  position:absolute;right:-30px;top:-30px;
+  width:140px;height:140px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,214,0,0.06),transparent 70%);
+  pointer-events:none;
 }
 .tb-logo{
-  width:52px;height:52px;border-radius:14px;
+  width:56px;height:56px;border-radius:16px;
   background:var(--yellow);
   display:flex;align-items:center;justify-content:center;
   flex-shrink:0;
-  box-shadow:0 0 24px rgba(255,214,0,0.3),0 4px 12px rgba(0,0,0,0.4);
+  box-shadow:0 0 28px rgba(255,214,0,0.32),0 4px 14px rgba(0,0,0,0.5);
 }
-.tb-logo svg{width:30px;height:30px}
+.tb-logo svg{width:32px;height:32px}
 .brand-text{}
 .brand-name{
   font-family:'Syne',sans-serif;
-  font-size:20px;font-weight:800;letter-spacing:-.3px;
+  font-size:22px;font-weight:800;letter-spacing:-.4px;
+  color:var(--yellow);line-height:1.1;
+}
+.brand-tagline{font-size:11.5px;color:var(--text-3);margin-top:4px;letter-spacing:.2px}
+.brand-badge{
+  display:inline-flex;align-items:center;gap:5px;
+  margin-top:7px;
+  padding:3px 9px;border-radius:99px;
+  font-size:10px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;
+  background:rgba(255,214,0,0.1);border:1px solid rgba(255,214,0,0.2);
   color:var(--yellow);
-  line-height:1.1;
 }
-.brand-sub{
-  font-size:11.5px;color:var(--text-3);
-  margin-top:3px;letter-spacing:.3px;
-}
+.brand-badge::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--yellow);animation:bdot 1.8s ease-in-out infinite}
+@keyframes bdot{0%,100%{opacity:1}50%{opacity:.2}}
 
-/* Info stats row */
+/* ── Stats row ── */
 .info-stats{
-  display:grid;grid-template-columns:repeat(3,1fr);
+  display:grid;grid-template-columns:repeat(4,1fr);
   border-bottom:1px solid rgba(255,255,255,0.06);
 }
 .i-stat{
-  padding:14px 16px;
-  text-align:center;
+  padding:13px 10px;text-align:center;
   border-right:1px solid rgba(255,255,255,0.06);
 }
 .i-stat:last-child{border-right:none}
 .i-stat-val{
-  font-family:'Syne',sans-serif;
-  font-size:18px;font-weight:800;
-  color:var(--yellow);
-  line-height:1;
-  margin-bottom:4px;
+  font-family:'Syne',sans-serif;font-size:17px;font-weight:800;
+  color:var(--yellow);line-height:1;margin-bottom:4px;
 }
-.i-stat-key{
-  font-size:10px;text-transform:uppercase;
-  letter-spacing:.8px;color:var(--text-3);font-weight:600;
-}
+.i-stat-key{font-size:9.5px;text-transform:uppercase;letter-spacing:.7px;color:var(--text-3);font-weight:600}
 
-/* About section */
+/* ── About ── */
 .info-about{
-  padding:18px 24px;
+  padding:16px 22px;
   border-bottom:1px solid rgba(255,255,255,0.06);
 }
-.info-about p{
-  font-size:12.5px;color:var(--text-2);
-  line-height:1.7;
-}
+.info-about p{font-size:12.5px;color:var(--text-2);line-height:1.72}
 .info-about p strong{color:var(--yellow)}
 
-/* Highlights */
-.info-highlights{
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:0;
-}
+/* ── Highlights ── */
+.info-highlights{display:grid;grid-template-columns:1fr 1fr;gap:0}
 .hi-item{
   display:flex;align-items:flex-start;gap:10px;
-  padding:14px 16px;
+  padding:13px 16px;
   border-right:1px solid rgba(255,255,255,0.06);
   border-bottom:1px solid rgba(255,255,255,0.06);
+  transition:background .2s;
 }
+.hi-item:hover{background:rgba(255,214,0,0.03)}
 .hi-item:nth-child(2n){border-right:none}
 .hi-item:nth-last-child(-n+2){border-bottom:none}
 .hi-icon{
   width:30px;height:30px;border-radius:8px;flex-shrink:0;
-  background:rgba(255,214,0,0.1);
-  border:1px solid rgba(255,214,0,0.18);
+  background:rgba(255,214,0,0.1);border:1px solid rgba(255,214,0,0.18);
   display:flex;align-items:center;justify-content:center;
   font-size:13px;margin-top:1px;
 }
-.hi-text{}
 .hi-title{font-size:12px;font-weight:600;color:var(--text);margin-bottom:2px}
 .hi-desc{font-size:11px;color:var(--text-3);line-height:1.45}
 
-/* Coordinator strip */
+/* ── Courses strip ── */
+.info-courses{
+  padding:14px 22px;
+  border-bottom:1px solid rgba(255,255,255,0.06);
+}
+.courses-label{
+  font-size:9.5px;text-transform:uppercase;letter-spacing:1px;
+  font-weight:700;color:var(--text-3);margin-bottom:10px;
+}
+.courses-pills{display:flex;flex-wrap:wrap;gap:6px}
+.c-pill{
+  font-size:10.5px;font-weight:600;
+  padding:4px 10px;border-radius:99px;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.09);
+  color:var(--text-3);
+  transition:all .2s;
+}
+.c-pill.active{
+  background:rgba(255,214,0,0.1);
+  border-color:rgba(255,214,0,0.22);
+  color:var(--yellow);
+}
+
+/* ── Contact row ── */
+.info-contact{
+  display:grid;grid-template-columns:1fr 1fr;
+  border-bottom:1px solid rgba(255,255,255,0.06);
+}
+.contact-item{
+  display:flex;align-items:center;gap:10px;
+  padding:12px 16px;
+  border-right:1px solid rgba(255,255,255,0.06);
+}
+.contact-item:last-child{border-right:none}
+.contact-icon{
+  width:28px;height:28px;border-radius:8px;flex-shrink:0;
+  background:rgba(255,214,0,0.1);border:1px solid rgba(255,214,0,0.18);
+  display:flex;align-items:center;justify-content:center;font-size:12px;
+}
+.contact-detail{}
+.contact-label{font-size:9.5px;text-transform:uppercase;letter-spacing:.7px;font-weight:600;color:var(--text-3);margin-bottom:2px}
+.contact-val{font-size:11.5px;font-weight:600;color:var(--text-2)}
+
+/* ── Coordinator strip ── */
 .info-coordinator{
-  display:flex;align-items:center;justify-content:space-between;
-  gap:14px;
-  padding:14px 20px;
-  background:rgba(255,214,0,0.05);
-  border-top:1px solid rgba(255,214,0,0.12);
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+  padding:14px 22px;
+  background:rgba(255,214,0,0.04);
+  border-top:1px solid rgba(255,214,0,0.1);
   flex-wrap:wrap;
 }
-.coord-left{}
-.coord-label{
-  font-size:9.5px;text-transform:uppercase;letter-spacing:1px;
-  font-weight:700;color:var(--yellow);opacity:.7;margin-bottom:3px;
-}
-.coord-name{font-size:13px;font-weight:600;color:var(--text)}
-.coord-role{font-size:11px;color:var(--text-3);margin-top:1px}
+.coord-label{font-size:9.5px;text-transform:uppercase;letter-spacing:1px;font-weight:700;color:var(--yellow);opacity:.7;margin-bottom:3px}
+.coord-name{font-size:13px;font-weight:700;color:var(--text)}
+.coord-role{font-size:11px;color:var(--text-3);margin-top:2px}
+.coord-phones{display:flex;flex-direction:column;gap:6px;align-items:flex-end}
 .coord-phone{
   display:inline-flex;align-items:center;gap:7px;
-  padding:8px 16px;
-  border-radius:99px;
-  text-decoration:none;
-  color:var(--yellow);
-  font-weight:700;font-size:13px;
-  border:1px solid rgba(255,214,0,0.28);
-  background:rgba(255,214,0,0.08);
+  padding:7px 14px;border-radius:99px;
+  text-decoration:none;color:var(--yellow);
+  font-weight:700;font-size:12px;
+  border:1px solid rgba(255,214,0,0.25);
+  background:rgba(255,214,0,0.07);
   white-space:nowrap;
-  animation:pulsePhone 2.5s infinite;
   transition:transform .25s,box-shadow .25s;
 }
-.coord-phone:hover{transform:translateY(-2px);box-shadow:0 0 20px rgba(255,214,0,.2)}
+.coord-phone:hover{transform:translateY(-2px);box-shadow:0 0 18px rgba(255,214,0,.18)}
+.coord-phone.pulse{animation:pulsePhone 2.5s infinite}
 @keyframes pulsePhone{
   0%{box-shadow:0 0 0 0 rgba(255,214,0,.35)}
   70%{box-shadow:0 0 0 10px rgba(255,214,0,0)}
   100%{box-shadow:0 0 0 0 rgba(255,214,0,0)}
 }
 
-/* ══════════════════════════════════════
+/* ════════════════════════════════
    FORM CARD
-══════════════════════════════════════ */
+════════════════════════════════ */
 .card{
   position:relative;
   background:rgba(255,255,255,0.03);
   border:1px solid var(--border);
   border-radius:20px;
-  padding:32px 32px 36px;
+  padding:30px 30px 34px;
   backdrop-filter:blur(20px);
   -webkit-backdrop-filter:blur(20px);
-  box-shadow:
-    0 0 0 1px rgba(255,255,255,0.04) inset,
-    0 24px 60px rgba(0,0,0,0.6);
+  box-shadow:0 0 0 1px rgba(255,255,255,0.04) inset,0 24px 60px rgba(0,0,0,0.6);
 }
 .card::before{
   content:'';position:absolute;inset:0;border-radius:20px;
@@ -217,30 +253,26 @@ body{
 
 .form-heading{
   font-family:'Syne',sans-serif;
-  font-size:16px;font-weight:800;letter-spacing:-.2px;
-  color:var(--text);
-  margin-bottom:22px;
-  display:flex;align-items:center;gap:8px;
+  font-size:15px;font-weight:800;letter-spacing:-.2px;
+  color:var(--text);margin-bottom:20px;
+  display:flex;align-items:center;gap:9px;
 }
-.form-heading span{
-  width:4px;height:18px;border-radius:2px;
-  background:var(--yellow);display:inline-block;
-}
+.form-heading-bar{width:4px;height:18px;border-radius:2px;background:var(--yellow);flex-shrink:0}
 
-/* ── Section label ── */
+/* Section label */
 .section-label{
-  font-size:10.5px;font-weight:600;letter-spacing:1.2px;
+  font-size:10px;font-weight:600;letter-spacing:1.2px;
   text-transform:uppercase;color:var(--text-3);
-  margin:20px 0 12px;
+  margin:18px 0 11px;
   display:flex;align-items:center;gap:8px;
 }
 .section-label::after{content:'';flex:1;height:1px;background:var(--border)}
 
-/* ── Fields ── */
-.field{margin-bottom:12px;position:relative}
+/* Fields */
+.field{margin-bottom:11px;position:relative}
 .field label{
-  display:block;font-size:11px;font-weight:500;
-  color:var(--text-3);letter-spacing:.3px;margin-bottom:6px;
+  display:block;font-size:10.5px;font-weight:500;
+  color:var(--text-3);letter-spacing:.3px;margin-bottom:5px;
 }
 .field input,.field select{
   width:100%;padding:11px 14px 11px 40px;
@@ -248,25 +280,22 @@ body{
   border:1px solid var(--border);
   border-radius:var(--r);
   color:#f5f5f5;
-  font-family:'Inter',sans-serif;font-size:14px;
+  font-family:'Inter',sans-serif;font-size:13.5px;
   outline:none;
   transition:border-color .2s,background .2s,box-shadow .2s;
-  -webkit-appearance:none;
-  appearance:none;
+  -webkit-appearance:none;appearance:none;
 }
 .field input::placeholder{color:var(--text-3)}
 .field input:focus,.field select:focus{
   border-color:var(--border-focus);
   background:rgba(255,214,0,0.04);
-  box-shadow:0 0 0 3px rgba(255,214,0,0.1);
+  box-shadow:0 0 0 3px rgba(255,214,0,0.09);
 }
 .field select{
-  padding-right:40px;
+  padding-right:40px;cursor:pointer;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='none' stroke='%23FFD600' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
-  background-repeat:no-repeat;
-  background-position:right 14px center;
+  background-repeat:no-repeat;background-position:right 13px center;
   background-color:rgba(255,255,255,0.04);
-  cursor:pointer;
 }
 .field select option{background:#111111;color:#f5f5f5}
 .field-icon{
@@ -276,47 +305,45 @@ body{
   transition:stroke .2s;
 }
 .field:focus-within .field-icon{stroke:var(--yellow)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:11px}
 
-/* ── Grid ── */
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-
-/* ── Submit ── */
+/* Submit */
 .submit-btn{
-  width:100%;margin-top:22px;padding:14px;
+  width:100%;margin-top:20px;padding:14px;
   background:var(--yellow);color:#0a0a0a;
   font-family:'Syne',sans-serif;font-size:15px;font-weight:800;
-  letter-spacing:.3px;border:none;border-radius:var(--r);
+  letter-spacing:.2px;border:none;border-radius:var(--r);
   cursor:pointer;position:relative;overflow:hidden;
   transition:transform .25s,box-shadow .25s;
-  display:flex;align-items:center;justify-content:center;gap:9px;
+  display:flex;align-items:center;justify-content:center;gap:8px;
 }
-.submit-btn::before{
-  content:'';position:absolute;inset:0;
-  background:rgba(255,255,255,0.15);opacity:0;transition:opacity .25s;
-}
+.submit-btn::before{content:'';position:absolute;inset:0;background:rgba(255,255,255,0.15);opacity:0;transition:opacity .25s}
 .submit-btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(255,214,0,.3)}
 .submit-btn:hover::before{opacity:1}
 .submit-btn:active{transform:translateY(0)}
 .submit-btn span{position:relative;z-index:1;display:flex;align-items:center;gap:8px}
 .submit-btn svg{width:16px;height:16px;fill:none;stroke:#0a0a0a;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 
-/* ── Footer note ── */
-.foot-note{
-  display:flex;justify-content:center;gap:20px;
-  margin-top:18px;flex-wrap:wrap;
-}
-.fn-item{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--text-3)}
+/* Footer note */
+.foot-note{display:flex;justify-content:center;gap:18px;margin-top:16px;flex-wrap:wrap}
+.fn-item{display:flex;align-items:center;gap:5px;font-size:10.5px;color:var(--text-3)}
 .fn-dot{width:4px;height:4px;border-radius:50%;background:var(--yellow);opacity:.6}
 
 @media(max-width:500px){
-  .card{padding:24px 18px 28px}
+  .card{padding:22px 16px 26px}
   .grid2{grid-template-columns:1fr}
+  .info-stats{grid-template-columns:repeat(2,1fr)}
+  .i-stat:nth-child(2){border-right:none}
+  .i-stat:nth-child(3){border-top:1px solid rgba(255,255,255,0.06)}
   .info-highlights{grid-template-columns:1fr}
   .hi-item{border-right:none}
   .hi-item:nth-last-child(-n+2){border-bottom:1px solid rgba(255,255,255,0.06)}
   .hi-item:last-child{border-bottom:none}
-  .info-stats{grid-template-columns:repeat(3,1fr)}
+  .info-contact{grid-template-columns:1fr}
+  .contact-item{border-right:none;border-bottom:1px solid rgba(255,255,255,0.06)}
+  .contact-item:last-child{border-bottom:none}
   .info-coordinator{flex-direction:column;align-items:flex-start}
+  .coord-phones{align-items:flex-start}
 }
 </style>
 </head>
@@ -326,123 +353,164 @@ body{
 
 <div class="page-wrap">
 
-  <!-- ═══════════════════════════════
+  <!-- ══════════════════════════════
        INFO PANEL
-  ════════════════════════════════ -->
+  ══════════════════════════════ -->
   <div class="info-panel">
 
-    <!-- Brand header -->
+    <!-- Brand Header -->
     <div class="info-brand">
       <div class="tb-logo">
-        <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4.5 13h21l-2.7 10.5H7.2L4.5 13z" fill="#0a0a0a"/>
-          <path d="M10 13v8M15 13v8M20 13v8" stroke="#FFD600" stroke-width="1.3" stroke-linecap="round"/>
-          <path d="M9 13 Q7 8 11 7" stroke="#0a0a0a" stroke-width="2.2" stroke-linecap="round" fill="none"/>
-          <path d="M21 13 Q23 8 19 7" stroke="#0a0a0a" stroke-width="2.2" stroke-linecap="round" fill="none"/>
-          <polygon points="15,2 9,5 15,8 21,5" fill="#0a0a0a"/>
-          <line x1="21" y1="5" x2="21" y2="8.5" stroke="#0a0a0a" stroke-width="1.4" stroke-linecap="round"/>
-          <circle cx="21" cy="9.3" r=".9" fill="#0a0a0a"/>
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 14h22l-2.8 11H7.8L5 14z" fill="#0a0a0a"/>
+          <path d="M10.5 14v8.5M16 14v8.5M21.5 14v8.5" stroke="#FFD600" stroke-width="1.3" stroke-linecap="round"/>
+          <path d="M9.5 14 Q7.5 9 12 8" stroke="#1a1a1a" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+          <path d="M22.5 14 Q24.5 9 20 8" stroke="#1a1a1a" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+          <polygon points="16,2.5 10,5.5 16,8.5 22,5.5" fill="#1a1a1a"/>
+          <line x1="22" y1="5.5" x2="22" y2="9" stroke="#1a1a1a" stroke-width="1.4" stroke-linecap="round"/>
+          <circle cx="22" cy="10" r="1" fill="#1a1a1a"/>
         </svg>
       </div>
       <div class="brand-text">
         <div class="brand-name">Training Basket</div>
-        <div class="brand-sub">India's Premier IT Training Institute · Est. 2015</div>
+        <div class="brand-tagline">India's Premier IT Training Institute</div>
+        <div class="brand-badge">● Trusted by 2 Lakh+ Students</div>
       </div>
     </div>
 
-    <!-- Stats row -->
+    <!-- Real Stats (from website) -->
     <div class="info-stats">
       <div class="i-stat">
-        <div class="i-stat-val">10,000+</div>
-        <div class="i-stat-key">Students Trained</div>
+        <div class="i-stat-val">2L+</div>
+        <div class="i-stat-key">Students</div>
       </div>
       <div class="i-stat">
-        <div class="i-stat-val">50+</div>
-        <div class="i-stat-key">Courses Offered</div>
+        <div class="i-stat-val">50K+</div>
+        <div class="i-stat-key">Placed</div>
       </div>
       <div class="i-stat">
-        <div class="i-stat-val">95%</div>
-        <div class="i-stat-key">Placement Rate</div>
+        <div class="i-stat-val">25K+</div>
+        <div class="i-stat-key">Workshops</div>
+      </div>
+      <div class="i-stat">
+        <div class="i-stat-val">4.5★</div>
+        <div class="i-stat-key">Google Rating</div>
       </div>
     </div>
 
     <!-- About -->
     <div class="info-about">
       <p>
-        <strong>Training Basket</strong> is a leading IT training institute offering industry-relevant courses in
-        Data Analytics, Data Science, Cloud Computing, DevOps, and more. Our expert-led programs are
-        designed to bridge the gap between academic learning and real-world industry requirements.
+        <strong>Training Basket</strong> is a global provider of advanced IT Training &amp; Certification Programs for individuals and organizations. We bridge the gap between corporations seeking skilled professionals and students aspiring to secure satisfying employment — with <strong>hybrid learning</strong>, <strong>live projects</strong>, and <strong>100% job assistance</strong>.
       </p>
     </div>
 
-    <!-- Highlights grid -->
+    <!-- Highlights (real USPs from website) -->
     <div class="info-highlights">
       <div class="hi-item">
         <div class="hi-icon">🎓</div>
-        <div class="hi-text">
-          <div class="hi-title">Expert Trainers</div>
-          <div class="hi-desc">10+ years industry experience</div>
+        <div>
+          <div class="hi-title">20+ Expert Instructors</div>
+          <div class="hi-desc">Industry practitioners with deep domain expertise</div>
         </div>
       </div>
       <div class="hi-item">
         <div class="hi-icon">💼</div>
-        <div class="hi-text">
-          <div class="hi-title">Placement Support</div>
-          <div class="hi-desc">Dedicated career assistance</div>
+        <div>
+          <div class="hi-title">100% Job Assistance</div>
+          <div class="hi-desc">Dedicated placement support &amp; interview prep</div>
         </div>
       </div>
       <div class="hi-item">
-        <div class="hi-icon">🏆</div>
-        <div class="hi-text">
-          <div class="hi-title">Certified Programs</div>
-          <div class="hi-desc">Industry-recognized certifications</div>
+        <div class="hi-icon">🖥️</div>
+        <div>
+          <div class="hi-title">Hybrid Learning</div>
+          <div class="hi-desc">Instructor-led classes + world-class LMS platform</div>
         </div>
       </div>
       <div class="hi-item">
-        <div class="hi-icon">🕐</div>
-        <div class="hi-text">
+        <div class="hi-icon">♾️</div>
+        <div>
+          <div class="hi-title">Lifetime LMS Access</div>
+          <div class="hi-desc">Content updated as technology evolves, no extra cost</div>
+        </div>
+      </div>
+      <div class="hi-item">
+        <div class="hi-icon">🗓️</div>
+        <div>
           <div class="hi-title">Flexible Batches</div>
-          <div class="hi-desc">Weekday &amp; weekend options</div>
+          <div class="hi-desc">Weekday &amp; weekend · reschedule anytime</div>
         </div>
       </div>
       <div class="hi-item">
-        <div class="hi-icon">💻</div>
-        <div class="hi-text">
-          <div class="hi-title">Live Projects</div>
-          <div class="hi-desc">Hands-on real-world training</div>
-        </div>
-      </div>
-      <div class="hi-item">
-        <div class="hi-icon">📍</div>
-        <div class="hi-text">
-          <div class="hi-title">Delhi NCR</div>
-          <div class="hi-desc">Laxmi Nagar &amp; online batches</div>
+        <div class="hi-icon">🏗️</div>
+        <div>
+          <div class="hi-title">Real-Life Projects</div>
+          <div class="hi-desc">Hands-on experience solving real-world problems</div>
         </div>
       </div>
     </div>
 
-    <!-- Coordinator -->
+    <!-- Course categories (from website) -->
+    <div class="info-courses">
+      <div class="courses-label">Training Programs Available</div>
+      <div class="courses-pills">
+        <span class="c-pill active">Data Science</span>
+        <span class="c-pill active">Data Analytics</span>
+        <span class="c-pill active">AWS Cloud</span>
+        <span class="c-pill active">Azure</span>
+        <span class="c-pill active">DevOps</span>
+        <span class="c-pill">Python</span>
+        <span class="c-pill">Machine Learning</span>
+        <span class="c-pill">Web Development</span>
+        <span class="c-pill">CCNA / CCNP</span>
+        <span class="c-pill">Ethical Hacking</span>
+        <span class="c-pill">Power BI</span>
+        <span class="c-pill">Digital Marketing</span>
+      </div>
+    </div>
+
+    <!-- Contact details (real numbers from website) -->
+    <div class="info-contact">
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div class="contact-detail">
+          <div class="contact-label">Locations</div>
+          <div class="contact-val">Sector-62 &amp; Sector-2, Noida</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">✉️</div>
+        <div class="contact-detail">
+          <div class="contact-label">Email Support</div>
+          <div class="contact-val">support@trainingbasket.in</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coordinator (real info from provided data) -->
     <div class="info-coordinator">
-      <div class="coord-left">
+      <div>
         <div class="coord-label">Training &amp; Placement Coordinator</div>
         <div class="coord-name">Ms. Moushmi Bagh</div>
         <div class="coord-role">For queries &amp; enrollment assistance</div>
       </div>
-      <a href="tel:9811329422" class="coord-phone">
-        📞 98113 29422
-      </a>
+      <div class="coord-phones">
+        <a href="tel:9015887887" class="coord-phone pulse">📞 90158 87887</a>
+        <a href="tel:9899080006" class="coord-phone">📞 98990 80006</a>
+      </div>
     </div>
 
   </div><!-- /info-panel -->
 
-
-  <!-- ═══════════════════════════════
+  <!-- ══════════════════════════════
        FORM CARD
-  ════════════════════════════════ -->
+  ══════════════════════════════ -->
   <div class="card">
 
     <div class="form-heading">
-      <span></span> Student Exam Registration
+      <div class="form-heading-bar"></div>
+      Student Exam Registration
     </div>
 
     <form method="POST" id="mainForm">
@@ -507,8 +575,8 @@ body{
 <script>
 document.querySelectorAll('.field').forEach((el,i)=>{
   el.style.opacity='0';el.style.transform='translateY(10px)';
-  el.style.transition='opacity .4s ease, transform .4s ease';
-  setTimeout(()=>{el.style.opacity='1';el.style.transform='translateY(0)'},200+i*60);
+  el.style.transition='opacity .38s ease, transform .38s ease';
+  setTimeout(()=>{el.style.opacity='1';el.style.transform='translateY(0)'},180+i*55);
 });
 </script>
 </body>
