@@ -2,44 +2,49 @@
   {
     "question": "What is Django?",
     "options": [
-      "A JavaScript framework",
       "A Python web framework",
-      "A database management system",
-      "A CSS library"
+      "A database",
+      "A JavaScript library",
+      "An operating system"
     ],
     "answer": "A Python web framework"
   },
   {
-    "question": "Which architecture pattern does Django follow?",
-    "options": ["MVC", "MVT", "MVVM", "MVP"],
-    "answer": "MVT"
+    "question": "Which programming language is Django built on?",
+    "options": [
+      "Python",
+      "Java",
+      "C#",
+      "PHP"
+    ],
+    "answer": "Python"
   },
   {
     "question": "What does MVT stand for in Django?",
     "options": [
-      "Model, View, Template",
-      "Model, Variable, Template",
-      "Module, View, Template",
-      "Model, View, Table"
+      "Model View Template",
+      "Model Variable Template",
+      "Main View Template",
+      "Model View Table"
     ],
-    "answer": "Model, View, Template"
+    "answer": "Model View Template"
   },
   {
     "question": "Which command creates a new Django project?",
     "options": [
       "django-admin startproject project_name",
-      "python manage.py startproject project_name",
+      "python manage.py startapp project_name",
       "django create project_name",
-      "python manage.py newproject project_name"
+      "python create project_name"
     ],
     "answer": "django-admin startproject project_name"
   },
   {
-    "question": "Which command creates a new Django app?",
+    "question": "Which command creates a Django app?",
     "options": [
-      "python manage.py createapp app_name",
-      "django-admin startapp app_name",
       "python manage.py startapp app_name",
+      "django-admin startproject app_name",
+      "python manage.py createapp app_name",
       "django create app_name"
     ],
     "answer": "python manage.py startapp app_name"
@@ -49,106 +54,156 @@
     "options": [
       "python manage.py runserver",
       "python manage.py startserver",
-      "django-admin runserver",
+      "django runserver",
       "python server.py"
     ],
     "answer": "python manage.py runserver"
   },
   {
     "question": "Which file contains project settings?",
-    "options": ["views.py", "models.py", "settings.py", "urls.py"],
+    "options": [
+      "settings.py",
+      "views.py",
+      "urls.py",
+      "models.py"
+    ],
     "answer": "settings.py"
   },
   {
-    "question": "Which file defines URL patterns?",
-    "options": ["routes.py", "urls.py", "views.py", "paths.py"],
+    "question": "Which file contains URL patterns?",
+    "options": [
+      "urls.py",
+      "views.py",
+      "models.py",
+      "admin.py"
+    ],
     "answer": "urls.py"
   },
   {
-    "question": "Which setting contains the list of installed applications?",
+    "question": "What is the default database in Django?",
     "options": [
+      "SQLite",
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB"
+    ],
+    "answer": "SQLite"
+  },
+  {
+    "question": "Which setting contains installed applications?",
+    "options": [
+      "INSTALLED_APPS",
       "DATABASES",
       "MIDDLEWARE",
-      "INSTALLED_APPS",
       "TEMPLATES"
     ],
     "answer": "INSTALLED_APPS"
   },
   {
-    "question": "What is the default database used by Django?",
-    "options": ["MySQL", "PostgreSQL", "SQLite", "MongoDB"],
-    "answer": "SQLite"
-  },
-  {
-    "question": "Which file typically defines database models?",
-    "options": ["views.py", "models.py", "forms.py", "admin.py"],
+    "question": "Which file defines database models?",
+    "options": [
+      "models.py",
+      "views.py",
+      "forms.py",
+      "admin.py"
+    ],
     "answer": "models.py"
   },
   {
-    "question": "Which component handles database operations in Django?",
-    "options": ["Views", "Templates", "Models", "Middleware"],
+    "question": "Which file registers models in the admin panel?",
+    "options": [
+      "admin.py",
+      "models.py",
+      "views.py",
+      "urls.py"
+    ],
+    "answer": "admin.py"
+  },
+  {
+    "question": "Which component handles database operations?",
+    "options": [
+      "Models",
+      "Views",
+      "Templates",
+      "Forms"
+    ],
     "answer": "Models"
   },
   {
-    "question": "Which component receives requests and returns responses?",
-    "options": ["Templates", "Views", "Models", "Static files"],
+    "question": "Which component handles requests and responses?",
+    "options": [
+      "Views",
+      "Models",
+      "Templates",
+      "Middleware"
+    ],
     "answer": "Views"
   },
   {
-    "question": "Which component is responsible for the presentation layer?",
-    "options": ["Views", "Templates", "Models", "Forms"],
+    "question": "Which component is responsible for presentation?",
+    "options": [
+      "Templates",
+      "Models",
+      "Views",
+      "Forms"
+    ],
     "answer": "Templates"
   },
   {
     "question": "Which command creates migration files?",
     "options": [
-      "python manage.py migrate",
       "python manage.py makemigrations",
-      "python manage.py syncdb",
-      "python manage.py create_migrations"
+      "python manage.py migrate",
+      "python manage.py migration",
+      "python manage.py dbcreate"
     ],
     "answer": "python manage.py makemigrations"
   },
   {
-    "question": "Which command applies migrations to the database?",
+    "question": "Which command applies migrations?",
     "options": [
       "python manage.py migrate",
       "python manage.py apply",
       "python manage.py syncdb",
-      "python manage.py makemigrations"
+      "python manage.py makemodels"
     ],
     "answer": "python manage.py migrate"
   },
   {
-    "question": "Which command creates an administrator account?",
+    "question": "Which command creates an admin user?",
     "options": [
-      "python manage.py createadmin",
-      "python manage.py adduser",
       "python manage.py createsuperuser",
-      "python manage.py admin"
+      "python manage.py createadmin",
+      "python manage.py admin",
+      "python manage.py superuser"
     ],
     "answer": "python manage.py createsuperuser"
   },
   {
-    "question": "Which file is used to register models in the admin panel?",
-    "options": ["models.py", "admin.py", "apps.py", "views.py"],
-    "answer": "admin.py"
-  },
-  {
-    "question": "Which function is commonly used to return an HTML template from a view?",
-    "options": ["show()", "display()", "render()", "template()"],
+    "question": "Which function is used to render templates?",
+    "options": [
+      "render()",
+      "display()",
+      "show()",
+      "template()"
+    ],
     "answer": "render()"
   },
   {
-    "question": "Which object contains information about the current HTTP request?",
-    "options": ["response", "context", "request", "session"],
+    "question": "Which object contains request information?",
+    "options": [
+      "request",
+      "response",
+      "context",
+      "session"
+    ],
     "answer": "request"
   },
   {
     "question": "Which template syntax displays a variable?",
     "options": [
-      "{% variable %}",
       "{{ variable }}",
+      "{% variable %}",
       "<%= variable %>",
       "[[ variable ]]"
     ],
@@ -156,652 +211,302 @@
   },
   {
     "question": "Which template tag is used for loops and conditions?",
-    "options": ["{{ }}", "{% %}", "{# #}", "(( ))"],
+    "options": [
+      "{% %}",
+      "{{ }}",
+      "{# #}",
+      "<% %>"
+    ],
     "answer": "{% %}"
   },
   {
-    "question": "Which template tag is used to extend a base template?",
+    "question": "Which template tag extends a base template?",
     "options": [
-      "{% parent %}",
-      "{% inherit %}",
       "{% extends %}",
-      "{% include %}"
+      "{% include %}",
+      "{% parent %}",
+      "{% base %}"
     ],
     "answer": "{% extends %}"
   },
   {
-    "question": "Which template tag defines a replaceable section in a template?",
+    "question": "Which template tag includes another template?",
     "options": [
-      "{% content %}",
-      "{% section %}",
-      "{% block %}",
-      "{% area %}"
-    ],
-    "answer": "{% block %}"
-  },
-  {
-    "question": "Which template tag includes another template file?",
-    "options": [
-      "{% insert %}",
-      "{% render %}",
       "{% include %}",
-      "{% embed %}"
+      "{% extends %}",
+      "{% import %}",
+      "{% render %}"
     ],
     "answer": "{% include %}"
   },
   {
-    "question": "Which template tag is used to generate URLs dynamically?",
+    "question": "Which template tag generates dynamic URLs?",
     "options": [
-      "{% route %}",
-      "{% link %}",
       "{% url %}",
-      "{% path %}"
+      "{% path %}",
+      "{% route %}",
+      "{% link %}"
     ],
     "answer": "{% url %}"
   },
   {
-    "question": "Which template tag loads static files?",
-    "options": [
-      "{% static %}",
-      "{% import static %}",
-      "{% load static %}",
-      "{% load files %}"
-    ],
-    "answer": "{% load static %}"
-  },
-  {
     "question": "What is a QuerySet?",
     "options": [
-      "A collection of templates",
-      "A collection of database queries",
-      "A list of middleware",
-      "A configuration file"
+      "Collection of database queries",
+      "Collection of templates",
+      "Collection of forms",
+      "Collection of URLs"
     ],
-    "answer": "A collection of database queries"
+    "answer": "Collection of database queries"
   },
   {
-    "question": "Which method returns all objects from a model?",
+    "question": "Which method returns all records?",
     "options": [
+      "objects.all()",
       "objects.get()",
       "objects.filter()",
-      "objects.all()",
-      "objects.find()"
+      "objects.first()"
     ],
     "answer": "objects.all()"
   },
   {
-    "question": "Which method retrieves a single object?",
+    "question": "Which method retrieves a single record?",
     "options": [
+      "objects.get()",
       "objects.all()",
       "objects.filter()",
-      "objects.get()",
-      "objects.first()"
+      "objects.count()"
     ],
     "answer": "objects.get()"
   },
   {
-    "question": "Which method filters objects based on conditions?",
+    "question": "Which method filters records?",
     "options": [
-      "objects.search()",
       "objects.filter()",
-      "objects.where()",
-      "objects.get()"
+      "objects.get()",
+      "objects.all()",
+      "objects.first()"
     ],
     "answer": "objects.filter()"
   },
   {
-    "question": "Which method creates and saves a new object in one step?",
+    "question": "Which method counts records?",
     "options": [
-      "objects.add()",
-      "objects.insert()",
-      "objects.create()",
-      "objects.new()"
+      "objects.count()",
+      "objects.total()",
+      "objects.size()",
+      "objects.length()"
     ],
-    "answer": "objects.create()"
+    "answer": "objects.count()"
   },
   {
-    "question": "Which method saves changes to a model instance?",
-    "options": ["update()", "commit()", "save()", "store()"],
-    "answer": "save()"
-  },
-  {
-    "question": "Which method deletes a model instance?",
-    "options": ["remove()", "delete()", "destroy()", "erase()"],
-    "answer": "delete()"
-  },
-  {
-    "question": "Which model field is used to store short text?",
-    "options": ["TextField", "StringField", "CharField", "VarcharField"],
+    "question": "Which model field stores short text?",
+    "options": [
+      "CharField",
+      "TextField",
+      "StringField",
+      "VarcharField"
+    ],
     "answer": "CharField"
   },
   {
-    "question": "Which model field is suitable for long-form text?",
-    "options": ["CharField", "TextField", "StringField", "LongField"],
+    "question": "Which model field stores large text?",
+    "options": [
+      "TextField",
+      "CharField",
+      "StringField",
+      "LongField"
+    ],
     "answer": "TextField"
   },
   {
-    "question": "Which model field stores email addresses?",
-    "options": ["TextField", "EmailField", "AddressField", "CharField"],
+    "question": "Which field stores email addresses?",
+    "options": [
+      "EmailField",
+      "TextField",
+      "CharField",
+      "AddressField"
+    ],
     "answer": "EmailField"
   },
   {
-    "question": "Which model field stores a URL?",
-    "options": ["URLField", "LinkField", "WebField", "AddressField"],
+    "question": "Which field stores URLs?",
+    "options": [
+      "URLField",
+      "LinkField",
+      "AddressField",
+      "WebField"
+    ],
     "answer": "URLField"
   },
   {
-    "question": "Which model field stores dates only?",
-    "options": ["DateField", "TimeField", "DateTimeField", "CalendarField"],
-    "answer": "DateField"
-  },
-  {
-    "question": "Which model field stores both date and time?",
+    "question": "Which field stores uploaded images?",
     "options": [
-      "DateField",
-      "DateTimeField",
-      "TimestampField",
-      "TimeField"
+      "ImageField",
+      "FileField",
+      "PhotoField",
+      "PictureField"
     ],
-    "answer": "DateTimeField"
-  },
-  {
-    "question": "Which model field stores uploaded files?",
-    "options": ["ImageField", "FileField", "UploadField", "MediaField"],
-    "answer": "FileField"
-  },
-  {
-    "question": "Which model field stores uploaded images?",
-    "options": ["ImageField", "PhotoField", "PictureField", "FileField"],
     "answer": "ImageField"
   },
   {
     "question": "Which field creates a one-to-many relationship?",
     "options": [
-      "OneToOneField",
       "ForeignKey",
+      "OneToOneField",
       "ManyToManyField",
-      "RelationField"
+      "CharField"
     ],
     "answer": "ForeignKey"
   },
   {
     "question": "Which field creates a many-to-many relationship?",
     "options": [
-      "ForeignKey",
       "ManyToManyField",
+      "ForeignKey",
       "OneToOneField",
-      "ReferenceField"
+      "TextField"
     ],
     "answer": "ManyToManyField"
   },
   {
     "question": "Which field creates a one-to-one relationship?",
     "options": [
+      "OneToOneField",
       "ForeignKey",
       "ManyToManyField",
-      "OneToOneField",
-      "UniqueField"
+      "IntegerField"
     ],
     "answer": "OneToOneField"
   },
   {
-    "question": "What does the 'on_delete' argument specify?",
+    "question": "What does CASCADE do in on_delete?",
     "options": [
-      "How to update records",
-      "How to validate records",
-      "What happens when a related object is deleted",
-      "How to create migrations"
+      "Deletes related records",
+      "Protects records",
+      "Sets values to NULL",
+      "Does nothing"
     ],
-    "answer": "What happens when a related object is deleted"
-  },
-  {
-    "question": "Which 'on_delete' option removes related objects automatically?",
-    "options": ["PROTECT", "SET_NULL", "CASCADE", "DO_NOTHING"],
-    "answer": "CASCADE"
+    "answer": "Deletes related records"
   },
   {
     "question": "Which file usually contains form definitions?",
-    "options": ["models.py", "forms.py", "views.py", "admin.py"],
+    "options": [
+      "forms.py",
+      "views.py",
+      "models.py",
+      "admin.py"
+    ],
     "answer": "forms.py"
   },
   {
-    "question": "What is the primary purpose of Django forms?",
+    "question": "What is the purpose of Django Forms?",
     "options": [
-      "Creating APIs",
-      "Managing static files",
-      "Validating user input",
-      "Creating database tables"
+      "Validate user input",
+      "Create databases",
+      "Manage URLs",
+      "Handle static files"
     ],
-    "answer": "Validating user input"
+    "answer": "Validate user input"
   },
   {
-    "question": "Which class automatically generates a form from a model?",
-    "options": ["AutoForm", "ModelForm", "FormBuilder", "BaseForm"],
+    "question": "Which class creates forms from models automatically?",
+    "options": [
+      "ModelForm",
+      "AutoForm",
+      "BaseForm",
+      "FormBuilder"
+    ],
     "answer": "ModelForm"
   },
   {
     "question": "Which method validates form data?",
-    "options": ["validate()", "verify()", "is_valid()", "check()"],
+    "options": [
+      "is_valid()",
+      "validate()",
+      "check()",
+      "verify()"
+    ],
     "answer": "is_valid()"
   },
   {
-    "question": "Which property contains validated form data?",
+    "question": "Which decorator restricts access to logged-in users?",
     "options": [
-      "validated_data",
-      "cleaned_data",
-      "form_data",
-      "input_data"
-    ],
-    "answer": "cleaned_data"
-  },
-  {
-    "question": "Which decorator restricts a view to authenticated users?",
-    "options": [
+      "@login_required",
       "@auth_required",
       "@user_required",
-      "@login_required",
       "@protected"
     ],
     "answer": "@login_required"
   },
   {
-    "question": "Which function logs a user into a Django application?",
-    "options": ["authenticate()", "login()", "signin()", "access()"],
+    "question": "Which function authenticates a user?",
+    "options": [
+      "authenticate()",
+      "login()",
+      "logout()",
+      "verify()"
+    ],
+    "answer": "authenticate()"
+  },
+  {
+    "question": "Which function logs a user into Django?",
+    "options": [
+      "login()",
+      "authenticate()",
+      "signin()",
+      "access()"
+    ],
     "answer": "login()"
   },
   {
     "question": "Which function logs a user out?",
-    "options": ["signout()", "logout()", "deauthenticate()", "exit()"],
+    "options": [
+      "logout()",
+      "exit()",
+      "signin()",
+      "authenticate()"
+    ],
     "answer": "logout()"
-  },
-  {
-    "question": "Which function verifies a user's credentials?",
-    "options": ["verify()", "authenticate()", "login()", "validate()"],
-    "answer": "authenticate()"
   },
   {
     "question": "What is CSRF protection used for?",
     "options": [
-      "Encrypting passwords",
-      "Preventing SQL injection",
       "Preventing Cross-Site Request Forgery attacks",
-      "Protecting media files"
+      "Preventing SQL injection",
+      "Encrypting passwords",
+      "Managing sessions"
     ],
     "answer": "Preventing Cross-Site Request Forgery attacks"
   },
   {
-    "question": "Which template tag adds CSRF protection to a form?",
+    "question": "Which template tag adds CSRF protection?",
     "options": [
-      "{% csrf %}",
       "{% csrf_token %}",
+      "{% csrf %}",
       "{{ csrf_token }}",
       "{% token %}"
     ],
     "answer": "{% csrf_token %}"
   },
   {
-    "question": "Which file stores middleware configuration?",
-    "options": ["middleware.py", "settings.py", "apps.py", "config.py"],
-    "answer": "settings.py"
-  },
-  {
-    "question": "What is middleware in Django?",
+    "question": "Which HTTP method is generally used to retrieve data?",
     "options": [
-      "A database model",
-      "A template engine",
-      "Software that processes requests and responses",
-      "A form validation system"
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
     ],
-    "answer": "Software that processes requests and responses"
-  },
-  {
-    "question": "Which setting defines the root URL configuration file?",
-    "options": [
-      "URLS",
-      "ROOT_URLCONF",
-      "MAIN_URLS",
-      "URLPATTERNS"
-    ],
-    "answer": "ROOT_URLCONF"
-  },
-  {
-    "question": "Which function maps a URL pattern to a view?",
-    "options": ["url()", "route()", "path()", "link()"],
-    "answer": "path()"
-  },
-  {
-    "question": "What does the HttpResponse class return?",
-    "options": [
-      "A database object",
-      "An HTTP response to the client",
-      "A QuerySet",
-      "A template"
-    ],
-    "answer": "An HTTP response to the client"
-  },
-  {
-    "question": "Which HTTP method is typically used to retrieve data?",
-    "options": ["POST", "PUT", "GET", "DELETE"],
     "answer": "GET"
   },
   {
-    "question": "Which HTTP method is commonly used to submit form data?",
-    "options": ["GET", "POST", "DELETE", "OPTIONS"],
+    "question": "Which HTTP method is generally used to submit form data?",
+    "options": [
+      "POST",
+      "GET",
+      "DELETE",
+      "OPTIONS"
+    ],
     "answer": "POST"
-  },
-  {
-    "question": "Where can you access GET parameters in a Django view?",
-    "options": [
-      "request.GET",
-      "request.POST",
-      "request.DATA",
-      "request.PARAMS"
-    ],
-    "answer": "request.GET"
-  },
-  {
-    "question": "Where can you access POST data in a Django view?",
-    "options": [
-      "request.GET",
-      "request.POST",
-      "request.DATA",
-      "request.BODY"
-    ],
-    "answer": "request.POST"
-  },
-  {
-    "question": "Which setting defines the URL prefix for static files?",
-    "options": [
-      "STATIC_ROOT",
-      "STATIC_URL",
-      "STATICFILES_DIRS",
-      "MEDIA_URL"
-    ],
-    "answer": "STATIC_URL"
-  },
-  {
-    "question": "Which setting specifies additional static file directories?",
-    "options": [
-      "STATIC_ROOT",
-      "STATICFILES_DIRS",
-      "STATIC_URL",
-      "MEDIA_ROOT"
-    ],
-    "answer": "STATICFILES_DIRS"
-  },
-  {
-    "question": "Which setting specifies the URL prefix for uploaded media files?",
-    "options": [
-      "MEDIA_URL",
-      "MEDIA_ROOT",
-      "STATIC_URL",
-      "UPLOAD_URL"
-    ],
-    "answer": "MEDIA_URL"
-  },
-  {
-    "question": "Which setting specifies the filesystem path for uploaded files?",
-    "options": [
-      "MEDIA_URL",
-      "MEDIA_ROOT",
-      "STATIC_ROOT",
-      "UPLOAD_ROOT"
-    ],
-    "answer": "MEDIA_ROOT"
-  },
-  {
-    "question": "Which command collects static files into a single directory for deployment?",
-    "options": [
-      "python manage.py collectstatic",
-      "python manage.py static",
-      "python manage.py collect",
-      "python manage.py deploystatic"
-    ],
-    "answer": "python manage.py collectstatic"
-  },
-  {
-    "question": "Which file defines application configuration settings?",
-    "options": ["apps.py", "config.py", "settings.py", "app.py"],
-    "answer": "apps.py"
-  },
-  {
-    "question": "What does Django's admin interface provide?",
-    "options": [
-      "API generation",
-      "A command-line interface",
-      "A web interface for managing data",
-      "A deployment dashboard"
-    ],
-    "answer": "A web interface for managing data"
-  },
-  {
-    "question": "Which model field option ensures values are unique?",
-    "options": ["blank=True", "null=True", "unique=True", "default=True"],
-    "answer": "unique=True"
-  },
-  {
-    "question": "Which model option allows a database field to store NULL values?",
-    "options": ["blank=True", "empty=True", "null=True", "optional=True"],
-    "answer": "null=True"
-  },
-  {
-    "question": "Which field option allows a form field to be left empty?",
-    "options": ["blank=True", "null=True", "empty=True", "optional=True"],
-    "answer": "blank=True"
-  },
-  {
-    "question": "Which model method returns a human-readable string representation?",
-    "options": [
-      "__init__()",
-      "__repr__()",
-      "__str__()",
-      "__display__()"
-    ],
-    "answer": "__str__()"
-  },
-  {
-    "question": "What happens if objects.get() returns multiple records?",
-    "options": [
-      "The first record is returned",
-      "A list is returned",
-      "A MultipleObjectsReturned exception is raised",
-      "None is returned"
-    ],
-    "answer": "A MultipleObjectsReturned exception is raised"
-  },
-  {
-    "question": "What happens if objects.get() finds no matching record?",
-    "options": [
-      "None is returned",
-      "An empty QuerySet is returned",
-      "A DoesNotExist exception is raised",
-      "A ValueError is raised"
-    ],
-    "answer": "A DoesNotExist exception is raised"
-  },
-  {
-    "question": "Which QuerySet method returns the first object or None?",
-    "options": [
-      "objects.get()",
-      "objects.first()",
-      "objects.one()",
-      "objects.find()"
-    ],
-    "answer": "objects.first()"
-  },
-  {
-    "question": "Which QuerySet method counts the number of records?",
-    "options": [
-      "objects.total()",
-      "objects.length()",
-      "objects.count()",
-      "objects.size()"
-    ],
-    "answer": "objects.count()"
-  },
-  {
-    "question": "Which QuerySet method sorts results?",
-    "options": [
-      "arrange_by()",
-      "sort_by()",
-      "order_by()",
-      "group_by()"
-    ],
-    "answer": "order_by()"
-  },
-  {
-    "question": "Which QuerySet method excludes matching records?",
-    "options": [
-      "remove()",
-      "exclude()",
-      "omit()",
-      "ignore()"
-    ],
-    "answer": "exclude()"
-  },
-  {
-    "question": "Which file is automatically created when an app is generated?",
-    "options": [
-      "serializers.py",
-      "tasks.py",
-      "models.py",
-      "signals.py"
-    ],
-    "answer": "models.py"
-  },
-  {
-    "question": "Which Django utility is used for password hashing by default?",
-    "options": [
-      "SHA-1",
-      "MD5",
-      "PBKDF2",
-      "AES"
-    ],
-    "answer": "PBKDF2"
-  },
-  {
-    "question": "Which template tag is used to add comments that are not rendered?",
-    "options": [
-      "{{ comment }}",
-      "{# comment #}",
-      "{% comment %}",
-      "<!-- comment -->"
-    ],
-    "answer": "{# comment #}"
-  },
-  {
-    "question": "Which Django feature helps prevent SQL injection attacks?",
-    "options": [
-      "Templates",
-      "ORM",
-      "Middleware",
-      "Admin panel"
-    ],
-    "answer": "ORM"
-  },
-  {
-    "question": "What is the purpose of the DEBUG setting?",
-    "options": [
-      "To enable API mode",
-      "To show detailed error pages during development",
-      "To improve database performance",
-      "To enable authentication"
-    ],
-    "answer": "To show detailed error pages during development"
-  },
-  {
-    "question": "What value should DEBUG typically have in production?",
-    "options": ["True", "None", "False", "Default"],
-    "answer": "False"
-  },
-  {
-    "question": "Which setting specifies allowed host names for the application?",
-    "options": [
-      "HOSTS",
-      "ALLOWED_HOSTS",
-      "SERVER_NAMES",
-      "VALID_HOSTS"
-    ],
-    "answer": "ALLOWED_HOSTS"
-  },
-  {
-    "question": "Which command opens the Django interactive shell?",
-    "options": [
-      "python manage.py terminal",
-      "python manage.py shell",
-      "python manage.py console",
-      "python manage.py repl"
-    ],
-    "answer": "python manage.py shell"
-  },
-  {
-    "question": "Which command shows all available management commands?",
-    "options": [
-      "python manage.py commands",
-      "python manage.py list",
-      "python manage.py help",
-      "python manage.py info"
-    ],
-    "answer": "python manage.py help"
-  },
-  {
-    "question": "What is the purpose of the migrations folder?",
-    "options": [
-      "To store templates",
-      "To track database schema changes",
-      "To store static files",
-      "To configure middleware"
-    ],
-    "answer": "To track database schema changes"
-  },
-  {
-    "question": "Which built-in user model does Django provide?",
-    "options": [
-      "django.contrib.auth.models.User",
-      "django.models.User",
-      "django.auth.User",
-      "django.core.User"
-    ],
-    "answer": "django.contrib.auth.models.User"
-  },
-  {
-    "question": "Which app provides authentication features in Django?",
-    "options": [
-      "django.contrib.sessions",
-      "django.contrib.messages",
-      "django.contrib.auth",
-      "django.contrib.admin"
-    ],
-    "answer": "django.contrib.auth"
-  },
-  {
-    "question": "Which app manages user sessions?",
-    "options": [
-      "django.contrib.auth",
-      "django.contrib.sessions",
-      "django.contrib.admin",
-      "django.contrib.contenttypes"
-    ],
-    "answer": "django.contrib.sessions"
-  },
-  {
-    "question": "Which model field automatically increments for each record?",
-    "options": [
-      "CounterField",
-      "SequenceField",
-      "AutoField",
-      "IncrementField"
-    ],
-    "answer": "AutoField"
-  },
-  {
-    "question": "What is the default primary key field type in newer Django projects?",
-    "options": [
-      "AutoField",
-      "IntegerField",
-      "BigAutoField",
-      "UUIDField"
-    ],
-    "answer": "BigAutoField"
   }
 ]
