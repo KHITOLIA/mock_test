@@ -110,34 +110,45 @@ def exam(course):
     )
 
 # submit exam
-@app.route("/submit_exam",methods = ["POST"])
+@app.route("/submit_exam", methods=["POST"])
 def submit_exam():
-
     questions = session.get("questions", [])
-
     score = 0
+    review = []
 
     for idx, question in enumerate(questions):
-        selected = request.form.get(f"q{idx}")
-
+        selected = request.form.get(f"q{idx}")   # None if skipped
         correct_option = question["answer"]
+
         if selected == correct_option:
             score += 1
-    
-    total_questions = len(questions)
 
-    if total_questions > 0:
-        percentage = round((score / total_questions) * 100, 2)
-    else:
-        percentage = 0    
+        review.append({
+            "question":       question["question"],
+            "options":        question["options"],   # list of strings
+            "correct_answer": correct_option,
+            "student_answer": selected               # None if skipped
+        })
+
+    total_questions = len(questions)
+    percentage = round((score / total_questions) * 100, 2) if total_questions > 0 else 0
+    skipped_count = sum(1 for r in review if not r["student_answer"])
+
     save_results(
-        session["name"],session["enroll_no"],
+        session["name"], session["enroll_no"],
         session["batch_no"], session["trainer_name"],
-        session["course"], score, 
+        session["course"], score,
         percentage
     )
-    return render_template("result.html", score = score, total = total_questions, percentage = percentage)
 
+    return render_template(
+        "result.html",
+        score=score,
+        total=total_questions,
+        percentage=percentage,
+        review=review,
+        skipped_count=skipped_count
+    )
 
 if __name__ == "__main__":
     app.run(debug = True)
