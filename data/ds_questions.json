@@ -488,5 +488,11 @@
       "Design websites"
     ],
     "answer": "Extract meaningful insights from data"
+  },
+  {
+    "question" : " What is the primary cause of data leakage in machine learning",
+    "options" : [" The dataset contains missing values" , 
+    " Information from outside the training data unintentionally influences the model’s training process", 
+      " The training dataset is too small", "The model takes too long to train"]
   }
 ]
