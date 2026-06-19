@@ -2,18 +2,18 @@
   {
     "question": "What is Generative AI?",
     "options": [
-      "AI that creates new content",
-      "AI that only stores data",
       "AI used only for networking",
-      "AI that manages hardware"
+      "AI that manages hardware",
+      "AI that creates new content",
+      "AI that only stores data"
     ],
     "answer": "AI that creates new content"
   },
   {
     "question": "Which model architecture powers ChatGPT?",
     "options": [
-      "Transformer",
       "CNN",
+      "Transformer",
       "RNN",
       "KNN"
     ],
@@ -22,9 +22,9 @@
   {
     "question": "What does LLM stand for?",
     "options": [
-      "Large Language Model",
       "Long Learning Machine",
       "Language Logic Manager",
+      "Large Language Model",
       "Large Logic Module"
     ],
     "answer": "Large Language Model"
@@ -42,18 +42,18 @@
   {
     "question": "Which company created ChatGPT?",
     "options": [
-      "OpenAI",
       "Google",
       "Meta",
-      "Microsoft"
+      "Microsoft",
+      "OpenAI"
     ],
     "answer": "OpenAI"
   },
   {
     "question": "What is prompt engineering?",
     "options": [
-      "Designing effective prompts",
       "Building AI chips",
+      "Designing effective prompts",
       "Training databases",
       "Creating operating systems"
     ],
@@ -72,8 +72,8 @@
   {
     "question": "What is tokenization?",
     "options": [
-      "Breaking text into smaller units",
       "Encrypting data",
+      "Breaking text into smaller units",
       "Deleting words",
       "Compressing images"
     ],
@@ -82,19 +82,19 @@
   {
     "question": "Which company developed Gemini?",
     "options": [
-      "Google",
       "Meta",
       "OpenAI",
-      "Amazon"
+      "Amazon",
+      "Google"
     ],
     "answer": "Google"
   },
   {
     "question": "Which company developed Claude?",
     "options": [
-      "Anthropic",
       "OpenAI",
       "IBM",
+      "Anthropic",
       "NVIDIA"
     ],
     "answer": "Anthropic"
@@ -112,10 +112,10 @@
   {
     "question": "What is hallucination in AI?",
     "options": [
-      "Generating incorrect information confidently",
       "Training a model",
       "Improving accuracy",
-      "Compressing data"
+      "Compressing data",
+      "Generating incorrect information confidently"
     ],
     "answer": "Generating incorrect information confidently"
   },
@@ -132,8 +132,8 @@
   {
     "question": "What is RAG?",
     "options": [
-      "Retrieval-Augmented Generation",
       "Random AI Generator",
+      "Retrieval-Augmented Generation",
       "Resource Access Gateway",
       "Rapid Answer Generator"
     ],
@@ -142,9 +142,9 @@
   {
     "question": "Why is RAG used?",
     "options": [
-      "To provide external knowledge to models",
       "To replace databases",
       "To reduce storage",
+      "To provide external knowledge to models",
       "To build websites"
     ],
     "answer": "To provide external knowledge to models"
@@ -152,8 +152,8 @@
   {
     "question": "Which database type is commonly used in RAG?",
     "options": [
-      "Vector Database",
       "Relational Database",
+      "Vector Database",
       "Graph Database",
       "Hierarchical Database"
     ],
@@ -162,9 +162,9 @@
   {
     "question": "What is an embedding?",
     "options": [
-      "Numerical representation of data",
       "A programming language",
       "An operating system",
+      "Numerical representation of data",
       "A database table"
     ],
     "answer": "Numerical representation of data"
@@ -182,8 +182,8 @@
   {
     "question": "What is fine-tuning?",
     "options": [
-      "Training a pre-trained model on custom data",
       "Deleting model weights",
+      "Training a pre-trained model on custom data",
       "Compressing datasets",
       "Installing software"
     ],
@@ -192,10 +192,10 @@
   {
     "question": "Which model is open-source?",
     "options": [
-      "Llama",
       "ChatGPT",
       "Gemini Pro",
-      "Claude Opus"
+      "Claude Opus",
+      "Llama"
     ],
     "answer": "Llama"
   },
@@ -212,8 +212,8 @@
   {
     "question": "What is a multimodal model?",
     "options": [
-      "Processes multiple data types",
       "Processes only text",
+      "Processes multiple data types",
       "Processes only images",
       "Processes only audio"
     ],
@@ -222,9 +222,9 @@
   {
     "question": "Which modality can multimodal AI handle?",
     "options": [
-      "Text, Image, Audio",
       "Only Text",
       "Only Video",
+      "Text, Image, Audio",
       "Only Audio"
     ],
     "answer": "Text, Image, Audio"
@@ -232,8 +232,8 @@
   {
     "question": "What is context window?",
     "options": [
-      "Amount of information AI can consider",
       "Screen size",
+      "Amount of information AI can consider",
       "Browser tab",
       "Memory card"
     ],
@@ -242,19 +242,19 @@
   {
     "question": "What does zero-shot prompting mean?",
     "options": [
-      "Giving no examples",
       "Giving one example",
       "Giving many examples",
-      "Training a model"
+      "Training a model",
+      "Giving no examples"
     ],
     "answer": "Giving no examples"
   },
   {
     "question": "What is one-shot prompting?",
     "options": [
-      "Providing one example",
       "Providing no examples",
       "Training once",
+      "Providing one example",
       "Generating one response"
     ],
     "answer": "Providing one example"
@@ -262,10 +262,10 @@
   {
     "question": "What is few-shot prompting?",
     "options": [
-      "Providing a few examples",
       "No examples",
       "Only one example",
-      "Infinite examples"
+      "Infinite examples",
+      "Providing a few examples"
     ],
     "answer": "Providing a few examples"
   },
@@ -282,8 +282,8 @@
   {
     "question": "What is an AI agent?",
     "options": [
-      "AI system that performs tasks autonomously",
       "Database server",
+      "AI system that performs tasks autonomously",
       "Programming language",
       "Cloud provider"
     ],
@@ -302,9 +302,9 @@
   {
     "question": "Which framework is commonly used for AI agents?",
     "options": [
-      "LangGraph",
       "Bootstrap",
       "React Native",
+      "LangGraph",
       "Django"
     ],
     "answer": "LangGraph"
@@ -322,8 +322,8 @@
   {
     "question": "Which company developed Copilot?",
     "options": [
-      "Microsoft",
       "Oracle",
+      "Microsoft",
       "IBM",
       "Intel"
     ],
@@ -332,9 +332,9 @@
   {
     "question": "What is synthetic data?",
     "options": [
-      "Artificially generated data",
       "Deleted data",
       "Encrypted data",
+      "Artificially generated data",
       "Corrupted data"
     ],
     "answer": "Artificially generated data"
@@ -342,8 +342,8 @@
   {
     "question": "What is responsible AI?",
     "options": [
-      "Ethical and safe AI usage",
       "Fast AI execution",
+      "Ethical and safe AI usage",
       "Large AI models",
       "Cloud deployment"
     ],
@@ -362,9 +362,9 @@
   {
     "question": "What is reinforcement learning?",
     "options": [
-      "Learning through rewards and penalties",
       "Learning from databases",
       "Learning from spreadsheets",
+      "Learning through rewards and penalties",
       "Learning from images only"
     ],
     "answer": "Learning through rewards and penalties"
@@ -382,8 +382,8 @@
   {
     "question": "What is a foundation model?",
     "options": [
-      "Large pre-trained AI model",
       "Database schema",
+      "Large pre-trained AI model",
       "Operating system",
       "Network protocol"
     ],
@@ -392,8 +392,8 @@
   {
     "question": "Which hardware is commonly used to train AI models?",
     "options": [
-      "GPU",
       "Mouse",
+      "GPU",
       "Keyboard",
       "Printer"
     ],
@@ -402,8 +402,8 @@
   {
     "question": "What is prompt chaining?",
     "options": [
-      "Connecting multiple prompts together",
       "Deleting prompts",
+      "Connecting multiple prompts together",
       "Encrypting prompts",
       "Compiling prompts"
     ],
@@ -422,9 +422,9 @@
   {
     "question": "What happens when temperature is low?",
     "options": [
-      "More deterministic responses",
       "More random responses",
       "No response",
+      "More deterministic responses",
       "Faster internet"
     ],
     "answer": "More deterministic responses"
@@ -432,10 +432,10 @@
   {
     "question": "What is a chatbot?",
     "options": [
-      "AI system that converses with users",
       "Database engine",
       "Compiler",
-      "Web browser"
+      "Web browser",
+      "AI system that converses with users"
     ],
     "answer": "AI system that converses with users"
   },
@@ -452,8 +452,8 @@
   {
     "question": "What is token limit?",
     "options": [
-      "Maximum tokens a model can process",
       "Internet speed",
+      "Maximum tokens a model can process",
       "Storage capacity",
       "GPU memory"
     ],
@@ -462,8 +462,8 @@
   {
     "question": "What is model inference?",
     "options": [
-      "Generating predictions from a trained model",
       "Training a model",
+      "Generating predictions from a trained model",
       "Deleting weights",
       "Compressing data"
     ],
@@ -482,8 +482,8 @@
   {
     "question": "Which technology helps store embeddings efficiently?",
     "options": [
-      "FAISS",
       "HTML",
+      "FAISS",
       "CSS",
       "Bootstrap"
     ],
@@ -492,10 +492,10 @@
   {
     "question": "What is the main goal of Generative AI?",
     "options": [
-      "Create useful new content",
       "Replace the internet",
       "Manage hardware",
-      "Design processors"
+      "Design processors",
+      "Create useful new content"
     ],
     "answer": "Create useful new content"
   }
