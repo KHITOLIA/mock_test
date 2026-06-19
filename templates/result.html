@@ -63,7 +63,7 @@ body{
 @keyframes cpfall{0%{transform:translateY(-30px) rotate(0);opacity:1}100%{transform:translateY(110vh) rotate(740deg);opacity:0}}
 
 /* ── Card ── */
-.card{position:relative;z-index:10;width:100%;max-width:520px}
+.card{position:relative;z-index:10;width:100%;max-width:560px}
 
 /* Top brand bar */
 .brand-bar{
@@ -122,7 +122,7 @@ body{
   background:rgba(255,255,255,0.035);
   border:1px solid var(--border);
   border-top:none;
-  border-radius:0 0 20px 20px;
+  border-radius:0 0 0 0;
   padding:32px 28px 36px;
   backdrop-filter:blur(20px);
   -webkit-backdrop-filter:blur(20px);
@@ -213,7 +213,7 @@ body{
 .bk-wrong{height:100%;background:linear-gradient(90deg,#f87171,#a78bfa);border-radius:99px;transition:width 1.2s cubic-bezier(.25,1,.5,1) .9s}
 
 /* CTA */
-.cta-row{display:flex;gap:10px}
+.cta-row{display:flex;gap:10px;margin-bottom:0}
 .cta-primary{
   flex:1;display:flex;align-items:center;justify-content:center;gap:8px;
   padding:13px;
@@ -226,6 +226,216 @@ body{
 .cta-primary:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(255,214,0,.28)}
 .cta-primary svg{width:16px;height:16px;fill:none;stroke:#0a0a0a;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 
+/* ── Review Section ── */
+.review-section{
+  border:1px solid var(--border);
+  border-top:none;
+  border-radius:0 0 20px 20px;
+  overflow:hidden;
+  animation:cardIn .7s .15s cubic-bezier(.16,1,.3,1) both;
+}
+
+.review-header{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:18px 28px;
+  background:rgba(255,255,255,0.025);
+  border-bottom:1px solid var(--border);
+  cursor:pointer;
+  user-select:none;
+  transition:background .2s;
+}
+.review-header:hover{background:rgba(255,255,255,0.04)}
+
+.review-title{
+  display:flex;align-items:center;gap:10px;
+}
+.review-title-icon{
+  width:30px;height:30px;border-radius:8px;
+  background:var(--yellow-dim);
+  border:1px solid rgba(255,214,0,0.2);
+  display:flex;align-items:center;justify-content:center;
+}
+.review-title-icon svg{width:15px;height:15px;stroke:var(--yellow);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.review-title-text{
+  font-family:'Syne',sans-serif;font-size:13px;font-weight:700;color:var(--text);
+}
+.review-title-sub{font-size:11px;color:var(--text-3);margin-top:2px;font-weight:400}
+
+.review-toggle{
+  display:flex;align-items:center;gap:6px;
+  font-size:12px;color:var(--yellow);font-weight:600;
+  transition:opacity .2s;
+}
+.review-toggle svg{width:14px;height:14px;stroke:var(--yellow);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .3s}
+.review-toggle.open svg{transform:rotate(180deg)}
+
+.review-body{
+  display:none;
+  padding:20px 20px 24px;
+  background:rgba(0,0,0,0.2);
+}
+.review-body.open{display:block}
+
+/* Filter tabs */
+.filter-tabs{
+  display:flex;gap:6px;margin-bottom:16px;
+}
+.f-tab{
+  padding:6px 14px;border-radius:99px;
+  font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;
+  border:1px solid var(--border);
+  background:transparent;
+  color:var(--text-3);
+  cursor:pointer;transition:all .2s;
+  font-family:'Inter',sans-serif;
+}
+.f-tab:hover{color:var(--text-2);border-color:rgba(255,255,255,0.2)}
+.f-tab.active{background:rgba(255,255,255,0.07);color:var(--text);border-color:rgba(255,255,255,0.2)}
+.f-tab.active.all{border-color:rgba(255,214,0,0.3);color:var(--yellow);background:var(--yellow-dim)}
+.f-tab.active.correct{border-color:rgba(52,211,153,0.3);color:var(--green);background:rgba(52,211,153,0.08)}
+.f-tab.active.wrong{border-color:rgba(248,113,113,0.3);color:var(--red);background:rgba(248,113,113,0.08)}
+.f-tab.active.skipped{border-color:rgba(255,255,255,0.2);color:var(--text-2);background:rgba(255,255,255,0.05)}
+
+/* Question cards */
+.q-list{display:flex;flex-direction:column;gap:10px}
+
+.q-card{
+  border-radius:12px;
+  border:1px solid var(--border);
+  overflow:hidden;
+  transition:border-color .2s;
+}
+.q-card.correct{border-color:rgba(52,211,153,0.2)}
+.q-card.wrong{border-color:rgba(248,113,113,0.2)}
+.q-card.skipped{border-color:rgba(255,255,255,0.1)}
+
+.q-head{
+  display:flex;align-items:flex-start;gap:12px;
+  padding:14px 16px;
+  cursor:pointer;
+  background:rgba(255,255,255,0.02);
+  transition:background .2s;
+}
+.q-head:hover{background:rgba(255,255,255,0.04)}
+
+.q-num{
+  flex-shrink:0;
+  width:24px;height:24px;border-radius:7px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Syne',sans-serif;font-size:10px;font-weight:800;
+  margin-top:1px;
+}
+.q-card.correct .q-num{background:rgba(52,211,153,0.15);color:var(--green)}
+.q-card.wrong .q-num{background:rgba(248,113,113,0.15);color:var(--red)}
+.q-card.skipped .q-num{background:rgba(255,255,255,0.06);color:var(--text-3)}
+
+.q-text{
+  flex:1;
+  font-size:13px;color:var(--text);line-height:1.55;font-weight:500;
+}
+
+.q-badge{
+  flex-shrink:0;
+  display:flex;align-items:center;gap:5px;
+  font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;
+  padding:4px 9px;border-radius:99px;margin-top:1px;
+}
+.q-card.correct .q-badge{background:rgba(52,211,153,0.12);color:var(--green)}
+.q-card.wrong .q-badge{background:rgba(248,113,113,0.12);color:var(--red)}
+.q-card.skipped .q-badge{background:rgba(255,255,255,0.06);color:var(--text-3)}
+.q-badge svg{width:10px;height:10px;stroke:currentColor;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+
+.q-chevron{
+  flex-shrink:0;margin-top:4px;
+  width:14px;height:14px;stroke:var(--text-3);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;
+  transition:transform .25s;
+}
+.q-head.open .q-chevron{transform:rotate(180deg)}
+
+/* Options list */
+.q-opts{
+  display:none;
+  padding:0 16px 14px 52px;
+  background:rgba(0,0,0,0.15);
+}
+.q-opts.open{display:flex;flex-direction:column;gap:6px}
+.q-opts-label{
+  font-size:10px;color:var(--text-3);text-transform:uppercase;letter-spacing:.6px;
+  font-weight:600;margin-bottom:8px;margin-top:2px;
+}
+
+.opt-row{
+  display:flex;align-items:center;gap:10px;
+  padding:9px 12px;
+  border-radius:8px;
+  border:1px solid transparent;
+  font-size:13px;line-height:1.45;
+  transition:background .15s;
+}
+/* Neutral */
+.opt-row.neutral{
+  background:rgba(255,255,255,0.025);
+  border-color:rgba(255,255,255,0.06);
+  color:var(--text-2);
+}
+/* Correct answer */
+.opt-row.is-correct{
+  background:rgba(52,211,153,0.08);
+  border-color:rgba(52,211,153,0.25);
+  color:var(--green);
+}
+/* Student picked wrong */
+.opt-row.is-wrong-pick{
+  background:rgba(248,113,113,0.08);
+  border-color:rgba(248,113,113,0.25);
+  color:var(--red);
+}
+
+.opt-dot{
+  flex-shrink:0;width:18px;height:18px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:9px;font-weight:700;
+}
+.opt-row.neutral .opt-dot{background:rgba(255,255,255,0.06);color:var(--text-3)}
+.opt-row.is-correct .opt-dot{background:rgba(52,211,153,0.2);color:var(--green)}
+.opt-row.is-wrong-pick .opt-dot{background:rgba(248,113,113,0.2);color:var(--red)}
+
+.opt-text{flex:1}
+
+.opt-tag{
+  flex-shrink:0;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;
+  padding:2px 7px;border-radius:99px;
+}
+.opt-row.is-correct .opt-tag{background:rgba(52,211,153,0.15);color:var(--green)}
+.opt-row.is-wrong-pick .opt-tag{background:rgba(248,113,113,0.15);color:var(--red)}
+
+/* Skipped notice */
+.skipped-notice{
+  display:flex;align-items:center;gap:8px;
+  padding:9px 12px;border-radius:8px;
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.08);
+  font-size:12px;color:var(--text-3);
+  margin-bottom:6px;
+}
+.skipped-notice svg{flex-shrink:0;width:13px;height:13px;stroke:var(--text-3);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* Correct answer hint for wrong/skipped */
+.correct-hint{
+  display:flex;align-items:center;gap:8px;
+  padding:9px 12px;border-radius:8px;
+  background:rgba(52,211,153,0.06);
+  border:1px solid rgba(52,211,153,0.18);
+  font-size:12px;color:var(--green);
+}
+.correct-hint svg{flex-shrink:0;width:13px;height:13px;stroke:var(--green);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+
+/* No items */
+.q-empty{
+  text-align:center;padding:24px;
+  font-size:13px;color:var(--text-3);
+}
+
 @media(max-width:480px){
   body{padding:32px 14px 60px}
   .score-section{flex-direction:column;align-items:flex-start;gap:20px}
@@ -234,6 +444,9 @@ body{
   .card-body{padding:24px 20px 28px}
   .status-strip{padding:16px 20px}
   .brand-bar{padding:12px 16px}
+  .review-header{padding:16px 20px}
+  .q-opts{padding-left:40px}
+  .filter-tabs{flex-wrap:wrap}
 }
 </style>
 </head>
@@ -347,39 +560,6 @@ body{
       </div>
     </div>
 
-    <div class="review-section">
-  <h2>Question Review</h2>
-
-  {% for r in review_data %}
-  <div class="review-card">
-      <h4>Q{{ loop.index }}. {{ r.question }}</h4>
-
-      <p>
-        <strong>Your Answer:</strong>
-        <span class="{% if r.is_correct %}correct{% else %}wrong{% endif %}">
-          {{ r.selected_answer }}
-        </span>
-      </p>
-
-      <p>
-        <strong>Correct Answer:</strong>
-        <span class="correct">
-          {{ r.correct_answer }}
-        </span>
-      </p>
-
-      <p>
-        Status:
-        {% if r.is_correct %}
-          ✅ Correct
-        {% else %}
-          ❌ Wrong
-        {% endif %}
-      </p>
-  </div>
-  {% endfor %}
-</div>
-
     <!-- CTA -->
     <div class="cta-row">
       <a href="/" class="cta-primary">
@@ -389,6 +569,113 @@ body{
     </div>
 
   </div>
+
+  <!-- ── Question Review Section ── -->
+  <div class="review-section">
+
+    <div class="review-header" id="reviewToggle" onclick="toggleReview()">
+      <div class="review-title">
+        <div class="review-title-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12h6M9 16h4"/></svg>
+        </div>
+        <div>
+          <div class="review-title-text">Question Review</div>
+          <div class="review-title-sub">See every question, your answer &amp; the correct one</div>
+        </div>
+      </div>
+      <div class="review-toggle" id="toggleLabel">
+        <span>Show</span>
+        <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+    </div>
+
+    <div class="review-body" id="reviewBody">
+
+      <!-- Filter tabs -->
+      <div class="filter-tabs">
+        <button class="f-tab active all" onclick="filterQ('all',this)">All ({{ total }})</button>
+        <button class="f-tab correct" onclick="filterQ('correct',this)">Correct ({{ score }})</button>
+        <button class="f-tab wrong" onclick="filterQ('wrong',this)">Wrong ({{ total - score - skipped_count }})</button>
+        <button class="f-tab skipped" onclick="filterQ('skipped',this)">Skipped ({{ skipped_count }})</button>
+      </div>
+
+      <div class="q-list" id="qList">
+
+        {% for item in review %}
+        {# item keys: question, options (list of str), correct_answer (str), student_answer (str or None) #}
+
+        {% if item.student_answer == item.correct_answer %}
+          {% set status = 'correct' %}
+        {% elif item.student_answer is none or item.student_answer == '' %}
+          {% set status = 'skipped' %}
+        {% else %}
+          {% set status = 'wrong' %}
+        {% endif %}
+
+        <div class="q-card {{ status }}" data-status="{{ status }}">
+
+          <!-- Question head (click to expand) -->
+          <div class="q-head" onclick="toggleQ(this)">
+            <div class="q-num">{{ loop.index }}</div>
+            <div class="q-text">{{ item.question }}</div>
+            <div class="q-badge">
+              {% if status == 'correct' %}
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Correct
+              {% elif status == 'skipped' %}
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>Skipped
+              {% else %}
+              <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>Wrong
+              {% endif %}
+            </div>
+            <svg class="q-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+
+          <!-- Options (collapsed by default) -->
+          <div class="q-opts">
+            <div class="q-opts-label">Answer choices</div>
+
+            {% if status == 'skipped' %}
+            <div class="skipped-notice">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+              You did not select an answer for this question.
+            </div>
+            {% endif %}
+
+            {% for opt in item.options %}
+
+              {# Determine row class #}
+              {% if opt == item.correct_answer and opt == item.student_answer %}
+                {% set row_cls = 'is-correct' %}
+                {% set tag = 'Your answer · Correct' %}
+              {% elif opt == item.correct_answer %}
+                {% set row_cls = 'is-correct' %}
+                {% set tag = 'Correct answer' %}
+              {% elif opt == item.student_answer %}
+                {% set row_cls = 'is-wrong-pick' %}
+                {% set tag = 'Your answer' %}
+              {% else %}
+                {% set row_cls = 'neutral' %}
+                {% set tag = '' %}
+              {% endif %}
+
+              <div class="opt-row {{ row_cls }}">
+                <div class="opt-dot">{{ loop.index }}</div>
+                <div class="opt-text">{{ opt }}</div>
+                {% if tag %}<div class="opt-tag">{{ tag }}</div>{% endif %}
+              </div>
+
+            {% endfor %}
+
+          </div>
+        </div>
+        {% endfor %}
+
+        <div class="q-empty" id="qEmpty" style="display:none">No questions in this category.</div>
+
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <script>
@@ -437,6 +724,40 @@ for(let i=0;i<70;i++){
   wrap.appendChild(el);
 }
 {% endif %}
+
+/* ── Review toggle ── */
+function toggleReview(){
+  const body = document.getElementById('reviewBody');
+  const label = document.getElementById('toggleLabel');
+  const isOpen = body.classList.toggle('open');
+  label.classList.toggle('open', isOpen);
+  label.querySelector('span').textContent = isOpen ? 'Hide' : 'Show';
+}
+
+/* ── Expand individual question ── */
+function toggleQ(head){
+  const opts = head.nextElementSibling;
+  const isOpen = opts.classList.toggle('open');
+  head.classList.toggle('open', isOpen);
+}
+
+/* ── Filter tabs ── */
+function filterQ(type, btn){
+  // Update active tab
+  document.querySelectorAll('.f-tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+
+  const cards = document.querySelectorAll('.q-card');
+  let visible = 0;
+  cards.forEach(card => {
+    const show = type === 'all' || card.dataset.status === type;
+    card.style.display = show ? '' : 'none';
+    if(show) visible++;
+  });
+
+  const empty = document.getElementById('qEmpty');
+  empty.style.display = visible === 0 ? 'block' : 'none';
+}
 </script>
 </body>
 </html>
