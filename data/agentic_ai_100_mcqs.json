@@ -1,1002 +1,502 @@
 [
   {
-    "question": "Agentic AI Q1: What is a key feature of agentic systems?",
+    "question": "What is Agentic AI?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "AI used only for image generation",
+      "AI that can plan and take actions autonomously",
+      "AI that stores data",
+      "AI used only for databases"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "AI that can plan and take actions autonomously"
   },
   {
-    "question": "Agentic AI Q2: What is a key feature of agentic systems?",
+    "question": "Which framework is widely used for building LLM applications?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Pandas",
+      "LangChain",
+      "NumPy",
+      "Flask"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "LangChain"
   },
   {
-    "question": "Agentic AI Q3: What is a key feature of agentic systems?",
+    "question": "What does LLM stand for?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Large Logic Module",
+      "Language Logic Manager",
+      "Large Language Model",
+      "Long Learning Machine"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Large Language Model"
   },
   {
-    "question": "Agentic AI Q4: What is a key feature of agentic systems?",
+    "question": "What is RAG?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Random AI Generator",
+      "Retrieval-Augmented Generation",
+      "Rapid Agent Gateway",
+      "Retrieval Agent Graph"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Retrieval-Augmented Generation"
   },
   {
-    "question": "Agentic AI Q5: What is a key feature of agentic systems?",
+    "question": "What is an embedding?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Programming function",
+      "Database table",
+      "Network protocol",
+      "Numerical representation of data"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Numerical representation of data"
   },
   {
-    "question": "Agentic AI Q6: What is a key feature of agentic systems?",
+    "question": "Which vector database is commonly used locally with LangChain?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "SQLite",
+      "MySQL",
+      "FAISS",
+      "PostgreSQL"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "FAISS"
   },
   {
-    "question": "Agentic AI Q7: What is a key feature of agentic systems?",
+    "question": "What is a Tool in Agentic AI?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Python variable",
+      "External capability an agent can use",
+      "Prompt template",
+      "Database table"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "External capability an agent can use"
   },
   {
-    "question": "Agentic AI Q8: What is a key feature of agentic systems?",
+    "question": "What is a Retriever in RAG?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Component that fetches relevant documents",
+      "Component that trains models",
+      "Component that stores data",
+      "Component that creates prompts"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Component that fetches relevant documents"
   },
   {
-    "question": "Agentic AI Q9: What is a key feature of agentic systems?",
+    "question": "Which LangChain component stores conversation history?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Memory",
+      "Retriever",
+      "Tool",
+      "PromptTemplate"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Memory"
   },
   {
-    "question": "Agentic AI Q10: What is a key feature of agentic systems?",
+    "question": "What is Prompt Engineering?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Building GPUs",
+      "Designing effective prompts for AI",
+      "Training networks",
+      "Creating databases"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Designing effective prompts for AI"
   },
   {
-    "question": "Agentic AI Q11: What is a key feature of agentic systems?",
+    "question": "Which programming language is most commonly used for Agentic AI?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Java",
+      "Python",
+      "PHP",
+      "C#"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Python"
   },
   {
-    "question": "Agentic AI Q12: What is a key feature of agentic systems?",
+    "question": "What is LangGraph?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Visualization library",
+      "Framework for stateful AI agents",
+      "Database engine",
+      "Vector search tool"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Framework for stateful AI agents"
   },
   {
-    "question": "Agentic AI Q13: What is a key feature of agentic systems?",
+    "question": "What is a node in LangGraph?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Embedding",
+      "Database",
+      "A processing step",
+      "Prompt"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "A processing step"
   },
   {
-    "question": "Agentic AI Q14: What is a key feature of agentic systems?",
+    "question": "What is an edge in LangGraph?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Database relation",
+      "Embedding vector",
+      "Connection between nodes",
+      "Python function"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Connection between nodes"
   },
   {
-    "question": "Agentic AI Q15: What is a key feature of agentic systems?",
+    "question": "Why is LangGraph useful for agent workflows?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Creates databases",
+      "Builds websites",
+      "Supports cycles and state management",
+      "Trains models"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Supports cycles and state management"
   },
   {
-    "question": "Agentic AI Q16: What is a key feature of agentic systems?",
+    "question": "What is state in LangGraph?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Prompt template",
+      "Information shared across nodes",
+      "Embedding",
+      "Database table"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Information shared across nodes"
   },
   {
-    "question": "Agentic AI Q17: What is a key feature of agentic systems?",
+    "question": "What is Chain of Thought prompting?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Encouraging step-by-step reasoning",
+      "Vector indexing",
+      "Creating embeddings",
+      "Training a model"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Encouraging step-by-step reasoning"
   },
   {
-    "question": "Agentic AI Q18: What is a key feature of agentic systems?",
+    "question": "What is Zero-Shot Prompting?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Training a model",
+      "Prompting without examples",
+      "Using fewer tokens",
+      "Prompting with many examples"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Prompting without examples"
   },
   {
-    "question": "Agentic AI Q19: What is a key feature of agentic systems?",
+    "question": "What is Few-Shot Prompting?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Providing a few examples in prompts",
+      "Training with small datasets",
+      "Providing no examples",
+      "Using fewer tokens"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Providing a few examples in prompts"
   },
   {
-    "question": "Agentic AI Q20: What is a key feature of agentic systems?",
+    "question": "What is ReAct prompting?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Database query system",
+      "Reasoning and Acting framework",
+      "React.js integration",
+      "Vector search technique"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Reasoning and Acting framework"
   },
   {
-    "question": "Agentic AI Q21: What is a key feature of agentic systems?",
+    "question": "What is a hallucination in LLMs?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Correct reasoning",
+      "Confidently generating incorrect information",
+      "Tokenization",
+      "Model training"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Confidently generating incorrect information"
   },
   {
-    "question": "Agentic AI Q22: What is a key feature of agentic systems?",
+    "question": "Which technique helps reduce hallucinations?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Normalization",
+      "Compression",
+      "RAG",
+      "Tokenization"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "RAG"
   },
   {
-    "question": "Agentic AI Q23: What is a key feature of agentic systems?",
+    "question": "What is tokenization?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Compressing files",
+      "Breaking text into tokens",
+      "Deleting words",
+      "Encrypting text"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Breaking text into tokens"
   },
   {
-    "question": "Agentic AI Q24: What is a key feature of agentic systems?",
+    "question": "What is a context window?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Maximum information a model can consider",
+      "Browser window",
+      "Memory card",
+      "Database limit"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Maximum information a model can consider"
   },
   {
-    "question": "Agentic AI Q25: What is a key feature of agentic systems?",
+    "question": "What is OpenAI Function Calling?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Creating APIs",
+      "Allowing models to invoke external functions",
+      "Building databases",
+      "Training a model"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Allowing models to invoke external functions"
   },
   {
-    "question": "Agentic AI Q26: What is a key feature of agentic systems?",
+    "question": "What is an API?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Prompt template",
+      "Interface for software communication",
+      "Database schema",
+      "Vector index"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Interface for software communication"
   },
   {
-    "question": "Agentic AI Q27: What is a key feature of agentic systems?",
+    "question": "What is similarity search?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Sorting records",
+      "Finding semantically similar vectors",
+      "Finding duplicate files",
+      "Compressing data"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Finding semantically similar vectors"
   },
   {
-    "question": "Agentic AI Q28: What is a key feature of agentic systems?",
+    "question": "Which vector database is cloud-native?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Excel",
+      "Pinecone",
+      "Oracle Forms",
+      "Mongo Shell"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Pinecone"
   },
   {
-    "question": "Agentic AI Q29: What is a key feature of agentic systems?",
+    "question": "What is Chroma DB?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Web framework",
+      "SQL database",
+      "Open-source vector database",
+      "Cloud provider"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Open-source vector database"
   },
   {
-    "question": "Agentic AI Q30: What is a key feature of agentic systems?",
+    "question": "What is FAISS used for?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Vector similarity search",
+      "API hosting",
+      "Model training",
+      "Data cleaning"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Vector similarity search"
   },
   {
-    "question": "Agentic AI Q31: What is a key feature of agentic systems?",
+    "question": "What is agent memory used for?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Maintaining context across interactions",
+      "Creating embeddings",
+      "Database indexing",
+      "Training models"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Maintaining context across interactions"
   },
   {
-    "question": "Agentic AI Q32: What is a key feature of agentic systems?",
+    "question": "What is an autonomous agent?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Database server",
+      "Agent that performs tasks independently",
+      "Prompt template",
+      "Agent requiring manual input every step"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Agent that performs tasks independently"
   },
   {
-    "question": "Agentic AI Q33: What is a key feature of agentic systems?",
+    "question": "What is Multi-Agent AI?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Multiple prompts",
+      "Multiple agents collaborating",
+      "Multiple databases",
+      "Multiple models training together"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Multiple agents collaborating"
   },
   {
-    "question": "Agentic AI Q34: What is a key feature of agentic systems?",
+    "question": "Which component allows an AI agent to access external systems?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Memory",
+      "Prompt",
+      "Tool",
+      "Embedding"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Tool"
   },
   {
-    "question": "Agentic AI Q35: What is a key feature of agentic systems?",
+    "question": "What is Human-in-the-Loop (HITL)?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Data compression",
+      "Human approval during agent execution",
+      "Human model training",
+      "Manual vector storage"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Human approval during agent execution"
   },
   {
-    "question": "Agentic AI Q36: What is a key feature of agentic systems?",
+    "question": "What is Semantic Search?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Searching by meaning instead of keywords",
+      "Searching by file size",
+      "Searching by date",
+      "Searching by extension"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Searching by meaning instead of keywords"
   },
   {
-    "question": "Agentic AI Q37: What is a key feature of agentic systems?",
+    "question": "What is a Planner Agent?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Agent that stores vectors",
+      "Agent that breaks tasks into subtasks",
+      "Agent that trains models",
+      "Agent that hosts APIs"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Agent that breaks tasks into subtasks"
   },
   {
-    "question": "Agentic AI Q38: What is a key feature of agentic systems?",
+    "question": "What is an Executor Agent?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Agent that performs planned actions",
+      "Agent that stores embeddings",
+      "Agent that manages databases",
+      "Agent that builds prompts"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Agent that performs planned actions"
   },
   {
-    "question": "Agentic AI Q39: What is a key feature of agentic systems?",
+    "question": "What is the purpose of embeddings in RAG?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Store passwords",
+      "Represent text numerically for retrieval",
+      "Generate images",
+      "Train GPUs"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Represent text numerically for retrieval"
   },
   {
-    "question": "Agentic AI Q40: What is a key feature of agentic systems?",
+    "question": "Which LangChain object is used to define reusable prompts?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "PromptTemplate",
+      "Tool",
+      "Memory",
+      "Agent"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "PromptTemplate"
   },
   {
-    "question": "Agentic AI Q41: What is a key feature of agentic systems?",
+    "question": "What is a Vector Store?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "A storage system for embeddings",
+      "A relational database",
+      "A Python package",
+      "A web server"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "A storage system for embeddings"
   },
   {
-    "question": "Agentic AI Q42: What is a key feature of agentic systems?",
+    "question": "What is Retrieval in RAG?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Fetching relevant context before generation",
+      "Training an LLM",
+      "Creating embeddings",
+      "Deploying applications"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Fetching relevant context before generation"
   },
   {
-    "question": "Agentic AI Q43: What is a key feature of agentic systems?",
+    "question": "Which LangChain feature combines multiple steps together?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Chain",
+      "Prompt",
+      "Embedding",
+      "Tool"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Chain"
   },
   {
-    "question": "Agentic AI Q44: What is a key feature of agentic systems?",
+    "question": "What is Tool Calling?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Allowing an LLM to use external tools",
+      "Creating APIs",
+      "Training models",
+      "Generating embeddings"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Allowing an LLM to use external tools"
   },
   {
-    "question": "Agentic AI Q45: What is a key feature of agentic systems?",
+    "question": "Which Python package is commonly used to interact with OpenAI models?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "requests",
+      "openai",
+      "numpy",
+      "tkinter"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "openai"
   },
   {
-    "question": "Agentic AI Q46: What is a key feature of agentic systems?",
+    "question": "What is an Agent Workflow?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Sequence of reasoning and actions",
+      "Database schema",
+      "Programming language",
+      "Network architecture"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Sequence of reasoning and actions"
   },
   {
-    "question": "Agentic AI Q47: What is a key feature of agentic systems?",
+    "question": "What is iterative reasoning in agents?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Repeating reasoning steps until a goal is reached",
+      "Deleting context",
+      "Training repeatedly",
+      "Creating vectors"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Repeating reasoning steps until a goal is reached"
   },
   {
-    "question": "Agentic AI Q48: What is a key feature of agentic systems?",
+    "question": "Why are vector databases important in Agentic AI?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Compile Python code",
+      "Host web applications",
+      "Enable efficient semantic retrieval",
+      "Train neural networks"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Enable efficient semantic retrieval"
   },
   {
-    "question": "Agentic AI Q49: What is a key feature of agentic systems?",
+    "question": "What is the main benefit of LangGraph over simple chains?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Supports branching, loops, and state",
+      "Faster SQL queries",
+      "Image generation",
+      "Database hosting"
     ],
-    "answer": "Autonomous decision making"
+    "answer": "Supports branching, loops, and state"
   },
   {
-    "question": "Agentic AI Q50: What is a key feature of agentic systems?",
+    "question": "What is the primary goal of Agentic AI systems?",
     "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
+      "Store structured data",
+      "Build websites",
+      "Reason, plan, and execute tasks autonomously",
+      "Replace programming languages"
     ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q51: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q52: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q53: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q54: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q55: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q56: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q57: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q58: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q59: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q60: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q61: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q62: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q63: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q64: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q65: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q66: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q67: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q68: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q69: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q70: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q71: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q72: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q73: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q74: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q75: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q76: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q77: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q78: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q79: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q80: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q81: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q82: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q83: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q84: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q85: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q86: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q87: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q88: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q89: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q90: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q91: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q92: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q93: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q94: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q95: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q96: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q97: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q98: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q99: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
-  },
-  {
-    "question": "Agentic AI Q100: What is a key feature of agentic systems?",
-    "options": [
-      "Autonomous decision making",
-      "Manual-only execution",
-      "Static storage",
-      "Hardware cooling"
-    ],
-    "answer": "Autonomous decision making"
+    "answer": "Reason, plan, and execute tasks autonomously"
   }
 ]
