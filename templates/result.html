@@ -36,7 +36,7 @@ body{
   position:relative;
 }
 
-/* ── Background ── */
+/* Background */
 .bg-glow{position:fixed;inset:0;pointer-events:none;z-index:0}
 .bg-glow.pass{
   background:
@@ -57,15 +57,15 @@ body{
   mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 30%,transparent 100%);
 }
 
-/* ── Confetti ── */
+/* Confetti */
 .confetti-wrap{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:1}
 .cp{position:absolute;animation:cpfall linear forwards}
 @keyframes cpfall{0%{transform:translateY(-30px) rotate(0);opacity:1}100%{transform:translateY(110vh) rotate(740deg);opacity:0}}
 
-/* ── Card ── */
+/* Card */
 .card{position:relative;z-index:10;width:100%;max-width:560px}
 
-/* Top brand bar */
+/* Brand bar */
 .brand-bar{
   display:flex;align-items:center;gap:12px;
   padding:14px 24px;
@@ -80,11 +80,7 @@ body{
   display:flex;align-items:center;justify-content:center;flex-shrink:0;
 }
 .tb-logo svg{width:20px;height:20px}
-.brand-name{
-  font-family:'Syne',sans-serif;
-  font-size:13px;font-weight:800;
-  color:var(--yellow);
-}
+.brand-name{font-family:'Syne',sans-serif;font-size:13px;font-weight:800;color:var(--yellow)}
 
 /* Status strip */
 .status-strip{
@@ -93,14 +89,8 @@ body{
   border:1px solid var(--border);
   border-top:none;border-bottom:none;
 }
-.status-strip.pass{
-  background:linear-gradient(135deg,rgba(52,211,153,0.09),rgba(255,214,0,0.04));
-  border-color:rgba(52,211,153,0.2);
-}
-.status-strip.fail{
-  background:linear-gradient(135deg,rgba(248,113,113,0.09),rgba(139,92,246,0.05));
-  border-color:rgba(248,113,113,0.2);
-}
+.status-strip.pass{background:linear-gradient(135deg,rgba(52,211,153,0.09),rgba(255,214,0,0.04));border-color:rgba(52,211,153,0.2)}
+.status-strip.fail{background:linear-gradient(135deg,rgba(248,113,113,0.09),rgba(139,92,246,0.05));border-color:rgba(248,113,113,0.2)}
 .ss-icon{
   width:48px;height:48px;border-radius:14px;flex-shrink:0;
   display:flex;align-items:center;justify-content:center;
@@ -121,8 +111,7 @@ body{
 .card-body{
   background:rgba(255,255,255,0.035);
   border:1px solid var(--border);
-  border-top:none;
-  border-radius:0 0 0 0;
+  border-top:none;border-radius:0;
   padding:32px 28px 36px;
   backdrop-filter:blur(20px);
   -webkit-backdrop-filter:blur(20px);
@@ -133,8 +122,7 @@ body{
 /* Score ring */
 .score-section{
   display:flex;align-items:center;gap:28px;
-  margin-bottom:28px;
-  padding-bottom:28px;
+  margin-bottom:28px;padding-bottom:28px;
   border-bottom:1px solid var(--border);
 }
 .ring-wrap{position:relative;width:130px;height:130px;flex-shrink:0}
@@ -147,53 +135,27 @@ body{
 }
 .ring-fill.pass{stroke:url(#passGrad)}
 .ring-fill.fail{stroke:url(#failGrad)}
-.ring-center{
-  position:absolute;inset:0;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;
-}
+.ring-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
 .ring-pct{
-  font-family:'Syne',sans-serif;
-  font-size:32px;font-weight:800;letter-spacing:-1px;line-height:1;
+  font-family:'Syne',sans-serif;font-size:32px;font-weight:800;letter-spacing:-1px;line-height:1;
   animation:pctPop .6s .5s cubic-bezier(.34,1.56,.64,1) both;
 }
-.ring-pct.pass{
-  background:linear-gradient(135deg,#34d399,#FFD600);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-}
-.ring-pct.fail{
-  background:linear-gradient(135deg,#f87171,#a78bfa);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-}
+.ring-pct.pass{background:linear-gradient(135deg,#34d399,#FFD600);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.ring-pct.fail{background:linear-gradient(135deg,#f87171,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 @keyframes pctPop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
 .ring-sub{font-size:10px;color:var(--text-3);text-transform:uppercase;letter-spacing:.6px;font-weight:500}
 
-.score-verdict{
-  font-family:'Syne',sans-serif;font-size:22px;font-weight:800;
-  letter-spacing:-.5px;margin-bottom:10px;
-}
-.score-verdict.pass{
-  background:linear-gradient(90deg,#34d399,#FFD600);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-}
-.score-verdict.fail{
-  background:linear-gradient(90deg,#f87171,#a78bfa);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
-}
+.score-verdict{font-family:'Syne',sans-serif;font-size:22px;font-weight:800;letter-spacing:-.5px;margin-bottom:10px}
+.score-verdict.pass{background:linear-gradient(90deg,#34d399,#FFD600);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.score-verdict.fail{background:linear-gradient(90deg,#f87171,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .score-tagline{font-size:13px;color:var(--text-2);line-height:1.5}
 
 /* Stats */
-.stats-grid{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:10px;
-  margin-bottom:28px;
-}
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:28px}
 .stat-card{
-  padding:16px 12px;
-  background:rgba(255,255,255,0.03);
-  border:1px solid var(--border);
-  border-radius:var(--r);
-  text-align:center;
-  opacity:0;
-  animation:statIn .4s ease forwards;
+  padding:16px 12px;background:rgba(255,255,255,0.03);
+  border:1px solid var(--border);border-radius:var(--r);
+  text-align:center;opacity:0;animation:statIn .4s ease forwards;
 }
 .stat-card:nth-child(1){animation-delay:.6s}
 .stat-card:nth-child(2){animation-delay:.75s}
@@ -216,9 +178,7 @@ body{
 .cta-row{display:flex;gap:10px;margin-bottom:0}
 .cta-primary{
   flex:1;display:flex;align-items:center;justify-content:center;gap:8px;
-  padding:13px;
-  background:var(--yellow);
-  color:#0a0a0a;
+  padding:13px;background:var(--yellow);color:#0a0a0a;
   font-family:'Syne',sans-serif;font-size:14px;font-weight:800;
   text-decoration:none;border-radius:var(--r);
   transition:transform .25s,box-shadow .25s;letter-spacing:.2px;
@@ -226,71 +186,46 @@ body{
 .cta-primary:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(255,214,0,.28)}
 .cta-primary svg{width:16px;height:16px;fill:none;stroke:#0a0a0a;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 
-/* ── Review Section ── */
+/* Review Section */
 .review-section{
-  border:1px solid var(--border);
-  border-top:none;
-  border-radius:0 0 20px 20px;
-  overflow:hidden;
+  border:1px solid var(--border);border-top:none;
+  border-radius:0 0 20px 20px;overflow:hidden;
   animation:cardIn .7s .15s cubic-bezier(.16,1,.3,1) both;
 }
-
 .review-header{
   display:flex;align-items:center;justify-content:space-between;
   padding:18px 28px;
   background:rgba(255,255,255,0.025);
-  border-bottom:1px solid var(--border);
-  cursor:pointer;
-  user-select:none;
-  transition:background .2s;
+  border-bottom:1px solid transparent;
+  cursor:pointer;user-select:none;transition:background .2s;
 }
 .review-header:hover{background:rgba(255,255,255,0.04)}
-
-.review-title{
-  display:flex;align-items:center;gap:10px;
-}
+.review-header.open{border-bottom-color:var(--border)}
+.review-title{display:flex;align-items:center;gap:10px}
 .review-title-icon{
   width:30px;height:30px;border-radius:8px;
-  background:var(--yellow-dim);
-  border:1px solid rgba(255,214,0,0.2);
+  background:var(--yellow-dim);border:1px solid rgba(255,214,0,0.2);
   display:flex;align-items:center;justify-content:center;
 }
 .review-title-icon svg{width:15px;height:15px;stroke:var(--yellow);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.review-title-text{
-  font-family:'Syne',sans-serif;font-size:13px;font-weight:700;color:var(--text);
-}
+.review-title-text{font-family:'Syne',sans-serif;font-size:13px;font-weight:700;color:var(--text)}
 .review-title-sub{font-size:11px;color:var(--text-3);margin-top:2px;font-weight:400}
-
-.review-toggle{
-  display:flex;align-items:center;gap:6px;
-  font-size:12px;color:var(--yellow);font-weight:600;
-  transition:opacity .2s;
-}
+.review-toggle{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--yellow);font-weight:600}
 .review-toggle svg{width:14px;height:14px;stroke:var(--yellow);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .3s}
 .review-toggle.open svg{transform:rotate(180deg)}
 
-.review-body{
-  display:none;
-  padding:20px 20px 24px;
-  background:rgba(0,0,0,0.2);
-}
+.review-body{display:none;padding:20px 20px 24px;background:rgba(0,0,0,0.2)}
 .review-body.open{display:block}
 
 /* Filter tabs */
-.filter-tabs{
-  display:flex;gap:6px;margin-bottom:16px;
-}
+.filter-tabs{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap}
 .f-tab{
   padding:6px 14px;border-radius:99px;
   font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;
-  border:1px solid var(--border);
-  background:transparent;
-  color:var(--text-3);
-  cursor:pointer;transition:all .2s;
-  font-family:'Inter',sans-serif;
+  border:1px solid var(--border);background:transparent;color:var(--text-3);
+  cursor:pointer;transition:all .2s;font-family:'Inter',sans-serif;
 }
 .f-tab:hover{color:var(--text-2);border-color:rgba(255,255,255,0.2)}
-.f-tab.active{background:rgba(255,255,255,0.07);color:var(--text);border-color:rgba(255,255,255,0.2)}
 .f-tab.active.all{border-color:rgba(255,214,0,0.3);color:var(--yellow);background:var(--yellow-dim)}
 .f-tab.active.correct{border-color:rgba(52,211,153,0.3);color:var(--green);background:rgba(52,211,153,0.08)}
 .f-tab.active.wrong{border-color:rgba(248,113,113,0.3);color:var(--red);background:rgba(248,113,113,0.08)}
@@ -298,45 +233,31 @@ body{
 
 /* Question cards */
 .q-list{display:flex;flex-direction:column;gap:10px}
-
-.q-card{
-  border-radius:12px;
-  border:1px solid var(--border);
-  overflow:hidden;
-  transition:border-color .2s;
-}
+.q-card{border-radius:12px;border:1px solid var(--border);overflow:hidden;transition:border-color .2s}
 .q-card.correct{border-color:rgba(52,211,153,0.2)}
 .q-card.wrong{border-color:rgba(248,113,113,0.2)}
 .q-card.skipped{border-color:rgba(255,255,255,0.1)}
 
 .q-head{
   display:flex;align-items:flex-start;gap:12px;
-  padding:14px 16px;
-  cursor:pointer;
-  background:rgba(255,255,255,0.02);
-  transition:background .2s;
+  padding:14px 16px;cursor:pointer;
+  background:rgba(255,255,255,0.02);transition:background .2s;
 }
 .q-head:hover{background:rgba(255,255,255,0.04)}
 
 .q-num{
-  flex-shrink:0;
-  width:24px;height:24px;border-radius:7px;
+  flex-shrink:0;width:24px;height:24px;border-radius:7px;
   display:flex;align-items:center;justify-content:center;
-  font-family:'Syne',sans-serif;font-size:10px;font-weight:800;
-  margin-top:1px;
+  font-family:'Syne',sans-serif;font-size:10px;font-weight:800;margin-top:1px;
 }
 .q-card.correct .q-num{background:rgba(52,211,153,0.15);color:var(--green)}
 .q-card.wrong .q-num{background:rgba(248,113,113,0.15);color:var(--red)}
 .q-card.skipped .q-num{background:rgba(255,255,255,0.06);color:var(--text-3)}
 
-.q-text{
-  flex:1;
-  font-size:13px;color:var(--text);line-height:1.55;font-weight:500;
-}
+.q-text{flex:1;font-size:13px;color:var(--text);line-height:1.55;font-weight:500}
 
 .q-badge{
-  flex-shrink:0;
-  display:flex;align-items:center;gap:5px;
+  flex-shrink:0;display:flex;align-items:center;gap:5px;
   font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;
   padding:4px 9px;border-radius:99px;margin-top:1px;
 }
@@ -347,94 +268,48 @@ body{
 
 .q-chevron{
   flex-shrink:0;margin-top:4px;
-  width:14px;height:14px;stroke:var(--text-3);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;
+  width:14px;height:14px;stroke:var(--text-3);fill:none;
+  stroke-width:2;stroke-linecap:round;stroke-linejoin:round;
   transition:transform .25s;
 }
 .q-head.open .q-chevron{transform:rotate(180deg)}
 
-/* Options list */
-.q-opts{
-  display:none;
-  padding:0 16px 14px 52px;
-  background:rgba(0,0,0,0.15);
-}
+/* Answer reveal */
+.q-opts{display:none;padding:0 16px 14px 52px;background:rgba(0,0,0,0.15)}
 .q-opts.open{display:flex;flex-direction:column;gap:6px}
-.q-opts-label{
-  font-size:10px;color:var(--text-3);text-transform:uppercase;letter-spacing:.6px;
-  font-weight:600;margin-bottom:8px;margin-top:2px;
-}
+.q-opts-label{font-size:10px;color:var(--text-3);text-transform:uppercase;letter-spacing:.6px;font-weight:600;margin-bottom:8px;margin-top:12px}
 
 .opt-row{
   display:flex;align-items:center;gap:10px;
-  padding:9px 12px;
-  border-radius:8px;
-  border:1px solid transparent;
+  padding:10px 14px;border-radius:9px;border:1px solid transparent;
   font-size:13px;line-height:1.45;
-  transition:background .15s;
 }
-/* Neutral */
-.opt-row.neutral{
-  background:rgba(255,255,255,0.025);
-  border-color:rgba(255,255,255,0.06);
-  color:var(--text-2);
-}
-/* Correct answer */
-.opt-row.is-correct{
-  background:rgba(52,211,153,0.08);
-  border-color:rgba(52,211,153,0.25);
-  color:var(--green);
-}
-/* Student picked wrong */
-.opt-row.is-wrong-pick{
-  background:rgba(248,113,113,0.08);
-  border-color:rgba(248,113,113,0.25);
-  color:var(--red);
-}
+.opt-row.is-correct{background:rgba(52,211,153,0.08);border-color:rgba(52,211,153,0.25);color:var(--green)}
+.opt-row.is-wrong-pick{background:rgba(248,113,113,0.08);border-color:rgba(248,113,113,0.25);color:var(--red)}
 
 .opt-dot{
-  flex-shrink:0;width:18px;height:18px;border-radius:50%;
+  flex-shrink:0;width:20px;height:20px;border-radius:50%;
   display:flex;align-items:center;justify-content:center;
-  font-size:9px;font-weight:700;
 }
-.opt-row.neutral .opt-dot{background:rgba(255,255,255,0.06);color:var(--text-3)}
-.opt-row.is-correct .opt-dot{background:rgba(52,211,153,0.2);color:var(--green)}
-.opt-row.is-wrong-pick .opt-dot{background:rgba(248,113,113,0.2);color:var(--red)}
+.opt-row.is-correct .opt-dot{background:rgba(52,211,153,0.2)}
+.opt-row.is-wrong-pick .opt-dot{background:rgba(248,113,113,0.2)}
+.opt-dot svg{width:11px;height:11px;stroke:currentColor;fill:none;stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round}
 
 .opt-text{flex:1}
-
-.opt-tag{
-  flex-shrink:0;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;
-  padding:2px 7px;border-radius:99px;
-}
+.opt-tag{flex-shrink:0;font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;padding:2px 8px;border-radius:99px}
 .opt-row.is-correct .opt-tag{background:rgba(52,211,153,0.15);color:var(--green)}
 .opt-row.is-wrong-pick .opt-tag{background:rgba(248,113,113,0.15);color:var(--red)}
 
 /* Skipped notice */
 .skipped-notice{
   display:flex;align-items:center;gap:8px;
-  padding:9px 12px;border-radius:8px;
-  background:rgba(255,255,255,0.03);
-  border:1px solid rgba(255,255,255,0.08);
-  font-size:12px;color:var(--text-3);
-  margin-bottom:6px;
+  padding:10px 13px;border-radius:9px;
+  background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);
+  font-size:12px;color:var(--text-3);margin-top:10px;margin-bottom:2px;
 }
 .skipped-notice svg{flex-shrink:0;width:13px;height:13px;stroke:var(--text-3);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 
-/* Correct answer hint for wrong/skipped */
-.correct-hint{
-  display:flex;align-items:center;gap:8px;
-  padding:9px 12px;border-radius:8px;
-  background:rgba(52,211,153,0.06);
-  border:1px solid rgba(52,211,153,0.18);
-  font-size:12px;color:var(--green);
-}
-.correct-hint svg{flex-shrink:0;width:13px;height:13px;stroke:var(--green);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
-
-/* No items */
-.q-empty{
-  text-align:center;padding:24px;
-  font-size:13px;color:var(--text-3);
-}
+.q-empty{text-align:center;padding:24px;font-size:13px;color:var(--text-3)}
 
 @media(max-width:480px){
   body{padding:32px 14px 60px}
@@ -445,16 +320,15 @@ body{
   .status-strip{padding:16px 20px}
   .brand-bar{padding:12px 16px}
   .review-header{padding:16px 20px}
-  .q-opts{padding-left:40px}
-  .filter-tabs{flex-wrap:wrap}
+  .q-opts{padding-left:16px}
 }
 </style>
 </head>
 <body>
 
-<div class="bg-glow {% if percentage >= 40 %}pass{% else %}fail{% endif %}"></div>
+<div class="bg-glow {% if percentage >= 70 %}pass{% else %}fail{% endif %}"></div>
 <div class="grid-lines"></div>
-{% if percentage >= 40 %}<div class="confetti-wrap" id="confWrap"></div>{% endif %}
+{% if percentage >= 70 %}<div class="confetti-wrap" id="confWrap"></div>{% endif %}
 
 <div class="card">
 
@@ -475,33 +349,30 @@ body{
   </div>
 
   <!-- Status strip -->
-  <div class="status-strip {% if percentage >= 40 %}pass{% else %}fail{% endif %}">
+  <div class="status-strip {% if percentage >= 70 %}pass{% else %}fail{% endif %}">
     <div class="ss-icon">
-      {% if percentage >= 40 %}
+      {% if percentage >= 70 %}
       <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
       {% else %}
       <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
       {% endif %}
     </div>
     <div>
-      <div class="ss-label">{% if percentage >= 40 %}Congratulations!{% else %}Better luck next time{% endif %}</div>
-      <div class="ss-desc">{% if percentage >= 40 %}You've cleared the exam successfully{% else %}You didn't meet the passing criteria{% endif %}</div>
+      <div class="ss-label">{% if percentage >= 70 %}Congratulations!{% else %}Better luck next time{% endif %}</div>
+      <div class="ss-desc">{% if percentage >= 70 %}You've cleared the exam successfully{% else %}You didn't meet the passing criteria{% endif %}</div>
     </div>
   </div>
 
   <!-- Body -->
   <div class="card-body">
 
-    <!-- SVG gradients -->
     <svg width="0" height="0" style="position:absolute">
       <defs>
         <linearGradient id="passGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="#34d399"/>
-          <stop offset="100%" stop-color="#FFD600"/>
+          <stop offset="0%" stop-color="#34d399"/><stop offset="100%" stop-color="#FFD600"/>
         </linearGradient>
         <linearGradient id="failGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="#f87171"/>
-          <stop offset="100%" stop-color="#a78bfa"/>
+          <stop offset="0%" stop-color="#f87171"/><stop offset="100%" stop-color="#a78bfa"/>
         </linearGradient>
       </defs>
     </svg>
@@ -511,22 +382,22 @@ body{
       <div class="ring-wrap">
         <svg class="ring-svg" width="130" height="130" viewBox="0 0 130 130">
           <circle class="ring-track" cx="65" cy="65" r="56"/>
-          <circle class="ring-fill {% if percentage >= 40 %}pass{% else %}fail{% endif %}" id="ringFill" cx="65" cy="65" r="56"/>
+          <circle class="ring-fill {% if percentage >= 70 %}pass{% else %}fail{% endif %}" id="ringFill" cx="65" cy="65" r="56"/>
         </svg>
         <div class="ring-center">
-          <span class="ring-pct {% if percentage >= 40 %}pass{% else %}fail{% endif %}" id="pctEl">0%</span>
+          <span class="ring-pct {% if percentage >= 70 %}pass{% else %}fail{% endif %}" id="pctEl">0%</span>
           <span class="ring-sub">Score</span>
         </div>
       </div>
       <div class="score-info">
-        <div class="score-verdict {% if percentage >= 40 %}pass{% else %}fail{% endif %}">
-          {% if percentage >= 40 %}PASS ✓{% else %}FAIL ✗{% endif %}
+        <div class="score-verdict {% if percentage >= 70 %}pass{% else %}fail{% endif %}">
+          {% if percentage >= 70 %}PASS ✓{% else %}FAIL ✗{% endif %}
         </div>
         <div class="score-tagline">
-          {% if percentage >= 40 %}
+          {% if percentage >= 70 %}
             You scored {{ score }} out of {{ total }} questions correctly.
           {% else %}
-            You need 40% to pass. You scored {{ percentage }}%.
+            You need 70% to pass. You scored {{ percentage }}%.
           {% endif %}
         </div>
       </div>
@@ -540,7 +411,7 @@ body{
       </div>
       <div class="stat-card">
         <div class="stat-val r">{{ total - score }}</div>
-        <div class="stat-key">Wrong</div>
+        <div class="stat-key">Wrong / Skipped</div>
       </div>
       <div class="stat-card">
         <div class="stat-val y">{{ total }}</div>
@@ -570,7 +441,7 @@ body{
 
   </div>
 
-  <!-- ── Question Review Section ── -->
+  <!-- Question Review Section -->
   <div class="review-section">
 
     <div class="review-header" id="reviewToggle" onclick="toggleReview()">
@@ -580,7 +451,7 @@ body{
         </div>
         <div>
           <div class="review-title-text">Question Review</div>
-          <div class="review-title-sub">See every question, your answer &amp; the correct one</div>
+          <div class="review-title-sub">Check which answers you got right or wrong</div>
         </div>
       </div>
       <div class="review-toggle" id="toggleLabel">
@@ -593,81 +464,74 @@ body{
 
       <!-- Filter tabs -->
       <div class="filter-tabs">
-        <button class="f-tab active all" onclick="filterQ('all',this)">All ({{ total }})</button>
-        <button class="f-tab correct" onclick="filterQ('correct',this)">Correct ({{ score }})</button>
-        <button class="f-tab wrong" onclick="filterQ('wrong',this)">Wrong ({{ total - score - skipped_count }})</button>
-        <button class="f-tab skipped" onclick="filterQ('skipped',this)">Skipped ({{ skipped_count }})</button>
+        <button class="f-tab active all"     onclick="filterQ('all',this)">All ({{ total }})</button>
+        <button class="f-tab correct"        onclick="filterQ('correct',this)">Correct ({{ score }})</button>
+        <button class="f-tab wrong"          onclick="filterQ('wrong',this)">Wrong ({{ total - score - skipped_count }})</button>
+        <button class="f-tab skipped"        onclick="filterQ('skipped',this)">Skipped ({{ skipped_count }})</button>
       </div>
 
       <div class="q-list" id="qList">
 
         {% for item in review %}
-        {# item keys: question, options (list of str), correct_answer (str), student_answer (str or None) #}
 
-        {% if item.student_answer == item.correct_answer %}
-          {% set status = 'correct' %}
-        {% elif item.student_answer is none or item.student_answer == '' %}
-          {% set status = 'skipped' %}
-        {% else %}
-          {% set status = 'wrong' %}
-        {% endif %}
+          {% if item.student_answer == item.correct_answer %}
+            {% set status = 'correct' %}
+          {% elif item.student_answer is none or item.student_answer == '' %}
+            {% set status = 'skipped' %}
+          {% else %}
+            {% set status = 'wrong' %}
+          {% endif %}
 
-        <div class="q-card {{ status }}" data-status="{{ status }}">
+          <div class="q-card {{ status }}" data-status="{{ status }}">
 
-          <!-- Question head (click to expand) -->
-          <div class="q-head" onclick="toggleQ(this)">
-            <div class="q-num">{{ loop.index }}</div>
-            <div class="q-text">{{ item.question }}</div>
-            <div class="q-badge">
-              {% if status == 'correct' %}
-              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Correct
-              {% elif status == 'skipped' %}
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>Skipped
-              {% else %}
-              <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>Wrong
-              {% endif %}
-            </div>
-            <svg class="q-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
-          </div>
-
-          <!-- Options (collapsed by default) -->
-          <div class="q-opts">
-            <div class="q-opts-label">Answer choices</div>
-
-            {% if status == 'skipped' %}
-            <div class="skipped-notice">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
-              You did not select an answer for this question.
-            </div>
-            {% endif %}
-
-            {% for opt in item.options %}
-
-              {# Determine row class #}
-              {% if opt == item.correct_answer and opt == item.student_answer %}
-                {% set row_cls = 'is-correct' %}
-                {% set tag = 'Your answer · Correct' %}
-              {% elif opt == item.correct_answer %}
-                {% set row_cls = 'is-correct' %}
-                {% set tag = 'Correct answer' %}
-              {% elif opt == item.student_answer %}
-                {% set row_cls = 'is-wrong-pick' %}
-                {% set tag = 'Your answer' %}
-              {% else %}
-                {% set row_cls = 'neutral' %}
-                {% set tag = '' %}
-              {% endif %}
-
-              <div class="opt-row {{ row_cls }}">
-                <div class="opt-dot">{{ loop.index }}</div>
-                <div class="opt-text">{{ opt }}</div>
-                {% if tag %}<div class="opt-tag">{{ tag }}</div>{% endif %}
+            <!-- Question header -->
+            <div class="q-head" onclick="toggleQ(this)">
+              <div class="q-num">{{ loop.index }}</div>
+              <div class="q-text">{{ item.question }}</div>
+              <div class="q-badge">
+                {% if status == 'correct' %}
+                  <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Correct
+                {% elif status == 'skipped' %}
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>Skipped
+                {% else %}
+                  <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>Wrong
+                {% endif %}
               </div>
+              <svg class="q-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+            </div>
 
-            {% endfor %}
+            <!-- Answer reveal — only student's chosen option, no correct answer shown -->
+            <div class="q-opts">
+              <div class="q-opts-label">Your answer</div>
 
+              {% if status == 'skipped' %}
+                <div class="skipped-notice">
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+                  You did not select an answer for this question.
+                </div>
+
+              {% elif status == 'correct' %}
+                <div class="opt-row is-correct">
+                  <div class="opt-dot">
+                    <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+                  </div>
+                  <div class="opt-text">{{ item.student_answer }}</div>
+                  <div class="opt-tag">Correct</div>
+                </div>
+
+              {% else %}
+                <div class="opt-row is-wrong-pick">
+                  <div class="opt-dot">
+                    <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                  </div>
+                  <div class="opt-text">{{ item.student_answer }}</div>
+                  <div class="opt-tag">Incorrect</div>
+                </div>
+              {% endif %}
+
+            </div>
           </div>
-        </div>
+
         {% endfor %}
 
         <div class="q-empty" id="qEmpty" style="display:none">No questions in this category.</div>
@@ -679,84 +543,82 @@ body{
 </div>
 
 <script>
-const PCT = {{ percentage }};
+const PCT   = {{ percentage }};
 const SCORE = {{ score }};
 const TOTAL = {{ total }};
-const CIRC = 2 * Math.PI * 56;
+const CIRC  = 2 * Math.PI * 56;
 
 const ring = document.getElementById('ringFill');
-ring.style.strokeDasharray = CIRC;
+ring.style.strokeDasharray  = CIRC;
 ring.style.strokeDashoffset = CIRC;
-setTimeout(()=>{ ring.style.strokeDashoffset = CIRC - (PCT/100)*CIRC; }, 80);
+setTimeout(() => { ring.style.strokeDashoffset = CIRC - (PCT / 100) * CIRC; }, 80);
 
 const pctEl = document.getElementById('pctEl');
-let curr=0;
-const steps=60, dur=1200;
-const inc=PCT/steps, intv=dur/steps;
-const counter=setInterval(()=>{
-  curr=Math.min(curr+inc,PCT);
-  pctEl.textContent=Math.round(curr)+'%';
-  if(curr>=PCT) clearInterval(counter);
-},intv);
+let curr = 0;
+const steps = 60, dur = 1200;
+const inc = PCT / steps, intv = dur / steps;
+const counter = setInterval(() => {
+  curr = Math.min(curr + inc, PCT);
+  pctEl.textContent = Math.round(curr) + '%';
+  if (curr >= PCT) clearInterval(counter);
+}, intv);
 
-setTimeout(()=>{
-  document.getElementById('bkCorrect').style.width=(SCORE/TOTAL*100)+'%';
-  document.getElementById('bkWrong').style.width=((TOTAL-SCORE)/TOTAL*100)+'%';
-},700);
+setTimeout(() => {
+  document.getElementById('bkCorrect').style.width = (SCORE / TOTAL * 100) + '%';
+  document.getElementById('bkWrong').style.width   = ((TOTAL - SCORE) / TOTAL * 100) + '%';
+}, 700);
 
-{% if percentage >= 40 %}
-const colors=['#FFD600','#34d399','#ffffff','#fcd34d','#6ee7b7','#FFF176'];
-const wrap=document.getElementById('confWrap');
-for(let i=0;i<70;i++){
-  const el=document.createElement('div');
-  el.className='cp';
-  const sz=Math.random()*8+4;
-  el.style.cssText=[
-    'left:'+(Math.random()*100)+'%',
+{% if percentage >= 70 %}
+const colors = ['#FFD600','#34d399','#ffffff','#fcd34d','#6ee7b7','#FFF176'];
+const wrap   = document.getElementById('confWrap');
+for (let i = 0; i < 70; i++) {
+  const el = document.createElement('div');
+  el.className = 'cp';
+  const sz = Math.random() * 8 + 4;
+  el.style.cssText = [
+    'left:'   + (Math.random() * 100) + '%',
     'top:-20px',
-    'width:'+sz+'px','height:'+sz+'px',
-    'background:'+colors[Math.floor(Math.random()*colors.length)],
-    'border-radius:'+(Math.random()>.45?'50%':'3px'),
-    'animation-duration:'+(Math.random()*2+2)+'s',
-    'animation-delay:'+(Math.random()*1.8)+'s',
-    'opacity:'+(Math.random()*.7+.3)
+    'width:'  + sz + 'px', 'height:' + sz + 'px',
+    'background:' + colors[Math.floor(Math.random() * colors.length)],
+    'border-radius:' + (Math.random() > .45 ? '50%' : '3px'),
+    'animation-duration:' + (Math.random() * 2 + 2) + 's',
+    'animation-delay:'    + (Math.random() * 1.8)   + 's',
+    'opacity:' + (Math.random() * .7 + .3)
   ].join(';');
   wrap.appendChild(el);
 }
 {% endif %}
 
-/* ── Review toggle ── */
-function toggleReview(){
-  const body = document.getElementById('reviewBody');
+/* Review panel toggle */
+function toggleReview() {
+  const body  = document.getElementById('reviewBody');
+  const hdr   = document.getElementById('reviewToggle');
   const label = document.getElementById('toggleLabel');
   const isOpen = body.classList.toggle('open');
+  hdr.classList.toggle('open', isOpen);
   label.classList.toggle('open', isOpen);
   label.querySelector('span').textContent = isOpen ? 'Hide' : 'Show';
 }
 
-/* ── Expand individual question ── */
-function toggleQ(head){
-  const opts = head.nextElementSibling;
+/* Individual question expand */
+function toggleQ(head) {
+  const opts   = head.nextElementSibling;
   const isOpen = opts.classList.toggle('open');
   head.classList.toggle('open', isOpen);
 }
 
-/* ── Filter tabs ── */
-function filterQ(type, btn){
-  // Update active tab
+/* Filter tabs */
+function filterQ(type, btn) {
   document.querySelectorAll('.f-tab').forEach(t => t.classList.remove('active'));
   btn.classList.add('active');
-
   const cards = document.querySelectorAll('.q-card');
   let visible = 0;
   cards.forEach(card => {
     const show = type === 'all' || card.dataset.status === type;
     card.style.display = show ? '' : 'none';
-    if(show) visible++;
+    if (show) visible++;
   });
-
-  const empty = document.getElementById('qEmpty');
-  empty.style.display = visible === 0 ? 'block' : 'none';
+  document.getElementById('qEmpty').style.display = visible === 0 ? 'block' : 'none';
 }
 </script>
 </body>
