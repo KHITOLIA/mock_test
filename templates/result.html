@@ -347,6 +347,39 @@ body{
       </div>
     </div>
 
+    <div class="review-section">
+  <h2>Question Review</h2>
+
+  {% for r in review_data %}
+  <div class="review-card">
+      <h4>Q{{ loop.index }}. {{ r.question }}</h4>
+
+      <p>
+        <strong>Your Answer:</strong>
+        <span class="{% if r.is_correct %}correct{% else %}wrong{% endif %}">
+          {{ r.selected_answer }}
+        </span>
+      </p>
+
+      <p>
+        <strong>Correct Answer:</strong>
+        <span class="correct">
+          {{ r.correct_answer }}
+        </span>
+      </p>
+
+      <p>
+        Status:
+        {% if r.is_correct %}
+          ✅ Correct
+        {% else %}
+          ❌ Wrong
+        {% endif %}
+      </p>
+  </div>
+  {% endfor %}
+</div>
+
     <!-- CTA -->
     <div class="cta-row">
       <a href="/" class="cta-primary">
