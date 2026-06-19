@@ -3,17 +3,17 @@
     "question": "What is Data Science?",
     "options": [
       "Extracting insights from data",
-      "Building computer hardware",
+      "Managing networks",
       "Creating websites only",
-      "Managing networks"
+      "Building computer hardware"
     ],
     "answer": "Extracting insights from data"
   },
   {
     "question": "Which language is most commonly used in Data Science?",
     "options": [
-      "Python",
       "HTML",
+      "Python",
       "CSS",
       "PHP"
     ],
@@ -22,19 +22,19 @@
   {
     "question": "Which library is commonly used for data analysis in Python?",
     "options": [
-      "Pandas",
       "Flask",
       "Tkinter",
-      "Pygame"
+      "Pygame",
+      "Pandas"
     ],
     "answer": "Pandas"
   },
   {
     "question": "Which library is used for numerical computations?",
     "options": [
-      "NumPy",
       "Bootstrap",
       "Django",
+      "NumPy",
       "React"
     ],
     "answer": "NumPy"
@@ -42,10 +42,10 @@
   {
     "question": "What is a dataset?",
     "options": [
-      "Collection of data",
       "Computer program",
       "Database server",
-      "Operating system"
+      "Operating system",
+      "Collection of data"
     ],
     "answer": "Collection of data"
   },
@@ -62,8 +62,8 @@
   {
     "question": "What is data cleaning?",
     "options": [
-      "Removing errors and inconsistencies",
       "Deleting all data",
+      "Removing errors and inconsistencies",
       "Formatting code",
       "Installing software"
     ],
@@ -72,18 +72,18 @@
   {
     "question": "Which file format is commonly used for datasets?",
     "options": [
-      "CSV",
       "MP3",
       "PNG",
-      "EXE"
+      "EXE",
+      "CSV"
     ],
     "answer": "CSV"
   },
   {
     "question": "What does CSV stand for?",
     "options": [
-      "Comma Separated Values",
       "Common Stored Variables",
+      "Comma Separated Values",
       "Computer System Values",
       "Central Storage View"
     ],
@@ -92,8 +92,8 @@
   {
     "question": "What is a feature in machine learning?",
     "options": [
-      "Input variable",
       "Output result",
+      "Input variable",
       "Error value",
       "Chart type"
     ],
@@ -112,18 +112,18 @@
   {
     "question": "Which chart is best for showing trends over time?",
     "options": [
-      "Line Chart",
       "Pie Chart",
       "Histogram",
-      "Scatter Plot"
+      "Scatter Plot",
+      "Line Chart"
     ],
     "answer": "Line Chart"
   },
   {
     "question": "Which chart shows proportions of a whole?",
     "options": [
-      "Pie Chart",
       "Line Chart",
+      "Pie Chart",
       "Scatter Plot",
       "Box Plot"
     ],
@@ -132,9 +132,9 @@
   {
     "question": "Which library is commonly used for visualization?",
     "options": [
-      "Matplotlib",
       "NumPy",
       "OpenCV",
+      "Matplotlib",
       "TensorFlow"
     ],
     "answer": "Matplotlib"
@@ -142,9 +142,9 @@
   {
     "question": "What is missing data?",
     "options": [
-      "Unavailable values in a dataset",
       "Extra columns",
       "Duplicate rows",
+      "Unavailable values in a dataset",
       "Stored files"
     ],
     "answer": "Unavailable values in a dataset"
@@ -152,9 +152,9 @@
   {
     "question": "What is the mean?",
     "options": [
-      "Average value",
       "Middle value",
       "Most frequent value",
+      "Average value",
       "Largest value"
     ],
     "answer": "Average value"
@@ -162,10 +162,10 @@
   {
     "question": "What is the median?",
     "options": [
-      "Middle value in sorted data",
       "Average value",
       "Largest value",
-      "Smallest value"
+      "Smallest value",
+      "Middle value in sorted data"
     ],
     "answer": "Middle value in sorted data"
   },
@@ -182,9 +182,9 @@
   {
     "question": "What is an outlier?",
     "options": [
-      "An unusually different value",
       "A missing value",
       "A duplicate row",
+      "An unusually different value",
       "A column name"
     ],
     "answer": "An unusually different value"
@@ -202,8 +202,8 @@
   {
     "question": "Why is EDA important?",
     "options": [
-      "To understand data patterns",
       "To create websites",
+      "To understand data patterns",
       "To install Python",
       "To manage databases"
     ],
@@ -212,9 +212,9 @@
   {
     "question": "What is correlation?",
     "options": [
-      "Relationship between variables",
       "Data cleaning process",
       "Chart type",
+      "Relationship between variables",
       "Programming language"
     ],
     "answer": "Relationship between variables"
@@ -222,8 +222,8 @@
   {
     "question": "A correlation value close to 1 indicates?",
     "options": [
-      "Strong positive relationship",
       "No relationship",
+      "Strong positive relationship",
       "Strong negative relationship",
       "Missing values"
     ],
@@ -232,10 +232,10 @@
   {
     "question": "What is machine learning?",
     "options": [
-      "Teaching computers to learn from data",
       "Building hardware",
       "Writing HTML pages",
-      "Creating databases"
+      "Creating databases",
+      "Teaching computers to learn from data"
     ],
     "answer": "Teaching computers to learn from data"
   },
@@ -252,8 +252,8 @@
   {
     "question": "What is unsupervised learning?",
     "options": [
-      "Learning from unlabeled data",
       "Learning with labels",
+      "Learning from unlabeled data",
       "Learning with hardware",
       "Learning from images only"
     ],
@@ -262,9 +262,9 @@
   {
     "question": "Which algorithm is used for classification?",
     "options": [
-      "Logistic Regression",
       "K-Means",
       "Apriori",
+      "Logistic Regression",
       "PCA"
     ],
     "answer": "Logistic Regression"
@@ -272,19 +272,19 @@
   {
     "question": "Which algorithm is commonly used for clustering?",
     "options": [
-      "K-Means",
       "Linear Regression",
       "Decision Tree",
-      "Random Forest"
+      "Random Forest",
+      "K-Means"
     ],
     "answer": "K-Means"
   },
   {
     "question": "What is regression used for?",
     "options": [
-      "Predicting continuous values",
       "Grouping data",
       "Finding duplicates",
+      "Predicting continuous values",
       "Creating charts"
     ],
     "answer": "Predicting continuous values"
@@ -292,8 +292,8 @@
   {
     "question": "Which algorithm predicts numerical values?",
     "options": [
-      "Linear Regression",
       "K-Means",
+      "Linear Regression",
       "Naive Bayes",
       "KNN Classification"
     ],
@@ -312,8 +312,8 @@
   {
     "question": "What is model training?",
     "options": [
-      "Learning patterns from data",
       "Installing software",
+      "Learning patterns from data",
       "Creating datasets",
       "Drawing charts"
     ],
@@ -322,9 +322,9 @@
   {
     "question": "What is testing data used for?",
     "options": [
-      "Evaluating model performance",
       "Training the model",
       "Cleaning data",
+      "Evaluating model performance",
       "Creating graphs"
     ],
     "answer": "Evaluating model performance"
@@ -332,19 +332,19 @@
   {
     "question": "What is accuracy?",
     "options": [
-      "Percentage of correct predictions",
       "Training speed",
       "Dataset size",
-      "Memory usage"
+      "Memory usage",
+      "Percentage of correct predictions"
     ],
     "answer": "Percentage of correct predictions"
   },
   {
     "question": "Which library is widely used for machine learning?",
     "options": [
-      "Scikit-learn",
       "Flask",
       "Bootstrap",
+      "Scikit-learn",
       "BeautifulSoup"
     ],
     "answer": "Scikit-learn"
@@ -362,8 +362,8 @@
   {
     "question": "What is underfitting?",
     "options": [
-      "Model fails to learn patterns",
       "Model is too accurate",
+      "Model fails to learn patterns",
       "Model is deployed",
       "Data is duplicated"
     ],
@@ -382,9 +382,9 @@
   {
     "question": "What is data visualization?",
     "options": [
-      "Representing data graphically",
       "Deleting data",
       "Training models",
+      "Representing data graphically",
       "Creating APIs"
     ],
     "answer": "Representing data graphically"
@@ -392,8 +392,8 @@
   {
     "question": "Which library provides advanced statistical visualizations?",
     "options": [
-      "Seaborn",
       "Flask",
+      "Seaborn",
       "NumPy",
       "Tkinter"
     ],
@@ -402,8 +402,8 @@
   {
     "question": "What is SQL commonly used for in Data Science?",
     "options": [
-      "Querying databases",
       "Building games",
+      "Querying databases",
       "Editing videos",
       "Creating mobile apps"
     ],
@@ -412,19 +412,19 @@
   {
     "question": "Which SQL command retrieves data?",
     "options": [
-      "SELECT",
       "INSERT",
       "DELETE",
-      "UPDATE"
+      "UPDATE",
+      "SELECT"
     ],
     "answer": "SELECT"
   },
   {
     "question": "What is Big Data?",
     "options": [
-      "Very large datasets",
       "Large computer screens",
       "Large software",
+      "Very large datasets",
       "Large databases only"
     ],
     "answer": "Very large datasets"
@@ -442,18 +442,18 @@
   {
     "question": "Which tool is popular for creating dashboards?",
     "options": [
-      "Power BI",
       "Notepad",
       "Paint",
-      "WordPad"
+      "WordPad",
+      "Power BI"
     ],
     "answer": "Power BI"
   },
   {
     "question": "What is Data Analytics?",
     "options": [
-      "Analyzing data for insights",
       "Building servers",
+      "Analyzing data for insights",
       "Writing CSS",
       "Managing networks"
     ],
@@ -462,9 +462,9 @@
   {
     "question": "What is predictive analytics?",
     "options": [
-      "Using data to forecast future outcomes",
       "Cleaning data",
       "Creating charts",
+      "Using data to forecast future outcomes",
       "Deleting records"
     ],
     "answer": "Using data to forecast future outcomes"
@@ -472,8 +472,8 @@
   {
     "question": "What is a KPI?",
     "options": [
-      "Key Performance Indicator",
       "Knowledge Processing Interface",
+      "Key Performance Indicator",
       "Key Programming Index",
       "Kernel Performance Integration"
     ],
@@ -482,17 +482,21 @@
   {
     "question": "What is the primary goal of Data Science?",
     "options": [
-      "Extract meaningful insights from data",
       "Build computer hardware",
       "Create operating systems",
-      "Design websites"
+      "Design websites",
+      "Extract meaningful insights from data"
     ],
     "answer": "Extract meaningful insights from data"
   },
   {
-    "question" : " What is the primary cause of data leakage in machine learning",
-    "options" : [" The dataset contains missing values" , 
-    " Information from outside the training data unintentionally influences the model’s training process", 
-      " The training dataset is too small", "The model takes too long to train"]
+    "question": "What is the primary cause of data leakage in machine learning?",
+    "options": [
+      "The dataset contains missing values",
+      "Information from outside the training data unintentionally influences the model’s training process",
+      "The training dataset is too small",
+      "The model takes too long to train"
+    ],
+    "answer": "Information from outside the training data unintentionally influences the model’s training process"
   }
 ]
