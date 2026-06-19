@@ -1,1002 +1,492 @@
 [
   {
-    "question": "Data Science Q1: What is a common task in data science?",
+    "question": "What is Data Science?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Extracting insights from data",
+      "Building computer hardware",
+      "Creating websites only",
+      "Managing networks"
     ],
-    "answer": "Building predictive models"
+    "answer": "Extracting insights from data"
   },
   {
-    "question": "Data Science Q2: What is a common task in data science?",
+    "question": "Which language is most commonly used in Data Science?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Python",
+      "HTML",
+      "CSS",
+      "PHP"
     ],
-    "answer": "Building predictive models"
+    "answer": "Python"
   },
   {
-    "question": "Data Science Q3: What is a common task in data science?",
+    "question": "Which library is commonly used for data analysis in Python?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Pandas",
+      "Flask",
+      "Tkinter",
+      "Pygame"
     ],
-    "answer": "Building predictive models"
+    "answer": "Pandas"
   },
   {
-    "question": "Data Science Q4: What is a common task in data science?",
+    "question": "Which library is used for numerical computations?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "NumPy",
+      "Bootstrap",
+      "Django",
+      "React"
     ],
-    "answer": "Building predictive models"
+    "answer": "NumPy"
   },
   {
-    "question": "Data Science Q5: What is a common task in data science?",
+    "question": "What is a dataset?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Collection of data",
+      "Computer program",
+      "Database server",
+      "Operating system"
     ],
-    "answer": "Building predictive models"
+    "answer": "Collection of data"
   },
   {
-    "question": "Data Science Q6: What is a common task in data science?",
+    "question": "What is the first step in a Data Science project?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Understanding the problem",
+      "Building a model",
+      "Deploying the model",
+      "Creating charts"
     ],
-    "answer": "Building predictive models"
+    "answer": "Understanding the problem"
   },
   {
-    "question": "Data Science Q7: What is a common task in data science?",
+    "question": "What is data cleaning?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Removing errors and inconsistencies",
+      "Deleting all data",
+      "Formatting code",
+      "Installing software"
     ],
-    "answer": "Building predictive models"
+    "answer": "Removing errors and inconsistencies"
   },
   {
-    "question": "Data Science Q8: What is a common task in data science?",
+    "question": "Which file format is commonly used for datasets?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "CSV",
+      "MP3",
+      "PNG",
+      "EXE"
     ],
-    "answer": "Building predictive models"
+    "answer": "CSV"
   },
   {
-    "question": "Data Science Q9: What is a common task in data science?",
+    "question": "What does CSV stand for?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Comma Separated Values",
+      "Common Stored Variables",
+      "Computer System Values",
+      "Central Storage View"
     ],
-    "answer": "Building predictive models"
+    "answer": "Comma Separated Values"
   },
   {
-    "question": "Data Science Q10: What is a common task in data science?",
+    "question": "What is a feature in machine learning?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Input variable",
+      "Output result",
+      "Error value",
+      "Chart type"
     ],
-    "answer": "Building predictive models"
+    "answer": "Input variable"
   },
   {
-    "question": "Data Science Q11: What is a common task in data science?",
+    "question": "What is the target variable?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Output variable to predict",
+      "Input column",
+      "Missing value",
+      "Dataset name"
     ],
-    "answer": "Building predictive models"
+    "answer": "Output variable to predict"
   },
   {
-    "question": "Data Science Q12: What is a common task in data science?",
+    "question": "Which chart is best for showing trends over time?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Line Chart",
+      "Pie Chart",
+      "Histogram",
+      "Scatter Plot"
     ],
-    "answer": "Building predictive models"
+    "answer": "Line Chart"
   },
   {
-    "question": "Data Science Q13: What is a common task in data science?",
+    "question": "Which chart shows proportions of a whole?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Pie Chart",
+      "Line Chart",
+      "Scatter Plot",
+      "Box Plot"
     ],
-    "answer": "Building predictive models"
+    "answer": "Pie Chart"
   },
   {
-    "question": "Data Science Q14: What is a common task in data science?",
+    "question": "Which library is commonly used for visualization?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Matplotlib",
+      "NumPy",
+      "OpenCV",
+      "TensorFlow"
     ],
-    "answer": "Building predictive models"
+    "answer": "Matplotlib"
   },
   {
-    "question": "Data Science Q15: What is a common task in data science?",
+    "question": "What is missing data?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Unavailable values in a dataset",
+      "Extra columns",
+      "Duplicate rows",
+      "Stored files"
     ],
-    "answer": "Building predictive models"
+    "answer": "Unavailable values in a dataset"
   },
   {
-    "question": "Data Science Q16: What is a common task in data science?",
+    "question": "What is the mean?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Average value",
+      "Middle value",
+      "Most frequent value",
+      "Largest value"
     ],
-    "answer": "Building predictive models"
+    "answer": "Average value"
   },
   {
-    "question": "Data Science Q17: What is a common task in data science?",
+    "question": "What is the median?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Middle value in sorted data",
+      "Average value",
+      "Largest value",
+      "Smallest value"
     ],
-    "answer": "Building predictive models"
+    "answer": "Middle value in sorted data"
   },
   {
-    "question": "Data Science Q18: What is a common task in data science?",
+    "question": "What is the mode?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Most frequent value",
+      "Average value",
+      "Middle value",
+      "Range value"
     ],
-    "answer": "Building predictive models"
+    "answer": "Most frequent value"
   },
   {
-    "question": "Data Science Q19: What is a common task in data science?",
+    "question": "What is an outlier?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "An unusually different value",
+      "A missing value",
+      "A duplicate row",
+      "A column name"
     ],
-    "answer": "Building predictive models"
+    "answer": "An unusually different value"
   },
   {
-    "question": "Data Science Q20: What is a common task in data science?",
+    "question": "What does EDA stand for?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Exploratory Data Analysis",
+      "External Data Access",
+      "Efficient Data Arrangement",
+      "Extended Database Analysis"
     ],
-    "answer": "Building predictive models"
+    "answer": "Exploratory Data Analysis"
   },
   {
-    "question": "Data Science Q21: What is a common task in data science?",
+    "question": "Why is EDA important?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "To understand data patterns",
+      "To create websites",
+      "To install Python",
+      "To manage databases"
     ],
-    "answer": "Building predictive models"
+    "answer": "To understand data patterns"
   },
   {
-    "question": "Data Science Q22: What is a common task in data science?",
+    "question": "What is correlation?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Relationship between variables",
+      "Data cleaning process",
+      "Chart type",
+      "Programming language"
     ],
-    "answer": "Building predictive models"
+    "answer": "Relationship between variables"
   },
   {
-    "question": "Data Science Q23: What is a common task in data science?",
+    "question": "A correlation value close to 1 indicates?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Strong positive relationship",
+      "No relationship",
+      "Strong negative relationship",
+      "Missing values"
     ],
-    "answer": "Building predictive models"
+    "answer": "Strong positive relationship"
   },
   {
-    "question": "Data Science Q24: What is a common task in data science?",
+    "question": "What is machine learning?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Teaching computers to learn from data",
+      "Building hardware",
+      "Writing HTML pages",
+      "Creating databases"
     ],
-    "answer": "Building predictive models"
+    "answer": "Teaching computers to learn from data"
   },
   {
-    "question": "Data Science Q25: What is a common task in data science?",
+    "question": "What is supervised learning?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Learning using labeled data",
+      "Learning without data",
+      "Learning without labels",
+      "Manual programming only"
     ],
-    "answer": "Building predictive models"
+    "answer": "Learning using labeled data"
   },
   {
-    "question": "Data Science Q26: What is a common task in data science?",
+    "question": "What is unsupervised learning?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Learning from unlabeled data",
+      "Learning with labels",
+      "Learning with hardware",
+      "Learning from images only"
     ],
-    "answer": "Building predictive models"
+    "answer": "Learning from unlabeled data"
   },
   {
-    "question": "Data Science Q27: What is a common task in data science?",
+    "question": "Which algorithm is used for classification?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Logistic Regression",
+      "K-Means",
+      "Apriori",
+      "PCA"
     ],
-    "answer": "Building predictive models"
+    "answer": "Logistic Regression"
   },
   {
-    "question": "Data Science Q28: What is a common task in data science?",
+    "question": "Which algorithm is commonly used for clustering?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "K-Means",
+      "Linear Regression",
+      "Decision Tree",
+      "Random Forest"
     ],
-    "answer": "Building predictive models"
+    "answer": "K-Means"
   },
   {
-    "question": "Data Science Q29: What is a common task in data science?",
+    "question": "What is regression used for?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Predicting continuous values",
+      "Grouping data",
+      "Finding duplicates",
+      "Creating charts"
     ],
-    "answer": "Building predictive models"
+    "answer": "Predicting continuous values"
   },
   {
-    "question": "Data Science Q30: What is a common task in data science?",
+    "question": "Which algorithm predicts numerical values?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Linear Regression",
+      "K-Means",
+      "Naive Bayes",
+      "KNN Classification"
     ],
-    "answer": "Building predictive models"
+    "answer": "Linear Regression"
   },
   {
-    "question": "Data Science Q31: What is a common task in data science?",
+    "question": "What is a Decision Tree?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Tree-like prediction model",
+      "Database structure",
+      "Visualization chart",
+      "Programming language"
     ],
-    "answer": "Building predictive models"
+    "answer": "Tree-like prediction model"
   },
   {
-    "question": "Data Science Q32: What is a common task in data science?",
+    "question": "What is model training?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Learning patterns from data",
+      "Installing software",
+      "Creating datasets",
+      "Drawing charts"
     ],
-    "answer": "Building predictive models"
+    "answer": "Learning patterns from data"
   },
   {
-    "question": "Data Science Q33: What is a common task in data science?",
+    "question": "What is testing data used for?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Evaluating model performance",
+      "Training the model",
+      "Cleaning data",
+      "Creating graphs"
     ],
-    "answer": "Building predictive models"
+    "answer": "Evaluating model performance"
   },
   {
-    "question": "Data Science Q34: What is a common task in data science?",
+    "question": "What is accuracy?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Percentage of correct predictions",
+      "Training speed",
+      "Dataset size",
+      "Memory usage"
     ],
-    "answer": "Building predictive models"
+    "answer": "Percentage of correct predictions"
   },
   {
-    "question": "Data Science Q35: What is a common task in data science?",
+    "question": "Which library is widely used for machine learning?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Scikit-learn",
+      "Flask",
+      "Bootstrap",
+      "BeautifulSoup"
     ],
-    "answer": "Building predictive models"
+    "answer": "Scikit-learn"
   },
   {
-    "question": "Data Science Q36: What is a common task in data science?",
+    "question": "What is overfitting?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Model memorizes training data too well",
+      "Model trains too slowly",
+      "Dataset is too small",
+      "Missing values increase"
     ],
-    "answer": "Building predictive models"
+    "answer": "Model memorizes training data too well"
   },
   {
-    "question": "Data Science Q37: What is a common task in data science?",
+    "question": "What is underfitting?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Model fails to learn patterns",
+      "Model is too accurate",
+      "Model is deployed",
+      "Data is duplicated"
     ],
-    "answer": "Building predictive models"
+    "answer": "Model fails to learn patterns"
   },
   {
-    "question": "Data Science Q38: What is a common task in data science?",
+    "question": "What is a confusion matrix used for?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Evaluating classification models",
+      "Data cleaning",
+      "Feature creation",
+      "Database management"
     ],
-    "answer": "Building predictive models"
+    "answer": "Evaluating classification models"
   },
   {
-    "question": "Data Science Q39: What is a common task in data science?",
+    "question": "What is data visualization?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Representing data graphically",
+      "Deleting data",
+      "Training models",
+      "Creating APIs"
     ],
-    "answer": "Building predictive models"
+    "answer": "Representing data graphically"
   },
   {
-    "question": "Data Science Q40: What is a common task in data science?",
+    "question": "Which library provides advanced statistical visualizations?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Seaborn",
+      "Flask",
+      "NumPy",
+      "Tkinter"
     ],
-    "answer": "Building predictive models"
+    "answer": "Seaborn"
   },
   {
-    "question": "Data Science Q41: What is a common task in data science?",
+    "question": "What is SQL commonly used for in Data Science?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Querying databases",
+      "Building games",
+      "Editing videos",
+      "Creating mobile apps"
     ],
-    "answer": "Building predictive models"
+    "answer": "Querying databases"
   },
   {
-    "question": "Data Science Q42: What is a common task in data science?",
+    "question": "Which SQL command retrieves data?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "SELECT",
+      "INSERT",
+      "DELETE",
+      "UPDATE"
     ],
-    "answer": "Building predictive models"
+    "answer": "SELECT"
   },
   {
-    "question": "Data Science Q43: What is a common task in data science?",
+    "question": "What is Big Data?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Very large datasets",
+      "Large computer screens",
+      "Large software",
+      "Large databases only"
     ],
-    "answer": "Building predictive models"
+    "answer": "Very large datasets"
   },
   {
-    "question": "Data Science Q44: What is a common task in data science?",
+    "question": "What is a dashboard?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Visual summary of data",
+      "Database table",
+      "Programming language",
+      "Machine learning model"
     ],
-    "answer": "Building predictive models"
+    "answer": "Visual summary of data"
   },
   {
-    "question": "Data Science Q45: What is a common task in data science?",
+    "question": "Which tool is popular for creating dashboards?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Power BI",
+      "Notepad",
+      "Paint",
+      "WordPad"
     ],
-    "answer": "Building predictive models"
+    "answer": "Power BI"
   },
   {
-    "question": "Data Science Q46: What is a common task in data science?",
+    "question": "What is Data Analytics?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Analyzing data for insights",
+      "Building servers",
+      "Writing CSS",
+      "Managing networks"
     ],
-    "answer": "Building predictive models"
+    "answer": "Analyzing data for insights"
   },
   {
-    "question": "Data Science Q47: What is a common task in data science?",
+    "question": "What is predictive analytics?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Using data to forecast future outcomes",
+      "Cleaning data",
+      "Creating charts",
+      "Deleting records"
     ],
-    "answer": "Building predictive models"
+    "answer": "Using data to forecast future outcomes"
   },
   {
-    "question": "Data Science Q48: What is a common task in data science?",
+    "question": "What is a KPI?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Key Performance Indicator",
+      "Knowledge Processing Interface",
+      "Key Programming Index",
+      "Kernel Performance Integration"
     ],
-    "answer": "Building predictive models"
+    "answer": "Key Performance Indicator"
   },
   {
-    "question": "Data Science Q49: What is a common task in data science?",
+    "question": "What is the primary goal of Data Science?",
     "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
+      "Extract meaningful insights from data",
+      "Build computer hardware",
+      "Create operating systems",
+      "Design websites"
     ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q50: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q51: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q52: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q53: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q54: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q55: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q56: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q57: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q58: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q59: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q60: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q61: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q62: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q63: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q64: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q65: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q66: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q67: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q68: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q69: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q70: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q71: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q72: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q73: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q74: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q75: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q76: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q77: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q78: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q79: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q80: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q81: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q82: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q83: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q84: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q85: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q86: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q87: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q88: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q89: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q90: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q91: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q92: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q93: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q94: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q95: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q96: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q97: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q98: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q99: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
-  },
-  {
-    "question": "Data Science Q100: What is a common task in data science?",
-    "options": [
-      "Building predictive models",
-      "Painting images",
-      "Repairing hardware",
-      "Network cabling"
-    ],
-    "answer": "Building predictive models"
+    "answer": "Extract meaningful insights from data"
   }
 ]
