@@ -2,9 +2,9 @@
   {
     "question": "What is Data Analytics?",
     "options": [
-      "Analyzing data to find insights",
       "Creating websites",
       "Managing networks",
+      "Analyzing data to find insights",
       "Building hardware"
     ],
     "answer": "Analyzing data to find insights"
@@ -12,8 +12,8 @@
   {
     "question": "Which tool is widely used for Data Analytics?",
     "options": [
-      "Excel",
       "Photoshop",
+      "Excel",
       "AutoCAD",
       "VS Code"
     ],
@@ -22,8 +22,8 @@
   {
     "question": "What does KPI stand for?",
     "options": [
-      "Key Performance Indicator",
       "Key Process Information",
+      "Key Performance Indicator",
       "Knowledge Performance Index",
       "Key Program Indicator"
     ],
@@ -32,9 +32,9 @@
   {
     "question": "Which chart is best for comparing categories?",
     "options": [
-      "Bar Chart",
       "Line Chart",
       "Scatter Plot",
+      "Bar Chart",
       "Histogram"
     ],
     "answer": "Bar Chart"
@@ -42,18 +42,18 @@
   {
     "question": "Which chart is used to show trends over time?",
     "options": [
-      "Line Chart",
       "Pie Chart",
       "Bar Chart",
-      "Histogram"
+      "Histogram",
+      "Line Chart"
     ],
     "answer": "Line Chart"
   },
   {
     "question": "What is the purpose of data cleaning?",
     "options": [
-      "Remove errors and inconsistencies",
       "Delete all records",
+      "Remove errors and inconsistencies",
       "Create reports",
       "Store data"
     ],
@@ -62,9 +62,9 @@
   {
     "question": "Which file format is commonly used for analytics datasets?",
     "options": [
-      "CSV",
       "MP4",
       "PNG",
+      "CSV",
       "EXE"
     ],
     "answer": "CSV"
@@ -72,9 +72,9 @@
   {
     "question": "What does CSV stand for?",
     "options": [
-      "Comma Separated Values",
       "Common Stored Variables",
       "Central Statistical Values",
+      "Comma Separated Values",
       "Computer Saved Values"
     ],
     "answer": "Comma Separated Values"
@@ -82,8 +82,8 @@
   {
     "question": "Which Excel function calculates the average?",
     "options": [
-      "AVERAGE()",
       "SUM()",
+      "AVERAGE()",
       "COUNT()",
       "MAX()"
     ],
@@ -92,18 +92,18 @@
   {
     "question": "Which Excel function counts numeric values?",
     "options": [
-      "COUNT()",
       "SUM()",
       "AVERAGE()",
-      "MIN()"
+      "MIN()",
+      "COUNT()"
     ],
     "answer": "COUNT()"
   },
   {
     "question": "What is a dashboard?",
     "options": [
-      "Visual summary of business metrics",
       "Database table",
+      "Visual summary of business metrics",
       "Programming language",
       "Operating system"
     ],
@@ -112,18 +112,18 @@
   {
     "question": "What is a metric?",
     "options": [
-      "Measurable value used for analysis",
       "Database key",
       "Programming function",
-      "Chart type"
+      "Chart type",
+      "Measurable value used for analysis"
     ],
     "answer": "Measurable value used for analysis"
   },
   {
     "question": "What is a dimension in analytics?",
     "options": [
-      "Descriptive data category",
       "Mathematical formula",
+      "Descriptive data category",
       "Database server",
       "Visualization tool"
     ],
@@ -132,8 +132,8 @@
   {
     "question": "What is the mean?",
     "options": [
-      "Average value",
       "Middle value",
+      "Average value",
       "Most frequent value",
       "Range value"
     ],
@@ -142,9 +142,9 @@
   {
     "question": "What is the median?",
     "options": [
-      "Middle value in sorted data",
       "Average value",
       "Most frequent value",
+      "Middle value in sorted data",
       "Largest value"
     ],
     "answer": "Middle value in sorted data"
@@ -152,9 +152,9 @@
   {
     "question": "What is the mode?",
     "options": [
-      "Most frequent value",
       "Average value",
       "Middle value",
+      "Most frequent value",
       "Range"
     ],
     "answer": "Most frequent value"
@@ -162,9 +162,9 @@
   {
     "question": "What is an outlier?",
     "options": [
-      "A value significantly different from others",
       "Missing value",
       "Duplicate value",
+      "A value significantly different from others",
       "Average value"
     ],
     "answer": "A value significantly different from others"
@@ -172,8 +172,8 @@
   {
     "question": "What does SQL stand for?",
     "options": [
-      "Structured Query Language",
       "Simple Query Language",
+      "Structured Query Language",
       "System Query Logic",
       "Standard Quick Language"
     ],
@@ -182,9 +182,9 @@
   {
     "question": "Which SQL command retrieves data?",
     "options": [
-      "SELECT",
       "INSERT",
       "UPDATE",
+      "SELECT",
       "DELETE"
     ],
     "answer": "SELECT"
@@ -192,8 +192,8 @@
   {
     "question": "Which SQL command adds new records?",
     "options": [
-      "INSERT",
       "SELECT",
+      "INSERT",
       "UPDATE",
       "ALTER"
     ],
@@ -202,9 +202,9 @@
   {
     "question": "Which SQL clause filters records?",
     "options": [
-      "WHERE",
       "ORDER BY",
       "GROUP BY",
+      "WHERE",
       "JOIN"
     ],
     "answer": "WHERE"
@@ -212,18 +212,18 @@
   {
     "question": "Which SQL clause sorts data?",
     "options": [
-      "ORDER BY",
       "WHERE",
       "GROUP BY",
-      "HAVING"
+      "HAVING",
+      "ORDER BY"
     ],
     "answer": "ORDER BY"
   },
   {
     "question": "Which SQL function returns the total number of rows?",
     "options": [
-      "COUNT()",
       "SUM()",
+      "COUNT()",
       "AVG()",
       "MAX()"
     ],
@@ -232,9 +232,9 @@
   {
     "question": "Which SQL function calculates the average?",
     "options": [
-      "AVG()",
       "COUNT()",
       "SUM()",
+      "AVG()",
       "MAX()"
     ],
     "answer": "AVG()"
@@ -242,9 +242,9 @@
   {
     "question": "Which SQL function calculates the total?",
     "options": [
-      "SUM()",
       "AVG()",
       "COUNT()",
+      "SUM()",
       "MIN()"
     ],
     "answer": "SUM()"
@@ -252,18 +252,18 @@
   {
     "question": "What is a primary key?",
     "options": [
-      "Unique identifier for each row",
       "Foreign table reference",
       "Duplicate value",
-      "Index column"
+      "Index column",
+      "Unique identifier for each row"
     ],
     "answer": "Unique identifier for each row"
   },
   {
     "question": "What is a foreign key?",
     "options": [
-      "Column linking two tables",
       "Unique identifier",
+      "Column linking two tables",
       "Duplicate column",
       "Calculated field"
     ],
@@ -272,9 +272,9 @@
   {
     "question": "Which JOIN returns matching records from both tables?",
     "options": [
-      "INNER JOIN",
       "LEFT JOIN",
       "RIGHT JOIN",
+      "INNER JOIN",
       "FULL JOIN"
     ],
     "answer": "INNER JOIN"
@@ -282,19 +282,19 @@
   {
     "question": "What is data visualization?",
     "options": [
-      "Representing data graphically",
       "Deleting data",
       "Creating databases",
-      "Writing code"
+      "Writing code",
+      "Representing data graphically"
     ],
     "answer": "Representing data graphically"
   },
   {
     "question": "Which tool is commonly used for business dashboards?",
     "options": [
-      "Power BI",
       "Notepad",
       "Paint",
+      "Power BI",
       "WordPad"
     ],
     "answer": "Power BI"
@@ -302,8 +302,8 @@
   {
     "question": "What is Power BI?",
     "options": [
-      "Business Intelligence tool",
       "Database",
+      "Business Intelligence tool",
       "Programming language",
       "Web framework"
     ],
@@ -312,9 +312,9 @@
   {
     "question": "What is ETL?",
     "options": [
-      "Extract, Transform, Load",
       "Evaluate, Test, Load",
       "Extract, Transfer, Link",
+      "Extract, Transform, Load",
       "Export, Transform, Learn"
     ],
     "answer": "Extract, Transform, Load"
@@ -322,8 +322,8 @@
   {
     "question": "What is data transformation?",
     "options": [
-      "Converting data into a usable format",
       "Deleting data",
+      "Converting data into a usable format",
       "Backing up data",
       "Sorting files"
     ],
@@ -332,18 +332,18 @@
   {
     "question": "What is data profiling?",
     "options": [
-      "Examining data quality and structure",
       "Creating dashboards",
       "Building databases",
-      "Writing SQL"
+      "Writing SQL",
+      "Examining data quality and structure"
     ],
     "answer": "Examining data quality and structure"
   },
   {
     "question": "What is descriptive analytics?",
     "options": [
-      "Analyzing past performance",
       "Predicting future",
+      "Analyzing past performance",
       "Recommending actions",
       "Automating decisions"
     ],
@@ -352,9 +352,9 @@
   {
     "question": "What is predictive analytics?",
     "options": [
-      "Forecasting future outcomes",
       "Analyzing historical data only",
       "Creating reports",
+      "Forecasting future outcomes",
       "Data cleaning"
     ],
     "answer": "Forecasting future outcomes"
@@ -362,9 +362,9 @@
   {
     "question": "What is prescriptive analytics?",
     "options": [
-      "Suggesting actions to take",
       "Analyzing past data",
       "Collecting data",
+      "Suggesting actions to take",
       "Storing data"
     ],
     "answer": "Suggesting actions to take"
@@ -372,9 +372,9 @@
   {
     "question": "What is data governance?",
     "options": [
-      "Managing data quality and security",
       "Creating charts",
       "Building software",
+      "Managing data quality and security",
       "Training models"
     ],
     "answer": "Managing data quality and security"
@@ -382,9 +382,9 @@
   {
     "question": "What is a data warehouse?",
     "options": [
-      "Central repository for analytics",
       "Programming language",
       "Spreadsheet",
+      "Central repository for analytics",
       "Visualization tool"
     ],
     "answer": "Central repository for analytics"
@@ -392,8 +392,8 @@
   {
     "question": "What is a fact table?",
     "options": [
-      "Stores measurable business data",
       "Stores descriptions",
+      "Stores measurable business data",
       "Stores user accounts",
       "Stores backups"
     ],
@@ -412,8 +412,8 @@
   {
     "question": "What is a KPI dashboard primarily used for?",
     "options": [
-      "Monitoring business performance",
       "Writing code",
+      "Monitoring business performance",
       "Managing databases",
       "Creating websites"
     ],
@@ -422,8 +422,8 @@
   {
     "question": "Which Power BI language is used for calculations?",
     "options": [
-      "DAX",
       "SQL",
+      "DAX",
       "Python",
       "M"
     ],
@@ -432,9 +432,9 @@
   {
     "question": "What does DAX stand for?",
     "options": [
-      "Data Analysis Expressions",
       "Data Access Expressions",
       "Database Analytics Exchange",
+      "Data Analysis Expressions",
       "Data Aggregation XML"
     ],
     "answer": "Data Analysis Expressions"
@@ -442,19 +442,19 @@
   {
     "question": "Which SQL clause is used after GROUP BY to filter groups?",
     "options": [
-      "HAVING",
       "WHERE",
       "ORDER BY",
-      "LIMIT"
+      "LIMIT",
+      "HAVING"
     ],
     "answer": "HAVING"
   },
   {
     "question": "A sales manager wants to see monthly revenue trends. Which visualization is most suitable?",
     "options": [
-      "Line Chart",
       "Pie Chart",
       "Gauge",
+      "Line Chart",
       "Table"
     ],
     "answer": "Line Chart"
@@ -462,8 +462,8 @@
   {
     "question": "A company wants to identify its top 10 customers by revenue. Which SQL clause is useful?",
     "options": [
-      "ORDER BY",
       "ALTER",
+      "ORDER BY",
       "DROP",
       "TRUNCATE"
     ],
@@ -472,8 +472,8 @@
   {
     "question": "What is data storytelling?",
     "options": [
-      "Communicating insights using data and visuals",
       "Creating databases",
+      "Communicating insights using data and visuals",
       "Building dashboards only",
       "Writing SQL queries"
     ],
@@ -482,8 +482,8 @@
   {
     "question": "Which metric measures year-over-year growth?",
     "options": [
-      "YoY Growth",
       "Average",
+      "YoY Growth",
       "Median",
       "Mode"
     ],
@@ -492,9 +492,9 @@
   {
     "question": "What is the ultimate goal of Data Analytics?",
     "options": [
-      "Support better business decisions",
       "Store data forever",
       "Create websites",
+      "Support better business decisions",
       "Build operating systems"
     ],
     "answer": "Support better business decisions"
