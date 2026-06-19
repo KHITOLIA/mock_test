@@ -37,7 +37,7 @@ def load_questions(course):
     file_map = {
         'DA' : "data/da_questions.json",
         'DS' : 'data/ds_questions.json',
-        'AWS' : 'data/aws_questions.json',
+        'AWS' : 'data/aws_saa_c03_exam_bank.json',
         'AZURE' : 'data/azure_az104_exam_bank.json',
         'DEVOPS': 'data/devops_exam_bank.json',
         "JAVA" : 'data/java.json',
