@@ -498,15 +498,5 @@
       "DELETE"
     ],
     "answer": "GET"
-  },
-  {
-    "question": "Which HTTP method is generally used to submit form data?",
-    "options": [
-      "POST",
-      "GET",
-      "DELETE",
-      "OPTIONS"
-    ],
-    "answer": "POST"
   }
 ]
