@@ -1,502 +1,502 @@
 [
   {
-    "question": "What is Agentic AI?",
+    "question": "What happens when you use a mutable object (like a list) as a default argument in a Python function?",
     "options": [
-      "AI used only for image generation",
-      "AI that can plan and take actions autonomously",
-      "AI that stores data",
-      "AI used only for databases"
+      "The list is cleared every time the function is called without an argument",
+      "A new list is created every time the function is invoked",
+      "The default list is shared across all calls to the function",
+      "Python raises a SyntaxError at compile time"
     ],
-    "answer": "AI that can plan and take actions autonomously"
+    "answer": "The default list is shared across all calls to the function"
   },
   {
-    "question": "Which framework is widely used for building LLM applications?",
+    "question": "Which of the following best describes the difference between '__init__' and '__new__' in Python?",
     "options": [
-      "Pandas",
-      "LangChain",
-      "NumPy",
-      "Flask"
+      "'__new__' is the static initializer, while '__init__' is the dynamic constructor",
+      "'__init__' creates the instance, while '__new__' initializes it",
+      "'__new__' creates the instance, while '__init__' initializes it",
+      "There is no difference; they are completely interchangeable aliases"
     ],
-    "answer": "LangChain"
+    "answer": "'__new__' creates the instance, while '__init__' initializes it"
   },
   {
-    "question": "What does LLM stand for?",
+    "question": "In Python, what is the core mechanism behind Method Resolution Order (MRO)?",
     "options": [
-      "Large Logic Module",
-      "Language Logic Manager",
-      "Large Language Model",
-      "Long Learning Machine"
+      "C3 Linearization algorithm",
+      "Depth-First Search (DFS) exclusively",
+      "Breadth-First Search (BFS) exclusively",
+      "The Order of Declaration in the main module"
     ],
-    "answer": "Large Language Model"
+    "answer": "C3 Linearization algorithm"
   },
   {
-    "question": "What is RAG?",
+    "question": "What will be the output of the expression: `[i for i in range(5) if i % 2 == 0 else 'Odd']`?",
     "options": [
-      "Random AI Generator",
-      "Retrieval-Augmented Generation",
-      "Rapid Agent Gateway",
-      "Retrieval Agent Graph"
+      "[0, 'Odd', 2, 'Odd', 4]",
+      "",
+      "SyntaxError: invalid syntax",
+      "['Odd', 1, 'Odd', 3, 'Odd']"
     ],
-    "answer": "Retrieval-Augmented Generation"
+    "answer": "SyntaxError: invalid syntax"
   },
   {
-    "question": "What is an embedding?",
+    "question": "How does a Python generator preserve state between executions?",
     "options": [
-      "Programming function",
-      "Database table",
-      "Network protocol",
-      "Numerical representation of data"
+      "By saving local variables to a temporary JSON file hidden on disk",
+      "By utilizing the 'yield' keyword, which pauses the function frame execution context",
+      "By automatically promoting all internal variables to global scope",
+      "Generators do not preserve state; they re-run from scratch every time"
     ],
-    "answer": "Numerical representation of data"
+    "answer": "By utilizing the 'yield' keyword, which pauses the function frame execution context"
   },
   {
-    "question": "Which vector database is commonly used locally with LangChain?",
+    "question": "What is the primary benefit of declaring `__slots__` inside a custom Python class definition?",
     "options": [
-      "SQLite",
-      "MySQL",
-      "FAISS",
-      "PostgreSQL"
+      "It allows the class to inherit safely from multiple parent classes",
+      "It encrypts object field attributes to prevent runtime alterations",
+      "It optimizes memory usage by preventing the automatic creation of '__dict__' for instances",
+      "It speeds up execution loops by converting the class into pure C bytecode"
     ],
-    "answer": "FAISS"
+    "answer": "It optimizes memory usage by preventing the automatic creation of '__dict__' for instances"
   },
   {
-    "question": "What is a Tool in Agentic AI?",
+    "question": "Which of the following built-in modules can be used to create deep copies of nested data structures?",
     "options": [
-      "Python variable",
-      "External capability an agent can use",
-      "Prompt template",
-      "Database table"
+      "clone",
+      "copy",
+      "sys",
+      "struct"
     ],
-    "answer": "External capability an agent can use"
+    "answer": "copy"
   },
   {
-    "question": "What is a Retriever in RAG?",
+    "question": "What exception handling block executes ONLY if the protected code in the 'try' block completes without throwing any errors?",
     "options": [
-      "Component that fetches relevant documents",
-      "Component that trains models",
-      "Component that stores data",
-      "Component that creates prompts"
+      "else",
+      "finally",
+      "except",
+      "then"
     ],
-    "answer": "Component that fetches relevant documents"
+    "answer": "else"
   },
   {
-    "question": "Which LangChain component stores conversation history?",
+    "question": "Under the LEGB scoping rule in Python, what does the letter 'E' stand for?",
     "options": [
-      "Memory",
-      "Retriever",
-      "Tool",
-      "PromptTemplate"
+      "Enclosing",
+      "External",
+      "Evaluation",
+      "Explicit"
     ],
-    "answer": "Memory"
+    "answer": "Enclosing"
   },
   {
-    "question": "What is Prompt Engineering?",
+    "question": "What is the consequence of Python's Global Interpreter Lock (GIL)?",
     "options": [
-      "Building GPUs",
-      "Designing effective prompts for AI",
-      "Training networks",
-      "Creating databases"
+      "It prevents Python scripts from accessing external web databases",
+      "It restricts multi-threaded CPython programs from running code on multiple CPU cores simultaneously",
+      "It limits the maximum file storage size to 4GB per script execution",
+      "It blocks the usage of custom decorators inside object methods"
     ],
-    "answer": "Designing effective prompts for AI"
+    "answer": "It restricts multi-threaded CPython programs from running code on multiple CPU cores simultaneously"
   },
   {
-    "question": "Which programming language is most commonly used for Agentic AI?",
+    "question": "What dunder methods must be implemented to create a valid custom context manager using the 'with' statement?",
     "options": [
-      "Java",
-      "Python",
-      "PHP",
-      "C#"
+      "__start__ and __stop__",
+      "__enter__ and __exit__",
+      "__open__ and __close__",
+      "__init__ and __del__"
     ],
-    "answer": "Python"
+    "answer": "__enter__ and __exit__"
   },
   {
-    "question": "What is LangGraph?",
+    "question": "Consider the assignment `a =` and `b = a[:]`. What will `a is b` evaluate to?",
     "options": [
-      "Visualization library",
-      "Framework for stateful AI agents",
-      "Database engine",
-      "Vector search tool"
+      "True",
+      "False",
+      "None",
+      "ValueError"
     ],
-    "answer": "Framework for stateful AI agents"
+    "answer": "False"
   },
   {
-    "question": "What is a node in LangGraph?",
+    "question": "What will be the output of `all([])` and `any([])` evaluated in an interactive Python session?",
     "options": [
-      "Embedding",
-      "Database",
-      "A processing step",
-      "Prompt"
+      "True and True",
+      "False and False",
+      "True and False",
+      "False and True"
     ],
-    "answer": "A processing step"
+    "answer": "True and False"
   },
   {
-    "question": "What is an edge in LangGraph?",
+    "question": "Which collection type from the 'collections' module automatically initializes missing keys with a default factory value when accessed?",
     "options": [
-      "Database relation",
-      "Embedding vector",
-      "Connection between nodes",
-      "Python function"
+      "OrderedDict",
+      "Counter",
+      "NamedTuple",
+      "defaultdict"
     ],
-    "answer": "Connection between nodes"
+    "answer": "defaultdict"
   },
   {
-    "question": "Why is LangGraph useful for agent workflows?",
+    "question": "When designing decorators, what function from the 'functools' module is recommended to preserve the original metadata of the wrapped function?",
     "options": [
-      "Creates databases",
-      "Builds websites",
-      "Supports cycles and state management",
-      "Trains models"
+      "functools.update_wrapper",
+      "functools.wraps",
+      "functools.partial",
+      "functools.lru_cache"
     ],
-    "answer": "Supports cycles and state management"
+    "answer": "functools.wraps"
   },
   {
-    "question": "What is state in LangGraph?",
+    "question": "What is the behavior of the `itertools.groupby()` function if the input iterable is not sorted beforehand?",
     "options": [
-      "Prompt template",
-      "Information shared across nodes",
-      "Embedding",
-      "Database table"
+      "It automatically sorts the collection in memory before parsing",
+      "It raises a RuntimeWarning error message",
+      "It groups items based strictly on consecutive appearances, creating multiple separate groups for the same key",
+      "It breaks the process and outputs an empty iterator wrapper object"
     ],
-    "answer": "Information shared across nodes"
+    "answer": "It groups items based strictly on consecutive appearances, creating multiple separate groups for the same key"
   },
   {
-    "question": "What is Chain of Thought prompting?",
+    "question": "How do you access the real function name string inside a decorated function frame if it was wrapped cleanly using `@functools.wraps`?",
     "options": [
-      "Encouraging step-by-step reasoning",
-      "Vector indexing",
-      "Creating embeddings",
-      "Training a model"
+      "func.__name__",
+      "func.__label__",
+      "func.__id__",
+      "func.get_name()"
     ],
-    "answer": "Encouraging step-by-step reasoning"
+    "answer": "func.__name__"
   },
   {
-    "question": "What is Zero-Shot Prompting?",
+    "question": "In Python, how is an attribute name dynamically mangled when it is prefixed with a double underscore (e.g., `__my_var`) inside a class named `MyClass`?",
     "options": [
-      "Training a model",
-      "Prompting without examples",
-      "Using fewer tokens",
-      "Prompting with many examples"
+      "It becomes `__my_var_mangled`",
+      "It becomes `_MyClass__my_var`",
+      "It becomes `__MyClass_my_var`",
+      "It is converted into a random alphanumeric identifier hash"
     ],
-    "answer": "Prompting without examples"
+    "answer": "_MyClass__my_var"
   },
   {
-    "question": "What is Few-Shot Prompting?",
+    "question": "Given the list unpacking expression `a, *b, c =`, what will be the value of the variable `b`?",
     "options": [
-      "Providing a few examples in prompts",
-      "Training with small datasets",
-      "Providing no examples",
-      "Using fewer tokens"
+      "2",
+      "",
+      "",
+      "[]"
     ],
-    "answer": "Providing a few examples in prompts"
+    "answer": ""
   },
   {
-    "question": "What is ReAct prompting?",
+    "question": "What is the key functional capability provided by the `@classmethod` decorator compared to `@staticmethod`?",
     "options": [
-      "Database query system",
-      "Reasoning and Acting framework",
-      "React.js integration",
-      "Vector search technique"
+      "It implicitly passes the class reference object (cls) as the first argument",
+      "It allows calling the method strictly without instantiating the parent class object",
+      "It locks class attribute fields to prevent changes during script runtimes",
+      "It forces the method to output raw string formatting representations"
     ],
-    "answer": "Reasoning and Acting framework"
+    "answer": "It implicitly passes the class reference object (cls) as the first argument"
   },
   {
-    "question": "What is a hallucination in LLMs?",
+    "question": "What does a dictionary view object (such as returned by `my_dict.keys()`) reflect?",
     "options": [
-      "Correct reasoning",
-      "Confidently generating incorrect information",
-      "Tokenization",
-      "Model training"
+      "A static frozen array snapshot of keys captured at invocation time",
+      "A dynamic look at dictionary keys that updates automatically as the dictionary drops or adds records",
+      "An encrypted generator string stream tailored for deep search operations",
+      "A sorted list copy containing primitive string items"
     ],
-    "answer": "Confidently generating incorrect information"
+    "answer": "A dynamic look at dictionary keys that updates automatically as the dictionary drops or adds records"
   },
   {
-    "question": "Which technique helps reduce hallucinations?",
+    "question": "Which of the following operations has a time complexity of O(1) in a standard Python built-in set data structure?",
     "options": [
-      "Normalization",
-      "Compression",
-      "RAG",
-      "Tokenization"
+      "Checking membership using the 'in' keyword",
+      "Sorting elements using the sorted() built-in function",
+      "Iterating through the full set using a standard for loop",
+      "Converting the full set into a dictionary collection type"
     ],
-    "answer": "RAG"
+    "answer": "Checking membership using the 'in' keyword"
   },
   {
-    "question": "What is tokenization?",
+    "question": "What happens if you use the `remove()` method on a Python set and the specified element does not exist?",
     "options": [
-      "Compressing files",
-      "Breaking text into tokens",
-      "Deleting words",
-      "Encrypting text"
+      "The set remains unchanged and returns None",
+      "A KeyError is raised at runtime",
+      "The first element in the set is deleted instead",
+      "An index placement marker is appended to the set structure"
     ],
-    "answer": "Breaking text into tokens"
+    "answer": "A KeyError is raised at runtime"
   },
   {
-    "question": "What is a context window?",
+    "question": "What module should you use to enforce abstract method declarations on a base class in Python?",
     "options": [
-      "Maximum information a model can consider",
-      "Browser window",
-      "Memory card",
-      "Database limit"
+      "abstract",
+      "abc",
+      "base",
+      "typing"
     ],
-    "answer": "Maximum information a model can consider"
+    "answer": "abc"
   },
   {
-    "question": "What is OpenAI Function Calling?",
+    "question": "What will be the result of executing `type(type)` in a Python interpreter window?",
     "options": [
-      "Creating APIs",
-      "Allowing models to invoke external functions",
-      "Building databases",
-      "Training a model"
+      "<class 'object'>",
+      "<class 'type'>",
+      "NameError",
+      "<class 'class'>"
     ],
-    "answer": "Allowing models to invoke external functions"
+    "answer": "<class 'type'>"
   },
   {
-    "question": "What is an API?",
+    "question": "Which parameter can be set within Python 3.10+ `zip()` function to ensure an exception is thrown if the input iterables are of unequal length?",
     "options": [
-      "Prompt template",
-      "Interface for software communication",
-      "Database schema",
-      "Vector index"
+      "match=True",
+      "strict=True",
+      "check=True",
+      "align=True"
     ],
-    "answer": "Interface for software communication"
+    "answer": "strict=True"
   },
   {
-    "question": "What is similarity search?",
+    "question": "What dunder method is evaluated when an instance of a class is invoked directly as a function, such as `my_instance()`?",
     "options": [
-      "Sorting records",
-      "Finding semantically similar vectors",
-      "Finding duplicate files",
-      "Compressing data"
+      "__init__",
+      "__new__",
+      "__execute__",
+      "__call__"
     ],
-    "answer": "Finding semantically similar vectors"
+    "answer": "__call__"
   },
   {
-    "question": "Which vector database is cloud-native?",
+    "question": "What is the structural difference between `__str__` and `__repr__` for custom Python classes?",
     "options": [
-      "Excel",
-      "Pinecone",
-      "Oracle Forms",
-      "Mongo Shell"
+      "`__str__` is intended to be user-friendly, while `__repr__` aims to provide an unambiguous representation useful for debugging",
+      "`__repr__` is intended to be user-friendly, while `__str__` aims to provide an unambiguous representation useful for debugging",
+      "`__str__` converts text to string format, while `__repr__` acts as a data compiler",
+      "There is no functional distinction between the two methods"
     ],
-    "answer": "Pinecone"
+    "answer": "`__str__` is intended to be user-friendly, while `__repr__` aims to provide an unambiguous representation useful for debugging"
   },
   {
-    "question": "What is Chroma DB?",
+    "question": "Which data collection from the 'collections' module is optimized for fast O(1) appends and pops from both ends?",
     "options": [
-      "Web framework",
-      "SQL database",
-      "Open-source vector database",
-      "Cloud provider"
+      "deque",
+      "Counter",
+      "defaultdict",
+      "OrderedDict"
     ],
-    "answer": "Open-source vector database"
+    "answer": "deque"
   },
   {
-    "question": "What is FAISS used for?",
+    "question": "What happens to elements when a maximum size constraint is set on a `collections.deque(maxlen=3)` object and a fourth element is added to the right side?",
     "options": [
-      "Vector similarity search",
-      "API hosting",
-      "Model training",
-      "Data cleaning"
+      "An IndexError is thrown immediately",
+      "The addition is ignored entirely",
+      "The leftmost element is discarded automatically to accommodate the new entry",
+      "The maxlen property boundary expands dynamically"
     ],
-    "answer": "Vector similarity search"
+    "answer": "The leftmost element is discarded automatically to accommodate the new entry"
   },
   {
-    "question": "What is agent memory used for?",
+    "question": "What keyword allows you to modify a variable inside an outer enclosing function scope that is not global?",
     "options": [
-      "Maintaining context across interactions",
-      "Creating embeddings",
-      "Database indexing",
-      "Training models"
+      "global",
+      "nonlocal",
+      "outer",
+      "enclosed"
     ],
-    "answer": "Maintaining context across interactions"
+    "answer": "nonlocal"
   },
   {
-    "question": "What is an autonomous agent?",
+    "question": "What will be the output of the expression `bool('False')` in Python?",
     "options": [
-      "Database server",
-      "Agent that performs tasks independently",
-      "Prompt template",
-      "Agent requiring manual input every step"
+      "False",
+      "True",
+      "TypeError",
+      "None"
     ],
-    "answer": "Agent that performs tasks independently"
+    "answer": "True"
   },
   {
-    "question": "What is Multi-Agent AI?",
+    "question": "What does the `sys.getsizeof()` function return for a defined Python object wrapper instance?",
     "options": [
-      "Multiple prompts",
-      "Multiple agents collaborating",
-      "Multiple databases",
-      "Multiple models training together"
+      "The count of fields assigned within the item framework",
+      "The length of the element string conversion value",
+      "The actual memory size allocated to the object measured in bytes",
+      "The exact bit allocation length score variable index"
     ],
-    "answer": "Multiple agents collaborating"
+    "answer": "The actual memory size allocated to the object measured in bytes"
   },
   {
-    "question": "Which component allows an AI agent to access external systems?",
+    "question": "Which statement accurately describes file modes `w+` and `r+` in Python built-in file operations?",
     "options": [
-      "Memory",
-      "Prompt",
-      "Tool",
-      "Embedding"
+      "`w+` opens for reading and writing, overwriting existing files; `r+` opens for reading and writing without truncation",
+      "`r+` opens for reading and writing, overwriting existing files; `w+` opens for reading and writing without truncation",
+      "Both modes perform identical file initialization loops",
+      "`w+` cannot create a new file on disk if it does not already exist"
     ],
-    "answer": "Tool"
+    "answer": "`w+` opens for reading and writing, overwriting existing files; `r+` opens for reading and writing without truncation"
   },
   {
-    "question": "What is Human-in-the-Loop (HITL)?",
+    "question": "Which module in modern Python is preferred for handling file system path traversals as object representations instead of raw strings?",
     "options": [
-      "Data compression",
-      "Human approval during agent execution",
-      "Human model training",
-      "Manual vector storage"
+      "os.path",
+      "glob",
+      "pathlib",
+      "sys.path"
     ],
-    "answer": "Human approval during agent execution"
+    "answer": "pathlib"
   },
   {
-    "question": "What is Semantic Search?",
+    "question": "What is the primary evaluation mechanism behind Python's logical operators when evaluating expressions like `x or y`?",
     "options": [
-      "Searching by meaning instead of keywords",
-      "Searching by file size",
-      "Searching by date",
-      "Searching by extension"
+      "Eager calculation framework execution",
+      "Short-circuit evaluation",
+      "Parallel bitwise translation",
+      "Recursive frame evaluation loops"
     ],
-    "answer": "Searching by meaning instead of keywords"
+    "answer": "Short-circuit evaluation"
   },
   {
-    "question": "What is a Planner Agent?",
+    "question": "What happens to the visibility scope of a variable defined inside a list comprehension block in Python 3?",
     "options": [
-      "Agent that stores vectors",
-      "Agent that breaks tasks into subtasks",
-      "Agent that trains models",
-      "Agent that hosts APIs"
+      "It leaks out into the parent function local scope frame context",
+      "It is restricted cleanly to the internal scope of the comprehension block",
+      "It automatically gets promoted to global scope properties",
+      "It becomes accessible only via special dunder dictionary views"
     ],
-    "answer": "Agent that breaks tasks into subtasks"
+    "answer": "It is restricted cleanly to the internal scope of the comprehension block"
   },
   {
-    "question": "What is an Executor Agent?",
+    "question": "Which functional function applies a specific computational operation cumulatively to items of an iterable sequence to reduce it down to a single value?",
     "options": [
-      "Agent that performs planned actions",
-      "Agent that stores embeddings",
-      "Agent that manages databases",
-      "Agent that builds prompts"
+      "map",
+      "filter",
+      "functools.reduce",
+      "accumulate"
     ],
-    "answer": "Agent that performs planned actions"
+    "answer": "functools.reduce"
   },
   {
-    "question": "What is the purpose of embeddings in RAG?",
+    "question": "What pattern does a custom class use to expose its fields to clear support verification loops using the `in` keyword?",
     "options": [
-      "Store passwords",
-      "Represent text numerically for retrieval",
-      "Generate images",
-      "Train GPUs"
+      "__iter__",
+      "__contains__",
+      "__search__",
+      "__match__"
     ],
-    "answer": "Represent text numerically for retrieval"
+    "answer": "__contains__"
   },
   {
-    "question": "Which LangChain object is used to define reusable prompts?",
+    "question": "What happens if a class definition lacks custom error configuration values but uses multiple inheritance paths with mismatched method layouts?",
     "options": [
-      "PromptTemplate",
-      "Tool",
-      "Memory",
-      "Agent"
+      "Python automatically generates an interface proxy class layer",
+      "The program builds safely following the Method Resolution Order sequence context instructions",
+      "A MROConflictError exception freezes execution at launch validation",
+      "All parent methods are discarded silently from instances"
     ],
-    "answer": "PromptTemplate"
+    "answer": "The program builds safely following the Method Resolution Order sequence context instructions"
   },
   {
-    "question": "What is a Vector Store?",
+    "question": "What built-in function can verify if a target object property can be modified safely using `setattr()` without causing an unexpected error hook?",
     "options": [
-      "A storage system for embeddings",
-      "A relational database",
-      "A Python package",
-      "A web server"
+      "hasattr",
+      "checkattr",
+      "iswritable",
+      "verifyattr"
     ],
-    "answer": "A storage system for embeddings"
+    "answer": "hasattr"
   },
   {
-    "question": "What is Retrieval in RAG?",
+    "question": "What metric does `collections.Counter` use if you query a missing key descriptor value from its data grid?",
     "options": [
-      "Fetching relevant context before generation",
-      "Training an LLM",
-      "Creating embeddings",
-      "Deploying applications"
+      "Raises a KeyError exception",
+      "Returns None",
+      "Returns 0",
+      "Appends a blank entry mapping line"
     ],
-    "answer": "Fetching relevant context before generation"
+    "answer": "Returns 0"
   },
   {
-    "question": "Which LangChain feature combines multiple steps together?",
+    "question": "What is the value of the variable `result` after executing `result = 10 / 2 or 5`?",
     "options": [
-      "Chain",
-      "Prompt",
-      "Embedding",
-      "Tool"
+      "5.0",
+      "5",
+      "True",
+      "ValueError"
     ],
-    "answer": "Chain"
+    "answer": "5.0"
   },
   {
-    "question": "What is Tool Calling?",
+    "question": "Which tool statement should be applied if an analyst wants to capture warnings without crashing functional production application runs?",
     "options": [
-      "Allowing an LLM to use external tools",
-      "Creating APIs",
-      "Training models",
-      "Generating embeddings"
+      "try...except Exception",
+      "warnings.catch_warnings context manager",
+      "sys.settrace routine blocks",
+      "os.environ alert variable toggles"
     ],
-    "answer": "Allowing an LLM to use external tools"
+    "answer": "warnings.catch_warnings context manager"
   },
   {
-    "question": "Which Python package is commonly used to interact with OpenAI models?",
+    "question": "What is the structural type composition of an object generated via a standard generator expression like `(x*2 for x in range(10))`?",
     "options": [
-      "requests",
-      "openai",
-      "numpy",
-      "tkinter"
+      "tuple",
+      "list",
+      "generator",
+      "iterator"
     ],
-    "answer": "openai"
+    "answer": "generator"
   },
   {
-    "question": "What is an Agent Workflow?",
+    "question": "What string behavior is observed if you attempt to use the `+` operator to join a string object and an integer object directly without explicit casting?",
     "options": [
-      "Sequence of reasoning and actions",
-      "Database schema",
-      "Programming language",
-      "Network architecture"
+      "The integer is cast automatically to string format",
+      "A TypeError is raised at runtime",
+      "The string is dropped and an integer calculation result is delivered",
+      "A new byte string container object instance forms"
     ],
-    "answer": "Sequence of reasoning and actions"
+    "answer": "A TypeError is raised at runtime"
   },
   {
-    "question": "What is iterative reasoning in agents?",
+    "question": "Which statement perfectly summarizes the role of the `weakref` module in core Python memory architectures?",
     "options": [
-      "Repeating reasoning steps until a goal is reached",
-      "Deleting context",
-      "Training repeatedly",
-      "Creating vectors"
+      "It creates temporary data references that bypass local encryption bounds",
+      "It allows reference objects to be tracked without tracking them toward garbage collection thresholds",
+      "It accelerates serialization tasks inside distributed system processing networks",
+      "It forces the system variable assignment models to use strict binary data alignments"
     ],
-    "answer": "Repeating reasoning steps until a goal is reached"
+    "answer": "It allows reference objects to be tracked without tracking them toward garbage collection thresholds"
   },
   {
-    "question": "Why are vector databases important in Agentic AI?",
+    "question": "What does a negative index slice statement like `my_list[-3:]` yield?",
     "options": [
-      "Compile Python code",
-      "Host web applications",
-      "Enable efficient semantic retrieval",
-      "Train neural networks"
+      "The last three elements of the list structure sequence",
+      "The first three elements sorted in reverse sequence direction",
+      "A slice sequence missing the concluding three array points",
+      "An empty list slice container structure"
     ],
-    "answer": "Enable efficient semantic retrieval"
+    "answer": "The last three elements of the list structure sequence"
   },
   {
-    "question": "What is the main benefit of LangGraph over simple chains?",
+    "question": "What structural evaluation constraint occurs if you create an inline Lambda function that refers to a loop tracking variable?",
     "options": [
-      "Supports branching, loops, and state",
-      "Faster SQL queries",
-      "Image generation",
-      "Database hosting"
+      "The variable is bound by value immediately at generation loop runtimes",
+      "The lambda captures the variable by reference, looking up its final loop sequence valuation when called later",
+      "A ScopeValidation exception prevents block execution layout compiling",
+      "The tracking loop value sets to 0 automatically across execution loops"
     ],
-    "answer": "Supports branching, loops, and state"
+    "answer": "The lambda captures the variable by reference, looking up its final loop sequence valuation when called later"
   },
   {
-    "question": "What is the primary goal of Agentic AI systems?",
+    "question": "Which feature statement is true regarding Python's dictionary implementation since version 3.7+?",
     "options": [
-      "Store structured data",
-      "Build websites",
-      "Reason, plan, and execute tasks autonomously",
-      "Replace programming languages"
+      "Keys are sorted alphabetically automatically",
+      "Insertion order of keys is explicitly preserved",
+      "Memory allocation footprint sizes scale up exponentially per key added",
+      "Duplicate duplicate key strings can sit within separate hash categories safely"
     ],
-    "answer": "Reason, plan, and execute tasks autonomously"
+    "answer": "Insertion order of keys is explicitly preserved"
   }
 ]
