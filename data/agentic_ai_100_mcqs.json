@@ -1,502 +1,502 @@
 [
   {
-    "question": "What happens when you use a mutable object (like a list) as a default argument in a Python function?",
+    "question": "Who developed the Python programming language?",
     "options": [
-      "The list is cleared every time the function is called without an argument",
-      "A new list is created every time the function is invoked",
-      "The default list is shared across all calls to the function",
-      "Python raises a SyntaxError at compile time"
+      "Dennis Ritchie",
+      "Guido van Rossum",
+      "James Gosling",
+      "Bjarne Stroustrup"
     ],
-    "answer": "The default list is shared across all calls to the function"
+    "answer": "Guido van Rossum"
   },
   {
-    "question": "Which of the following best describes the difference between '__init__' and '__new__' in Python?",
+    "question": "Which of the following character is used to give single-line comments in Python?",
     "options": [
-      "'__new__' is the static initializer, while '__init__' is the dynamic constructor",
-      "'__init__' creates the instance, while '__new__' initializes it",
-      "'__new__' creates the instance, while '__init__' initializes it",
-      "There is no difference; they are completely interchangeable aliases"
+      "//",
+      "/*",
+      "#",
+      "!"
     ],
-    "answer": "'__new__' creates the instance, while '__init__' initializes it"
+    "answer": "#"
   },
   {
-    "question": "In Python, what is the core mechanism behind Method Resolution Order (MRO)?",
+    "question": "What is the correct file extension for Python files?",
     "options": [
-      "C3 Linearization algorithm",
-      "Depth-First Search (DFS) exclusively",
-      "Breadth-First Search (BFS) exclusively",
-      "The Order of Declaration in the main module"
+      ".pt",
+      ".pyt",
+      ".py",
+      ".p"
     ],
-    "answer": "C3 Linearization algorithm"
+    "answer": ".py"
   },
   {
-    "question": "What will be the output of the expression: `[i for i in range(5) if i % 2 == 0 else 'Odd']`?",
+    "question": "Which of the following is NOT a valid variable name in Python?",
     "options": [
-      "[0, 'Odd', 2, 'Odd', 4]",
-      "",
-      "SyntaxError: invalid syntax",
-      "['Odd', 1, 'Odd', 3, 'Odd']"
+      "my_var",
+      "__myvar",
+      "1myvar",
+      "myvar1"
     ],
-    "answer": "SyntaxError: invalid syntax"
+    "answer": "1myvar"
   },
   {
-    "question": "How does a Python generator preserve state between executions?",
+    "question": "What is the default data type of the value returned by the input() function?",
     "options": [
-      "By saving local variables to a temporary JSON file hidden on disk",
-      "By utilizing the 'yield' keyword, which pauses the function frame execution context",
-      "By automatically promoting all internal variables to global scope",
-      "Generators do not preserve state; they re-run from scratch every time"
+      "integer",
+      "float",
+      "string",
+      "boolean"
     ],
-    "answer": "By utilizing the 'yield' keyword, which pauses the function frame execution context"
+    "answer": "string"
   },
   {
-    "question": "What is the primary benefit of declaring `__slots__` inside a custom Python class definition?",
+    "question": "Which operator is used for exponentiation (power) in Python?",
     "options": [
-      "It allows the class to inherit safely from multiple parent classes",
-      "It encrypts object field attributes to prevent runtime alterations",
-      "It optimizes memory usage by preventing the automatic creation of '__dict__' for instances",
-      "It speeds up execution loops by converting the class into pure C bytecode"
+      "^",
+      "**",
+      "*",
+      "^^"
     ],
-    "answer": "It optimizes memory usage by preventing the automatic creation of '__dict__' for instances"
+    "answer": "**"
   },
   {
-    "question": "Which of the following built-in modules can be used to create deep copies of nested data structures?",
+    "question": "What is the output of the expression 10 // 3 in Python?",
     "options": [
-      "clone",
-      "copy",
-      "sys",
-      "struct"
+      "3.333",
+      "3",
+      "1",
+      "0"
     ],
-    "answer": "copy"
+    "answer": "3"
   },
   {
-    "question": "What exception handling block executes ONLY if the protected code in the 'try' block completes without throwing any errors?",
+    "question": "Which built-in function can be used to find the number of items in a list or string?",
     "options": [
-      "else",
-      "finally",
-      "except",
-      "then"
+      "count()",
+      "size()",
+      "length()",
+      "len()"
     ],
-    "answer": "else"
+    "answer": "len()"
   },
   {
-    "question": "Under the LEGB scoping rule in Python, what does the letter 'E' stand for?",
+    "question": "What is used to define a block of code (like a loop or function) in Python?",
     "options": [
-      "Enclosing",
-      "External",
-      "Evaluation",
-      "Explicit"
+      "Curly braces",
+      "Parentheses",
+      "Indentation",
+      "Semicolons"
     ],
-    "answer": "Enclosing"
+    "answer": "Indentation"
   },
   {
-    "question": "What is the consequence of Python's Global Interpreter Lock (GIL)?",
+    "question": "Which keyword is used to create a function in Python?",
     "options": [
-      "It prevents Python scripts from accessing external web databases",
-      "It restricts multi-threaded CPython programs from running code on multiple CPU cores simultaneously",
-      "It limits the maximum file storage size to 4GB per script execution",
-      "It blocks the usage of custom decorators inside object methods"
+      "function",
+      "void",
+      "def",
+      "define"
     ],
-    "answer": "It restricts multi-threaded CPython programs from running code on multiple CPU cores simultaneously"
+    "answer": "def"
   },
   {
-    "question": "What dunder methods must be implemented to create a valid custom context manager using the 'with' statement?",
+    "question": "Which of the following data types is immutable (cannot be changed after creation)?",
     "options": [
-      "__start__ and __stop__",
-      "__enter__ and __exit__",
-      "__open__ and __close__",
-      "__init__ and __del__"
+      "List",
+      "Dictionary",
+      "Tuple",
+      "Set"
     ],
-    "answer": "__enter__ and __exit__"
+    "answer": "Tuple"
   },
   {
-    "question": "Consider the assignment `a =` and `b = a[:]`. What will `a is b` evaluate to?",
+    "question": "How do you start a for loop to run 5 times (from index 0 to 4)?",
+    "options": [
+      "for i in range(5):",
+      "for i in range(1, 5):",
+      "for (i=0; i<5; i++):",
+      "for i up to 5:"
+    ],
+    "answer": "for i in range(5):"
+  },
+  {
+    "question": "What will be the output of print(type(5.0))?",
+    "options": [
+      "<class 'int'>",
+      "<class 'float'>",
+      "<class 'str'>",
+      "<class 'double'>"
+    ],
+    "answer": "<class 'float'>"
+  },
+  {
+    "question": "Which method is used to add an element to the end of a list?",
+    "options": [
+      "add()",
+      "insert()",
+      "append()",
+      "extend()"
+    ],
+    "answer": "append()"
+  },
+  {
+    "question": "What does the modulo operator (%) do?",
+    "options": [
+      "Calculates percentages",
+      "Divides numbers and returns the quotient",
+      "Returns the remainder of a division",
+      "Multiplies two values"
+    ],
+    "answer": "Returns the remainder of a division"
+  },
+  {
+    "question": "How do you create an empty dictionary in Python?",
+    "options": [
+      "d = []",
+      "d = {}",
+      "d = ()",
+      "d = dict([])"
+    ],
+    "answer": "d = {}"
+  },
+  {
+    "question": "Which keyword is used to handle conditional branching when the 'if' condition is false?",
+    "options": [
+      "else if",
+      "elseif",
+      "elif",
+      "iff"
+    ],
+    "answer": "elif"
+  },
+  {
+    "question": "What is the index number of the first element in a Python list?",
+    "options": [
+      "1",
+      "0",
+      "-1",
+      "First"
+    ],
+    "answer": "0"
+  },
+  {
+    "question": "What is the output of the code: print('Hello' + 'World')?",
+    "options": [
+      "Hello World",
+      "HelloWorld",
+      "Hello+World",
+      "TypeError"
+    ],
+    "answer": "HelloWorld"
+  },
+  {
+    "question": "Which keyword is used to stop a loop prematurely?",
+    "options": [
+      "stop",
+      "exit",
+      "break",
+      "continue"
+    ],
+    "answer": "break"
+  },
+  {
+    "question": "Which keyword skips the current iteration of a loop and moves to the next one?",
+    "options": [
+      "skip",
+      "pass",
+      "continue",
+      "next"
+    ],
+    "answer": "continue"
+  },
+  {
+    "question": "What will be the output of print('Python')?",
+    "options": [
+      "P",
+      "y",
+      "t",
+      "IndexError"
+    ],
+    "answer": "y"
+  },
+  {
+    "question": "What collection type does not allow duplicate elements and is unordered?",
+    "options": [
+      "List",
+      "Tuple",
+      "Set",
+      "Dictionary"
+    ],
+    "answer": "Set"
+  },
+  {
+    "question": "How do you convert an integer x into a string data type?",
+    "options": [
+      "str(x)",
+      "string(x)",
+      "x.toString()",
+      "cast(x, str)"
+    ],
+    "answer": "str(x)"
+  },
+  {
+    "question": "Which of the following is the correct syntax to open a file named 'data.txt' for reading?",
+    "options": [
+      "open('data.txt', 'w')",
+      "open('data.txt', 'r')",
+      "readFile('data.txt')",
+      "openFile('data.txt')"
+    ],
+    "answer": "open('data.txt', 'r')"
+  },
+  {
+    "question": "What is the output of print(2 == 2.0)?",
     "options": [
       "True",
       "False",
       "None",
-      "ValueError"
-    ],
-    "answer": "False"
-  },
-  {
-    "question": "What will be the output of `all([])` and `any([])` evaluated in an interactive Python session?",
-    "options": [
-      "True and True",
-      "False and False",
-      "True and False",
-      "False and True"
-    ],
-    "answer": "True and False"
-  },
-  {
-    "question": "Which collection type from the 'collections' module automatically initializes missing keys with a default factory value when accessed?",
-    "options": [
-      "OrderedDict",
-      "Counter",
-      "NamedTuple",
-      "defaultdict"
-    ],
-    "answer": "defaultdict"
-  },
-  {
-    "question": "When designing decorators, what function from the 'functools' module is recommended to preserve the original metadata of the wrapped function?",
-    "options": [
-      "functools.update_wrapper",
-      "functools.wraps",
-      "functools.partial",
-      "functools.lru_cache"
-    ],
-    "answer": "functools.wraps"
-  },
-  {
-    "question": "What is the behavior of the `itertools.groupby()` function if the input iterable is not sorted beforehand?",
-    "options": [
-      "It automatically sorts the collection in memory before parsing",
-      "It raises a RuntimeWarning error message",
-      "It groups items based strictly on consecutive appearances, creating multiple separate groups for the same key",
-      "It breaks the process and outputs an empty iterator wrapper object"
-    ],
-    "answer": "It groups items based strictly on consecutive appearances, creating multiple separate groups for the same key"
-  },
-  {
-    "question": "How do you access the real function name string inside a decorated function frame if it was wrapped cleanly using `@functools.wraps`?",
-    "options": [
-      "func.__name__",
-      "func.__label__",
-      "func.__id__",
-      "func.get_name()"
-    ],
-    "answer": "func.__name__"
-  },
-  {
-    "question": "In Python, how is an attribute name dynamically mangled when it is prefixed with a double underscore (e.g., `__my_var`) inside a class named `MyClass`?",
-    "options": [
-      "It becomes `__my_var_mangled`",
-      "It becomes `_MyClass__my_var`",
-      "It becomes `__MyClass_my_var`",
-      "It is converted into a random alphanumeric identifier hash"
-    ],
-    "answer": "_MyClass__my_var"
-  },
-  {
-    "question": "Given the list unpacking expression `a, *b, c =`, what will be the value of the variable `b`?",
-    "options": [
-      "2",
-      "",
-      "",
-      "[]"
-    ],
-    "answer": ""
-  },
-  {
-    "question": "What is the key functional capability provided by the `@classmethod` decorator compared to `@staticmethod`?",
-    "options": [
-      "It implicitly passes the class reference object (cls) as the first argument",
-      "It allows calling the method strictly without instantiating the parent class object",
-      "It locks class attribute fields to prevent changes during script runtimes",
-      "It forces the method to output raw string formatting representations"
-    ],
-    "answer": "It implicitly passes the class reference object (cls) as the first argument"
-  },
-  {
-    "question": "What does a dictionary view object (such as returned by `my_dict.keys()`) reflect?",
-    "options": [
-      "A static frozen array snapshot of keys captured at invocation time",
-      "A dynamic look at dictionary keys that updates automatically as the dictionary drops or adds records",
-      "An encrypted generator string stream tailored for deep search operations",
-      "A sorted list copy containing primitive string items"
-    ],
-    "answer": "A dynamic look at dictionary keys that updates automatically as the dictionary drops or adds records"
-  },
-  {
-    "question": "Which of the following operations has a time complexity of O(1) in a standard Python built-in set data structure?",
-    "options": [
-      "Checking membership using the 'in' keyword",
-      "Sorting elements using the sorted() built-in function",
-      "Iterating through the full set using a standard for loop",
-      "Converting the full set into a dictionary collection type"
-    ],
-    "answer": "Checking membership using the 'in' keyword"
-  },
-  {
-    "question": "What happens if you use the `remove()` method on a Python set and the specified element does not exist?",
-    "options": [
-      "The set remains unchanged and returns None",
-      "A KeyError is raised at runtime",
-      "The first element in the set is deleted instead",
-      "An index placement marker is appended to the set structure"
-    ],
-    "answer": "A KeyError is raised at runtime"
-  },
-  {
-    "question": "What module should you use to enforce abstract method declarations on a base class in Python?",
-    "options": [
-      "abstract",
-      "abc",
-      "base",
-      "typing"
-    ],
-    "answer": "abc"
-  },
-  {
-    "question": "What will be the result of executing `type(type)` in a Python interpreter window?",
-    "options": [
-      "<class 'object'>",
-      "<class 'type'>",
-      "NameError",
-      "<class 'class'>"
-    ],
-    "answer": "<class 'type'>"
-  },
-  {
-    "question": "Which parameter can be set within Python 3.10+ `zip()` function to ensure an exception is thrown if the input iterables are of unequal length?",
-    "options": [
-      "match=True",
-      "strict=True",
-      "check=True",
-      "align=True"
-    ],
-    "answer": "strict=True"
-  },
-  {
-    "question": "What dunder method is evaluated when an instance of a class is invoked directly as a function, such as `my_instance()`?",
-    "options": [
-      "__init__",
-      "__new__",
-      "__execute__",
-      "__call__"
-    ],
-    "answer": "__call__"
-  },
-  {
-    "question": "What is the structural difference between `__str__` and `__repr__` for custom Python classes?",
-    "options": [
-      "`__str__` is intended to be user-friendly, while `__repr__` aims to provide an unambiguous representation useful for debugging",
-      "`__repr__` is intended to be user-friendly, while `__str__` aims to provide an unambiguous representation useful for debugging",
-      "`__str__` converts text to string format, while `__repr__` acts as a data compiler",
-      "There is no functional distinction between the two methods"
-    ],
-    "answer": "`__str__` is intended to be user-friendly, while `__repr__` aims to provide an unambiguous representation useful for debugging"
-  },
-  {
-    "question": "Which data collection from the 'collections' module is optimized for fast O(1) appends and pops from both ends?",
-    "options": [
-      "deque",
-      "Counter",
-      "defaultdict",
-      "OrderedDict"
-    ],
-    "answer": "deque"
-  },
-  {
-    "question": "What happens to elements when a maximum size constraint is set on a `collections.deque(maxlen=3)` object and a fourth element is added to the right side?",
-    "options": [
-      "An IndexError is thrown immediately",
-      "The addition is ignored entirely",
-      "The leftmost element is discarded automatically to accommodate the new entry",
-      "The maxlen property boundary expands dynamically"
-    ],
-    "answer": "The leftmost element is discarded automatically to accommodate the new entry"
-  },
-  {
-    "question": "What keyword allows you to modify a variable inside an outer enclosing function scope that is not global?",
-    "options": [
-      "global",
-      "nonlocal",
-      "outer",
-      "enclosed"
-    ],
-    "answer": "nonlocal"
-  },
-  {
-    "question": "What will be the output of the expression `bool('False')` in Python?",
-    "options": [
-      "False",
-      "True",
-      "TypeError",
-      "None"
+      "TypeError"
     ],
     "answer": "True"
   },
   {
-    "question": "What does the `sys.getsizeof()` function return for a defined Python object wrapper instance?",
+    "question": "Which logical operator returns True only if both operational expressions are True?",
     "options": [
-      "The count of fields assigned within the item framework",
-      "The length of the element string conversion value",
-      "The actual memory size allocated to the object measured in bytes",
-      "The exact bit allocation length score variable index"
+      "or",
+      "not",
+      "and",
+      "&&"
     ],
-    "answer": "The actual memory size allocated to the object measured in bytes"
+    "answer": "and"
   },
   {
-    "question": "Which statement accurately describes file modes `w+` and `r+` in Python built-in file operations?",
+    "question": "How do you add a new key-value pair to a dictionary named 'user'?",
     "options": [
-      "`w+` opens for reading and writing, overwriting existing files; `r+` opens for reading and writing without truncation",
-      "`r+` opens for reading and writing, overwriting existing files; `w+` opens for reading and writing without truncation",
-      "Both modes perform identical file initialization loops",
-      "`w+` cannot create a new file on disk if it does not already exist"
+      "user.add('name', 'Bob')",
+      "user['name'] = 'Bob'",
+      "user.append('name': 'Bob')",
+      "user.insert('name', 'Bob')"
     ],
-    "answer": "`w+` opens for reading and writing, overwriting existing files; `r+` opens for reading and writing without truncation"
+    "answer": "user['name'] = 'Bob'"
   },
   {
-    "question": "Which module in modern Python is preferred for handling file system path traversals as object representations instead of raw strings?",
+    "question": "What will be the result of print(list(range(2, 5)))?",
     "options": [
-      "os.path",
-      "glob",
-      "pathlib",
-      "sys.path"
+      "",
+      "",
+      "",
+      ""
     ],
-    "answer": "pathlib"
+    "answer": ""
   },
   {
-    "question": "What is the primary evaluation mechanism behind Python's logical operators when evaluating expressions like `x or y`?",
+    "question": "Which method removes and returns the last element from a list?",
     "options": [
-      "Eager calculation framework execution",
-      "Short-circuit evaluation",
-      "Parallel bitwise translation",
-      "Recursive frame evaluation loops"
+      "remove()",
+      "pop()",
+      "delete()",
+      "discard()"
     ],
-    "answer": "Short-circuit evaluation"
+    "answer": "pop()"
   },
   {
-    "question": "What happens to the visibility scope of a variable defined inside a list comprehension block in Python 3?",
+    "question": "What keyword is used to make a placeholder block where no code execution is required?",
     "options": [
-      "It leaks out into the parent function local scope frame context",
-      "It is restricted cleanly to the internal scope of the comprehension block",
-      "It automatically gets promoted to global scope properties",
-      "It becomes accessible only via special dunder dictionary views"
+      "null",
+      "none",
+      "pass",
+      "void"
     ],
-    "answer": "It is restricted cleanly to the internal scope of the comprehension block"
+    "answer": "pass"
   },
   {
-    "question": "Which functional function applies a specific computational operation cumulatively to items of an iterable sequence to reduce it down to a single value?",
+    "question": "How can you get the last element of a list named 'my_list' using negative indexing?",
     "options": [
-      "map",
-      "filter",
-      "functools.reduce",
-      "accumulate"
+      "my_list[-1]",
+      "my_list",
+      "my_list[-0]",
+      "my_list[len(my_list)]"
     ],
-    "answer": "functools.reduce"
+    "answer": "my_list[-1]"
   },
   {
-    "question": "What pattern does a custom class use to expose its fields to clear support verification loops using the `in` keyword?",
+    "question": "What will be the output of print(10 > 5 and 3 < 1)?",
     "options": [
-      "__iter__",
-      "__contains__",
-      "__search__",
-      "__match__"
-    ],
-    "answer": "__contains__"
-  },
-  {
-    "question": "What happens if a class definition lacks custom error configuration values but uses multiple inheritance paths with mismatched method layouts?",
-    "options": [
-      "Python automatically generates an interface proxy class layer",
-      "The program builds safely following the Method Resolution Order sequence context instructions",
-      "A MROConflictError exception freezes execution at launch validation",
-      "All parent methods are discarded silently from instances"
-    ],
-    "answer": "The program builds safely following the Method Resolution Order sequence context instructions"
-  },
-  {
-    "question": "What built-in function can verify if a target object property can be modified safely using `setattr()` without causing an unexpected error hook?",
-    "options": [
-      "hasattr",
-      "checkattr",
-      "iswritable",
-      "verifyattr"
-    ],
-    "answer": "hasattr"
-  },
-  {
-    "question": "What metric does `collections.Counter` use if you query a missing key descriptor value from its data grid?",
-    "options": [
-      "Raises a KeyError exception",
-      "Returns None",
-      "Returns 0",
-      "Appends a blank entry mapping line"
-    ],
-    "answer": "Returns 0"
-  },
-  {
-    "question": "What is the value of the variable `result` after executing `result = 10 / 2 or 5`?",
-    "options": [
-      "5.0",
-      "5",
       "True",
-      "ValueError"
+      "False",
+      "None",
+      "Error"
     ],
-    "answer": "5.0"
+    "answer": "False"
   },
   {
-    "question": "Which tool statement should be applied if an analyst wants to capture warnings without crashing functional production application runs?",
+    "question": "Which Python statement is used to catch and handle exceptions?",
     "options": [
-      "try...except Exception",
-      "warnings.catch_warnings context manager",
-      "sys.settrace routine blocks",
-      "os.environ alert variable toggles"
+      "try...catch",
+      "try...except",
+      "do...catch",
+      "catch...finally"
     ],
-    "answer": "warnings.catch_warnings context manager"
+    "answer": "try...except"
   },
   {
-    "question": "What is the structural type composition of an object generated via a standard generator expression like `(x*2 for x in range(10))`?",
+    "question": "What string method converts all characters in a string to lowercase?",
     "options": [
-      "tuple",
-      "list",
-      "generator",
-      "iterator"
+      "lower()",
+      "lowercase()",
+      "down()",
+      "toLower()"
     ],
-    "answer": "generator"
+    "answer": "lower()"
   },
   {
-    "question": "What string behavior is observed if you attempt to use the `+` operator to join a string object and an integer object directly without explicit casting?",
+    "question": "How do you check if the item 'apple' is present in a list named 'fruits'?",
     "options": [
-      "The integer is cast automatically to string format",
-      "A TypeError is raised at runtime",
-      "The string is dropped and an integer calculation result is delivered",
-      "A new byte string container object instance forms"
+      "if 'apple' in fruits:",
+      "if fruits.contains('apple'):",
+      "if 'apple' exist fruits:",
+      "if fruits.has('apple'):"
     ],
-    "answer": "A TypeError is raised at runtime"
+    "answer": "if 'apple' in fruits:"
   },
   {
-    "question": "Which statement perfectly summarizes the role of the `weakref` module in core Python memory architectures?",
+    "question": "What is the output of print(3 * 'A')?",
     "options": [
-      "It creates temporary data references that bypass local encryption bounds",
-      "It allows reference objects to be tracked without tracking them toward garbage collection thresholds",
-      "It accelerates serialization tasks inside distributed system processing networks",
-      "It forces the system variable assignment models to use strict binary data alignments"
+      "9",
+      "AAA",
+      "3A",
+      "TypeError"
     ],
-    "answer": "It allows reference objects to be tracked without tracking them toward garbage collection thresholds"
+    "answer": "AAA"
   },
   {
-    "question": "What does a negative index slice statement like `my_list[-3:]` yield?",
+    "question": "Which function is used to load an external library or module into your Python script?",
     "options": [
-      "The last three elements of the list structure sequence",
-      "The first three elements sorted in reverse sequence direction",
-      "A slice sequence missing the concluding three array points",
-      "An empty list slice container structure"
+      "load",
+      "include",
+      "import",
+      "require"
     ],
-    "answer": "The last three elements of the list structure sequence"
+    "answer": "import"
   },
   {
-    "question": "What structural evaluation constraint occurs if you create an inline Lambda function that refers to a loop tracking variable?",
+    "question": "What will be the output of the expression: print(bool(0))?",
     "options": [
-      "The variable is bound by value immediately at generation loop runtimes",
-      "The lambda captures the variable by reference, looking up its final loop sequence valuation when called later",
-      "A ScopeValidation exception prevents block execution layout compiling",
-      "The tracking loop value sets to 0 automatically across execution loops"
+      "True",
+      "False",
+      "None",
+      "0"
     ],
-    "answer": "The lambda captures the variable by reference, looking up its final loop sequence valuation when called later"
+    "answer": "False"
   },
   {
-    "question": "Which feature statement is true regarding Python's dictionary implementation since version 3.7+?",
+    "question": "What happens when you execute a statement like: print(my_list[1:4])?",
     "options": [
-      "Keys are sorted alphabetically automatically",
-      "Insertion order of keys is explicitly preserved",
-      "Memory allocation footprint sizes scale up exponentially per key added",
-      "Duplicate duplicate key strings can sit within separate hash categories safely"
+      "It returns a slice from index 1 to 4 inclusive",
+      "It returns a slice from index 1 to 3",
+      "It removes elements from index 1 to 4",
+      "It raises a SyntaxError"
     ],
-    "answer": "Insertion order of keys is explicitly preserved"
+    "answer": "It returns a slice from index 1 to 3"
+  },
+  {
+    "question": "Which method removes a specific item from a list by its value (not index)?",
+    "options": [
+      "pop()",
+      "delete()",
+      "remove()",
+      "clear()"
+    ],
+    "answer": "remove()"
+  },
+  {
+    "question": "What does the dictionary method .keys() return?",
+    "options": [
+      "All the values present in the dictionary",
+      "A view object containing all the keys of the dictionary",
+      "The count of total records",
+      "The primary key configurations"
+    ],
+    "answer": "A view object containing all the keys of the dictionary"
+  },
+  {
+    "question": "What is the output of print(type(True))?",
+    "options": [
+      "<class 'str'>",
+      "<class 'int'>",
+      "<class 'bool'>",
+      "<class 'boolean'>"
+    ],
+    "answer": "<class 'bool'>"
+  },
+  {
+    "question": "Which function allows you to round a floating-point number to a specific number of decimals?",
+    "options": [
+      "round()",
+      "floor()",
+      "ceil()",
+      "format()"
+    ],
+    "answer": "round()"
+  },
+  {
+    "question": "How can you inject variables directly inside a string text using curly brackets in modern Python?",
+    "options": [
+      "By placing a '$' symbol before the string",
+      "By placing an 'f' character before the quotation marks (f-string)",
+      "By using the format() function globally",
+      "Strings do not support variable injection directly"
+    ],
+    "answer": "By placing an 'f' character before the quotation marks (f-string)"
+  },
+  {
+    "question": "What will be the output of print(5 != 5)?",
+    "options": [
+      "True",
+      "False",
+      "None",
+      "SyntaxError"
+    ],
+    "answer": "False"
+  },
+  {
+    "question": "Which of the following creates a new set object containing elements present in list x?",
+    "options": [
+      "set(x)",
+      "toSet(x)",
+      "x.set()",
+      "new set(x)"
+    ],
+    "answer": "set(x)"
+  },
+  {
+    "question": "What is the name of the special method used as a constructor or initializer inside a Python class?",
+    "options": [
+      "__init__",
+      "__new__",
+      "__class__",
+      "__construct__"
+    ],
+    "answer": "__init__"
+  },
+  {
+    "question": "Which method splits a string into a list of strings based on a separator character?",
+    "options": [
+      "divide()",
+      "split()",
+      "break()",
+      "separate()"
+    ],
+    "answer": "split()"
+  },
+  {
+    "question": "What does the statement execution clear() do to a list object?",
+    "options": [
+      "Deletes the full list variable object completely from system memory",
+      "Removes all elements from the list, leaving it completely empty",
+      "Sorts the list items in alphabetical layout",
+      "Filters out duplicate elements from the list structure"
+    ],
+    "answer": "Removes all elements from the list, leaving it completely empty"
   }
 ]
