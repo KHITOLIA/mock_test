@@ -1,0 +1,502 @@
+[
+  {
+    "question": "What does CCNA stand for?",
+    "options": [
+      "Cisco Certified Network Associate",
+      "Cisco Certified Network Administrator",
+      "Cisco Certified Networking Analyst",
+      "Cisco Certified Network Architect"
+    ],
+    "answer": "Cisco Certified Network Associate"
+  },
+  {
+    "question": "Which OSI layer is responsible for routing?",
+    "options": [
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 7"
+    ],
+    "answer": "Layer 3"
+  },
+  {
+    "question": "Which protocol resolves IP addresses to MAC addresses?",
+    "options": [
+      "DNS",
+      "ARP",
+      "DHCP",
+      "ICMP"
+    ],
+    "answer": "ARP"
+  },
+  {
+    "question": "What is the default administrative distance of a static route?",
+    "options": [
+      "0",
+      "1",
+      "90",
+      "110"
+    ],
+    "answer": "1"
+  },
+  {
+    "question": "Which command displays the routing table?",
+    "options": [
+      "show ip route",
+      "show vlan brief",
+      "show interfaces",
+      "show cdp neighbors"
+    ],
+    "answer": "show ip route"
+  },
+  {
+    "question": "What is the purpose of a default route?",
+    "options": [
+      "Route local traffic",
+      "Route unknown destinations",
+      "Route VLAN traffic",
+      "Route multicast traffic"
+    ],
+    "answer": "Route unknown destinations"
+  },
+  {
+    "question": "Which routing protocol is link-state?",
+    "options": [
+      "RIP",
+      "EIGRP",
+      "OSPF",
+      "IGRP"
+    ],
+    "answer": "OSPF"
+  },
+  {
+    "question": "What is the OSPF administrative distance?",
+    "options": [
+      "1",
+      "90",
+      "110",
+      "120"
+    ],
+    "answer": "110"
+  },
+  {
+    "question": "Which OSPF area is known as the backbone area?",
+    "options": [
+      "Area 1",
+      "Area 10",
+      "Area 100",
+      "Area 0"
+    ],
+    "answer": "Area 0"
+  },
+  {
+    "question": "Which command verifies OSPF neighbors?",
+    "options": [
+      "show ip route",
+      "show ip ospf neighbor",
+      "show vlan",
+      "show arp"
+    ],
+    "answer": "show ip ospf neighbor"
+  },
+  {
+    "question": "Which wildcard mask corresponds to 255.255.255.0?",
+    "options": [
+      "0.0.0.255",
+      "255.255.255.255",
+      "0.255.255.255",
+      "255.0.0.0"
+    ],
+    "answer": "0.0.0.255"
+  },
+  {
+    "question": "Which VLAN is the default VLAN on Cisco switches?",
+    "options": [
+      "10",
+      "99",
+      "100",
+      "1"
+    ],
+    "answer": "1"
+  },
+  {
+    "question": "Which command creates VLAN 10?",
+    "options": [
+      "vlan 10",
+      "create vlan 10",
+      "switchport vlan 10",
+      "interface vlan 10"
+    ],
+    "answer": "vlan 10"
+  },
+  {
+    "question": "What is the purpose of a trunk port?",
+    "options": [
+      "Carry one VLAN",
+      "Carry multiple VLANs",
+      "Block broadcasts",
+      "Provide routing"
+    ],
+    "answer": "Carry multiple VLANs"
+  },
+  {
+    "question": "Which protocol is used for VLAN tagging?",
+    "options": [
+      "STP",
+      "802.1Q",
+      "ARP",
+      "PPP"
+    ],
+    "answer": "802.1Q"
+  },
+  {
+    "question": "What is the default native VLAN?",
+    "options": [
+      "10",
+      "99",
+      "100",
+      "1"
+    ],
+    "answer": "1"
+  },
+  {
+    "question": "What does STP prevent?",
+    "options": [
+      "Routing loops",
+      "Switching loops",
+      "ARP requests",
+      "NAT translations"
+    ],
+    "answer": "Switching loops"
+  },
+  {
+    "question": "Which STP bridge becomes root bridge?",
+    "options": [
+      "Highest MAC",
+      "Lowest Bridge ID",
+      "Highest Priority",
+      "Fastest Switch"
+    ],
+    "answer": "Lowest Bridge ID"
+  },
+  {
+    "question": "What is PortFast used for?",
+    "options": [
+      "Faster routing",
+      "Faster trunking",
+      "Immediate forwarding state",
+      "NAT acceleration"
+    ],
+    "answer": "Immediate forwarding state"
+  },
+  {
+    "question": "What does BPDU Guard do?",
+    "options": [
+      "Elect root bridge",
+      "Disable port receiving BPDU",
+      "Create VLAN",
+      "Enable trunking"
+    ],
+    "answer": "Disable port receiving BPDU"
+  },
+  {
+    "question": "Which ACL filters only source IP address?",
+    "options": [
+      "Extended ACL",
+      "Standard ACL",
+      "Named ACL",
+      "Reflexive ACL"
+    ],
+    "answer": "Standard ACL"
+  },
+  {
+    "question": "Which ACL can filter TCP and UDP ports?",
+    "options": [
+      "Standard ACL",
+      "Extended ACL",
+      "VLAN ACL",
+      "Dynamic ACL"
+    ],
+    "answer": "Extended ACL"
+  },
+  {
+    "question": "What is the implicit rule at the end of every ACL?",
+    "options": [
+      "permit any",
+      "deny any",
+      "permit tcp any any",
+      "deny icmp any any"
+    ],
+    "answer": "deny any"
+  },
+  {
+    "question": "Which command verifies ACL entries?",
+    "options": [
+      "show access-lists",
+      "show ip route",
+      "show vlan",
+      "show nat"
+    ],
+    "answer": "show access-lists"
+  },
+  {
+    "question": "What is NAT used for?",
+    "options": [
+      "Routing",
+      "Address Translation",
+      "Switching",
+      "Encryption"
+    ],
+    "answer": "Address Translation"
+  },
+  {
+    "question": "Which NAT type maps one private IP to one public IP?",
+    "options": [
+      "PAT",
+      "Dynamic NAT",
+      "Static NAT",
+      "Overload"
+    ],
+    "answer": "Static NAT"
+  },
+  {
+    "question": "What does PAT use to distinguish sessions?",
+    "options": [
+      "MAC Address",
+      "Port Numbers",
+      "VLAN IDs",
+      "Subnet Masks"
+    ],
+    "answer": "Port Numbers"
+  },
+  {
+    "question": "Which command displays NAT translations?",
+    "options": [
+      "show ip nat translations",
+      "show ip route",
+      "show access-list",
+      "show arp"
+    ],
+    "answer": "show ip nat translations"
+  },
+  {
+    "question": "What is the purpose of DHCP?",
+    "options": [
+      "Resolve Names",
+      "Assign IP Addresses",
+      "Route Packets",
+      "Translate Addresses"
+    ],
+    "answer": "Assign IP Addresses"
+  },
+  {
+    "question": "Which DHCP message is sent first by a client?",
+    "options": [
+      "Offer",
+      "Discover",
+      "Request",
+      "ACK"
+    ],
+    "answer": "Discover"
+  },
+  {
+    "question": "What protocol is used to resolve hostnames?",
+    "options": [
+      "ARP",
+      "DNS",
+      "ICMP",
+      "SNMP"
+    ],
+    "answer": "DNS"
+  },
+  {
+    "question": "What protocol sends Echo Requests?",
+    "options": [
+      "TCP",
+      "UDP",
+      "ICMP",
+      "ARP"
+    ],
+    "answer": "ICMP"
+  },
+  {
+    "question": "Which command tests connectivity?",
+    "options": [
+      "ping",
+      "copy run start",
+      "show ip route",
+      "erase startup-config"
+    ],
+    "answer": "ping"
+  },
+  {
+    "question": "Which command shows interface status?",
+    "options": [
+      "show ip interface brief",
+      "show access-lists",
+      "show vlan",
+      "show arp"
+    ],
+    "answer": "show ip interface brief"
+  },
+  {
+    "question": "Which protocol uses TCP port 22?",
+    "options": [
+      "Telnet",
+      "SSH",
+      "FTP",
+      "HTTP"
+    ],
+    "answer": "SSH"
+  },
+  {
+    "question": "Which protocol uses TCP port 23?",
+    "options": [
+      "SSH",
+      "Telnet",
+      "FTP",
+      "DNS"
+    ],
+    "answer": "Telnet"
+  },
+  {
+    "question": "Which command encrypts plaintext passwords?",
+    "options": [
+      "service password-encryption",
+      "enable secret",
+      "crypto password",
+      "encrypt all"
+    ],
+    "answer": "service password-encryption"
+  },
+  {
+    "question": "What is the purpose of SNMP?",
+    "options": [
+      "File Transfer",
+      "Monitoring and Management",
+      "Routing",
+      "Authentication"
+    ],
+    "answer": "Monitoring and Management"
+  },
+  {
+    "question": "What is Syslog used for?",
+    "options": [
+      "Address Translation",
+      "Centralized Logging",
+      "Routing",
+      "DNS Resolution"
+    ],
+    "answer": "Centralized Logging"
+  },
+  {
+    "question": "What is NTP used for?",
+    "options": [
+      "Routing",
+      "Time Synchronization",
+      "VLAN Management",
+      "Address Resolution"
+    ],
+    "answer": "Time Synchronization"
+  },
+  {
+    "question": "Which wireless standard operates only in 5 GHz?",
+    "options": [
+      "802.11b",
+      "802.11g",
+      "802.11a",
+      "802.11n"
+    ],
+    "answer": "802.11a"
+  },
+  {
+    "question": "Which wireless security protocol is the most secure?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "WPA3"
+    ],
+    "answer": "WPA3"
+  },
+  {
+    "question": "What is the purpose of Port Security?",
+    "options": [
+      "Prevent unauthorized devices",
+      "Increase bandwidth",
+      "Enable routing",
+      "Configure VLANs"
+    ],
+    "answer": "Prevent unauthorized devices"
+  },
+  {
+    "question": "Which violation mode disables the port?",
+    "options": [
+      "Protect",
+      "Restrict",
+      "Shutdown",
+      "Sticky"
+    ],
+    "answer": "Shutdown"
+  },
+  {
+    "question": "What does Sticky MAC do?",
+    "options": [
+      "Deletes MACs",
+      "Learns and saves MAC addresses",
+      "Encrypts MAC addresses",
+      "Blocks all MAC addresses"
+    ],
+    "answer": "Learns and saves MAC addresses"
+  },
+  {
+    "question": "Which command saves configuration to NVRAM?",
+    "options": [
+      "copy running-config startup-config",
+      "show startup-config",
+      "erase startup-config",
+      "reload"
+    ],
+    "answer": "copy running-config startup-config"
+  },
+  {
+    "question": "What is the purpose of CDP?",
+    "options": [
+      "Cisco Device Discovery",
+      "Routing",
+      "DNS",
+      "NAT"
+    ],
+    "answer": "Cisco Device Discovery"
+  },
+  {
+    "question": "Which command shows directly connected Cisco devices?",
+    "options": [
+      "show cdp neighbors",
+      "show arp",
+      "show ip route",
+      "show vlan"
+    ],
+    "answer": "show cdp neighbors"
+  },
+  {
+    "question": "Which device forwards packets based on MAC addresses?",
+    "options": [
+      "Router",
+      "Switch",
+      "Firewall",
+      "Hub"
+    ],
+    "answer": "Switch"
+  },
+  {
+    "question": "Which device forwards packets based on IP addresses?",
+    "options": [
+      "Hub",
+      "Switch",
+      "Router",
+      "Access Point"
+    ],
+    "answer": "Router"
+  }
+]
