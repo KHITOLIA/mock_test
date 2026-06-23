@@ -1,0 +1,404 @@
+{
+    "mongodb_interview_questions": [
+        {
+            "id": 1,
+            "question": "What is MongoDB?"
+        },
+        {
+            "id": 2,
+            "question": "What type of database is MongoDB?"
+        },
+        {
+            "id": 3,
+            "question": "What is a document in MongoDB?"
+        },
+        {
+            "id": 4,
+            "question": "What is a collection in MongoDB?"
+        },
+        {
+            "id": 5,
+            "question": "What is BSON?"
+        },
+        {
+            "id": 6,
+            "question": "Difference between JSON and BSON?"
+        },
+        {
+            "id": 7,
+            "question": "What are the advantages of MongoDB?"
+        },
+        {
+            "id": 8,
+            "question": "What are the limitations of MongoDB?"
+        },
+        {
+            "id": 9,
+            "question": "What is the default port of MongoDB?"
+        },
+        {
+            "id": 10,
+            "question": "What is the MongoDB shell?"
+        },
+        {
+            "id": 11,
+            "question": "What is MongoDB Compass?"
+        },
+        {
+            "id": 12,
+            "question": "What is a database in MongoDB?"
+        },
+        {
+            "id": 13,
+            "question": "What is the _id field?"
+        },
+        {
+            "id": 14,
+            "question": "How do you create a database in MongoDB?"
+        },
+        {
+            "id": 15,
+            "question": "How do you create a collection?"
+        },
+        {
+            "id": 16,
+            "question": "How do you insert a document?"
+        },
+        {
+            "id": 17,
+            "question": "How do you insert multiple documents?"
+        },
+        {
+            "id": 18,
+            "question": "How do you find all documents?"
+        },
+        {
+            "id": 19,
+            "question": "How do you find a single document?"
+        },
+        {
+            "id": 20,
+            "question": "What is the difference between find() and findOne()?"
+        },
+        {
+            "id": 21,
+            "question": "How do you update a document?"
+        },
+        {
+            "id": 22,
+            "question": "What is updateOne()?"
+        },
+        {
+            "id": 23,
+            "question": "What is updateMany()?"
+        },
+        {
+            "id": 24,
+            "question": "What is replaceOne()?"
+        },
+        {
+            "id": 25,
+            "question": "How do you delete a document?"
+        },
+        {
+            "id": 26,
+            "question": "What is deleteOne()?"
+        },
+        {
+            "id": 27,
+            "question": "What is deleteMany()?"
+        },
+        {
+            "id": 28,
+            "question": "What are query operators in MongoDB?"
+        },
+        {
+            "id": 29,
+            "question": "What is the $eq operator?"
+        },
+        {
+            "id": 30,
+            "question": "What is the $gt operator?"
+        },
+        {
+            "id": 31,
+            "question": "What is the $lt operator?"
+        },
+        {
+            "id": 32,
+            "question": "What is the $in operator?"
+        },
+        {
+            "id": 33,
+            "question": "What is the $and operator?"
+        },
+        {
+            "id": 34,
+            "question": "What is the $or operator?"
+        },
+        {
+            "id": 35,
+            "question": "What is projection in MongoDB?"
+        },
+        {
+            "id": 36,
+            "question": "How do you sort documents?"
+        },
+        {
+            "id": 37,
+            "question": "What is the limit() method?"
+        },
+        {
+            "id": 38,
+            "question": "What is the skip() method?"
+        },
+        {
+            "id": 39,
+            "question": "How do you perform pagination?"
+        },
+        {
+            "id": 40,
+            "question": "What is indexing in MongoDB?"
+        },
+        {
+            "id": 41,
+            "question": "Why are indexes important?"
+        },
+        {
+            "id": 42,
+            "question": "What is a single-field index?"
+        },
+        {
+            "id": 43,
+            "question": "What is a compound index?"
+        },
+        {
+            "id": 44,
+            "question": "What is a text index?"
+        },
+        {
+            "id": 45,
+            "question": "What is a unique index?"
+        },
+        {
+            "id": 46,
+            "question": "What is a TTL index?"
+        },
+        {
+            "id": 47,
+            "question": "What is a wildcard index?"
+        },
+        {
+            "id": 48,
+            "question": "How do you create an index?"
+        },
+        {
+            "id": 49,
+            "question": "How do you view indexes?"
+        },
+        {
+            "id": 50,
+            "question": "What is index cardinality?"
+        },
+        {
+            "id": 51,
+            "question": "What is aggregation in MongoDB?"
+        },
+        {
+            "id": 52,
+            "question": "What is the aggregation pipeline?"
+        },
+        {
+            "id": 53,
+            "question": "What is the $match stage?"
+        },
+        {
+            "id": 54,
+            "question": "What is the $group stage?"
+        },
+        {
+            "id": 55,
+            "question": "What is the $project stage?"
+        },
+        {
+            "id": 56,
+            "question": "What is the $sort stage?"
+        },
+        {
+            "id": 57,
+            "question": "What is the $lookup stage?"
+        },
+        {
+            "id": 58,
+            "question": "What is the $unwind stage?"
+        },
+        {
+            "id": 59,
+            "question": "What is the $facet stage?"
+        },
+        {
+            "id": 60,
+            "question": "What is sharding in MongoDB?"
+        },
+        {
+            "id": 61,
+            "question": "Why is sharding used?"
+        },
+        {
+            "id": 62,
+            "question": "What is a shard key?"
+        },
+        {
+            "id": 63,
+            "question": "What is replication in MongoDB?"
+        },
+        {
+            "id": 64,
+            "question": "What is a replica set?"
+        },
+        {
+            "id": 65,
+            "question": "What is a primary node?"
+        },
+        {
+            "id": 66,
+            "question": "What is a secondary node?"
+        },
+        {
+            "id": 67,
+            "question": "What is an arbiter in MongoDB?"
+        },
+        {
+            "id": 68,
+            "question": "What happens during failover?"
+        },
+        {
+            "id": 69,
+            "question": "What is read preference?"
+        },
+        {
+            "id": 70,
+            "question": "What is write concern?"
+        },
+        {
+            "id": 71,
+            "question": "What is journaling?"
+        },
+        {
+            "id": 72,
+            "question": "What are transactions in MongoDB?"
+        },
+        {
+            "id": 73,
+            "question": "When should you use transactions?"
+        },
+        {
+            "id": 74,
+            "question": "What is ACID compliance in MongoDB?"
+        },
+        {
+            "id": 75,
+            "question": "What is schema design in MongoDB?"
+        },
+        {
+            "id": 76,
+            "question": "Embedding vs Referencing in MongoDB?"
+        },
+        {
+            "id": 77,
+            "question": "What are capped collections?"
+        },
+        {
+            "id": 78,
+            "question": "What is GridFS?"
+        },
+        {
+            "id": 79,
+            "question": "When should GridFS be used?"
+        },
+        {
+            "id": 80,
+            "question": "What is MongoDB Atlas?"
+        },
+        {
+            "id": 81,
+            "question": "What are MongoDB Atlas clusters?"
+        },
+        {
+            "id": 82,
+            "question": "What is data modeling in MongoDB?"
+        },
+        {
+            "id": 83,
+            "question": "What are schema validation rules?"
+        },
+        {
+            "id": 84,
+            "question": "What is the $set operator?"
+        },
+        {
+            "id": 85,
+            "question": "What is the $unset operator?"
+        },
+        {
+            "id": 86,
+            "question": "What is the $push operator?"
+        },
+        {
+            "id": 87,
+            "question": "What is the $pull operator?"
+        },
+        {
+            "id": 88,
+            "question": "What is the $addToSet operator?"
+        },
+        {
+            "id": 89,
+            "question": "What is ObjectId?"
+        },
+        {
+            "id": 90,
+            "question": "How do you back up a MongoDB database?"
+        },
+        {
+            "id": 91,
+            "question": "What is mongodump?"
+        },
+        {
+            "id": 92,
+            "question": "What is mongorestore?"
+        },
+        {
+            "id": 93,
+            "question": "How do you monitor MongoDB performance?"
+        },
+        {
+            "id": 94,
+            "question": "What is explain() in MongoDB?"
+        },
+        {
+            "id": 95,
+            "question": "What is query optimization?"
+        },
+        {
+            "id": 96,
+            "question": "What are covered queries?"
+        },
+        {
+            "id": 97,
+            "question": "What security features does MongoDB provide?"
+        },
+        {
+            "id": 98,
+            "question": "How do authentication and authorization work?"
+        },
+        {
+            "id": 99,
+            "question": "What are roles in MongoDB?"
+        },
+        {
+            "id": 100,
+            "question": "What are common MongoDB interview challenges?"
+        }
+    ]
+}
