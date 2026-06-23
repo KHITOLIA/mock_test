@@ -45,7 +45,7 @@ def load_questions(course):
         'DJANGO': 'data/django-questions.json',
         'CYBER' : 'data/CEH_v13_50_MCQ_Set_1.json',
         'CCNA' : 'data/ccna_200_301_exam_bank.json',
-        'CCNP' : 'data/CCNP_ENCOR_50_Questions.json',
+        'CCNP' : 'data/ccnp.json',
         'DM' : 'data/digital_marketing_mcqs.json',
         'GENAI' : 'data/gen_ai_100_mcqs.json',
         'AGENTICAI' : 'data/agentic_ai_100_mcqs.json'
