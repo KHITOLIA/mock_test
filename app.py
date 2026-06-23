@@ -48,7 +48,8 @@ def load_questions(course):
         'CCNP' : 'data/ccnp.json',
         'DM' : 'data/digital_marketing_mcqs.json',
         'GENAI' : 'data/gen_ai_100_mcqs.json',
-        'AGENTICAI' : 'data/agentic_ai_100_mcqs.json'
+        'AGENTICAI' : 'data/agentic_ai_100_mcqs.json',
+        'MONGODB' : 'data/mongodb_100_interview_questions.json'
     }
 
     with open(file_map[course], "r", encoding = "utf-8") as f:
