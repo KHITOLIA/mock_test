@@ -1,602 +1,502 @@
 [
-  {
-    "question": "Scenario: A company is experiencing issues related to VMs. As an administrator, what is the BEST action to take?",
-    "options": [
-      "Review and configure VMs appropriately",
-      "Delete all resources immediately",
-      "Ignore the issue",
-      "Disable monitoring permanently"
-    ],
-    "answer": "Review and configure VMs appropriately",
-    "difficulty": "Easy",
-    "type": "Scenario-Based"
-  },
-  {
-    "question": "What is the primary purpose of Storage Accounts?",
-    "options": [
-      "To permanently disable services",
-      "To provide its intended functionality",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of VNets?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To provide its intended functionality",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of Azure AD?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls",
-      "To provide its intended functionality"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of NSG?",
-    "options": [
-      "To provide its intended functionality",
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "Scenario: A company is experiencing issues related to Load Balancer. As an administrator, what is the BEST action to take?",
-    "options": [
-      "Delete all resources immediately",
-      "Review and configure Load Balancer appropriately",
-      "Ignore the issue",
-      "Disable monitoring permanently"
-    ],
-    "answer": "Review and configure Load Balancer appropriately",
-    "difficulty": "Easy",
-    "type": "Scenario-Based"
-  },
-  {
-    "question": "What is the primary purpose of Backup?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To provide its intended functionality",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of App Service?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls",
-      "To provide its intended functionality"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of Monitor?",
-    "options": [
-      "To provide its intended functionality",
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of RBAC?",
-    "options": [
-      "To permanently disable services",
-      "To provide its intended functionality",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "Scenario: A company is experiencing issues related to VMs. As an administrator, what is the BEST action to take?",
-    "options": [
-      "Delete all resources immediately",
-      "Ignore the issue",
-      "Review and configure VMs appropriately",
-      "Disable monitoring permanently"
-    ],
-    "answer": "Review and configure VMs appropriately",
-    "difficulty": "Easy",
-    "type": "Scenario-Based"
-  },
-  {
-    "question": "What is the primary purpose of Storage Accounts?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls",
-      "To provide its intended functionality"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of VNets?",
-    "options": [
-      "To provide its intended functionality",
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of Azure AD?",
-    "options": [
-      "To permanently disable services",
-      "To provide its intended functionality",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of NSG?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To provide its intended functionality",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "Scenario: A company is experiencing issues related to Load Balancer. As an administrator, what is the BEST action to take?",
-    "options": [
-      "Delete all resources immediately",
-      "Ignore the issue",
-      "Disable monitoring permanently",
-      "Review and configure Load Balancer appropriately"
-    ],
-    "answer": "Review and configure Load Balancer appropriately",
-    "difficulty": "Easy",
-    "type": "Scenario-Based"
-  },
-  {
-    "question": "What is the primary purpose of Backup?",
-    "options": [
-      "To provide its intended functionality",
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of App Service?",
-    "options": [
-      "To permanently disable services",
-      "To provide its intended functionality",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of Monitor?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To provide its intended functionality",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of RBAC?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls",
-      "To provide its intended functionality"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "Scenario: A company is experiencing issues related to VMs. As an administrator, what is the BEST action to take?",
-    "options": [
-      "Review and configure VMs appropriately",
-      "Delete all resources immediately",
-      "Ignore the issue",
-      "Disable monitoring permanently"
-    ],
-    "answer": "Review and configure VMs appropriately",
-    "difficulty": "Easy",
-    "type": "Scenario-Based"
-  },
-  {
-    "question": "What is the primary purpose of Storage Accounts?",
-    "options": [
-      "To permanently disable services",
-      "To provide its intended functionality",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of VNets?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To provide its intended functionality",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of Azure AD?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls",
-      "To provide its intended functionality"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of NSG?",
-    "options": [
-      "To provide its intended functionality",
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "Scenario: A company is experiencing issues related to Load Balancer. As an administrator, what is the BEST action to take?",
-    "options": [
-      "Delete all resources immediately",
-      "Review and configure Load Balancer appropriately",
-      "Ignore the issue",
-      "Disable monitoring permanently"
-    ],
-    "answer": "Review and configure Load Balancer appropriately",
-    "difficulty": "Easy",
-    "type": "Scenario-Based"
-  },
-  {
-    "question": "What is the primary purpose of Backup?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To provide its intended functionality",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of App Service?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls",
-      "To provide its intended functionality"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of Monitor?",
-    "options": [
-      "To provide its intended functionality",
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of RBAC?",
-    "options": [
-      "To permanently disable services",
-      "To provide its intended functionality",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "Scenario: A company is experiencing issues related to VMs. As an administrator, what is the BEST action to take?",
-    "options": [
-      "Delete all resources immediately",
-      "Ignore the issue",
-      "Review and configure VMs appropriately",
-      "Disable monitoring permanently"
-    ],
-    "answer": "Review and configure VMs appropriately",
-    "difficulty": "Easy",
-    "type": "Scenario-Based"
-  },
-  {
-    "question": "What is the primary purpose of Storage Accounts?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls",
-      "To provide its intended functionality"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of VNets?",
-    "options": [
-      "To provide its intended functionality",
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of Azure AD?",
-    "options": [
-      "To permanently disable services",
-      "To provide its intended functionality",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of NSG?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To provide its intended functionality",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Medium",
-    "type": "Conceptual"
-  },
-  {
-    "question": "Scenario: A company is experiencing issues related to Load Balancer. As an administrator, what is the BEST action to take?",
-    "options": [
-      "Delete all resources immediately",
-      "Ignore the issue",
-      "Disable monitoring permanently",
-      "Review and configure Load Balancer appropriately"
-    ],
-    "answer": "Review and configure Load Balancer appropriately",
-    "difficulty": "Medium",
-    "type": "Scenario-Based"
-  },
-  {
-    "question": "What is the primary purpose of Backup?",
-    "options": [
-      "To provide its intended functionality",
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Medium",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of App Service?",
-    "options": [
-      "To permanently disable services",
-      "To provide its intended functionality",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Medium",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of Monitor?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To provide its intended functionality",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Medium",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of RBAC?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls",
-      "To provide its intended functionality"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Medium",
-    "type": "Conceptual"
-  },
-  {
-    "question": "Scenario: A company is experiencing issues related to VMs. As an administrator, what is the BEST action to take?",
-    "options": [
-      "Review and configure VMs appropriately",
-      "Delete all resources immediately",
-      "Ignore the issue",
-      "Disable monitoring permanently"
-    ],
-    "answer": "Review and configure VMs appropriately",
-    "difficulty": "Medium",
-    "type": "Scenario-Based"
-  },
-  {
-    "question": "What is the primary purpose of Storage Accounts?",
-    "options": [
-      "To permanently disable services",
-      "To provide its intended functionality",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Medium",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of VNets?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To provide its intended functionality",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Medium",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of Azure AD?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls",
-      "To provide its intended functionality"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Medium",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of NSG?",
-    "options": [
-      "To provide its intended functionality",
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Medium",
-    "type": "Conceptual"
-  },
-  {
-    "question": "Scenario: A company is experiencing issues related to Load Balancer. As an administrator, what is the BEST action to take?",
-    "options": [
-      "Delete all resources immediately",
-      "Review and configure Load Balancer appropriately",
-      "Ignore the issue",
-      "Disable monitoring permanently"
-    ],
-    "answer": "Review and configure Load Balancer appropriately",
-    "difficulty": "Medium",
-    "type": "Scenario-Based"
-  },
-  {
-    "question": "What is the primary purpose of Backup?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To provide its intended functionality",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Medium",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of App Service?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls",
-      "To provide its intended functionality"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Medium",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of Monitor?",
-    "options": [
-      "To provide its intended functionality",
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Medium",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of RBAC?",
-    "options": [
-      "To permanently disable services",
-      "To provide its intended functionality",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Medium",
-    "type": "Conceptual"
-  }
+    {
+        "question": "A company runs a web application on multiple Azure VMs. The traffic increases unpredictably, and the admin wants Azure to automatically add or remove VMs based on CPU usage. What should you deploy?",
+        "options": [
+            "Availability Set",
+            "Azure Load Balancer",
+            "Virtual Machine Scale Set",
+            "Azure App Service"
+        ],
+        "answer": "Virtual Machine Scale Set"
+    },
+    {
+        "question": "You have a VM running Windows Server. You need to attach additional storage without recreating the VM. Which Azure resource should you use?",
+        "options": [
+            "Azure File Share",
+            "Managed Disk",
+            "Snapshot",
+            "Blob Container"
+        ],
+        "answer": "Managed Disk"
+    },
+    {
+        "question": "An application requires low-latency access to frequently used data. You want to attach storage directly to a VM. Which disk type should you use?",
+        "options": [
+            "Blob Storage",
+            "Azure Files",
+            "Managed Data Disk",
+            "Archive Storage"
+        ],
+        "answer": "Managed Data Disk"
+    },
+    {
+        "question": "A VM hosts a production web server. The admin wants daily OS-level backups with minimal configuration. Which service should be used?",
+        "options": [
+            "Azure Backup",
+            "Azure Site Recovery",
+            "Snapshot",
+            "Azure Monitor"
+        ],
+        "answer": "Azure Backup"
+    },
+    {
+        "question": "You deployed multiple VMs behind a load balancer. One VM becomes unhealthy and should stop receiving traffic automatically. Which load balancer feature enables this?",
+        "options": [
+            "NAT Rules",
+            "Frontend IP",
+            "Health Probe",
+            "Backend Pool"
+        ],
+        "answer": "Health Probe"
+    },
+    {
+        "question": "A company wants to scale out VMs automatically and also ensure high availability. Which solution meets both requirements?",
+        "options": [
+            "Availability Zones",
+            "VM Scale Set with Load Balancer",
+            "Single VM with backup",
+            "Azure App Gateway"
+        ],
+        "answer": "VM Scale Set with Load Balancer"
+    },
+    {
+        "question": "An admin wants to resize a VM disk without data loss. Which action should be performed?",
+        "options": [
+            "Create new VM",
+            "Resize managed disk",
+            "Reinstall OS",
+            "Convert to snapshot"
+        ],
+        "answer": "Resize managed disk"
+    },
+    {
+        "question": "Which Azure service allows automatic OS patching for multiple identical VMs?",
+        "options": [
+            "Availability Set",
+            "Azure Monitor",
+            "VM Scale Set",
+            "Azure Backup"
+        ],
+        "answer": "VM Scale Set"
+    },
+    {
+        "question": "You need to restore a VM to a previous state after a failed update. What should you use?",
+        "options": [
+            "Snapshot",
+            "Azure Backup Restore",
+            "New Disk",
+            "VM Image"
+        ],
+        "answer": "Azure Backup Restore"
+    },
+    {
+        "question": "Which component of a VM Scale Set distributes traffic evenly?",
+        "options": [
+            "Network Security Group",
+            "Application Gateway",
+            "Load Balancer",
+            "Virtual Network"
+        ],
+        "answer": "Load Balancer"
+    },
+    {
+        "question": "You create a Virtual Network with multiple subnets. You want to control traffic between subnets. Which resource should you configure?",
+        "options": [
+            "Route Table",
+            "Network Security Group",
+            "Load Balancer",
+            "Azure Firewall"
+        ],
+        "answer": "Network Security Group"
+    },
+    {
+        "question": "An NSG rule allows inbound traffic on port 80. Where can this NSG be associated?",
+        "options": [
+            "Only VM",
+            "Only Subnet",
+            "Subnet or NIC",
+            "Resource Group"
+        ],
+        "answer": "Subnet or NIC"
+    },
+    {
+        "question": "You want to connect two VNets in different regions privately without using the internet. What should you use?",
+        "options": [
+            "VPN Gateway",
+            "ExpressRoute",
+            "VNet Peering",
+            "NAT Gateway"
+        ],
+        "answer": "VNet Peering"
+    },
+    {
+        "question": "A VM should allow only RDP traffic from a specific IP address. Where should this rule be configured?",
+        "options": [
+            "Route Table",
+            "Azure Load Balancer",
+            "NSG Inbound Rule",
+            "Azure Firewall Policy"
+        ],
+        "answer": "NSG Inbound Rule"
+    },
+    {
+        "question": "Which NSG rule is processed first?",
+        "options": [
+            "Custom rule with priority 200",
+            "Custom rule with priority 100",
+            "Default rule",
+            "Last created rule"
+        ],
+        "answer": "Custom rule with priority 100"
+    },
+    {
+        "question": "You want to block outbound internet access from a subnet. What should you configure?",
+        "options": [
+            "Inbound NSG rule",
+            "Outbound NSG rule",
+            "Load Balancer",
+            "DNS Zone"
+        ],
+        "answer": "Outbound NSG rule"
+    },
+    {
+        "question": "Which component defines the IP address range for Azure resources?",
+        "options": [
+            "Subnet",
+            "NSG",
+            "Virtual Network",
+            "NIC"
+        ],
+        "answer": "Virtual Network"
+    },
+    {
+        "question": "A VM in VNet-A must communicate with VM in VNet-B. Which condition is required for VNet Peering?",
+        "options": [
+            "Same subscription only",
+            "Overlapping IP ranges allowed",
+            "Non-overlapping IP ranges",
+            "Same region only"
+        ],
+        "answer": "Non-overlapping IP ranges"
+    },
+    {
+        "question": "Which Azure service filters traffic at Layer 4?",
+        "options": [
+            "Application Gateway",
+            "Azure Firewall",
+            "Network Security Group",
+            "Front Door"
+        ],
+        "answer": "Network Security Group"
+    },
+    {
+        "question": "A subnet must be protected using centralized rules for multiple VNets. Which solution should you use?",
+        "options": [
+            "NSG",
+            "Azure Firewall",
+            "Load Balancer",
+            "NAT Gateway"
+        ],
+        "answer": "Azure Firewall"
+    },
+    {
+        "question": "An application stores unstructured data like images and videos. Which storage service should be used?",
+        "options": [
+            "Azure Files",
+            "Azure Disk",
+            "Blob Storage",
+            "Table Storage"
+        ],
+        "answer": "Blob Storage"
+    },
+    {
+        "question": "You want to share files between multiple VMs using SMB protocol. Which service should you choose?",
+        "options": [
+            "Blob Storage",
+            "Azure Files",
+            "Managed Disk",
+            "Snapshot"
+        ],
+        "answer": "Azure Files"
+    },
+    {
+        "question": "Which Azure service is required to store backup policies?",
+        "options": [
+            "Storage Account",
+            "Azure Backup Vault",
+            "Blob Container",
+            "File Share"
+        ],
+        "answer": "Azure Backup Vault"
+    },
+    {
+        "question": "You want to back up on-premises servers to Azure. Which component is required?",
+        "options": [
+            "Azure Site Recovery",
+            "Azure Backup Agent",
+            "VM Extension",
+            "Load Balancer"
+        ],
+        "answer": "Azure Backup Agent"
+    },
+    {
+        "question": "Which backup supports files and folders only?",
+        "options": [
+            "VM Backup",
+            "SQL Backup",
+            "File and Folder Backup",
+            "Snapshot"
+        ],
+        "answer": "File and Folder Backup"
+    },
+    {
+        "question": "A company needs long-term, low-cost storage for rarely accessed data. Which Blob tier should be used?",
+        "options": [
+            "Hot",
+            "Cool",
+            "Archive",
+            "Premium"
+        ],
+        "answer": "Archive"
+    },
+    {
+        "question": "Where are Azure VM backups stored?",
+        "options": [
+            "Managed Disk",
+            "Azure Backup Vault",
+            "Local VM storage",
+            "File Share"
+        ],
+        "answer": "Azure Backup Vault"
+    },
+    {
+        "question": "Which feature protects deleted blobs for a defined period?",
+        "options": [
+            "Replication",
+            "Soft Delete",
+            "Snapshot",
+            "Versioning"
+        ],
+        "answer": "Soft Delete"
+    },
+    {
+        "question": "What is required before configuring Azure Backup?",
+        "options": [
+            "Virtual Network",
+            "Recovery Services Vault",
+            "Load Balancer",
+            "Application Gateway"
+        ],
+        "answer": "Recovery Services Vault"
+    },
+    {
+        "question": "Which storage service supports REST-based object access?",
+        "options": [
+            "Azure Files",
+            "Managed Disk",
+            "Blob Storage",
+            "Archive Vault"
+        ],
+        "answer": "Blob Storage"
+    },
+    {
+        "question": "You need Layer 7 load balancing with URL-based routing. Which service should you use?",
+        "options": [
+            "Azure Load Balancer",
+            "Traffic Manager",
+            "Application Gateway",
+            "Front Door"
+        ],
+        "answer": "Application Gateway"
+    },
+    {
+        "question": "Which Azure service provides global traffic routing using DNS?",
+        "options": [
+            "Azure Load Balancer",
+            "Application Gateway",
+            "Traffic Manager",
+            "Azure Firewall"
+        ],
+        "answer": "Traffic Manager"
+    },
+    {
+        "question": "Azure Load Balancer operates at which OSI layer?",
+        "options": [
+            "Layer 3",
+            "Layer 4",
+            "Layer 7",
+            "Layer 2"
+        ],
+        "answer": "Layer 4"
+    },
+    {
+        "question": "Which service is best for regional high availability?",
+        "options": [
+            "Traffic Manager",
+            "Azure Load Balancer",
+            "Azure DNS",
+            "Front Door"
+        ],
+        "answer": "Azure Load Balancer"
+    },
+    {
+        "question": "You want to distribute traffic based on user geographic location. Which service should you use?",
+        "options": [
+            "Azure Load Balancer",
+            "Application Gateway",
+            "Traffic Manager",
+            "NSG"
+        ],
+        "answer": "Traffic Manager"
+    },
+    {
+        "question": "Which Azure load balancer supports SSL termination?",
+        "options": [
+            "Azure Load Balancer",
+            "Traffic Manager",
+            "Application Gateway",
+            "NAT Gateway"
+        ],
+        "answer": "Application Gateway"
+    },
+    {
+        "question": "Which Azure service provides global HTTP/HTTPS acceleration?",
+        "options": [
+            "Traffic Manager",
+            "Front Door",
+            "Azure Load Balancer",
+            "NSG"
+        ],
+        "answer": "Front Door"
+    },
+    {
+        "question": "Which component defines where traffic is sent inside a load balancer?",
+        "options": [
+            "Frontend IP",
+            "Health Probe",
+            "Backend Pool",
+            "Rule Priority"
+        ],
+        "answer": "Backend Pool"
+    },
+    {
+        "question": "If all backend VMs fail health probes, what happens?",
+        "options": [
+            "Traffic is rerouted",
+            "Traffic is blocked",
+            "Traffic is dropped",
+            "New VM is created"
+        ],
+        "answer": "Traffic is dropped"
+    },
+    {
+        "question": "Which load balancer type is used for internal-only traffic?",
+        "options": [
+            "Public Load Balancer",
+            "Internal Load Balancer",
+            "Traffic Manager",
+            "Application Gateway"
+        ],
+        "answer": "Internal Load Balancer"
+    },
+    {
+        "question": "You want to deploy identical VMs across multiple availability zones. Which service is best?",
+        "options": [
+            "Availability Set",
+            "VM Scale Set",
+            "Azure Backup",
+            "Azure Monitor"
+        ],
+        "answer": "VM Scale Set"
+    },
+    {
+        "question": "Which Azure service ensures automatic failover between regions?",
+        "options": [
+            "Azure Load Balancer",
+            "Traffic Manager",
+            "NSG",
+            "VM Snapshot"
+        ],
+        "answer": "Traffic Manager"
+    },
+    {
+        "question": "You want secure inbound web traffic with WAF. Which service should you use?",
+        "options": [
+            "Azure Load Balancer",
+            "Application Gateway",
+            "NSG",
+            "Azure Firewall"
+        ],
+        "answer": "Application Gateway"
+    },
+    {
+        "question": "A VM must be protected from accidental deletion. Which feature should be used?",
+        "options": [
+            "Backup",
+            "Snapshot",
+            "Resource Lock",
+            "NSG"
+        ],
+        "answer": "Resource Lock"
+    },
+    {
+        "question": "Which Azure service monitors VM performance metrics?",
+        "options": [
+            "Azure Backup",
+            "Azure Monitor",
+            "Recovery Vault",
+            "Load Balancer"
+        ],
+        "answer": "Azure Monitor"
+    },
+    {
+        "question": "Which service is required for point-in-time restore?",
+        "options": [
+            "Azure Backup",
+            "Snapshot",
+            "Blob Versioning",
+            "All of the above"
+        ],
+        "answer": "All of the above"
+    },
+    {
+        "question": "Which Azure component controls east-west traffic?",
+        "options": [
+            "Load Balancer",
+            "NSG",
+            "Traffic Manager",
+            "Front Door"
+        ],
+        "answer": "NSG"
+    },
+    {
+        "question": "Which service ensures high availability within a region?",
+        "options": [
+            "Availability Zones",
+            "Traffic Manager",
+            "Azure Backup",
+            "DNS"
+        ],
+        "answer": "Availability Zones"
+    },
+    {
+        "question": "Which Azure service is best for disaster recovery of VMs?",
+        "options": [
+            "Azure Backup",
+            "Azure Site Recovery",
+            "Snapshot",
+            "File Share"
+        ],
+        "answer": "Azure Site Recovery"
+    },
+    {
+        "question": "Which service protects applications from OWASP attacks?",
+        "options": [
+            "Azure Load Balancer",
+            "Application Gateway with WAF",
+            "NSG",
+            "Traffic Manager"
+        ],
+        "answer": "Application Gateway with WAF"
+    }
 ]
