@@ -1,602 +1,502 @@
 [
-  {
-    "question": "Scenario: A company is experiencing issues related to EC2. As an administrator, what is the BEST action to take?",
-    "options": [
-      "Review and configure EC2 appropriately",
-      "Delete all resources immediately",
-      "Ignore the issue",
-      "Disable monitoring permanently"
-    ],
-    "answer": "Review and configure EC2 appropriately",
-    "difficulty": "Easy",
-    "type": "Scenario-Based"
-  },
-  {
-    "question": "What is the primary purpose of S3?",
-    "options": [
-      "To permanently disable services",
-      "To provide its intended functionality",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of VPC?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To provide its intended functionality",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of IAM?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls",
-      "To provide its intended functionality"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of RDS?",
-    "options": [
-      "To provide its intended functionality",
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "Scenario: A company is experiencing issues related to Lambda. As an administrator, what is the BEST action to take?",
-    "options": [
-      "Delete all resources immediately",
-      "Review and configure Lambda appropriately",
-      "Ignore the issue",
-      "Disable monitoring permanently"
-    ],
-    "answer": "Review and configure Lambda appropriately",
-    "difficulty": "Easy",
-    "type": "Scenario-Based"
-  },
-  {
-    "question": "What is the primary purpose of CloudFront?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To provide its intended functionality",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of Route53?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls",
-      "To provide its intended functionality"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of EBS?",
-    "options": [
-      "To provide its intended functionality",
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of EKS?",
-    "options": [
-      "To permanently disable services",
-      "To provide its intended functionality",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "Scenario: A company is experiencing issues related to EC2. As an administrator, what is the BEST action to take?",
-    "options": [
-      "Delete all resources immediately",
-      "Ignore the issue",
-      "Review and configure EC2 appropriately",
-      "Disable monitoring permanently"
-    ],
-    "answer": "Review and configure EC2 appropriately",
-    "difficulty": "Easy",
-    "type": "Scenario-Based"
-  },
-  {
-    "question": "What is the primary purpose of S3?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls",
-      "To provide its intended functionality"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of VPC?",
-    "options": [
-      "To provide its intended functionality",
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of IAM?",
-    "options": [
-      "To permanently disable services",
-      "To provide its intended functionality",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of RDS?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To provide its intended functionality",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "Scenario: A company is experiencing issues related to Lambda. As an administrator, what is the BEST action to take?",
-    "options": [
-      "Delete all resources immediately",
-      "Ignore the issue",
-      "Disable monitoring permanently",
-      "Review and configure Lambda appropriately"
-    ],
-    "answer": "Review and configure Lambda appropriately",
-    "difficulty": "Easy",
-    "type": "Scenario-Based"
-  },
-  {
-    "question": "What is the primary purpose of CloudFront?",
-    "options": [
-      "To provide its intended functionality",
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of Route53?",
-    "options": [
-      "To permanently disable services",
-      "To provide its intended functionality",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of EBS?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To provide its intended functionality",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of EKS?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls",
-      "To provide its intended functionality"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "Scenario: A company is experiencing issues related to EC2. As an administrator, what is the BEST action to take?",
-    "options": [
-      "Review and configure EC2 appropriately",
-      "Delete all resources immediately",
-      "Ignore the issue",
-      "Disable monitoring permanently"
-    ],
-    "answer": "Review and configure EC2 appropriately",
-    "difficulty": "Easy",
-    "type": "Scenario-Based"
-  },
-  {
-    "question": "What is the primary purpose of S3?",
-    "options": [
-      "To permanently disable services",
-      "To provide its intended functionality",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of VPC?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To provide its intended functionality",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of IAM?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls",
-      "To provide its intended functionality"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of RDS?",
-    "options": [
-      "To provide its intended functionality",
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "Scenario: A company is experiencing issues related to Lambda. As an administrator, what is the BEST action to take?",
-    "options": [
-      "Delete all resources immediately",
-      "Review and configure Lambda appropriately",
-      "Ignore the issue",
-      "Disable monitoring permanently"
-    ],
-    "answer": "Review and configure Lambda appropriately",
-    "difficulty": "Easy",
-    "type": "Scenario-Based"
-  },
-  {
-    "question": "What is the primary purpose of CloudFront?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To provide its intended functionality",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of Route53?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls",
-      "To provide its intended functionality"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of EBS?",
-    "options": [
-      "To provide its intended functionality",
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of EKS?",
-    "options": [
-      "To permanently disable services",
-      "To provide its intended functionality",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "Scenario: A company is experiencing issues related to EC2. As an administrator, what is the BEST action to take?",
-    "options": [
-      "Delete all resources immediately",
-      "Ignore the issue",
-      "Review and configure EC2 appropriately",
-      "Disable monitoring permanently"
-    ],
-    "answer": "Review and configure EC2 appropriately",
-    "difficulty": "Easy",
-    "type": "Scenario-Based"
-  },
-  {
-    "question": "What is the primary purpose of S3?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls",
-      "To provide its intended functionality"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of VPC?",
-    "options": [
-      "To provide its intended functionality",
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of IAM?",
-    "options": [
-      "To permanently disable services",
-      "To provide its intended functionality",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Easy",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of RDS?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To provide its intended functionality",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Medium",
-    "type": "Conceptual"
-  },
-  {
-    "question": "Scenario: A company is experiencing issues related to Lambda. As an administrator, what is the BEST action to take?",
-    "options": [
-      "Delete all resources immediately",
-      "Ignore the issue",
-      "Disable monitoring permanently",
-      "Review and configure Lambda appropriately"
-    ],
-    "answer": "Review and configure Lambda appropriately",
-    "difficulty": "Medium",
-    "type": "Scenario-Based"
-  },
-  {
-    "question": "What is the primary purpose of CloudFront?",
-    "options": [
-      "To provide its intended functionality",
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Medium",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of Route53?",
-    "options": [
-      "To permanently disable services",
-      "To provide its intended functionality",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Medium",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of EBS?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To provide its intended functionality",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Medium",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of EKS?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls",
-      "To provide its intended functionality"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Medium",
-    "type": "Conceptual"
-  },
-  {
-    "question": "Scenario: A company is experiencing issues related to EC2. As an administrator, what is the BEST action to take?",
-    "options": [
-      "Review and configure EC2 appropriately",
-      "Delete all resources immediately",
-      "Ignore the issue",
-      "Disable monitoring permanently"
-    ],
-    "answer": "Review and configure EC2 appropriately",
-    "difficulty": "Medium",
-    "type": "Scenario-Based"
-  },
-  {
-    "question": "What is the primary purpose of S3?",
-    "options": [
-      "To permanently disable services",
-      "To provide its intended functionality",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Medium",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of VPC?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To provide its intended functionality",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Medium",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of IAM?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls",
-      "To provide its intended functionality"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Medium",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of RDS?",
-    "options": [
-      "To provide its intended functionality",
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Medium",
-    "type": "Conceptual"
-  },
-  {
-    "question": "Scenario: A company is experiencing issues related to Lambda. As an administrator, what is the BEST action to take?",
-    "options": [
-      "Delete all resources immediately",
-      "Review and configure Lambda appropriately",
-      "Ignore the issue",
-      "Disable monitoring permanently"
-    ],
-    "answer": "Review and configure Lambda appropriately",
-    "difficulty": "Medium",
-    "type": "Scenario-Based"
-  },
-  {
-    "question": "What is the primary purpose of CloudFront?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To provide its intended functionality",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Medium",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of Route53?",
-    "options": [
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls",
-      "To provide its intended functionality"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Medium",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of EBS?",
-    "options": [
-      "To provide its intended functionality",
-      "To permanently disable services",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Medium",
-    "type": "Conceptual"
-  },
-  {
-    "question": "What is the primary purpose of EKS?",
-    "options": [
-      "To permanently disable services",
-      "To provide its intended functionality",
-      "To replace all networking",
-      "To remove security controls"
-    ],
-    "answer": "To provide its intended functionality",
-    "difficulty": "Medium",
-    "type": "Conceptual"
-  }
+    {
+        "question": "An application requires a low-cost compute option for intermittent workloads that can tolerate interruptions. Which EC2 purchasing option is best?",
+        "options": [
+            "On-Demand Instances",
+            "Reserved Instances",
+            "Spot Instances",
+            "Dedicated Hosts"
+        ],
+        "answer": "Spot Instances"
+    },
+    {
+        "question": "A company hosts a web app on EC2. They want automatic scaling during traffic spikes and termination when demand reduces. Which combination is required?",
+        "options": [
+            "Auto Scaling Group + Elastic Load Balancer",
+            "Placement Groups + Reserved Instances",
+            "Elastic Beanstalk + Dedicated Instances",
+            "CloudFormation + Lambda"
+        ],
+        "answer": "Auto Scaling Group + Elastic Load Balancer"
+    },
+    {
+        "question": "Which storage type provides the highest performance for transactional workloads?",
+        "options": [
+            "Amazon EBS gp3",
+            "Amazon EBS io2",
+            "Instance Store",
+            "Amazon S3 Standard"
+        ],
+        "answer": "Amazon EBS io2"
+    },
+    {
+        "question": "Which feature allows you to save the configuration of an EC2 instance for later launch?",
+        "options": [
+            "AMI",
+            "Snapshot",
+            "Launch Template",
+            "EBS Volume"
+        ],
+        "answer": "AMI"
+    },
+    {
+        "question": "Which EC2 option is best suited for applications requiring dedicated physical hardware?",
+        "options": [
+            "On-Demand Instances",
+            "Dedicated Hosts",
+            "Spot Instances",
+            "Reserved Instances"
+        ],
+        "answer": "Dedicated Hosts"
+    },
+    {
+        "question": "Which feature provides automatic recovery of EC2 instances if the underlying hardware fails?",
+        "options": [
+            "Elastic Load Balancer",
+            "EC2 Auto Recovery",
+            "CloudWatch Alarm",
+            "Auto Scaling Group"
+        ],
+        "answer": "EC2 Auto Recovery"
+    },
+    {
+        "question": "A company wants to reduce compute costs for a steady 1-year workload. Which option is best?",
+        "options": [
+            "Spot Instances",
+            "Reserved Instances (1-year term)",
+            "On-Demand Instances",
+            "Dedicated Instances"
+        ],
+        "answer": "Reserved Instances (1-year term)"
+    },
+    {
+        "question": "Which placement group type is best for low-latency, high-throughput workloads?",
+        "options": [
+            "Spread",
+            "Cluster",
+            "Partition",
+            "Random"
+        ],
+        "answer": "Cluster"
+    },
+    {
+        "question": "What is the maximum number of Elastic IP addresses you can have per region by default?",
+        "options": [
+            "2",
+            "5",
+            "10",
+            "Unlimited"
+        ],
+        "answer": "5"
+    },
+    {
+        "question": "Which EC2 pricing model is recommended for workloads that run continuously for 3 years?",
+        "options": [
+            "Spot Instances",
+            "Reserved Instances (3-year)",
+            "On-Demand",
+            "Savings Plans"
+        ],
+        "answer": "Reserved Instances (3-year)"
+    },
+    {
+        "question": "Which service allows running containers on EC2 without managing servers?",
+        "options": [
+            "AWS Fargate",
+            "ECS with EC2",
+            "EKS",
+            "Lambda"
+        ],
+        "answer": "AWS Fargate"
+    },
+    {
+        "question": "An EC2 instance in a private subnet needs to download patches from the internet. Which solution allows this securely?",
+        "options": [
+            "NAT Gateway",
+            "Internet Gateway",
+            "VPN",
+            "Direct Connect"
+        ],
+        "answer": "NAT Gateway"
+    },
+    {
+        "question": "Which feature provides temporary, secure credentials to applications running on EC2?",
+        "options": [
+            "IAM Role",
+            "IAM User",
+            "Access Keys",
+            "Security Group"
+        ],
+        "answer": "IAM Role"
+    },
+    {
+        "question": "Which service provides the ability to run scripts at EC2 instance launch?",
+        "options": [
+            "User Data",
+            "CloudFormation",
+            "Elastic Beanstalk",
+            "AWS CLI"
+        ],
+        "answer": "User Data"
+    },
+    {
+        "question": "Which Amazon EC2 storage option is ephemeral and data is lost when the instance stops?",
+        "options": [
+            "EBS",
+            "S3",
+            "Instance Store",
+            "FSx"
+        ],
+        "answer": "Instance Store"
+    },
+    {
+        "question": "What is the maximum size of an EBS General Purpose SSD (gp3) volume?",
+        "options": [
+            "1 TB",
+            "2 TB",
+            "16 TB",
+            "64 TB"
+        ],
+        "answer": "16 TB"
+    },
+    {
+        "question": "A company needs to ensure EC2 instances scale automatically based on CPU usage. Which service is required?",
+        "options": [
+            "Auto Scaling",
+            "CloudTrail",
+            "Elastic IP",
+            "S3 Lifecycle"
+        ],
+        "answer": "Auto Scaling"
+    },
+    {
+        "question": "Which Amazon EC2 feature allows running multiple operating systems on the same instance?",
+        "options": [
+            "Virtualization Types (HVM/PV)",
+            "Multi-AZ",
+            "Multi-Region Deployment",
+            "Elastic Fabric Adapter"
+        ],
+        "answer": "Virtualization Types (HVM/PV)"
+    },
+    {
+        "question": "Which EC2 instance type is best for machine learning workloads requiring GPUs?",
+        "options": [
+            "T4g",
+            "M6i",
+            "P3",
+            "R5"
+        ],
+        "answer": "P3"
+    },
+    {
+        "question": "Which option provides the lowest latency between EC2 instances?",
+        "options": [
+            "Same Region, different AZs",
+            "Same VPC, different subnets",
+            "Same Placement Group – Cluster",
+            "Different Regions"
+        ],
+        "answer": "Same Placement Group – Cluster"
+    },
+    {
+        "question": "Which component allows VPCs in different AWS accounts to communicate securely using private IPs?",
+        "options": [
+            "Transit Gateway",
+            "VPC Peering",
+            "NAT Gateway",
+            "Internet Gateway"
+        ],
+        "answer": "VPC Peering"
+    },
+    {
+        "question": "A company's private EC2 instances in a subnet need to download updates from the internet, but must not be publicly accessible. Which solution is best?",
+        "options": [
+            "NAT Gateway",
+            "Internet Gateway",
+            "VPC Peering",
+            "Direct Connect"
+        ],
+        "answer": "NAT Gateway"
+    },
+    {
+        "question": "Which statement is true about Security Groups?",
+        "options": [
+            "They are stateful",
+            "They are stateless",
+            "Outbound rules are always denied",
+            "They cannot be modified"
+        ],
+        "answer": "They are stateful"
+    },
+    {
+        "question": "Which service provides centralized connectivity for multiple VPCs and on-premises networks?",
+        "options": [
+            "Transit Gateway",
+            "Direct Connect",
+            "VPC Peering",
+            "VPN"
+        ],
+        "answer": "Transit Gateway"
+    },
+    {
+        "question": "Which VPC component enables private connectivity to AWS services without using the Internet Gateway?",
+        "options": [
+            "VPC Endpoint",
+            "NAT Gateway",
+            "Direct Connect",
+            "VPN"
+        ],
+        "answer": "VPC Endpoint"
+    },
+    {
+        "question": "How many VPCs can you create per region by default?",
+        "options": [
+            "1",
+            "5",
+            "10",
+            "20"
+        ],
+        "answer": "5"
+    },
+    {
+        "question": "A company requires a subnet with instances that can only communicate internally. Which type should be created?",
+        "options": [
+            "Public Subnet",
+            "Private Subnet",
+            "Isolated Subnet",
+            "Protected Subnet"
+        ],
+        "answer": "Private Subnet"
+    },
+    {
+        "question": "What is the smallest CIDR block you can assign to a VPC?",
+        "options": [
+            "/28",
+            "/16",
+            "/20",
+            "/24"
+        ],
+        "answer": "/28"
+    },
+    {
+        "question": "Which option allows hybrid connectivity between on-premises and AWS?",
+        "options": [
+            "VPC Peering",
+            "Transit Gateway",
+            "Direct Connect",
+            "Internet Gateway"
+        ],
+        "answer": "Direct Connect"
+    },
+    {
+        "question": "Which option is used to enable communication between VPCs across different AWS Regions?",
+        "options": [
+            "VPC Peering (Inter-Region)",
+            "Internet Gateway",
+            "NAT Gateway",
+            "VPN"
+        ],
+        "answer": "VPC Peering (Inter-Region)"
+    },
+    {
+        "question": "Which NACL rule takes precedence?",
+        "options": [
+            "Allow rule",
+            "Deny rule",
+            "First created rule",
+            "Last evaluated rule"
+        ],
+        "answer": "First created rule"
+    },
+    {
+        "question": "What is the default maximum number of Security Groups per VPC?",
+        "options": [
+            "50",
+            "100",
+            "200",
+            "500"
+        ],
+        "answer": "500"
+    },
+    {
+        "question": "A company wants to ensure all outbound traffic from a subnet goes through a firewall. Which feature is needed?",
+        "options": [
+            "Route Table with Firewall Appliance",
+            "NAT Gateway",
+            "Security Group",
+            "VPN"
+        ],
+        "answer": "Route Table with Firewall Appliance"
+    },
+    {
+        "question": "Which VPC feature helps capture traffic for monitoring and troubleshooting?",
+        "options": [
+            "VPC Flow Logs",
+            "CloudWatch Logs",
+            "CloudTrail",
+            "Transit Gateway"
+        ],
+        "answer": "VPC Flow Logs"
+    },
+    {
+        "question": "Which service helps restrict access between subnets within a VPC?",
+        "options": [
+            "NACL",
+            "Security Groups",
+            "Route Tables",
+            "Both A & B"
+        ],
+        "answer": "Both A & B"
+    },
+    {
+        "question": "Which S3 storage class is best for long-term data archival with retrieval time of minutes to hours?",
+        "options": [
+            "S3 Standard",
+            "S3 Standard-IA",
+            "S3 Glacier Flexible Retrieval",
+            "S3 One Zone-IA"
+        ],
+        "answer": "S3 Glacier Flexible Retrieval"
+    },
+    {
+        "question": "A healthcare company must store sensitive patient data in S3 with server-side encryption managed by AWS. Which option should they choose?",
+        "options": [
+            "SSE-S3",
+            "SSE-KMS",
+            "SSE-C",
+            "Client-Side Encryption"
+        ],
+        "answer": "SSE-S3"
+    },
+    {
+        "question": "Which feature ensures strong read-after-write consistency in S3?",
+        "options": [
+            "Cross-Region Replication",
+            "Versioning",
+            "Object Lock",
+            "S3 Consistency Model"
+        ],
+        "answer": "S3 Consistency Model"
+    },
+    {
+        "question": "Which feature prevents accidental or malicious deletion of objects in S3?",
+        "options": [
+            "Lifecycle Policies",
+            "Object Lock",
+            "Versioning",
+            "Replication"
+        ],
+        "answer": "Object Lock"
+    },
+    {
+        "question": "Which option enables automatic movement of objects to lower-cost storage classes?",
+        "options": [
+            "S3 Lifecycle Rules",
+            "S3 Glacier",
+            "S3 Transfer Acceleration",
+            "S3 Cross-Region Replication"
+        ],
+        "answer": "S3 Lifecycle Rules"
+    },
+    {
+        "question": "A company must store compliance logs for 7 years and ensure they cannot be modified or deleted. Which S3 feature is best?",
+        "options": [
+            "S3 Versioning",
+            "S3 Lifecycle Policy",
+            "S3 Object Lock (Compliance Mode)",
+            "S3 Replication"
+        ],
+        "answer": "S3 Object Lock (Compliance Mode)"
+    },
+    {
+        "question": "Which feature increases upload/download performance across geographically distributed users?",
+        "options": [
+            "Multipart Upload",
+            "S3 Transfer Acceleration",
+            "S3 Lifecycle Rules",
+            "Cross-Region Replication"
+        ],
+        "answer": "S3 Transfer Acceleration"
+    },
+    {
+        "question": "Which event type can S3 trigger?",
+        "options": [
+            "EC2 Reboot",
+            "Lambda Invocation",
+            "CloudTrail Logging",
+            "Auto Scaling"
+        ],
+        "answer": "Lambda Invocation"
+    },
+    {
+        "question": "Which S3 storage class has the lowest cost but requires retrieval time of 12 hours?",
+        "options": [
+            "S3 Standard-IA",
+            "S3 Glacier Instant Retrieval",
+            "S3 Glacier Deep Archive",
+            "S3 One Zone-IA"
+        ],
+        "answer": "S3 Glacier Deep Archive"
+    },
+    {
+        "question": "A video streaming company requires high throughput for large files. Which best practice should they follow?",
+        "options": [
+            "Use smaller objects",
+            "Use Multipart Upload",
+            "Enable Object Lock",
+            "Enable Lifecycle Policies"
+        ],
+        "answer": "Use Multipart Upload"
+    },
+    {
+        "question": "What is the maximum object size allowed in S3?",
+        "options": [
+            "1 TB",
+            "5 TB",
+            "10 TB",
+            "Unlimited"
+        ],
+        "answer": "5 TB"
+    },
+    {
+        "question": "Which AWS service can analyze logs stored in S3 using SQL queries?",
+        "options": [
+            "CloudWatch Logs",
+            "Athena",
+            "CloudTrail",
+            "Kinesis"
+        ],
+        "answer": "Athena"
+    },
+    {
+        "question": "Which option allows replication between different AWS accounts?",
+        "options": [
+            "Lifecycle Policy",
+            "Cross-Region Replication with Permissions",
+            "Multipart Upload",
+            "Transfer Acceleration"
+        ],
+        "answer": "Cross-Region Replication with Permissions"
+    },
+    {
+        "question": "A company wants to host a static website using S3. Which configuration is required?",
+        "options": [
+            "Enable Versioning",
+            "Enable Static Website Hosting + Public Read Access",
+            "Enable Lifecycle Policies",
+            "Enable Replication"
+        ],
+        "answer": "Enable Static Website Hosting + Public Read Access"
+    },
+    {
+        "question": "Which feature allows you to restrict access to specific S3 buckets or objects?",
+        "options": [
+            "IAM Policy",
+            "Bucket Policy",
+            "ACLs",
+            "All of the above"
+        ],
+        "answer": "All of the above"
+    }
 ]
