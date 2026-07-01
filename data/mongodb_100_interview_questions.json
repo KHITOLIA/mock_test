@@ -2,601 +2,551 @@
   {
     "id": 1,
     "question": "What type of database is MongoDB?",
-    "options": {
-      "A": "Relational Database",
-      "B": "Document Database",
-      "C": "Graph Database",
-      "D": "Hierarchical Database"
-    },
-    "answer": "B",
-    "answer_text": "Document Database"
+    "options": [
+      "Relational Database",
+      "Document Database",
+      "Graph Database",
+      "Hierarchical Database"
+    ],
+    "answer": "Document Database"
   },
   {
     "id": 2,
     "question": "MongoDB stores data in the form of?",
-    "options": {
-      "A": "Tables",
-      "B": "Rows",
-      "C": "Documents",
-      "D": "Columns"
-    },
-    "answer": "C",
-    "answer_text": "Documents"
+    "options": [
+        "Tables",
+        "Rows",
+        "Documents",
+        "Columns"
+    ],
+    "answer": "Documents"
   },
   {
     "id": 3,
     "question": "What is the default primary key field in MongoDB?",
-    "options": {
-      "A": "id",
-      "B": "_id",
-      "C": "primary_key",
-      "D": "doc_id"
-    },
-    "answer": "B",
-    "answer_text": "_id"
+    "options": [
+      "id",
+      "_id",
+      "primary_key",
+      "doc_id"
+    ],
+    "answer": "_id"
   },
   {
     "id": 4,
     "question": "MongoDB internally stores documents in which format?",
-    "options": {
-      "A": "JSON",
-      "B": "XML",
-      "C": "BSON",
-      "D": "CSV"
-    },
-    "answer": "C",
-    "answer_text": "BSON"
+    "options": [
+      "JSON",
+       "XML",
+       "BSON",
+       "CSV"
+    ],
+    "answer": "BSON"
   },
   {
     "id": 5,
     "question": "Which command is used to display all databases?",
-    "options": {
-      "A": "show dbs",
-      "B": "list dbs",
-      "C": "display dbs",
-      "D": "show databases"
-    },
-    "answer": "A",
-    "answer_text": "show dbs"
+    "options": [
+      "show dbs",
+       "list dbs",
+       "display dbs",
+       "show databases"
+    ],
+    "answer": "show dbs"
   },
   {
     "id": 6,
     "question": "Which command is used to switch databases?",
-    "options": {
-      "A": "change",
-      "B": "switch",
-      "C": "use",
-      "D": "connect"
-    },
-    "answer": "C",
-    "answer_text": "use"
+    "options": [
+      "change",
+      "switch",
+      "use",
+      "connect"
+    ],
+    "answer": "use"
   },
   {
     "id": 7,
     "question": "A MongoDB database contains?",
-    "options": {
-      "A": "Rows",
-      "B": "Tables",
-      "C": "Collections",
-      "D": "Schemas"
-    },
-    "answer": "C",
-    "answer_text": "Collections"
+    "options": [
+      "Rows",
+      "Tables",
+      "Collections",
+      "Schemas"
+    ],
+    "answer": "Collections"
   },
   {
     "id": 8,
     "question": "A MongoDB collection contains?",
-    "options": {
-      "A": "Tables",
-      "B": "Documents",
-      "C": "Databases",
-      "D": "Views"
-    },
-    "answer": "B",
-    "answer_text": "Documents"
+    "options": [
+      "Tables",
+      "Documents",
+      "Databases",
+      "Views"
+    ],
+    "answer": "Documents"
   },
   {
     "id": 9,
     "question": "Which method inserts one document?",
-    "options": {
-      "A": "insertOne()",
-      "B": "insertMany()",
-      "C": "addOne()",
-      "D": "createOne()"
-    },
-    "answer": "A",
-    "answer_text": "insertOne()"
+    "options": [
+      "insertOne()",
+      "insertMany()",
+      "addOne()",
+      "createOne()"
+    ],
+    "answer": "insertOne()"
   },
   {
     "id": 10,
     "question": "Which method inserts multiple documents?",
-    "options": {
-      "A": "insertBulk()",
-      "B": "insertMany()",
-      "C": "bulkInsert()",
-      "D": "addMany()"
-    },
-    "answer": "B",
-    "answer_text": "insertMany()"
+    "options": [
+      "insertBulk()",
+      "insertMany()",
+      "bulkInsert()",
+      "addMany()"
+    ],
+    "answer": "insertMany()"
   },
   {
     "id": 11,
     "question": "Which method retrieves all matching documents?",
-    "options": {
-      "A": "find()",
-      "B": "findOne()",
-      "C": "get()",
-      "D": "select()"
-    },
-    "answer": "A",
-    "answer_text": "find()"
+    "options": [
+      "find()",
+      "findOne()",
+      "get()",
+      "select()"
+    ],
+    "answer": "find()"
   },
   {
     "id": 12,
     "question": "Which method retrieves a single document?",
-    "options": {
-      "A": "getOne()",
-      "B": "findOne()",
-      "C": "single()",
-      "D": "fetch()"
-    },
-    "answer": "B",
-    "answer_text": "findOne()"
+    "options": [
+      "getOne()",
+      "findOne()",
+      "single()",
+      "fetch()"
+    ],
+    "answer": "findOne()"
   },
   {
     "id": 13,
     "question": "Which operator is used for equality comparison?",
-    "options": {
-      "A": "$eq",
-      "B": "$gt",
-      "C": "$lt",
-      "D": "$ne"
-    },
-    "answer": "A",
-    "answer_text": "$eq"
+    "options": [
+      "$eq",
+      "$gt",
+      "$lt",
+      "$ne"
+    ],
+    "answer": "$eq"
   },
   {
     "id": 14,
     "question": "Which operator means greater than?",
-    "options": {
-      "A": "$lt",
-      "B": "$gt",
-      "C": "$gte",
-      "D": "$eq"
-    },
-    "answer": "B",
-    "answer_text": "$gt"
+    "options": [
+      "$lt",
+      "$gt",
+      "$gte",
+      "$eq"
+    ],
+    "answer": "$gt"
   },
   {
     "id": 15,
     "question": "Which operator means less than?",
-    "options": {
-      "A": "$lt",
-      "B": "$gt",
-      "C": "$lte",
-      "D": "$eq"
-    },
-    "answer": "A",
-    "answer_text": "$lt"
+    "options": [
+      "$lt",
+      "$gt",
+      "$lte",
+      "$eq"
+    ],
+    "answer": "$lt"
   },
   {
     "id": 16,
     "question": "Which operator means not equal?",
-    "options": {
-      "A": "$neq",
-      "B": "$not",
-      "C": "$ne",
-      "D": "$diff"
-    },
-    "answer": "C",
-    "answer_text": "$ne"
+    "options": [
+      "$neq",
+      "$not",
+      "$ne",
+      "$diff"
+    ],
+    "answer": "$ne"
   },
   {
     "id": 17,
     "question": "Which operator performs logical AND?",
-    "options": {
-      "A": "$or",
-      "B": "$and",
-      "C": "$nor",
-      "D": "$not"
-    },
-    "answer": "B",
-    "answer_text": "$and"
+    "options": [
+      "$or",
+      "$and",
+      "$nor",
+      "$not"
+    ],
+    "answer": "$and"
   },
   {
     "id": 18,
     "question": "Which operator performs logical OR?",
-    "options": {
-      "A": "$or",
-      "B": "$and",
-      "C": "$not",
-      "D": "$eq"
-    },
-    "answer": "A",
-    "answer_text": "$or"
+    "options": [
+      "$or",
+      "$and",
+      "$not",
+      "$eq"
+    ],
+    "answer": "$or"
   },
   {
     "id": 19,
     "question": "Which method updates a single document?",
-    "options": {
-      "A": "updateOne()",
-      "B": "updateMany()",
-      "C": "modify()",
-      "D": "editOne()"
-    },
-    "answer": "A",
-    "answer_text": "updateOne()"
+    "options": [
+      "updateOne()",
+      "updateMany()",
+      "modify()",
+      "editOne()"
+    ],
+    "answer": "updateOne()"
   },
   {
     "id": 20,
     "question": "Which method updates multiple documents?",
-    "options": {
-      "A": "updateBulk()",
-      "B": "updateMany()",
-      "C": "modifyMany()",
-      "D": "replaceMany()"
-    },
-    "answer": "B",
-    "answer_text": "updateMany()"
+    "options":[
+      "updateBulk()",
+      "updateMany()",
+      "modifyMany()",
+      "replaceMany()"
+    ],
+    "answer": "updateMany()"
   },
   {
     "id": 21,
     "question": "Which operator sets a field value?",
-    "options": {
-      "A": "$set",
-      "B": "$push",
-      "C": "$inc",
-      "D": "$unset"
-    },
-    "answer": "A",
-    "answer_text": "$set"
+    "options": [
+      "$set",
+      "$push",
+      "$inc",
+      "$unset"
+    ],
+    "answer": "$set"
   },
   {
     "id": 22,
     "question": "Which operator increments a numeric field?",
-    "options": {
-      "A": "$plus",
-      "B": "$inc",
-      "C": "$sum",
-      "D": "$add"
-    },
-    "answer": "B",
-    "answer_text": "$inc"
+    "options": [
+      "$plus",
+      "$inc",
+      "$sum",
+      "$add"
+    ],
+    "answer": "$inc"
   },
   {
     "id": 23,
     "question": "Which method deletes one document?",
-    "options": {
-      "A": "removeOne()",
-      "B": "deleteOne()",
-      "C": "dropOne()",
-      "D": "eraseOne()"
-    },
-    "answer": "B",
-    "answer_text": "deleteOne()"
+    "options": [
+      "removeOne()",
+      "deleteOne()",
+      "dropOne()",
+      "eraseOne()"
+    ],
+    "answer": "deleteOne()"
   },
   {
     "id": 24,
     "question": "Which method deletes multiple documents?",
-    "options": {
-      "A": "deleteMany()",
-      "B": "removeMany()",
-      "C": "eraseMany()",
-      "D": "dropMany()"
-    },
-    "answer": "A",
-    "answer_text": "deleteMany()"
+    "options": [
+      "deleteMany()",
+      "removeMany()",
+      "eraseMany()",
+      "dropMany()"
+    ],
+    "answer": "deleteMany()"
   },
   {
     "id": 25,
     "question": "Which command drops a collection?",
-    "options": {
-      "A": "remove()",
-      "B": "drop()",
-      "C": "delete()",
-      "D": "erase()"
-    },
-    "answer": "B",
-    "answer_text": "drop()"
+    "options": [
+      "remove()",
+      "drop()",
+      "delete()",
+      "erase()"
+    ],
+    "answer": "drop()"
   },
   {
     "id": 26,
     "question": "Which command removes a database?",
-    "options": {
-      "A": "dropDB()",
-      "B": "removeDB()",
-      "C": "db.dropDatabase()",
-      "D": "deleteDB()"
-    },
-    "answer": "C",
-    "answer_text": "db.dropDatabase()"
+    "options": [
+      "dropDB()",
+      "removeDB()",
+      "db.dropDatabase()",
+      "deleteDB()"
+    ],
+    "answer": "db.dropDatabase()"
   },
   {
     "id": 27,
     "question": "What is the purpose of an index?",
-    "options": {
-      "A": "Data Encryption",
-      "B": "Improve Query Performance",
-      "C": "Replication",
-      "D": "Backup"
-    },
-    "answer": "B",
-    "answer_text": "Improve Query Performance"
+    "options": [
+      "Data Encryption",
+      "Improve Query Performance",
+      "Replication",
+      "Backup"
+    ],
+    "answer": "Improve Query Performance"
   },
   {
     "id": 28,
     "question": "Which method creates an index?",
-    "options": {
-      "A": "makeIndex()",
-      "B": "createIndex()",
-      "C": "newIndex()",
-      "D": "addIndex()"
-    },
-    "answer": "B",
-    "answer_text": "createIndex()"
+    "options": [
+      "makeIndex()",
+      "createIndex()",
+      "newIndex()",
+      "addIndex()"
+    ],
+    "answer": "createIndex()"
   },
   {
     "id": 29,
     "question": "Which aggregation stage filters documents?",
-    "options": {
-      "A": "$group",
-      "B": "$match",
-      "C": "$project",
-      "D": "$sort"
-    },
-    "answer": "B",
-    "answer_text": "$match"
+    "options": [
+      "$group",
+      "$match",
+      "$project",
+      "$sort"
+    ],
+    "answer": "$match"
   },
   {
     "id": 30,
     "question": "Which aggregation stage groups documents?",
-    "options": {
-      "A": "$match",
-      "B": "$group",
-      "C": "$project",
-      "D": "$sort"
-    },
-    "answer": "B",
-    "answer_text": "$group"
+    "options": [
+      "$match",
+      "$group",
+      "$project",
+      "$sort"
+    ],
+    "answer": "$group"
   },
   {
     "id": 31,
     "question": "Which aggregation stage sorts documents?",
-    "options": {
-      "A": "$sort",
-      "B": "$group",
-      "C": "$match",
-      "D": "$lookup"
-    },
-    "answer": "A",
-    "answer_text": "$sort"
+    "options": [
+      "$sort",
+      "$group",
+      "$match",
+      "$lookup"
+    ],
+    "answer": "$sort"
   },
   {
     "id": 32,
     "question": "Which aggregation stage reshapes documents?",
-    "options": {
-      "A": "$group",
-      "B": "$project",
-      "C": "$match",
-      "D": "$sort"
-    },
-    "answer": "B",
-    "answer_text": "$project"
+    "options": [
+      "$group",
+      "$project",
+      "$match",
+      "$sort"
+    ],
+    "answer": "$project"
   },
   {
     "id": 33,
     "question": "Which aggregation stage performs joins?",
-    "options": {
-      "A": "$merge",
-      "B": "$lookup",
-      "C": "$join",
-      "D": "$connect"
-    },
-    "answer": "B",
-    "answer_text": "$lookup"
+    "options": [
+      "$merge",
+      "$lookup",
+      "$join",
+      "$connect"
+    ],
+    "answer": "$lookup"
   },
   {
     "id": 34,
     "question": "Which aggregation stage limits output documents?",
-    "options": {
-      "A": "$skip",
-      "B": "$project",
-      "C": "$limit",
-      "D": "$group"
-    },
-    "answer": "C",
-    "answer_text": "$limit"
+    "options": [
+      "$skip",
+      "$project",
+      "$limit",
+      "$group"
+    ],
+    "answer": "$limit"
   },
   {
     "id": 35,
     "question": "Which aggregation stage skips documents?",
-    "options": {
-      "A": "$skip",
-      "B": "$limit",
-      "C": "$ignore",
-      "D": "$project"
-    },
-    "answer": "A",
-    "answer_text": "$skip"
+    "options": [
+      "$skip",
+      "$limit",
+      "$ignore",
+      "$project"
+    ],
+    "answer": "$skip"
   },
   {
     "id": 36,
     "question": "Which operator adds an element to an array?",
-    "options": {
-      "A": "$append",
-      "B": "$push",
-      "C": "$insert",
-      "D": "$add"
-    },
-    "answer": "B",
-    "answer_text": "$push"
+    "options": [
+      "$append",
+      "$push",
+      "$insert",
+      "$add"
+    ],
+    "answer": "$push"
   },
   {
     "id": 37,
     "question": "Which operator removes matching elements from an array?",
-    "options": {
-      "A": "$remove",
-      "B": "$delete",
-      "C": "$pull",
-      "D": "$pop"
-    },
-    "answer": "C",
-    "answer_text": "$pull"
+    "options": [
+      "$remove",
+      "$delete",
+      "$pull",
+      "$pop"
+    ],
+    "answer": "$pull"
   },
   {
     "id": 38,
     "question": "Which operator checks whether a field exists?",
-    "options": {
-      "A": "$exist",
-      "B": "$exists",
-      "C": "$available",
-      "D": "$field"
-    },
-    "answer": "B",
-    "answer_text": "$exists"
+    "options": [
+      "$exist",
+      "$exists",
+      "$available",
+      "$field"
+    ],
+    "answer": "$exists"
   },
   {
     "id": 39,
     "question": "Which operator is used for pattern matching?",
-    "options": {
-      "A": "$regex",
-      "B": "$pattern",
-      "C": "$search",
-      "D": "$match"
-    },
-    "answer": "A",
-    "answer_text": "$regex"
+    "options": [
+      "$regex",
+      "$pattern",
+      "$search",
+      "$match"
+    ],
+    "answer": "$regex"
   },
   {
     "id": 40,
     "question": "What does BSON stand for?",
-    "options": {
-      "A": "Basic JSON",
-      "B": "Binary JavaScript Object Notation",
-      "C": "Binary JSON",
-      "D": "Binary Structured Object Notation"
-    },
-    "answer": "C",
-    "answer_text": "Binary JSON"
+    "options": [
+      "Basic JSON",
+      "Binary JavaScript Object Notation",
+      "Binary JSON",
+      "Binary Structured Object Notation"
+    ],
+    "answer": "Binary JSON"
   },
   {
     "id": 41,
     "question": "What is MongoDB Atlas?",
-    "options": {
-      "A": "GUI Tool",
-      "B": "Cloud Database Service",
-      "C": "Database Driver",
-      "D": "Backup Utility"
-    },
-    "answer": "B",
-    "answer_text": "Cloud Database Service"
+    "options": [
+      "GUI Tool",
+      "Cloud Database Service",
+      "Database Driver",
+      "Backup Utility"
+    ],
+    "answer": "Cloud Database Service" 
   },
   {
     "id": 42,
     "question": "What is a Replica Set?",
-    "options": {
-      "A": "Backup File",
-      "B": "Collection Group",
-      "C": "Group of MongoDB Instances for High Availability",
-      "D": "Database Cluster"
-    },
-    "answer": "C",
-    "answer_text": "Group of MongoDB Instances for High Availability"
+    "options": [
+      "Backup File",
+      "Collection Group",
+      "Group of MongoDB Instances for High Availability",
+      "Database Cluster"
+    ],
+    "answer": "Group of MongoDB Instances for High Availability"
   },
   {
     "id": 43,
     "question": "What is Sharding in MongoDB?",
-    "options": {
-      "A": "Data Encryption",
-      "B": "Horizontal Scaling",
-      "C": "Indexing",
-      "D": "Validation"
-    },
-    "answer": "B",
-    "answer_text": "Horizontal Scaling"
+    "options": [
+      "Data Encryption",
+      "Horizontal Scaling",
+      "Indexing",
+      "Validation"
+    ],
+    "answer": "Horizontal Scaling"
   },
   {
     "id": 44,
     "question": "Which shell is used in modern MongoDB versions?",
-    "options": {
-      "A": "mongo",
-      "B": "mongosh",
-      "C": "mongodb-shell",
-      "D": "dbshell"
-    },
-    "answer": "B",
-    "answer_text": "mongosh"
+    "options": [
+      "mongo",
+      "mongosh",
+      "mongodb-shell",
+      "dbshell"
+    ],
+    "answer": "mongosh"
   },
   {
     "id": 45,
     "question": "Which method counts matching documents?",
-    "options": {
-      "A": "count()",
-      "B": "countDocuments()",
-      "C": "getCount()",
-      "D": "totalCount()"
-    },
-    "answer": "B",
-    "answer_text": "countDocuments()"
+    "options": [
+      "count()",
+      "countDocuments()",
+      "getCount()",
+      "totalCount()"
+    ],
+    "answer": "countDocuments()"
   },
   {
     "id": 46,
     "question": "Which method completely replaces a document?",
-    "options": {
-      "A": "replaceOne()",
-      "B": "updateOne()",
-      "C": "modifyOne()",
-      "D": "setOne()"
-    },
-    "answer": "A",
-    "answer_text": "replaceOne()"
+    "options": [
+      "replaceOne()",
+      "updateOne()",
+      "modifyOne()",
+      "setOne()"
+    ],
+    "answer": "replaceOne()"
   },
   {
     "id": 47,
     "question": "Which operator removes a field from a document?",
-    "options": {
-      "A": "$delete",
-      "B": "$unset",
-      "C": "$remove",
-      "D": "$drop"
-    },
-    "answer": "B",
-    "answer_text": "$unset"
+    "options": [
+      "$delete",
+      "$unset",
+      "$remove",
+      "$drop"
+    ],
+    "answer": "$unset"
   },
   {
     "id": 48,
     "question": "Which operator adds multiple unique values to an array?",
-    "options": {
-      "A": "$push",
-      "B": "$addToSet",
-      "C": "$append",
-      "D": "$insert"
-    },
-    "answer": "B",
-    "answer_text": "$addToSet"
+    "options": [
+      "$push",
+      "$addToSet",
+      "$append",
+      "$insert"
+    ],
+    "answer": "$addToSet"
   },
   {
     "id": 49,
     "question": "MongoDB Compass is primarily used for?",
-    "options": {
-      "A": "Query Optimization",
-      "B": "GUI-Based Database Management",
-      "C": "Backup Creation",
-      "D": "Replication"
-    },
-    "answer": "B",
-    "answer_text": "GUI-Based Database Management"
+    "options": [
+      "Query Optimization",
+      "GUI-Based Database Management",
+      "Backup Creation",
+      "Replication"
+    ],
+    "answer": "GUI-Based Database Management"
   },
   {
     "id": 50,
     "question": "Which feature provides fault tolerance in MongoDB?",
-    "options": {
-      "A": "Indexes",
-      "B": "Aggregation",
-      "C": "Replica Sets",
-      "D": "Projection"
-    },
-    "answer": "C",
-    "answer_text": "Replica Sets"
+    "options": [
+      "Indexes",
+      "Aggregation",
+      "Replica Sets",
+      "Projection"
+   ],
+    "answer": "Replica Sets"
   }
 ]
